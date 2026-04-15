@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/hd/.agents/skills/llm-wiki/**)",
+      "Read(//Users/hd/.agents/skills/llm-wiki/scripts/**)",
+      "Bash(~/.claude/skills/llm-wiki/scripts/fetch-url.sh *)"
+    ]
+  }
+}
