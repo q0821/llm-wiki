@@ -52,3 +52,4 @@ npx skills add coreyhaines31/marketingskills --skill page-cro copywriting
 
 - [[Agent-Skills]] — 技能規範概念
 - [[src-photography-studio-proposal]] — 提案中的 SEO 策略可搭配這套工具執行
+- [[src-customer-diagnostic-50-questions]] — 顧客管理診斷，`churn-prevention` 與 `onboarding-cro` 直接對應

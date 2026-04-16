@@ -5,6 +5,7 @@ sources: [2026-04-07-OpenClaw × WordPress 輕量內部知識 RAG 系統.md]
 created: 2026-04-15
 updated: 2026-04-15
 tags: [技術, 平台, 部署]
+confidence: 強
 ---
 
 # Cloudflare
