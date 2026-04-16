@@ -63,3 +63,5 @@ confidence: 強
 
 - [[胖哥攝影工作室]] — 客戶實體頁
 - [[src-marketing-skills-ai-agents]] — 行銷技能工具，可輔助執行此提案中的 SEO 工作
+- [[src-customer-diagnostic-50-questions]] — 顧客管理診斷，「讓人敢聯繫」後的客戶經營策略
+- [[顧客終身價值]] — 提案成效最終應反映在 CLV 上

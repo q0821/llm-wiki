@@ -33,3 +33,4 @@ confidence: 中
 ## 相關頁面
 
 - [[src-plakoro-board-game]] — 同為 Pokemon 相關的願望清單品項
+- [[src-asgard-skills]] — Asgard Skills 中可能有設計相關 skill 可用於評估商品
