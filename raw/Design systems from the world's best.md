@@ -1,1 +1,0 @@
-[Design systems from the world's best](https://oh-my-design-lemon.vercel.app/)

@@ -1,7 +1,7 @@
 ---
 title: Agent Skills
 type: concept
-sources: [2026-03-12-Marketing-Skills-for-AI-Agents.md, asgard-ai-platform-skills.md, 只要 5 分鐘！Claude Code 無縫整合 NotebookLM 實戰.md]
+sources: [2026-03-12-Marketing-Skills-for-AI-Agents.md, asgard-ai-platform-skills.md, 只要 5 分鐘！Claude Code 無縫整合 NotebookLM 實戰.md, 推薦的 Claude Code  skill.md]
 created: 2026-04-15
 updated: 2026-04-20
 tags: [技術, AI, 工具, 概念]
@@ -35,6 +35,21 @@ confidence: 中
 - 「目的越清楚，skill 建得越好」——這是個自舉（bootstrapping）現象
 - 與 [[src-asgard-skills]] 的 `Iron Law` / `Gotchas` 設計理念呼應：明確的邊界條件帶來更好的 skill
 
+## 推薦 Skills 清單
+
+個人整理的值得安裝的 Claude Code skills：
+
+| Skill | 作者 | 適用對象 | 說明 |
+|-------|------|---------|------|
+| [superpowers](https://github.com/obra/superpowers) | Jesse Vincent | 所有人 | 讓 Claude 做事更嚴謹，16 萬星 |
+| [anthropics/skills](https://github.com/anthropics/skills) | Anthropic 官方 | 所有人 | 文件處理（Word、PPT、Excel、PDF），12 萬星 |
+| [gstack](https://github.com/garrytan/gstack) | Garry Tan（YC CEO） | 一人公司 | 模擬團隊角色審查，7.7 萬星 |
+| [obsidian-skills](https://github.com/kepano/obsidian-skills) | Stephan Ango（Obsidian CEO） | Obsidian 使用者 | Obsidian 整合，2.5 萬星 |
+| [claude-code-templates](https://github.com/davila7/claude-code-templates) | Daniel Ávila | Skill 新手 | 大型工具集，2.5 萬星 |
+| [marketingskills](https://github.com/coreyhaines31/marketingskills) | Corey Haines | 行銷/副業/一人公司 | 行銷技能集，2.2 萬星 |
+| [claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills) | K-Dense AI | 研究/論文 | 深度內容寫作，1.9 萬星 |
+| [compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin) | Every.to 團隊 | 長期內容/產品經營 | 複利式工程，1.5 萬星 |
+
 ## Skill 設計模式比較
 
 | 面向 | marketingskills | Asgard Skills |
@@ -51,5 +66,6 @@ confidence: 中
 - [[src-claude-code-notebooklm]] — NotebookLM Skill + 自製 yt-search skill 完整實戰
 - [[Managed-Agents]] — Agent 基礎設施層，支援 Skills 作為 agent 能力定義
 - [[Meta-Harness]] — Skills 可視為 harness 層對 agent 能力的模組化抽象
+- [[Harness-Engineering]] — Skills 是 Level 1 harness 的具體實踐
 - [[Asgard-AI-Platform]] — Asgard 平台
 - [[notebooklm-py]] — NotebookLM Skill 的底層 CLI 工具
