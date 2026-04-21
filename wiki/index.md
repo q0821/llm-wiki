@@ -8,6 +8,14 @@ title: 索引
 
 ## 最近新增
 
+### 2026-04-21
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-harness-engineering-openai\|Harness Engineering 入門篇]] | OpenAI 駕馭工程範式，三根支柱與三級實踐框架 |
+| [[Harness-Engineering\|Harness Engineering]] | AI 代理環境設計範式：約束 + 上下文 + 熵管理 |
+| [[src-dual-currency-truth\|雙幣贏的真相：折價賣波動率]] | 選擇權賣方本質、定價折價 40-60%、行情依賴性 |
+
 ### 2026-04-20
 
 | 頁面 | 摘要 |
@@ -48,6 +56,8 @@ title: 索引
 | [[src-design-md-revolution\|DESIGN.md 革命]] | awesome-design-md 專案介紹，AI UI 設計新標準 | 3 |
 | [[src-claude-code-notebooklm\|Claude Code × NotebookLM 整合實戰]] | token 外包 + skill 自我優化 | 1 |
 | [[src-anthropic-managed-agents-engineering\|Scaling Managed Agents]] | Anthropic 官方工程部落格，meta-harness 架構設計 | 1 |
+| [[src-harness-engineering-openai\|Harness Engineering 入門篇]] | OpenAI 駕馭工程，三根支柱與三級實踐框架 | 1 |
+| [[src-dual-currency-truth\|雙幣贏的真相：折價賣波動率]] | 選擇權賣方本質、定價折價 40-60% | 1 |
 
 ## 實體
 
@@ -66,14 +76,15 @@ title: 索引
 
 | 頁面 | 摘要 | 來源數 |
 |------|------|--------|
-| [[雙幣贏]] | 加密貨幣結構化收益產品，本質為賣出選擇權 | 1 |
+| [[雙幣贏]] | 選擇權賣方策略的零售包裝版，非存款非利息 | 2 |
 | [[RAG]] | 檢索增強生成，讓 AI 根據自有資料回答 | 2 |
 | [[Embedding]] | 向量化，把文字轉成語意向量供搜尋 | 1 |
 | [[Agent-Skills\|Agent Skills]] | AI Agent 可擴充任務能力的技能規範 | 3 |
 | [[顧客終身價值]] | CLV，衡量顧客經營成效的核心指標 | 1 |
 | [[DESIGN-md\|DESIGN.md]] | 純 Markdown 設計系統規範，讓 AI coding agent 生成風格一致的 UI | 2 |
 | [[Managed-Agents\|Claude Managed Agents]] | Anthropic 託管 agent 服務，session/harness/sandbox 三層架構 | 3 |
-| [[Meta-Harness]] | 為「尚未想出的程式」設計的 agent 架構模式 | 1 |
+| [[Meta-Harness]] | 為「尚未想出的程式」設計的 agent 架構模式 | 2 |
+| [[Harness-Engineering\|Harness Engineering]] | AI 代理環境設計範式：約束 + 上下文 + 熵管理 | 1 |
 
 ## 綜整與分析
 

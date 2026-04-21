@@ -1,7 +1,7 @@
 ---
 title: Meta-Harness
 type: concept
-sources: [scaling-managed-agents-decoupling-the-brain-from-the-hands-anthropic.md]
+sources: [scaling-managed-agents-decoupling-the-brain-from-the-hands-anthropic.md, Harness Engineering（AI駕馭工程）入門篇：OpenAI最新編程標準，教你輕鬆做到Lv.1.md]
 created: 2026-04-20
 updated: 2026-04-20
 tags: [架構設計, AI, Agent, 設計哲學]
@@ -102,6 +102,8 @@ Harness:  wake(sessionId) → harness_instance
 
 ## 相關頁面
 
+- [[Harness-Engineering]] — OpenAI 提出的互補概念，從約束與回饋系統角度切入
+- [[src-harness-engineering-openai]] — OpenAI Harness Engineering 的來源摘要
 - [[Managed-Agents]] — 第一個 meta-harness 實作
 - [[src-anthropic-managed-agents-engineering]] — 原始設計文件
 - [[Agent-Skills]] — 可視為 harness 層對 agent 能力的模組化抽象

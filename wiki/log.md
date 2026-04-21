@@ -96,3 +96,26 @@
 - 重點面向：(a) 架構設計哲學 (b) 實際部署案例 (c) 定價與經濟學（全部）
 - 關鍵觀察：TTFT p50 -60% / p95 -90% 是 decoupling 的具體效能收益，可作為架構評估基準
 - 影響頁面：[[src-anthropic-managed-agents-engineering]], [[Managed-Agents]], [[Meta-Harness]], [[Agent-Skills]], [[RAG]], [[src-claude-code-context-management]], index.md
+
+## [2026-04-21] ingest | Harness Engineering（AI 駕馭工程）入門篇
+- 來源：raw/Harness Engineering（AI駕馭工程）入門篇：OpenAI最新編程標準，教你輕鬆做到Lv.1.md
+- 作者：flip（動區動趨），原始文章來自 OpenAI 工程師 Ryan Lopopolo
+- 建立來源摘要頁：[[src-harness-engineering-openai]]
+- 建立概念頁：[[Harness-Engineering]]
+- 更新概念頁：[[Meta-Harness]]（新增 Harness Engineering 交叉引用，來源數 1→2）
+- 備註：來源後半段混入不相關的嘉信理財新聞（網頁擷取雜訊），已忽略
+- 影響頁面：[[src-harness-engineering-openai]], [[Harness-Engineering]], [[Meta-Harness]], index.md
+
+## [2026-04-21] ingest | 推薦的 Claude Code skill 清單
+- 來源：raw/推薦的 Claude Code  skill.md
+- 整合到既有頁面：[[Agent-Skills]]（新增「推薦 Skills 清單」區段，來源數 3→4）
+- 8 個推薦 skill：superpowers、anthropics/skills、gstack、obsidian-skills、claude-code-templates、marketingskills、claude-scientific-skills、compound-engineering-plugin
+- 不另建來源摘要頁（資訊密度低，整合進概念頁更合適）
+- 影響頁面：[[Agent-Skills]]
+
+## [2026-04-21] ingest | 雙幣贏的真相：折價賣波動率
+- 來源：raw/雙幣贏的真相：折價賣波動率.md
+- 建立來源摘要頁：[[src-dual-currency-truth]]
+- 大幅更新概念頁：[[雙幣贏]]（來源數 1→2，confidence 中→強，新增定價不公平、行情依賴、替代方案比較等區段）
+- 關鍵發現：交易所雙幣贏定價比 Deribit 公允價折價 40-60%，散戶期望值先天劣勢
+- 影響頁面：[[src-dual-currency-truth]], [[雙幣贏]], index.md
