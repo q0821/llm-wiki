@@ -37,3 +37,62 @@
 - 建立概念頁：[[顧客終身價值]]
 - 更新交叉引用：[[src-photography-studio-proposal]], [[src-marketing-skills-ai-agents]]
 - 影響頁面：[[src-customer-diagnostic-50-questions]], [[顧客終身價值]], [[src-photography-studio-proposal]], [[src-marketing-skills-ai-agents]], index.md
+
+## [2026-04-16] ingest | Claude Code 工作階段管理與百萬上下文攻略
+- 來源：raw/Claude Code 工作階段管理與百萬上下文攻略.md
+- 作者：Anthropic 工程師 Thariq，X (Twitter) 實戰教學
+- 建立來源摘要頁：[[src-claude-code-context-management]]
+- 影響頁面：[[src-claude-code-context-management]], [[Agent-Skills]], index.md
+
+## [2026-04-16] ingest | DESIGN.md 革命 + oh-my-design
+- 來源：raw/designmd-革命一個純文字檔案讓-ai-coding-agent-秒生成-stripelinear-等級的-ui.md, raw/oh-my-design-design-system-generator.md
+- 建立來源摘要頁：[[src-design-md-revolution]]
+- 建立概念頁：[[DESIGN-md]]
+- 影響頁面：[[src-design-md-revolution]], [[DESIGN-md]], [[Agent-Skills]], index.md
+- 備註：GitHub (VoltAgent/awesome-design-md) 抓取超時；YouTube (rgyuQNXyYvc) 無字幕，兩者均跳過
+
+## [2026-04-16] synthesis | 顧客管理自我診斷作答記錄
+- 逐題問答，記錄於 [[diagnostic-customer-answers]]
+- 使用業績記錄表.xlsx 補充部分真實數據
+- 資料狀況：2019-2022 完整，2023 缺漏，2024-2025 成交未登記
+- 待辦：取得更完整的業績資料後重新分析，補充 CLV、留存率等數字
+
+## [2026-04-20] ingest | VoltAgent/awesome-design-md（補抓 2026-04-16 跳過的來源）
+- 來源：raw/github-voltagentawesome-design-md-...-github.md（2026-04-20 fetch-url.sh 重抓成功）
+- 整合到既有頁面：[[src-design-md-revolution]]（來源數 2 → 3），補上完整 68 個品牌分類與最新數據
+- 更新概念頁：[[DESIGN-md]]（補上 getdesign.md 官方服務、採用動能說明）
+- 關鍵觀察：awesome-design-md 於 2-3 週內 stars 從 4,385 → 59,900（~14×），收錄 55+ → 68 個品牌
+- 清理：刪除空檔 `DESIGN.md 革命...md`（CJK 重複）與 `Untitled.md`（只含已知無字幕的 YouTube URL）
+- 影響頁面：[[src-design-md-revolution]], [[DESIGN-md]], index.md
+
+## [2026-04-20] ingest | Claude Code × NotebookLM 整合實戰
+- 來源：raw/只要 5 分鐘！Claude Code 無縫整合 NotebookLM 實戰.md
+- 作者：[[HC-AI-說人話]]（YouTube 創作者）｜原始影片：https://www.youtube.com/watch?v=22bjps4LMmU
+- 建立來源摘要頁：[[src-claude-code-notebooklm]]
+- 建立實體頁：[[NotebookLM]], [[notebooklm-py]], [[HC-AI-說人話]]
+- 更新概念頁：[[Agent-Skills]]（新增 NotebookLM Skill、yt-search Skill 案例與「Skill 自我優化 meta-pattern」段落）
+- 更新概念頁：[[RAG]]（新增 RAG 解決方案類別表格，並列自建 vs 免費商用）
+- 補充交叉引用：[[src-claude-code-context-management]], [[src-asgard-skills]]
+- 重點面向：(a) 工具整合教學 (b) Token 經濟學 (c) Skill 自我優化 meta-pattern（全部）
+- 待辦：作者 HC 提到的「上一支影片」（LLM wiki + Obsidian + Claude Code）值得追蹤匯入
+
+## [2026-04-20] update | index.md 新增「最近新增」區塊
+- 在索引頁頂部加入最近 10 筆新增頁面清單，欄位：頁面、類型、新增日期
+- 按日期倒序排列，方便一眼掌握最新動態
+- 影響頁面：index.md
+
+## [2026-04-20] ingest | Anthropic Claude Managed Agents（3 來源整合）
+- 背景：原 raw/ 內的「永別了 n8n！Managed Agents」為空檔，使用者判斷導課內容不值得擷取；改為搜尋實用教學後選 3 份整合
+- 來源：
+  - raw/scaling-managed-agents-decoupling-the-brain-from-the-hands-anthropic.md（官方工程部落格，fetch-url.sh 抓取）
+  - raw/claude-managed-agents-github-tutorial-az9713.md（GitHub 教學 repo，WebFetch 抓取 raw README）
+  - raw/the-ai-corner-claude-managed-agents-guide-2026.md（真實部署案例，WebFetch 抓取摘要；premium 部分未取得）
+- 建立來源摘要頁（僅官方版，較厚）：[[src-anthropic-managed-agents-engineering]]
+- 建立概念頁：[[Managed-Agents]]（整合 3 來源，含架構、定價、真實案例、教學資源）
+- 建立概念頁：[[Meta-Harness]]（抽離出的設計哲學模式，OS 虛擬化類比）
+- 更新概念頁：[[Agent-Skills]], [[RAG]]（補交叉引用）
+- 更新來源頁：[[src-claude-code-context-management]]（與 Managed Agents session 外部化對照）
+- 清理：刪除空檔 `永別了 n8n！Managed Agents...md`
+- 重點面向：(a) 架構設計哲學 (b) 實際部署案例 (c) 定價與經濟學（全部）
+- 關鍵觀察：TTFT p50 -60% / p95 -90% 是 decoupling 的具體效能收益，可作為架構評估基準
+- 影響頁面：[[src-anthropic-managed-agents-engineering]], [[Managed-Agents]], [[Meta-Harness]], [[Agent-Skills]], [[RAG]], [[src-claude-code-context-management]], index.md

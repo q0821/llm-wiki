@@ -83,3 +83,4 @@ npx skills add asgard-ai-platform/skills
 - [[Asgard-AI-Platform]] — 開發此技能庫的平台
 - [[Agent-Skills]] — 技能規範概念
 - [[src-marketing-skills-ai-agents]] — 另一套 Agent Skills 集合（行銷導向），可互補使用
+- [[src-claude-code-notebooklm]] — 另一種 skill 應用模式（自製 + 整合外部工具，與 Asgard 的「理論模型 + 計算腳本」對照）
