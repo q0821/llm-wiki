@@ -1,9 +1,9 @@
 ---
 title: Agent Skills
 type: concept
-sources: [2026-03-12-Marketing-Skills-for-AI-Agents.md, asgard-ai-platform-skills.md]
+sources: [2026-03-12-Marketing-Skills-for-AI-Agents.md, asgard-ai-platform-skills.md, 只要 5 分鐘！Claude Code 無縫整合 NotebookLM 實戰.md]
 created: 2026-04-15
-updated: 2026-04-16
+updated: 2026-04-20
 tags: [技術, AI, 工具, 概念]
 confidence: 中
 ---
@@ -23,6 +23,17 @@ confidence: 中
 
 - [[src-marketing-skills-ai-agents|marketingskills]] — 行銷任務技能集（SEO、CRO、文案等）
 - [[src-asgard-skills|Asgard Skills]] — 263 個跨領域技能（理論模型、演算法、商業框架等），附確定性計算腳本
+- **NotebookLM Skill**（[[notebooklm-py]] 配套）— 讓 Claude Code 操作 [[NotebookLM]]，把研究外包給 Gemini。詳見 [[src-claude-code-notebooklm]]
+- **yt-search Skill**（自製範例）— 用 yt-dlp 搜尋 YouTube 並回傳結構化結果（含「觀看數/訂閱數」爆款比率）
+
+## Skill 自我優化 Meta-Pattern
+
+來自 [[src-claude-code-notebooklm]] 的觀察：可以**用 skill 來建 skill**。
+
+- Anthropic 內建的 `skill-creator` skill（Opus 4.6 自動觸發）會：建初版 → 跑測試 → 修腳本 → 優化 SKILL.md
+- 關鍵前提：使用者要清楚描述目的、輸入輸出、成功標準
+- 「目的越清楚，skill 建得越好」——這是個自舉（bootstrapping）現象
+- 與 [[src-asgard-skills]] 的 `Iron Law` / `Gotchas` 設計理念呼應：明確的邊界條件帶來更好的 skill
 
 ## Skill 設計模式比較
 
@@ -37,4 +48,8 @@ confidence: 中
 
 - [[src-marketing-skills-ai-agents]] — 行銷 Skills 集合詳細介紹
 - [[src-asgard-skills]] — Asgard Skills 集合詳細介紹
+- [[src-claude-code-notebooklm]] — NotebookLM Skill + 自製 yt-search skill 完整實戰
+- [[Managed-Agents]] — Agent 基礎設施層，支援 Skills 作為 agent 能力定義
+- [[Meta-Harness]] — Skills 可視為 harness 層對 agent 能力的模組化抽象
 - [[Asgard-AI-Platform]] — Asgard 平台
+- [[notebooklm-py]] — NotebookLM Skill 的底層 CLI 工具

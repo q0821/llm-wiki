@@ -3,7 +3,20 @@
     "allow": [
       "Read(//Users/hd/.agents/skills/llm-wiki/**)",
       "Read(//Users/hd/.agents/skills/llm-wiki/scripts/**)",
-      "Bash(~/.claude/skills/llm-wiki/scripts/fetch-url.sh *)"
+      "Bash(~/.claude/skills/llm-wiki/scripts/fetch-url.sh *)",
+      "Read(//Users/hd/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/a8456654-9572-49d0-a8f9-880c84cc3164/9bf640c6-cf47-4b24-9fc1-c8aa42b12124/skills/xlsx/**)",
+      "Bash(python3 -c ':*)",
+      "Bash(~/.agents/skills/llm-wiki/scripts/fetch-url.sh \"https://oh-my-design-lemon.vercel.app/\" \"/Users/hd/Library/Mobile Documents/iCloud~md~obsidian/Documents/llm-wiki/raw\")",
+      "Bash(~/.agents/skills/llm-wiki/scripts/fetch-url.sh \"https://www.aiposthub.com/design-md-ai-coding-agent-generate-stripe-linear-level-ui/\" \"/Users/hd/Library/Mobile Documents/iCloud~md~obsidian/Documents/llm-wiki/raw\")",
+      "Bash(~/.agents/skills/llm-wiki/scripts/fetch-url.sh \"https://github.com/VoltAgent/awesome-design-md\" \"/Users/hd/Library/Mobile Documents/iCloud~md~obsidian/Documents/llm-wiki/raw\")",
+      "Bash(~/.agents/skills/llm-wiki/scripts/fetch-youtube.sh \"https://youtube.com/watch?v=rgyuQNXyYvc&si=q6mvCeQPyNloJU32\" \"/Users/hd/Library/Mobile Documents/iCloud~md~obsidian/Documents/llm-wiki/raw\")",
+      "Bash(python3 -m pip install youtube-transcript-api --quiet)",
+      "Bash(python3 -m youtube_transcript_api rgyuQNXyYvc --languages zh-Hant zh en)",
+      "Bash(cp -r /tmp/quartz-template/quartz .)",
+      "Bash(cp /tmp/quartz-template/package.json .)",
+      "Bash(cp /tmp/quartz-template/package-lock.json .)",
+      "Bash(cp /tmp/quartz-template/tsconfig.json .)",
+      "Bash(cp /tmp/quartz-template/quartz.config.ts .)"
     ]
   }
 }
