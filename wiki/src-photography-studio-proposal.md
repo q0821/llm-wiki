@@ -6,6 +6,7 @@ created: 2026-04-15
 updated: 2026-04-15
 tags: [工作, SEO, 內容策略, 攝影, 網站優化]
 confidence: 強
+draft: true
 ---
 
 # 胖哥攝影工作室 — 網站內容優化提案
@@ -65,3 +66,5 @@ confidence: 強
 - [[src-marketing-skills-ai-agents]] — 行銷技能工具，可輔助執行此提案中的 SEO 工作
 - [[src-customer-diagnostic-50-questions]] — 顧客管理診斷，「讓人敢聯繫」後的客戶經營策略
 - [[顧客終身價值]] — 提案成效最終應反映在 CLV 上
+- [[WordPress-接手檢查SOP]] — 同屬 WordPress 接案脈絡，若接手此客戶網站可套用檢查流程
+- [[WordPress-接案工作筆記]] — 三階段工作流綜整，本提案對應階段 1（獲客）

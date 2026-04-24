@@ -5,11 +5,13 @@ sources: [src-customer-diagnostic-50-questions.md]
 created: 2026-04-16
 updated: 2026-04-16
 tags: [CRM, 顧客管理, 自我診斷]
+confidence: 中
+draft: true
 ---
 
 # 顧客管理自我診斷 — 作答記錄
 
-> 來源問卷：[[src-customer-diagnostic-50-questions.md]]
+> 來源問卷：[[src-customer-diagnostic-50-questions]]
 > 作答日期：2026-04-16
 
 ## 一、顧客基本面

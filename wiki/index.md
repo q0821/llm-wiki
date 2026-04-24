@@ -8,6 +8,22 @@ title: 索引
 
 ## 最近新增
 
+### 2026-04-24
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-recommended-claude-code-skills\|推薦的 Claude Code Skills 清單]] | 8 個值得安裝的 skills，按 GitHub stars 排序 |
+| [[WordPress-接案工作筆記]] | 綜整：接案前（SEO）→ 接手時（檢查 SOP）→ 加值階段（AI / RAG）三階段工作流 |
+| [[加密貨幣收益工具比較]] | 比較：活期賺幣 / 現貨網格 / 雙幣贏 / Deribit 自賣選擇權 |
+
+### 2026-04-23
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-wordpress-handover-sop\|WordPress 接案交接：如何檢查「前人的遺產」]] | 原創經驗文（Jackie Yeh），六步 SOP + 倫理原則 |
+| [[WordPress-接手檢查SOP]] | 六步驟 SOP：核心檔驗證、uploads 掃描、帳密搜尋、路徑殘留、DB 搜尋、外掛盤點 |
+| [[WP-CLI]] | WordPress 命令列工具，verify-checksums 與 search-replace 是接手檢查關鍵指令 |
+
 ### 2026-04-21
 
 | 頁面 | 摘要 |
@@ -58,6 +74,8 @@ title: 索引
 | [[src-anthropic-managed-agents-engineering\|Scaling Managed Agents]] | Anthropic 官方工程部落格，meta-harness 架構設計 | 1 |
 | [[src-harness-engineering-openai\|Harness Engineering 入門篇]] | OpenAI 駕馭工程，三根支柱與三級實踐框架 | 1 |
 | [[src-dual-currency-truth\|雙幣贏的真相：折價賣波動率]] | 選擇權賣方本質、定價折價 40-60% | 1 |
+| [[src-wordpress-handover-sop\|WordPress 接案交接：如何檢查「前人的遺產」]] | 原創經驗文，六步 SOP + 倫理原則 | 1 |
+| [[src-recommended-claude-code-skills\|推薦的 Claude Code Skills 清單]] | 8 個精選 skills，按 stars 排序（原創推薦） | 1 |
 
 ## 實體
 
@@ -71,6 +89,7 @@ title: 索引
 | [[NotebookLM]] | Google 免費閉合式 RAG 工具，Gemini 模型，可生成圖表/podcast | 1 |
 | [[notebooklm-py]] | 林探開發的 NotebookLM CLI 工具，提供 Claude Code 整合 | 1 |
 | [[HC-AI-說人話]] | YouTube 創作者，推廣 Claude Code + 第二大腦工作流 | 1 |
+| [[WP-CLI]] | WordPress 官方命令列工具，接手檢查 SOP 關鍵依賴 | 1 |
 
 ## 概念
 
@@ -79,17 +98,23 @@ title: 索引
 | [[雙幣贏]] | 選擇權賣方策略的零售包裝版，非存款非利息 | 2 |
 | [[RAG]] | 檢索增強生成，讓 AI 根據自有資料回答 | 2 |
 | [[Embedding]] | 向量化，把文字轉成語意向量供搜尋 | 1 |
-| [[Agent-Skills\|Agent Skills]] | AI Agent 可擴充任務能力的技能規範 | 3 |
+| [[Agent-Skills\|Agent Skills]] | AI Agent 可擴充任務能力的技能規範 | 4 |
 | [[顧客終身價值]] | CLV，衡量顧客經營成效的核心指標 | 1 |
-| [[DESIGN-md\|DESIGN.md]] | 純 Markdown 設計系統規範，讓 AI coding agent 生成風格一致的 UI | 2 |
+| [[DESIGN-md\|DESIGN.md]] | 純 Markdown 設計系統規範，讓 AI coding agent 生成風格一致的 UI | 3 |
 | [[Managed-Agents\|Claude Managed Agents]] | Anthropic 託管 agent 服務，session/harness/sandbox 三層架構 | 3 |
 | [[Meta-Harness]] | 為「尚未想出的程式」設計的 agent 架構模式 | 2 |
 | [[Harness-Engineering\|Harness Engineering]] | AI 代理環境設計範式：約束 + 上下文 + 熵管理 | 1 |
+| [[WordPress-接手檢查SOP]] | 接手 WordPress 網站的六步檢查流程，辨識「前人的遺產」 | 1 |
 
 ## 綜整與分析
 
-（尚無綜整頁面）
+| 頁面 | 摘要 | 來源數 |
+|------|------|--------|
+| [[diagnostic-customer-answers\|顧客管理自我診斷 — 作答記錄]] | 對 50 題顧客自我診斷問卷的個人作答 | 1 |
+| [[WordPress-接案工作筆記]] | WordPress 接案三階段工作流：獲客 → 接手 → 加值 | 3 |
 
 ## 比較
 
-（尚無比較頁面）
+| 頁面 | 摘要 | 來源數 |
+|------|------|--------|
+| [[加密貨幣收益工具比較]] | 活期賺幣 / 網格 / 雙幣贏 / Deribit 自賣選擇權的並排比較 | 2 |

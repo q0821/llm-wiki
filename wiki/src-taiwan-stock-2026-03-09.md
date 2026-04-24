@@ -6,6 +6,7 @@ created: 2026-04-15
 updated: 2026-04-15
 tags: [投資, 台股, ETF, 00981A, 富邦台50]
 confidence: 強
+draft: true
 ---
 
 # 台股大跌換股操作記錄 (2026-03-09)

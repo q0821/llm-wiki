@@ -119,3 +119,34 @@
 - 大幅更新概念頁：[[雙幣贏]]（來源數 1→2，confidence 中→強，新增定價不公平、行情依賴、替代方案比較等區段）
 - 關鍵發現：交易所雙幣贏定價比 Deribit 公允價折價 40-60%，散戶期望值先天劣勢
 - 影響頁面：[[src-dual-currency-truth]], [[雙幣贏]], index.md
+
+## [2026-04-23] ingest | WordPress 接案交接：如何檢查「前人的遺產」
+- 來源：raw/2026-04-23-接手專案檢查sop.md
+- 來源性質：**原創經驗文**（author: Jackie Yeh），第一手接手案例
+- 建立來源摘要頁：[[src-wordpress-handover-sop]]
+- 建立概念頁：[[WordPress-接手檢查SOP]]（依使用者決定，將「前人的遺產」概念併入此頁定義區段，不獨立建頁）
+- 建立實體頁：[[WP-CLI]]
+- 更新既有頁面：[[src-photography-studio-proposal]]（新增 WordPress-接手檢查SOP 交叉引用）
+- 重點面向：(a) 技術 SOP 六步驟 (b) 資安倫理（撿到別家帳密處理原則）(c) 接案經驗——三者都收
+- 關鍵觀察：
+  - `wp core verify-checksums` 一個指令同時解決「多餘檔盤點」與「核心檔竄改」
+  - serialized data 必須用 `wp search-replace --all-tables`，SQL UPDATE 會破壞長度標記
+  - 倫理處理三原則：不利用、不傳播、視認識程度決定通知
+- 影響頁面：[[src-wordpress-handover-sop]], [[WordPress-接手檢查SOP]], [[WP-CLI]], [[src-photography-studio-proposal]], index.md
+
+## [2026-04-24] lint | 健康檢查與修正
+- 操作模式：逐項確認執行
+- **A 類修正（結構/正確性）**：
+  - A1：index.md「綜整與分析」區段補上 [[diagnostic-customer-answers]]
+  - A2：修壞連結 2 個——`diagnostic-customer-answers` 的 `[[src-customer-diagnostic-50-questions.md]]` 去掉 `.md`；`Managed-Agents` 中指向 raw/ 的 `[[the-ai-corner-...]]` 改為純文字
+  - A3：補 confidence 欄位於 [[src-dual-currency-truth]]（強）、[[src-harness-engineering-openai]]（強）、[[diagnostic-customer-answers]]（中）
+- **B 類修正（一致性）**：
+  - B1：[[Agent-Skills]] 來源數 3→4；[[DESIGN-md]] frontmatter sources 改列 3 個 raw（與其他 concept 慣例一致），index 來源數 2→3
+- **C 類修正（交叉引用）**：
+  - C1：[[src-customer-diagnostic-50-questions]] 補反向連結 [[diagnostic-customer-answers]]
+  - C2：[[胖哥攝影工作室]] 連 [[WordPress-接手檢查SOP]]；[[src-openclaw-wordpress-rag]] 連 [[WordPress-接手檢查SOP]] 與 [[WP-CLI]]；並補齊反向連結
+- **D 類改善（新建頁面）**：
+  - D1.1：新建綜整頁 [[WordPress-接案工作筆記]]（整合 [[src-photography-studio-proposal]]、[[WordPress-接手檢查SOP]]、[[src-openclaw-wordpress-rag]]）
+  - D1.2：新建比較頁 [[加密貨幣收益工具比較]]（活期賺幣 / 網格 / [[雙幣贏]] / Deribit 自賣）
+  - D1.3：新建來源頁 [[src-recommended-claude-code-skills]]（原先整合於 [[Agent-Skills]]，改為獨立 author=Jackie Yeh 來源頁）
+- 影響頁面：index.md, [[diagnostic-customer-answers]], [[Managed-Agents]], [[src-dual-currency-truth]], [[src-harness-engineering-openai]], [[DESIGN-md]], [[Agent-Skills]], [[src-customer-diagnostic-50-questions]], [[胖哥攝影工作室]], [[src-openclaw-wordpress-rag]], [[WordPress-接手檢查SOP]], [[WP-CLI]], [[src-photography-studio-proposal]], [[src-wordpress-handover-sop]], [[雙幣贏]], [[src-recommended-claude-code-skills]], [[WordPress-接案工作筆記]], [[加密貨幣收益工具比較]]

@@ -101,3 +101,6 @@ WordPress REST API
 - [[Embedding]] — 向量化概念
 - [[Cloudflare]] — 部署平台
 - [[OpenClaw]] — MVP 階段使用的 AI Agent 框架
+- [[WordPress-接手檢查SOP]] — 同屬 WordPress 實作脈絡，資安檢查面向
+- [[WP-CLI]] — WordPress 命令列工具，可輔助 RAG 系統部署與資料搬遷
+- [[WordPress-接案工作筆記]] — 三階段工作流綜整，本來源對應階段 3（加值 / AI 整合）

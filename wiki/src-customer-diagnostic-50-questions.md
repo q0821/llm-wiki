@@ -86,6 +86,7 @@ confidence: 中
 
 ## 相關頁面
 
+- [[diagnostic-customer-answers]] — 對此問卷的個人作答記錄
 - [[顧客終身價值]] — CLV 概念頁
 - [[src-photography-studio-proposal]] — 胖哥攝影提案中的「讓人敢聯繫」對應顧客獲取策略
 - [[src-marketing-skills-ai-agents]] — marketingskills 中的 `churn-prevention`、`onboarding-cro` 直接相關
