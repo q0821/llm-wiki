@@ -61,6 +61,7 @@ confidence: 中
 
 ## 相關頁面
 
+- [[src-recommended-claude-code-skills]] — 8 個推薦 Skills 清單的原始來源頁
 - [[src-marketing-skills-ai-agents]] — 行銷 Skills 集合詳細介紹
 - [[src-asgard-skills]] — Asgard Skills 集合詳細介紹
 - [[src-claude-code-notebooklm]] — NotebookLM Skill + 自製 yt-search skill 完整實戰

@@ -1,7 +1,7 @@
 ---
 title: DESIGN.md
 type: concept
-sources: [src-design-md-revolution.md]
+sources: [designmd-革命一個純文字檔案讓-ai-coding-agent-秒生成-stripelinear-等級的-ui.md, oh-my-design-design-system-generator.md, github-voltagentawesome-design-md-a-collection-of-designmd-files-inspired-by-popular-brand-design-systems-drop-one-into-your-project-and-let-coding-agents-generate-a-matching-ui-github.md]
 created: 2026-04-16
 updated: 2026-04-20
 tags: [設計系統, AI工具, UI, Markdown]

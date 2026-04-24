@@ -5,6 +5,7 @@ sources: [雙幣贏的真相：折價賣波動率.md]
 created: 2026-04-21
 updated: 2026-04-21
 tags: [投資, crypto, 期權, 風險管理]
+confidence: 強
 ---
 
 # 雙幣贏的真相：折價賣波動率
