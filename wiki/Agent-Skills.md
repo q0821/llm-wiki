@@ -1,11 +1,11 @@
 ---
 title: Agent Skills
 type: concept
-sources: [2026-03-12-Marketing-Skills-for-AI-Agents.md, asgard-ai-platform-skills.md, 只要 5 分鐘！Claude Code 無縫整合 NotebookLM 實戰.md, 推薦的 Claude Code  skill.md]
+sources: [2026-03-12-Marketing-Skills-for-AI-Agents.md, asgard-ai-platform-skills.md, 只要 5 分鐘！Claude Code 無縫整合 NotebookLM 實戰.md, 推薦的 Claude Code  skill.md, "Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "科技翰林院怎麼用 Claude Code 終端機？8 個實戰設定全公開.md"]
 created: 2026-04-15
-updated: 2026-04-20
+updated: 2026-05-09
 tags: [技術, AI, 工具, 概念]
-confidence: 中
+confidence: 強
 ---
 
 # Agent Skills
@@ -18,6 +18,50 @@ confidence: 中
 
 - 官方規範：https://agentskills.io
 - 安裝方式：`npx skills add <repo>`
+
+## 與 .claude/commands/ 的關係
+
+[[Claude Code]] 的 `.claude/commands/` 機制是 Skills 的**簡化版本**：每個常用工作流寫成一個 markdown 範本（檔名 = slash command 名）。
+
+[[科技翰林院]] [[src-techhanlin-llm-wiki-tutorial|LLM Wiki 教學]]建議把高頻動作都寫成 slash command：
+- `/today` — 建立今日 daily note、搬入未完成 task
+- `/weekly-review` — 統計本週、辨識重複主題、產回顧筆記
+- `/llm-wiki ingest|query|lint` — [[LLM-Wiki]] 三步驟工作流
+
+差異：
+- **.claude/commands/**：本機專案層級，逐字 prompt 範本，無腳本邏輯
+- **Agent Skills**：跨專案分發、可含腳本（Python、shell）、有 frontmatter metadata 與觸發條件描述
+
+## 為什麼把 Prompt 變成 Skill？
+
+[[科技翰林院]] [[src-techhanlin-claude-code-8-settings|8 個設定]]提出的核心啟發：
+
+> 「**每次你發現自己在跟 AI 說一樣的話，那就是應該建一個 Skill 的時候。**」
+
+直接打 Prompt 的問題：
+- 每次都要重新描述完整流程（光是 prompt 就要幾百字）
+- 容易漏步驟
+- 流程更新時要去改每個 prompt
+
+Skill 的封裝優勢：
+- 一鍵觸發完整 SOP
+- 流程更新只改一處
+- 規範與檢查清單可被多個 session 共用
+
+## 實戰 Skill 命名範例（[[科技翰林院]] 的 10 個常用 Skills）
+
+按用途分類，可作為設計自己 skills 的參考：
+
+| 類別 | Skill 範例 | 觸發時機 |
+|---|---|---|
+| **內容產線** | `/techhanlin-write` | 寫文章：讀 SOP → 寫內容 → 上傳 WP → 設 SEO |
+| **單純操作** | `/techhanlin-wp` | 不寫內容只改 WordPress 設定 |
+| **批次任務** | `/wp-seo-batch` | 大量修 SEO 時，每 5 篇自動驗證 |
+| **修改流程** | `/css-fix` | 改樣式：先診斷再動手 |
+| **Session 護欄** | `/check`, `/verify` | session 開頭驗環境、修改後強制驗證 |
+| **部署流程** | `/deploy` | 上線時：跑 tsc → 建置 → commit → push |
+
+> 對應本知識庫：`/llm-wiki ingest|query|lint` 屬於「**流程護欄 + 內容產線**」混合型。
 
 ## 已知的 Skills 集合
 

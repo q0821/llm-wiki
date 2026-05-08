@@ -1,0 +1,1 @@
+[AI 品質共謀（AI Quality Collusion）](https://shingo0620.github.io/SPT/AI-%E5%93%81%E8%B3%AA%E5%85%B1%E8%AC%80#ai-%E5%93%81%E8%B3%AA%E5%85%B1%E8%AC%80ai-quality-collusion)

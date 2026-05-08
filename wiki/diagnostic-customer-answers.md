@@ -1,9 +1,9 @@
 ---
 title: 顧客管理自我診斷 — 作答記錄
 type: synthesis
-sources: [src-customer-diagnostic-50-questions.md]
+sources: ["你真的了解你的顧客嗎？—— 50 個自我診斷問題.md"]
 created: 2026-04-16
-updated: 2026-04-16
+updated: 2026-05-09
 tags: [CRM, 顧客管理, 自我診斷]
 confidence: 中
 draft: true

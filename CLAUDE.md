@@ -36,3 +36,16 @@
 - 每個 wiki 頁面包含 YAML frontmatter
 - 專有名詞首次出現時附註原文，後續可省略
 - index.md 各分類使用表格格式，欄位為「頁面」、「摘要」、「來源數」
+
+## 素材投遞（Inbox 機制）
+本專案不放在 iCloud（避免 .git 損毀、node_modules 同步衝突），但有獨立的 iCloud Obsidian vault 作為手機投遞口：
+
+- **Inbox 位置**：`~/Library/Mobile Documents/iCloud~md~obsidian/Documents/wiki-inbox/`（手機 Obsidian 可見）
+- **同步腳本**：`bin/inbox-pull.sh`
+- **同步策略**：mv（搬移），不是 cp。inbox 永遠保持淨空（只留 README.md）
+- **搬移規則**：
+  - `*.md` / `*.txt` → `raw/`
+  - 其他附件（圖片、PDF 等） → `raw/assets/`
+  - 衝突時自動加時間戳後綴
+- **觸發時機**：`/llm-wiki ingest` 流程開頭會自動執行此腳本（前置檢查的一部分）
+- **手動觸發**：直接跑 `./bin/inbox-pull.sh`

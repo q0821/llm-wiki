@@ -3,7 +3,7 @@ title: HC AI 說人話
 type: entity
 sources: [只要 5 分鐘！Claude Code 無縫整合 NotebookLM 實戰.md]
 created: 2026-04-20
-updated: 2026-04-20
+updated: 2026-05-08
 tags: [創作者, YouTube, AI教學, Claude Code, 第二大腦]
 confidence: 中
 ---
@@ -47,3 +47,11 @@ HC 在 [[src-claude-code-notebooklm]] 結尾提到：
 ## 相關概念
 
 - [[Agent-Skills]] — 影片中示範如何自製 yt-search skill 並用 skill-creator 自我優化
+- [[LLM-Wiki]] — 推廣的核心方法論，源自 [[Andrej-Karpathy]] 2026-04 gist
+
+## 同領域中文創作者
+
+- [[科技翰林院]]（AI 導演林思翰 Hans）— 同樣推廣 [[Claude Code]] + [[Obsidian]] 第二大腦工作流，但**內容定位互補**：
+  - **HC AI 說人話**：白話、實作示範、5 分鐘上手、token 經濟學
+  - **科技翰林院**：方法論導向、結構化分析、結合公司營運經驗
+- 兩者在 2026-04 同期推出 [[LLM-Wiki]] 相關內容，反映此範式在中文圈的擴散

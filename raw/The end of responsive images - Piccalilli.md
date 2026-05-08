@@ -1,0 +1,1 @@
+[The end of responsive images - Piccalilli](https://piccalil.li/blog/the-end-of-responsive-images/)

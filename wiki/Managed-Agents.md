@@ -3,7 +3,7 @@ title: Claude Managed Agents
 type: concept
 sources: [scaling-managed-agents-decoupling-the-brain-from-the-hands-anthropic.md, claude-managed-agents-github-tutorial-az9713.md, the-ai-corner-claude-managed-agents-guide-2026.md]
 created: 2026-04-20
-updated: 2026-04-20
+updated: 2026-05-09
 tags: [Anthropic, Agent基礎設施, Claude Platform, AI工具]
 confidence: 強
 ---
@@ -107,11 +107,17 @@ az9713 的教學 repo 有一個 **capstone 專案**：自動從 arXiv 爬新論�
 - 需要高度客製化 agent loop 行為
 - 預算極度敏感、runtime 不間斷
 
+## 三視角來源（同一概念的三種切入）
+
+- [[src-anthropic-managed-agents-engineering]] — **官方視角**：完整技術架構與設計原理
+- [[src-az9713-managed-agents-tutorial]] — **社群視角**：30 行 hello world + 5 part 教學的最低門檻入門
+- [[src-the-ai-corner-managed-agents-guide]] — **商業視角**：Notion / Rakuten / Asana / Sentry / Vibecode 的真實企業部署案例
+
 ## 相關頁面
 
-- [[src-anthropic-managed-agents-engineering]] — 完整技術架構（官方部落格）
 - [[Meta-Harness]] — 背後的設計哲學模式
 - [[Agent-Skills]] — Managed Agents 支援 Skills 作為 agent 能力定義
 - [[src-claude-code-context-management]] — Claude Code 的 context 管理策略（vs session 外部化）
 - [[RAG]] — 概念對照：session event log ↔ RAG 外部知識庫
 - [[src-claude-code-notebooklm]] — 同主題：把重活外包給專門服務
+- [[AI-Quality-Collusion]] — subagent context 隔離設計可緩解此反模式
