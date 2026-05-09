@@ -377,3 +377,58 @@
 
 - 新建：[[Claude Code]], [[Quartz]], [[Specification-by-Example]]
 - 更新：[[diagnostic-customer-answers]], [[presentation-攝影工作室A-網站優化]], [[src-transitions-dev]], [[src-piccalilli-end-of-responsive-images]], index.md
+
+## [2026-05-10] ingest | PAPAYA — Gemma 4 + LM Studio 本地 AI 教學
+
+### 來源驗證
+
+- inbox 投遞：兩個 YouTube URL 占位符（Untitled.md / Untitled 1.md）
+- fetch-youtube.sh 結果：
+  - r5M0W66xcGc（PAPAYA Gemma 教學）→ ✓ 繁中字幕完整（856 段）
+  - KrUkyTYaRs4（《啊!設計》系列日本排版）→ ✗ 僅土耳其語自動字幕，**跳過**（與 wiki 主軸關聯弱、需 Whisper fallback 耗時）
+
+### 強調軸（依使用者指引）
+
+- (a) **雲端 vs 本地 AI 對立軸**：本知識庫第一個本地 AI 主題，與既有 [[Claude Code]] / [[NotebookLM]] / [[Managed-Agents]] 雲端服務形成對照
+- (d) **使用者可操作的具體步驟**：影片完整實戰（硬體檢查 → 下載 → 設定 → 上傳分析 → 手機 → MCP → 寫程式）
+
+### 新建頁面
+
+**source（1 頁）**
+- [[src-papaya-gemma-lm-studio]] — 含完整 7 步驟操作指南、雲端 vs 本地對照表、5 段精彩原文
+
+**entity（3 頁）**
+- [[Gemma]] — Google open-weight LLM 系列，4 個版本與 MoE（A3B）解釋
+- [[LM-Studio]] — 跨平台 GUI 本地 LLM runtime，與 Ollama（CLI）對比
+- [[PAPAYA-電腦教室]] — 中文 YouTube 創作者，補完中文 AI 教學者地圖
+
+**concept（1 頁，重要）**
+- [[MCP]] — Anthropic 推出的開放協議。本知識庫之前已多處引用（[[Claude Code]]、[[Managed-Agents]]、[[Agent-Skills]]、[[Obsidian]]）但無獨立頁——本次補上
+- [[MCP]] 涵蓋 client/server 架構、與 OpenAI Function Calling 對照、本地 vs 雲端兩種使用情境、meta 工作流（用雲端 AI 設定本地 AI 的 MCP）
+
+### 中文 AI 教學者地圖補完
+
+新增的 [[PAPAYA-電腦教室]] 與既有 [[HC-AI-說人話]]、[[科技翰林院]] 形成三層光譜：
+
+| 層級 | 創作者 | 內容偏向 |
+|---|---|---|
+| 入門 | PAPAYA 電腦教室 | 純白話、生活化情境 |
+| 中階 | HC AI 說人話 | 5 分鐘上手、token 經濟學 |
+| 進階 | 科技翰林院 | 方法論、結合公司營運 |
+
+[[HC-AI-說人話]] 與 [[科技翰林院]] 兩頁皆更新「同領域中文創作者」區塊呈現此光譜。
+
+### 更新既有頁
+
+- [[Claude Code]] — 把 MCP 從文字加上 wikilink、相關頁面區塊補 [[Gemma]] / [[LM-Studio]] 對照
+- [[Agent-Skills]] — 新增「與 Continue（VS Code 擴充）的對照」區塊
+- [[HC-AI-說人話]] / [[科技翰林院]] — 中文 AI 教學者地圖三層光譜
+
+### 跳過項目
+
+- 第一支影片（KrUkyTYaRs4）保留 raw/Untitled.md 占位符作紀錄，未生成 wiki 頁
+
+### 影響頁面
+
+- 新建：[[src-papaya-gemma-lm-studio]], [[Gemma]], [[LM-Studio]], [[PAPAYA-電腦教室]], [[MCP]]
+- 更新：[[Claude Code]], [[Agent-Skills]], [[HC-AI-說人話]], [[科技翰林院]], index.md

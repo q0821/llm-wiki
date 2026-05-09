@@ -103,6 +103,19 @@ Skill 的封裝優勢：
 | 特色 | `product-marketing-context` 共用基底 | Iron Law / Gotchas 設計 + Python 計算腳本 |
 | 適用 | SEO/CRO/文案/廣告 | 股票分析、策略、統計、設計 |
 
+## 與 Continue（VS Code 擴充）的對照
+
+[[PAPAYA-電腦教室]] [[src-papaya-gemma-lm-studio|示範]]中介紹的 Continue 是另一種 AI agent 介入點：
+
+| | Agent Skills | Continue（VS Code 擴充） |
+|---|---|---|
+| 介入位置 | Claude Code / 其他 agent CLI | VS Code 編輯器 |
+| 模型來源 | Claude API / 任何 agent | 可選任意 LLM provider（含 [[LM-Studio]] 本地模型）|
+| 擴展機制 | Skill markdown + frontmatter | 編輯器擴充 + 模型 provider 設定 |
+| 適合情境 | 跨專案的標準化 SOP | 編輯器內逐行/逐區塊互動 |
+
+兩者**不衝突**——可同時用 Skills（高層流程）與 Continue（編輯器內互動）。
+
 ## 相關頁面
 
 - [[src-recommended-claude-code-skills]] — 8 個推薦 Skills 清單的原始來源頁
@@ -114,3 +127,4 @@ Skill 的封裝優勢：
 - [[Harness-Engineering]] — Skills 是 Level 1 harness 的具體實踐
 - [[Asgard-AI-Platform]] — Asgard 平台
 - [[notebooklm-py]] — NotebookLM Skill 的底層 CLI 工具
+- [[MCP]] — 概念對照：Skills 封裝工作流、MCP 連接外部工具

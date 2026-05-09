@@ -8,6 +8,16 @@ title: 索引
 
 ## 最近新增
 
+### 2026-05-10
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-papaya-gemma-lm-studio\|PAPAYA — Gemma 4 + LM Studio 本地 AI 工作站]] | 本知識庫第一個本地 AI 主題，開啟「雲端 vs 本地」對立軸 |
+| [[Gemma]] | Google open-weight LLM（Gemma 4 四個版本：E2B/E4B/26B/31B）|
+| [[LM-Studio]] | 跨平台 GUI 本地 LLM runtime，與 Ollama（CLI）對照 |
+| [[MCP]] | Anthropic 推出的開放協議，AI 連外部工具的「USB」 |
+| [[PAPAYA-電腦教室]] | 中文 AI 教學者地圖中的入門層（白話、零技術假設）|
+
 ### 2026-05-09 (lint 補建)
 
 | 頁面 | 摘要 |
@@ -152,6 +162,9 @@ title: 索引
 | [[Obsidian]] | Local-first markdown 筆記工具，LLM Wiki 工作流最佳載體 | 2 |
 | [[Claude Code]] | Anthropic 2025 推出的 agentic CLI，本知識庫核心執行 agent | 3 |
 | [[Quartz]] | jackyzha0 的 digital garden SSG，本知識庫的發布層工具 | 2 |
+| [[PAPAYA-電腦教室]] | 中文 YouTube 創作者，AI 教學者地圖中的入門層 | 1 |
+| [[Gemma]] | Google open-weight LLM 系列，本地 AI 代表模型 | 1 |
+| [[LM-Studio]] | 跨平台本地 LLM GUI runtime | 1 |
 
 ## 概念
 
@@ -166,6 +179,7 @@ title: 索引
 | [[CLAUDE-md\|CLAUDE.md]] | Claude Code 持久記憶層，兼任 LLM Wiki schema 規範 | 2 |
 | [[AI-Quality-Collusion]] | AI 同時生成 code 與 test 的隱形共謀反模式 | 2 |
 | [[Specification-by-Example\|SBE]] | 以具體範例凍結需求，AI 品質共謀的結構性對策之一 | 1 |
+| [[MCP]] | Anthropic 推出的開放協議，AI 連外部工具的「USB」標準 | 3 |
 | [[顧客終身價值]] | CLV，衡量顧客經營成效的核心指標 | 1 |
 | [[DESIGN-md\|DESIGN.md]] | 純 Markdown 設計系統規範，讓 AI coding agent 生成風格一致的 UI | 3 |
 | [[Managed-Agents\|Claude Managed Agents]] | Anthropic 託管 agent 服務，session/harness/sandbox 三層架構 | 3 |

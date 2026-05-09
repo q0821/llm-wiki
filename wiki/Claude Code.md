@@ -35,7 +35,7 @@ Anthropic 於 **2025 年**推出的 **agentic CLI 工具**，住在使用者的�
 | **CLAUDE.md 持久記憶** | 每次啟動自動載入專案根目錄的 CLAUDE.md | 記住 vault 結構、筆記規範、偏好設定 |
 | **Slash Commands** | 自訂指令放在 `.claude/commands/` 目錄 | 一鍵執行常用工作流 |
 | **Subagent 平行處理** | 把複雜任務拆給多個子代理同時執行 | 同時掃描多個資料夾、批次加標籤 |
-| **MCP 協議** | 透過 Model Context Protocol 連接外部服務 | 橋接 Obsidian 插件、外部資料來源 |
+| **[[MCP]] 協議** | 透過 Model Context Protocol 連接外部服務 | 橋接 Obsidian 插件、外部資料來源 |
 | **Scheduled Agents**（2026 新增）| 定時自動執行任務 | 每日整理昨天筆記、每週五自動產回顧 |
 
 > 截至 2026-04，GitHub 上每天約 **13.5 萬筆公開 commit** 來自 Claude Code，佔全平台 4%。
@@ -103,8 +103,10 @@ Managed Agents 的設計哲學「Python SDK 薄層 + 重活 delegate Claude Code
 
 - [[CLAUDE-md]] — 主要設定檔規範
 - [[Agent-Skills]] — Skill 系統
+- [[MCP]] — 連接外部工具/資料的標準協議（Anthropic 推出）
 - [[Obsidian]] — 配合的「IDE」
 - [[LLM-Wiki]] — 本知識庫採用的方法論
 - [[Managed-Agents]] — 雲端版 agent 託管
 - [[Meta-Harness]] / [[Harness-Engineering]] — 背後的設計範式
+- [[Gemma]] / [[LM-Studio]] — 本地 AI 對照組
 - [[src-claude-code-context-management]] / [[src-techhanlin-claude-code-8-settings]] — 詳細工作流來源
