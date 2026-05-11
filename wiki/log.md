@@ -471,3 +471,48 @@
 
 - 新建：[[src-ai-explained-tutorial]], [[src-browseforge]], [[BrowseForge]], [[Playwright]]
 - 更新：[[Embedding]], [[MCP]], [[Claude Code]], [[Agent-Skills]], index.md
+
+## [2026-05-11] ingest | Welly SEO 月報 2026-04（GEO / Agent-Ready 主題）
+
+### 來源驗證
+
+- inbox 投遞：Obsidian Web Clipper 抓的 PDF（從 Google Drive），但**只抓到前 3 頁**（PDF 共 8 頁）
+- 補救：從 Google Drive 直接下載完整 PDF（`curl uc?export=download&id=...`），用 Read 工具讀完 8 頁，存為 `raw/welly-seo-2026-04-full.md`
+- 兩個 raw 檔並存：`Welly SEO ....pdf.md`（不完整 Web Clipper 版）+ `welly-seo-2026-04-full.md`（完整版）
+
+### 三大主題
+
+1. Google 2026 年 3 月核心演算法更新（2026-03-27~04-08）——SEO 從「內容產量」轉「內容價值」
+2. **Cloudflare "Is Your Site Agent-Ready?" 檢測工具**——四面向 + Cloudflare Radar 採用率數據
+3. Google AI Mode 整合進 Chrome（2026-04-16）——Side-by-side Browsing、跨分頁整合
+
+### 新建頁面
+
+**source（1 頁）**
+- [[src-welly-seo-2026-04]] — 完整 8 頁內容，含 Cloudflare Radar 數據表
+
+**concept（1 頁，重要）**
+- [[GEO]] — Generative Engine Optimization / Agent-Ready 網站
+  - SEO vs GEO 對照、Cloudflare 四面向檢測、Radar 採用率（robots.txt 78% → MCP Server Card 0.0092%）
+  - 實作 4 個 Level（SEO 基礎 → AI 可讀性 → 結構化資料 → 可被 AI 操作）
+  - 含 E-E-A-T 框架說明（連結到本知識庫 CLAUDE.md 的品質規則）
+  - 標出資料缺口：LLMs.txt 格式規範、實際檢測範例、WebMCP 細節
+
+### 更新既有頁
+
+- [[Cloudflare]] — 從「部署平台」單一面向擴成「部署平台 + AI agent 標準推手」；新增 Agent-Ready 工具 + Radar 數據
+- [[MCP]] — 新增「採用現況：極早期」段（網站作為 MCP server 端僅 0.0092%）
+- [[Agent-Skills]] — 相關頁面補 [[GEO]]（網站暴露 Agent Skills 採用率 0.015%）
+- [[presentation-攝影工作室A-網站優化]] — 未改本文（Marp 簡報不宜插 wikilink），但 [[GEO]]/[[src-welly-seo-2026-04]] 已反向連結到它
+
+### 觀察：本知識庫的「AI × web」三角
+
+這次 ingest 後，本知識庫對「AI 與 web 互動」有了三個面向的頁面：
+- **主動操作**：[[BrowseForge]] / [[Playwright]]（AI agent 操控真實瀏覽器）
+- **被動準備**：[[GEO]]（網站如何準備好被 AI 爬取/引用/操作）
+- **協議層**：[[MCP]]（兩端如何標準化溝通）
+
+### 影響頁面
+
+- 新建：[[src-welly-seo-2026-04]], [[GEO]]
+- 更新：[[Cloudflare]], [[MCP]], [[Agent-Skills]], index.md

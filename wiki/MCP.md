@@ -1,7 +1,7 @@
 ---
 title: MCP (Model Context Protocol)
 type: concept
-sources: ["yt-別再小看本地-aigemma-4-lm-studio-讓你的電腦變成超級離線-ai-工作站而且完全免費-手機也能使用喔.md", "Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "scaling-managed-agents-decoupling-the-brain-from-the-hands-anthropic.md", "github-nczz-browseforge.md"]
+sources: ["yt-別再小看本地-aigemma-4-lm-studio-讓你的電腦變成超級離線-ai-工作站而且完全免費-手機也能使用喔.md", "Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "scaling-managed-agents-decoupling-the-brain-from-the-hands-anthropic.md", "github-nczz-browseforge.md", "welly-seo-2026-04-full.md"]
 created: 2026-05-10
 updated: 2026-05-11
 tags: [協議, mcp, anthropic, ai-tools, 互通]
@@ -56,6 +56,21 @@ Anthropic 推出的**開放協議標準**，定義 AI 模型如何與外部工�
 | Obsidian vault（obsidian-claude-code-mcp）| 操作筆記庫 | [[src-techhanlin-llm-wiki-tutorial]] |
 
 > 觀察：MCP server 端正在從「Anthropic 官方提供」擴散到「**第三方工具自帶**」——[[BrowseForge]] 把「我這個工具能做的事」直接包成 MCP server，AI agent 不必知道它的 REST API 細節。
+
+## 採用現況：極早期
+
+[[Cloudflare]] Radar 2026-04-13 掃 108,774 個 top 200,000 domains：
+
+| 標準 | 採用率 |
+|---|---|
+| robots.txt | 78% |
+| Link headers | 8.7% |
+| Markdown negotiation | 4.6% |
+| [[Agent-Skills\|Agent Skills]] | 0.015% |
+| **MCP Server Card** | **0.0092%** |
+| WebMCP | 0% |
+
+> 意思：MCP 在「AI client 端」（Claude Desktop / Claude Code / LM Studio…）已是標配，但在「**網站作為 MCP server 端**」幾乎沒人做（0.0092%）。對照 [[GEO]]：這是 Agent-Ready 網站的 Level 4，先行者紅利期。詳見 [[src-welly-seo-2026-04]]。
 
 ## 在本地 AI 的關鍵價值
 
@@ -112,4 +127,6 @@ Anthropic 推出的**開放協議標準**，定義 AI 模型如何與外部工�
 - [[Gemma]] — 透過 MCP 突破本地模型限制的代表
 - [[Managed-Agents]] — Anthropic 雲端 agent 服務也用 MCP
 - [[Agent-Skills]] — 概念對照：Skills 封裝工作流，MCP 連接外部工具
-- [[src-papaya-gemma-lm-studio]] / [[src-browseforge]] / [[src-anthropic-managed-agents-engineering]] / [[src-techhanlin-llm-wiki-tutorial]] — 提及 MCP 的來源
+- [[GEO]] — 網站暴露 MCP Server Card 是 Agent-Ready 的 Level 4
+- [[Cloudflare]] — Radar 追蹤 MCP Server Card 採用率
+- [[src-papaya-gemma-lm-studio]] / [[src-browseforge]] / [[src-anthropic-managed-agents-engineering]] / [[src-techhanlin-llm-wiki-tutorial]] / [[src-welly-seo-2026-04]] — 提及 MCP 的來源

@@ -8,6 +8,13 @@ title: 索引
 
 ## 最近新增
 
+### 2026-05-11（下午追加）
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-welly-seo-2026-04\|Welly SEO 月報 2026-04]] | Google 核心演算法更新 + Cloudflare Agent-Ready 工具 + Google AI Mode 進 Chrome |
+| [[GEO]] | Generative Engine Optimization / Agent-Ready 網站——SEO 延伸到「被 AI 理解引用」|
+
 ### 2026-05-11
 
 | 頁面 | 摘要 |
@@ -151,6 +158,7 @@ title: 索引
 | [[src-papaya-gemma-lm-studio\|PAPAYA — Gemma 4 + LM Studio]] | 本地 AI 完整工作流（YouTube，繁中字幕）| 1 |
 | [[src-ai-explained-tutorial\|ai-explained — Learn AI Layer by Layer]] | Rob Ennals 的互動式 AI 教學網站（21+ 章）| 2 |
 | [[src-browseforge\|nczz/BrowseForge]] | 多指紋反偵測瀏覽器 + 內建 MCP server | 2 |
+| [[src-welly-seo-2026-04\|Welly SEO 月報 2026-04]] | 演算法更新 + Cloudflare Agent-Ready + Google AI Mode（完整 8 頁 PDF）| 2 |
 
 ## 實體
 
@@ -193,7 +201,8 @@ title: 索引
 | [[CLAUDE-md\|CLAUDE.md]] | Claude Code 持久記憶層，兼任 LLM Wiki schema 規範 | 2 |
 | [[AI-Quality-Collusion]] | AI 同時生成 code 與 test 的隱形共謀反模式 | 2 |
 | [[Specification-by-Example\|SBE]] | 以具體範例凍結需求，AI 品質共謀的結構性對策之一 | 1 |
-| [[MCP]] | Anthropic 推出的開放協議，AI 連外部工具的「USB」標準 | 3 |
+| [[MCP]] | Anthropic 推出的開放協議，AI 連外部工具的「USB」標準 | 5 |
+| [[GEO]] | Generative Engine Optimization / Agent-Ready 網站，SEO 的 AI 時代延伸 | 2 |
 | [[顧客終身價值]] | CLV，衡量顧客經營成效的核心指標 | 1 |
 | [[DESIGN-md\|DESIGN.md]] | 純 Markdown 設計系統規範，讓 AI coding agent 生成風格一致的 UI | 3 |
 | [[Managed-Agents\|Claude Managed Agents]] | Anthropic 託管 agent 服務，session/harness/sandbox 三層架構 | 3 |
