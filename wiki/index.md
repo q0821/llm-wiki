@@ -8,6 +8,15 @@ title: 索引
 
 ## 最近新增
 
+### 2026-05-11
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-ai-explained-tutorial\|ai-explained — Learn AI Layer by Layer]] | Rob Ennals 的互動式 AI 教學網站，21+ 章從 first principles 講 AI |
+| [[src-browseforge\|nczz/BrowseForge — 多指紋反偵測瀏覽器]] | 雙引擎 + 每 Profile 獨立指紋/Cookie/Proxy + 內建 MCP server |
+| [[BrowseForge]] | AI agent 操作瀏覽器的代表工具，內建 12 個 MCP tools |
+| [[Playwright]] | Microsoft 跨瀏覽器自動化框架，多個工具的底層引擎 |
+
 ### 2026-05-10
 
 | 頁面 | 摘要 |
@@ -139,6 +148,9 @@ title: 索引
 | [[src-transitions-dev\|Transitions.dev]] | Jakub Antalik 的 web app 轉場效果集 | 2 |
 | [[src-az9713-managed-agents-tutorial\|az9713 Managed Agents Tutorial]] | 社群入門教學 repo，30 行 hello world + 5 part 教學 | 1 |
 | [[src-the-ai-corner-managed-agents-guide\|The AI Corner Managed Agents Guide]] | 商業視角，企業部署案例與定價分析（部分付費牆）| 1 |
+| [[src-papaya-gemma-lm-studio\|PAPAYA — Gemma 4 + LM Studio]] | 本地 AI 完整工作流（YouTube，繁中字幕）| 1 |
+| [[src-ai-explained-tutorial\|ai-explained — Learn AI Layer by Layer]] | Rob Ennals 的互動式 AI 教學網站（21+ 章）| 2 |
+| [[src-browseforge\|nczz/BrowseForge]] | 多指紋反偵測瀏覽器 + 內建 MCP server | 2 |
 
 ## 實體
 
@@ -165,6 +177,8 @@ title: 索引
 | [[PAPAYA-電腦教室]] | 中文 YouTube 創作者，AI 教學者地圖中的入門層 | 1 |
 | [[Gemma]] | Google open-weight LLM 系列，本地 AI 代表模型 | 1 |
 | [[LM-Studio]] | 跨平台本地 LLM GUI runtime | 1 |
+| [[BrowseForge]] | 多指紋反偵測瀏覽器（Go/開源），內建 MCP server | 2 |
+| [[Playwright]] | Microsoft 跨瀏覽器自動化框架，多工具的底層引擎 | 3 |
 
 ## 概念
 

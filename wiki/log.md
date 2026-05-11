@@ -432,3 +432,42 @@
 
 - 新建：[[src-papaya-gemma-lm-studio]], [[Gemma]], [[LM-Studio]], [[PAPAYA-電腦教室]], [[MCP]]
 - 更新：[[Claude Code]], [[Agent-Skills]], [[HC-AI-說人話]], [[科技翰林院]], index.md
+
+## [2026-05-11] ingest | ai-explained 教學網站 + BrowseForge 反偵測瀏覽器
+
+### 來源驗證
+
+- inbox 投遞：兩個 GitHub URL 占位符（robennals/ai-explained、nczz/BrowseForge/releases）
+- fetch-url.sh **超時**（GitHub repo 頁太大）→ 改用 `gh api` 萃取 README + curriculum + release，存為 `raw/github-robennals-ai-explained.md` 與 `raw/github-nczz-browseforge.md`
+
+### 強調軸（依使用者指引：全部）
+
+- (a) AI 底層學習路徑：[[src-ai-explained-tutorial]] 完整呈現 21+ 章地圖
+- (b) MCP 生態擴張：[[MCP]] 頁新增 server 端範例表，[[BrowseForge]] 作為「工具自帶 MCP server」案例
+- (c) AI agent 操作瀏覽器：[[BrowseForge]] 頁新增此應用類別比較表
+- (d) 反偵測瀏覽器技術細節：[[BrowseForge]] 頁完整收錄指紋/Cookie/Proxy/GeoIP 機制
+
+### 新建頁面
+
+**source（2 頁）**
+- [[src-ai-explained-tutorial]] — Rob Ennals 互動式 AI 教學網站，含完整章節地圖 + 對應本知識庫頁面表
+- [[src-browseforge]] — BrowseForge 完整功能，含倫理提示（雙用途工具）
+
+**entity（2 頁）**
+- [[BrowseForge]] — AI agent 操作瀏覽器的代表工具；MCP server 端範例
+- [[Playwright]] — Microsoft 跨瀏覽器自動化框架；第 2 次出現後建頁（之前在 MCP 工具列表、本次 BrowseForge）
+
+### 更新既有頁
+
+- [[Embedding]] — 新增「延伸學習：底層原理」連到 ai-explained 第 5 章
+- [[MCP]] — 客戶端表拆成 client/server 兩段；新增 server 範例表（Brave Search、Filesystem、BrowseForge、Obsidian vault）；補 Kiro CLI 為 client
+- [[Claude Code]] / [[Agent-Skills]] — 相關頁面區塊補 [[BrowseForge]] / [[Playwright]]
+
+### index.md 順手補正
+
+發現 5/10 ingest 時 [[src-papaya-gemma-lm-studio]] 只加到「最近新增」未加到「來源摘要」表格，本次補上。
+
+### 影響頁面
+
+- 新建：[[src-ai-explained-tutorial]], [[src-browseforge]], [[BrowseForge]], [[Playwright]]
+- 更新：[[Embedding]], [[MCP]], [[Claude Code]], [[Agent-Skills]], index.md

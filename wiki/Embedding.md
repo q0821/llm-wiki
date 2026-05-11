@@ -1,9 +1,9 @@
 ---
 title: Embedding (向量化)
 type: concept
-sources: [2026-04-07-OpenClaw × WordPress 輕量內部知識 RAG 系統.md]
+sources: [2026-04-07-OpenClaw × WordPress 輕量內部知識 RAG 系統.md, github-robennals-ai-explained.md]
 created: 2026-04-15
-updated: 2026-04-15
+updated: 2026-05-11
 tags: [技術, AI, 概念]
 confidence: 強
 ---
@@ -35,7 +35,12 @@ confidence: 強
 - **LLM 增強應在 Embedding 之前**：先讓 LLM 補充語意標籤，再向量化，大幅提升命中率
 - 5,000 件商品索引費用約 $0.10-$0.30 USD
 
+## 延伸學習：底層原理
+
+想深入理解 embedding「為什麼有效」（從 one-hot → learned representations、word analogies、meaning 的幾何結構），可看 [[src-ai-explained-tutorial|Rob Ennals 的 ai-explained]] 第 5 章「From Words to Meanings」——含互動 widgets + 可在 Colab 跑的 PyTorch notebook。前置章節（#3 Neural networks、#4 Vectors）也建立了必要的直覺。
+
 ## 相關頁面
 
 - [[RAG]] — Embedding 是 RAG 的核心技術
 - [[src-openclaw-wordpress-rag]] — 實作案例
+- [[src-ai-explained-tutorial]] — 底層原理的互動式教學（第 5 章專講 embeddings）

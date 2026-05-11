@@ -1,9 +1,9 @@
 ---
 title: MCP (Model Context Protocol)
 type: concept
-sources: ["yt-別再小看本地-aigemma-4-lm-studio-讓你的電腦變成超級離線-ai-工作站而且完全免費-手機也能使用喔.md", "Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "scaling-managed-agents-decoupling-the-brain-from-the-hands-anthropic.md"]
+sources: ["yt-別再小看本地-aigemma-4-lm-studio-讓你的電腦變成超級離線-ai-工作站而且完全免費-手機也能使用喔.md", "Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "scaling-managed-agents-decoupling-the-brain-from-the-hands-anthropic.md", "github-nczz-browseforge.md"]
 created: 2026-05-10
-updated: 2026-05-10
+updated: 2026-05-11
 tags: [協議, mcp, anthropic, ai-tools, 互通]
 confidence: 強
 ---
@@ -33,7 +33,9 @@ Anthropic 推出的**開放協議標準**，定義 AI 模型如何與外部工�
 
 > MCP 的設計目標：**寫一次 MCP server，所有支援 MCP 的 AI 都能用**。
 
-## 客戶端覆蓋（截至 2026）
+## 客戶端與伺服器覆蓋（截至 2026）
+
+### MCP Client（AI 應用端）
 
 | 客戶端 | MCP 支援 | 來源 |
 |---|---|---|
@@ -41,7 +43,19 @@ Anthropic 推出的**開放協議標準**，定義 AI 模型如何與外部工�
 | **[[Claude Code]]** | 原生支援 | [[src-techhanlin-llm-wiki-tutorial\|科技翰林院 LLM Wiki 教學]]提到 |
 | **[[LM-Studio]]** | 原生支援 | [[src-papaya-gemma-lm-studio\|PAPAYA Gemma 教學]]實測 |
 | **Continue（VS Code 擴充）** | 支援 | 同上 |
+| **Kiro CLI** | 支援 | [[src-browseforge\|BrowseForge README]]提到 |
 | **[[Managed-Agents]]** | 內建 tool orchestration | [[src-anthropic-managed-agents-engineering\|Anthropic 工程部落格]]提到 |
+
+### MCP Server（提供能力端）— 範例
+
+| Server | 提供什麼 | 來源 |
+|---|---|---|
+| Brave Search | 連網搜尋（免費 1000 次/月）| [[src-papaya-gemma-lm-studio]] |
+| Filesystem | 本機檔案操作 | 同上 |
+| **[[BrowseForge]]**（內建）| 多指紋瀏覽器操作（12 tools：建 profile、開瀏覽器、navigate、click、screenshot…）| [[src-browseforge]] |
+| Obsidian vault（obsidian-claude-code-mcp）| 操作筆記庫 | [[src-techhanlin-llm-wiki-tutorial]] |
+
+> 觀察：MCP server 端正在從「Anthropic 官方提供」擴散到「**第三方工具自帶**」——[[BrowseForge]] 把「我這個工具能做的事」直接包成 MCP server，AI agent 不必知道它的 REST API 細節。
 
 ## 在本地 AI 的關鍵價值
 
@@ -92,8 +106,10 @@ Anthropic 推出的**開放協議標準**，定義 AI 模型如何與外部工�
 ## 相關頁面
 
 - [[Claude Code]] — MCP 主要客戶端之一
-- [[LM-Studio]] — 本地 AI 透過 MCP 接外部工具
+- [[LM-Studio]] — 本地 AI 透過 MCP 接外部工具（client 端範例）
+- [[BrowseForge]] — 工具自帶 MCP server（server 端範例）
+- [[Playwright]] — 瀏覽器類 MCP server 的常見底層
 - [[Gemma]] — 透過 MCP 突破本地模型限制的代表
 - [[Managed-Agents]] — Anthropic 雲端 agent 服務也用 MCP
 - [[Agent-Skills]] — 概念對照：Skills 封裝工作流，MCP 連接外部工具
-- [[src-papaya-gemma-lm-studio]] / [[src-anthropic-managed-agents-engineering]] / [[src-techhanlin-llm-wiki-tutorial]] — 提及 MCP 的來源
+- [[src-papaya-gemma-lm-studio]] / [[src-browseforge]] / [[src-anthropic-managed-agents-engineering]] / [[src-techhanlin-llm-wiki-tutorial]] — 提及 MCP 的來源

@@ -1,0 +1,1 @@
+[Releases · nczz/BrowseForge](https://github.com/nczz/BrowseForge/releases)

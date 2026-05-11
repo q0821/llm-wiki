@@ -109,4 +109,5 @@ Managed Agents 的設計哲學「Python SDK 薄層 + 重活 delegate Claude Code
 - [[Managed-Agents]] — 雲端版 agent 託管
 - [[Meta-Harness]] / [[Harness-Engineering]] — 背後的設計範式
 - [[Gemma]] / [[LM-Studio]] — 本地 AI 對照組
+- [[BrowseForge]] / [[Playwright]] — AI agent 操作瀏覽器的工具（透過 MCP / 自動化框架）
 - [[src-claude-code-context-management]] / [[src-techhanlin-claude-code-8-settings]] — 詳細工作流來源

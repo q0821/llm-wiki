@@ -128,3 +128,4 @@ Skill 的封裝優勢：
 - [[Asgard-AI-Platform]] — Asgard 平台
 - [[notebooklm-py]] — NotebookLM Skill 的底層 CLI 工具
 - [[MCP]] — 概念對照：Skills 封裝工作流、MCP 連接外部工具
+- [[BrowseForge]] / [[Playwright]] — AI agent 操作瀏覽器的應用場景（多帳號管理、爬蟲、表單填寫）
