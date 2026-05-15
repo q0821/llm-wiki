@@ -1,11 +1,11 @@
 ---
 title: Agentic AI Workflow
 type: concept
-sources: ["(5) Will AI Kill SaaS系列：... - Yu-Chih Edward Hwang.md"]
+sources: ["(5) Will AI Kill SaaS系列：... - Yu-Chih Edward Hwang.md", "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md"]
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-05-14
 tags: [ai-coding, agent, development-paradigm, design-to-code, code-to-design]
-confidence: 中
+confidence: 強
 ---
 
 # Agentic AI Workflow
@@ -55,7 +55,8 @@ Agentic AI Workflow（代理式工作流）是 AI 開發路徑演化的第四階
 
 ## 不同觀點
 
-- [[src-will-ai-kill-saas-design]]（Yu-Chih Edward Hwang）：將 Agentic AI Workflow 視為「軟體開發邊際成本趨近於零」的最終形態，人類核心價值收斂為意圖、品味、架構三點。
+- [[src-will-ai-kill-saas-design]]（Yu-Chih Edward Hwang，**宏觀觀察**）：將 Agentic AI Workflow 視為「軟體開發邊際成本趨近於零」的最終形態，人類核心價值收斂為意圖、品味、架構三點。
+- [[src-aapd-claude-design-figma-workflow]]（[[Simon-Lin|Simon]]，**實作經驗**）：從 [[Claude-Design]] 0→1 → Hand off → [[Claude Code]] 產品化 → [[Figma]] MCP 雙向同步的具體實踐。實作觀察補強：(1) Claude Design 仍有 hard-coded / 無版本控制等限制；(2) Figma MCP 雙向 Auto layout 仍需人工補強；(3) 設計師角色從「雕刻畫面」轉向「判斷方向」。
 - [[src-anthropic-managed-agents-engineering]]（Anthropic）：[[Managed-Agents]] 與 [[Meta-Harness]] 是 Agentic AI Workflow 的具體技術實作——session / harness / sandbox 三層架構，TTFT p50 -60% / p95 -90%。
 - [[src-harness-engineering-openai]]（OpenAI）：[[Harness-Engineering]] 是 Agentic AI Workflow 的「工程紀律」面向——約束、上下文、熵管理三根支柱。
 
@@ -79,5 +80,6 @@ Agentic AI Workflow（代理式工作流）是 AI 開發路徑演化的第四階
 ## 應用與案例
 
 - [[Claude-Design]]：Anthropic 把 UI 設計與前端開發融合的 Agentic 產品
-- Claude Code：具備 Agent 能力的編程助手
+- [[Claude Code]]：具備 Agent 能力的編程助手
 - [[NotebookLM]] / [[notebooklm-py]]：把 NotebookLM 的閉合 RAG 包成 Agent 可呼叫的 skill，是 Agentic Workflow 的子模組
+- **Simon 工作流**（[[src-aapd-claude-design-figma-workflow]]）：[[Claude-Design]] → Hand off → [[Claude Code]] → [[Figma]] [[MCP]] 雙向同步的具體實作鏈，代表「同心圓迭代」的當前最佳實踐

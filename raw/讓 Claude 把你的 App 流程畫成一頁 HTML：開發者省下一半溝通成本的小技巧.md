@@ -1,0 +1,1 @@
+[讓 Claude 把你的 App 流程畫成一頁 HTML：開發者省下一半溝通成本的小技巧](https://akiraxclaw.com/blog/claude-app-flow-documentation-trick-2026)

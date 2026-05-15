@@ -8,6 +8,24 @@ title: 索引
 
 ## 最近新增
 
+### 2026-05-14
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-aapd-claude-design-figma-workflow\|AAPD 直播筆記 — Claude Design × Claude Code × Figma]] | [[Simon-Lin\|Simon]] 第一手 Demo：Hand off 機制、Figma MCP 雙向操作、設計師價值轉向判斷力 |
+| [[Simon-Lin]] | Product Designer，台灣→東京→雪梨，AI 設計工作流實作者 |
+| [[AAPD]] | 繁中產品設計教育平台，Simon 直播發表的場域 |
+| [[src-hermes-agent-99-cases\|Hermes Agent 99 個成功案例]] | [[Gas-Khuang]] 整理，跨 13 個分類 |
+| [[Hermes-Agent]] | Nous Research 開源 agent 框架，自我改進 + 跨平台訊息（13 平台） |
+| [[Gas-Khuang]] | 99 案例網站整理者 |
+| [[Self-Improving-Agent]] | 自我改進代理範式：MEMORY.md + Skill Factory + 偏好學習 |
+| [[src-addy-osmani-harness-engineering\|Addy Osmani Harness Engineering（FB 中文整理）]] | Google Cloud AI 總監視角的 Harness 七元件 + Ratchet + Context Rot + HaaS 趨勢 |
+| [[Addy-Osmani]] | Google Cloud AI 總監，Harness 七元件分解 |
+| [[Ratchet-Pattern]] | 每次錯誤編碼成永久規則的設計模式（含克制原則） |
+| [[src-akiraxclaw-app-flow-trick\|App Flow HTML + JSON 雙輸出技巧]] | Dave Jeffery 推文整理：給人看的 HTML + 給 AI 看的 JSON，作為系統「記憶外掛」 |
+| [[MEMORY-md\|MEMORY.md]] | AI Agent 跨 session 持久記憶層；與 CLAUDE.md 形成「AI 寫 vs 人類寫」對 |
+| [[Context-Rot]] | 上下文衰損；compaction / offloading / progressive disclosure 三招對抗 |
+
 ### 2026-05-11（下午追加）
 
 | 頁面 | 摘要 |
@@ -22,7 +40,7 @@ title: 索引
 | [[src-ai-explained-tutorial\|ai-explained — Learn AI Layer by Layer]] | Rob Ennals 的互動式 AI 教學網站，21+ 章從 first principles 講 AI |
 | [[src-browseforge\|nczz/BrowseForge — 多指紋反偵測瀏覽器]] | 雙引擎 + 每 Profile 獨立指紋/Cookie/Proxy + 內建 MCP server |
 | [[BrowseForge]] | AI agent 操作瀏覽器的代表工具，內建 12 個 MCP tools |
-| [[Playwright]] | Microsoft 跨瀏覽器自動化框架，多個工具的底層引擎 |
+| [[Playwright]] | Microsoft 跨瀏覽器自動化框架,多個工具的底層引擎 |
 
 ### 2026-05-10
 
@@ -159,6 +177,10 @@ title: 索引
 | [[src-ai-explained-tutorial\|ai-explained — Learn AI Layer by Layer]] | Rob Ennals 的互動式 AI 教學網站（21+ 章）| 2 |
 | [[src-browseforge\|nczz/BrowseForge]] | 多指紋反偵測瀏覽器 + 內建 MCP server | 2 |
 | [[src-welly-seo-2026-04\|Welly SEO 月報 2026-04]] | 演算法更新 + Cloudflare Agent-Ready + Google AI Mode（完整 8 頁 PDF）| 2 |
+| [[src-aapd-claude-design-figma-workflow\|AAPD — Claude Design × Claude Code × Figma 工作流]] | Simon 第一手 Demo：Hand off + Figma MCP 雙向操作 | 1 |
+| [[src-hermes-agent-99-cases\|Hermes Agent 99 個成功案例]] | Gas Khuang 整理；13 分類 + 跨平台訊息 + 自我改進 + Skill Factory | 1 |
+| [[src-addy-osmani-harness-engineering\|Addy Osmani Harness Engineering]] | Google 視角的 Harness 七元件 + Ratchet + Context Rot + HaaS（FB 中文整理）| 1 |
+| [[src-akiraxclaw-app-flow-trick\|App Flow HTML+JSON 雙輸出技巧]] | Dave Jeffery 推文整理：給人看的 HTML + 給 AI 看的 JSON 作為記憶外掛 | 2 |
 
 ## 實體
 
@@ -168,25 +190,30 @@ title: 索引
 | [[OKX]] | 加密貨幣交易所，使用雙幣贏產品 | 1 |
 | [[Cloudflare]] | 雲端平台，免費方案可部署 RAG 系統 | 1 |
 | [[Asgard-AI-Platform\|Asgard AI Platform]] | AI 平台，以 Skills + MCP 組合打造場景化 agent 外掛 | 1 |
-| [[OpenClaw]] | AI Agent 框架，支援 Telegram/Discord/Slack，RAG MVP 使用 | 1 |
+| [[OpenClaw]] | AI Agent 框架，支援 Telegram/Discord/Slack，RAG MVP 使用；2026 起被 Hermes 取代趨勢 | 2 |
 | [[NotebookLM]] | Google 免費閉合式 RAG 工具，Gemini 模型，可生成圖表/podcast | 1 |
 | [[notebooklm-py]] | 林探開發的 NotebookLM CLI 工具，提供 Claude Code 整合 | 1 |
 | [[HC-AI-說人話]] | YouTube 創作者，推廣 Claude Code + 第二大腦工作流 | 1 |
 | [[WP-CLI]] | WordPress 官方命令列工具，接手檢查 SOP 關鍵依賴 | 1 |
-| [[Figma]] | 雲端介面設計工具，AI 衝擊下護城河收斂為「美學錨點 + 像素控制」 | 1 |
+| [[Figma]] | 雲端介面設計工具，AI 衝擊下護城河收斂為「美學錨點 + 像素控制」；Figma MCP 已實現雙向操作 | 2 |
 | [[Adobe]] | 設計軟體龍頭，Creative Cloud 全家桶，面臨教育綁定鬆動 | 1 |
-| [[Claude-Design]] | Anthropic 2026 推出的 AI 原生設計產品，繞過設計稿直接產 React | 1 |
+| [[Claude-Design]] | Anthropic 2026 推出的 AI 原生設計產品，繞過設計稿直接產 React | 2 |
 | [[Yu-Chih-Edward-Hwang]] | 「Will AI Kill SaaS」系列作者，FB user fatality1117 | 1 |
 | [[Andrej-Karpathy]] | 前 Tesla AI 總監、OpenAI 共同創辦成員，LLM Wiki 提出者 | 1 |
 | [[科技翰林院]] | 中文圈 AI 工具實戰部落格，主筆 AI 導演林思翰 Hans | 2 |
 | [[Obsidian]] | Local-first markdown 筆記工具，LLM Wiki 工作流最佳載體 | 2 |
-| [[Claude Code]] | Anthropic 2025 推出的 agentic CLI，本知識庫核心執行 agent | 3 |
+| [[Claude Code]] | Anthropic 2025 推出的 agentic CLI，本知識庫核心執行 agent | 5 |
 | [[Quartz]] | jackyzha0 的 digital garden SSG，本知識庫的發布層工具 | 2 |
 | [[PAPAYA-電腦教室]] | 中文 YouTube 創作者，AI 教學者地圖中的入門層 | 1 |
 | [[Gemma]] | Google open-weight LLM 系列，本地 AI 代表模型 | 1 |
 | [[LM-Studio]] | 跨平台本地 LLM GUI runtime | 1 |
-| [[BrowseForge]] | 多指紋反偵測瀏覽器（Go/開源），內建 MCP server | 2 |
+| [[BrowseForge]] | 多指紋反偵測瀏覽器（Go/開源），內建 MCP server | 3 |
 | [[Playwright]] | Microsoft 跨瀏覽器自動化框架，多工具的底層引擎 | 3 |
+| [[Simon-Lin]] | Product Designer，台灣→東京→雪梨，Claude Design × Claude Code × Figma 工作流實作者 | 1 |
+| [[AAPD]] | 繁中產品設計教育平台 | 1 |
+| [[Hermes-Agent]] | Nous Research 出品的開源 agent 框架，跨平台 + 自我改進，OpenClaw 遷移目標 | 1 |
+| [[Gas-Khuang]] | Hermes 99 案例網站整理者 | 1 |
+| [[Addy-Osmani]] | Google Cloud AI 總監；Harness 七元件分解 + Ratchet 機制 + HaaS 趨勢 | 1 |
 
 ## 概念
 
@@ -195,22 +222,26 @@ title: 索引
 | [[雙幣贏]] | 選擇權賣方策略的零售包裝版，非存款非利息 | 2 |
 | [[RAG]] | 檢索增強生成，讓 AI 根據自有資料回答（含 vs LLM Wiki 對比）| 3 |
 | [[Embedding]] | 向量化，把文字轉成語意向量供搜尋 | 1 |
-| [[Agent-Skills\|Agent Skills]] | AI Agent 可擴充任務能力的技能規範 | 6 |
-| [[LLM-Wiki]] | Karpathy 提出的 wiki 化知識管理範式，本知識庫的方法論基礎 | 1 |
+| [[Agent-Skills\|Agent Skills]] | AI Agent 可擴充任務能力的技能規範 | 8 |
+| [[LLM-Wiki]] | Karpathy 提出的 wiki 化知識管理範式，本知識庫的方法論基礎；含人類引導 vs 全自動兩條路線對照 | 2 |
 | [[Memex]] | Vannevar Bush 1945 提出，LLM Wiki 的歷史先驅 | 1 |
-| [[CLAUDE-md\|CLAUDE.md]] | Claude Code 持久記憶層，兼任 LLM Wiki schema 規範 | 2 |
+| [[CLAUDE-md\|CLAUDE.md]] | Claude Code 持久記憶層，兼任 LLM Wiki schema 規範；Ratchet 編碼主要載體 | 4 |
 | [[AI-Quality-Collusion]] | AI 同時生成 code 與 test 的隱形共謀反模式 | 2 |
 | [[Specification-by-Example\|SBE]] | 以具體範例凍結需求，AI 品質共謀的結構性對策之一 | 1 |
-| [[MCP]] | Anthropic 推出的開放協議，AI 連外部工具的「USB」標準 | 5 |
+| [[MCP]] | Anthropic 推出的開放協議，AI 連外部工具的「USB」標準；含工具描述安全議題 | 8 |
 | [[GEO]] | Generative Engine Optimization / Agent-Ready 網站，SEO 的 AI 時代延伸 | 2 |
 | [[顧客終身價值]] | CLV，衡量顧客經營成效的核心指標 | 1 |
-| [[DESIGN-md\|DESIGN.md]] | 純 Markdown 設計系統規範，讓 AI coding agent 生成風格一致的 UI | 3 |
+| [[DESIGN-md\|DESIGN.md]] | 純 Markdown 設計系統規範，讓 AI coding agent 生成風格一致的 UI | 5 |
 | [[Managed-Agents\|Claude Managed Agents]] | Anthropic 託管 agent 服務，session/harness/sandbox 三層架構 | 3 |
-| [[Meta-Harness]] | 為「尚未想出的程式」設計的 agent 架構模式 | 2 |
-| [[Harness-Engineering\|Harness Engineering]] | AI 代理環境設計範式：約束 + 上下文 + 熵管理 | 1 |
+| [[Meta-Harness]] | 為「尚未想出的程式」設計的 agent 架構模式 | 3 |
+| [[Harness-Engineering\|Harness Engineering]] | AI 代理環境設計範式：約束 + 上下文 + 熵管理；含 OpenAI 三支柱與 Google Addy 七元件兩視角 | 2 |
 | [[WordPress-接手檢查SOP]] | 接手 WordPress 網站的六步檢查流程，辨識「前人的遺產」 | 1 |
 | [[Vibe-Coding]] | 自然語言直接驅動 LLM 生成程式碼的開發範式（演化光譜第 2 階段） | 1 |
-| [[Agentic-AI-Workflow]] | 同心圓迭代範式，含 Design to Code / Code to Design 雙向流動 | 1 |
+| [[Agentic-AI-Workflow]] | 同心圓迭代範式，含 Design to Code / Code to Design 雙向流動 | 2 |
+| [[Self-Improving-Agent]] | 自我改進代理範式：MEMORY.md + Skill Factory + 偏好學習，Hermes 是代表實作 | 2 |
+| [[Ratchet-Pattern]] | 每次錯誤編碼成永久規則的設計模式；CLAUDE.md / hook / reviewer subagent 三層編碼 | 2 |
+| [[MEMORY-md\|MEMORY.md]] | AI Agent 跨 session 持久記憶層；與 CLAUDE.md 形成「AI 寫 vs 人類寫」對；Claude Code / Hermes 雙實作 | 3 |
+| [[Context-Rot]] | 上下文衰損；compaction / offloading / progressive disclosure 三招；Claude Code 五招（rewind / clear / compact / subagent / continue）| 2 |
 
 ## 綜整與分析
 

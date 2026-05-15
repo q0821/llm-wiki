@@ -1,10 +1,10 @@
 ---
 title: CLAUDE.md
 type: concept
-sources: ["Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "科技翰林院怎麼用 Claude Code 終端機？8 個實戰設定全公開.md"]
+sources: ["Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "科技翰林院怎麼用 Claude Code 終端機？8 個實戰設定全公開.md", "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md", "未命名.md"]
 created: 2026-05-09
-updated: 2026-05-09
-tags: [claude-code, configuration, schema, persistent-memory, llm-wiki]
+updated: 2026-05-14
+tags: [claude-code, configuration, schema, persistent-memory, llm-wiki, design-workflow, harness, ratchet]
 confidence: 強
 ---
 
@@ -82,14 +82,39 @@ confidence: 強
 
 例：「回覆用中文、commit message 用英文、技術詞保留原文」。
 
+### 5. Ratchet 原則：每條規則都要從失敗中賺來
+
+[[src-addy-osmani-harness-engineering|Addy Osmani]] 給 CLAUDE.md 一個更銳利的定位：
+
+> 「**像飛行員的檢查清單，不應該像一份冗長風格指南。它要短，每一條規則都要是從過去的失敗中賺來的（earn the line）。**」
+
+對應的克制原則：
+
+- **加入規則**：只在你**真的觀察到失敗**時才加入（不要預想可能的問題就堆規則）
+- **移除規則**：模型變強後，某些限制已經不再必要時，要**主動移除**
+
+這與 [[Ratchet-Pattern]] 的整體哲學一致——CLAUDE.md 是 Ratchet 的主要編碼載體之一（另外兩層是 hook 與 reviewer subagent）。
+
+**重要安全議題**（同來源）：工具描述會直接進到 prompt 裡——一個品質差或惡意的外部整合（如未驗證的 [[MCP]] server）可能在 agent 工作前就注入不該有的指令到 CLAUDE.md 或 system context。挑工具要看「描述本身的健康度」。
+
+### 6. 設計領域規則（[[Simon-Lin|Simon]] [[src-aapd-claude-design-figma-workflow|範例]]）
+
+從 [[Claude-Design]] handoff 給 [[Claude Code]] 之前，必須先建好 CLAUDE.md，否則「翻譯出來的東西完全跑版」（直播當天的失敗教訓）。Simon 的設計規則範例：
+
+- 「跟 [[Figma]] 同步時必須使用已定義的 design token」
+- 「必須使用既有 component，沒有定義就先問我」
+
+這把 CLAUDE.md 從「工程協作備忘錄」擴展為「**跨工具品牌一致性的錨點**」——[[DESIGN-md]] 強調事前定義，CLAUDE.md 則收斂為「給當下 agent 看的具體規則」。
+
 ## 與其他 Schema 規範的關係
 
-| 檔名 | 工具 | 作用範圍 |
-|---|---|---|
-| **CLAUDE.md** | [[Claude Code]] | AI 助理規範 |
-| [[DESIGN-md\|DESIGN.md]] | AI Coding Agent（多家） | UI 設計系統規範 |
-| `AGENTS.md` | OpenAI Codex / 其他 agentic CLI | 任務代理人規範 |
-| `.cursorrules` | Cursor | 編輯器級規範 |
+| 檔名 | 工具 | 作用範圍 | 性質 |
+|---|---|---|---|
+| **CLAUDE.md** | [[Claude Code]] | AI 助理規範 | 行為規範（怎麼做事）|
+| [[DESIGN-md\|DESIGN.md]] | AI Coding Agent（多家） | UI 設計系統規範 | 行為規範（視覺風格）|
+| `AGENTS.md` | OpenAI Codex / 其他 agentic CLI | 任務代理人規範 | 行為規範 |
+| `.cursorrules` | Cursor | 編輯器級規範 | 行為規範 |
+| **App Flow JSON** | AI coding agent（[[src-akiraxclaw-app-flow-trick]]）| 系統核心流程結構化描述 | **系統地圖（系統長什麼樣）** |
 
 > 共通模式：純 markdown、放專案根目錄、agent 啟動自動讀取。差別在於各自關注的「行為面向」（程式碼風格 / 設計風格 / 任務代理規則）。
 
@@ -129,5 +154,9 @@ CLAUDE.md 是 Claude Code 自己最熟的格式，遇到要新增規則直接跟
 - [[LLM-Wiki]] — 把 CLAUDE.md 當 schema 使用的範式
 - [[Agent-Skills]] — 與 skill 機制互補（CLAUDE.md 是規範、Skill 是流程）
 - [[src-claude-code-context-management]] — Memory / Handoff / Token 管理相關
-- [[src-techhanlin-llm-wiki-tutorial]]、[[src-techhanlin-claude-code-8-settings]] — 來源
+- [[src-techhanlin-llm-wiki-tutorial]]、[[src-techhanlin-claude-code-8-settings]]、[[src-aapd-claude-design-figma-workflow]]、[[src-addy-osmani-harness-engineering]] — 來源
 - [[DESIGN-md]] — 同類設計：給 AI Agent 讀的規範檔
+- [[Simon-Lin]] — 提供設計領域具體規則範例的設計師
+- [[Ratchet-Pattern]] — CLAUDE.md 是 Ratchet 的主要編碼載體
+- [[Harness-Engineering]] — CLAUDE.md 是 harness 七元件之一
+- [[Addy-Osmani]] — 提出「飛行員檢查清單」隱喻

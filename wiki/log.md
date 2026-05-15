@@ -516,3 +516,107 @@
 
 - 新建：[[src-welly-seo-2026-04]], [[GEO]]
 - 更新：[[Cloudflare]], [[MCP]], [[Agent-Skills]], index.md
+
+## [2026-05-14] inbox-pull | 從 iCloud inbox 搬入素材
+- 搬入 3 個檔案到 raw/：
+  - `Hermes Agent 成功案例 — 你的 AI 代理可以做什麼.md`（2418 行，gaskhuang.github.io clipping）
+  - `【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md`（178 行）
+  - `電子發票.md`（7 行，3 個 YouTube 標題但 URL 不完整——暫緩 ingest）
+
+## [2026-05-14] ingest | AAPD 直播筆記 — Claude Design × Claude Code × Figma 工作流
+- 來源：aapd.com.tw / Simon（產品設計師，雪梨）/ 2026-05-05 直播筆記
+- 核心發現：Hand off to Claude Code 機制 + Figma MCP 雙向操作 + 邊走邊建設計規則 + 設計師價值轉向判斷力
+- 與 [[src-will-ai-kill-saas-design]] 形成「宏觀觀察 vs 實作經驗」對話組——Simon 的 Figma MCP bug 觀察反向佐證 Yu-Chih「人類仍需精細工具」論點
+
+### 影響頁面
+
+- 新建：[[src-aapd-claude-design-figma-workflow]], [[Simon-Lin]], [[AAPD]]
+- 更新：[[Claude-Design]]（補介面結構 / Hand off / 四限制）、[[Claude Code]]（補 Hand off + Figma MCP 整合）、[[CLAUDE-md]]（補設計領域規則範例）、[[Figma]]（補 MCP 雙向操作 + bug 觀察）、[[MCP]]（補 Figma MCP 案例）、[[DESIGN-md]]（補「事前定義 vs 邊走邊建」對照）、[[Agentic-AI-Workflow]]（補 Simon 實作經驗觀點）
+
+## [2026-05-14] todo | 暫緩處理：電子發票.md
+- 保留於 raw/，因內容僅 3 個 YouTube 標題 + 截斷的 `watch?v` URL（無 video id），無法跑 fetch-youtube.sh
+- 待使用者補完整 URL 後再 ingest 為 YouTube 來源
+
+## [2026-05-14] ingest | Hermes Agent 99 個成功案例
+- 來源：gaskhuang.github.io/hermes-agent-cases / [[Gas-Khuang]] 整理 / 99 案例 / 13 分類
+- 處理策略：結構化抽 patterns + 12 個代表案例展開（依先前對齊的策略）
+- 核心發現：
+  - **跨案例觀察 5 個模式**：自我改進三角（MEMORY.md + Skill Factory + 偏好學習）、多模型協作、多訊息平台閘道、成本壓縮極限、替代 SaaS 訂閱
+  - **OpenClaw → Hermes 遷移敘事**：兩個 case 直接記錄；本知識庫 [[OpenClaw]] 頁面已註記此趨勢
+  - **「自我改進的 LLM Wiki」路線分歧**：與本知識庫的「人類引導 + Obsidian」路線形成有意義對照
+  - **agent 自帶 MCP server**：`hermes mcp serve` 把 agent 自己包成可組合層
+
+### 影響頁面
+
+- 新建：[[src-hermes-agent-99-cases]], [[Hermes-Agent]], [[Gas-Khuang]], [[Self-Improving-Agent]]
+- 更新：[[OpenClaw]]（補遷移趨勢段落）、[[Agent-Skills]]（補 Hermes Skill 生態 + 三方比較表）、[[MCP]]（補 hermes mcp serve / jMunch / Firecrawl / OSV + agent-as-server 模式）、[[Claude Code]]（補跨代理統一記憶 case）、[[BrowseForge]]（補 Vessel Browser 對照）、[[LLM-Wiki]]（補人類引導 vs 全自動路線分歧）
+- 更新 index.md（最近新增 / 來源摘要 / 實體 / 概念；調整 7 個既有頁面的來源數）
+
+### 待 lint 與 query 處理項
+
+- Hermes vs Asgard vs Anthropic 三組 Agent Skills 生態的綜整分析（建議下次 lint 或專題 query 時做）
+- 「自我改進 LLM Wiki」case 的 medium 原文是否要獨立 ingest 為新來源
+- Vessel Browser 是否要獨立 source 頁（如關注 agent-first browser 範式）
+- Hermes 中提到的具體模型版本（GPT-5.4 / MiniMax M2.7 / Qwen 35B）需進一步驗證
+
+## [2026-05-14] inbox-pull | 第二次 inbox 同步
+- 搬入 2 個檔案到 raw/：
+  - `未命名.md`（241 行）— FB 中文整理 Addy Osmani 的 Harness Engineering 文章
+  - `讓 Claude 把你的 App 流程畫成一頁 HTML：...md`（1 行）— **只有 URL** 無內文
+
+## [2026-05-14] ingest | Addy Osmani Harness Engineering
+- 來源：FB 中文整理（二次來源），原文作者 [[Addy-Osmani]]（Google Cloud AI 總監）
+- 與既有 [[Harness-Engineering]]（OpenAI Ryan Lopopolo）形成「兩巨頭對同一範式不同切角」對話組
+- 新概念：[[Ratchet-Pattern]] — 「每次錯誤編碼成永久規則」，跨 OpenAI / Google 兩家工程文化的共識
+- 注入論點：Harness 七元件 / Context Rot 三招 / Long-Horizon 三招 / HaaS 趨勢 / harness 移動而非萎縮 / Training Loop 雙向
+
+### 影響頁面
+- 新建：[[src-addy-osmani-harness-engineering]], [[Addy-Osmani]], [[Ratchet-Pattern]]
+- 更新：[[Harness-Engineering]]（補七元件 / Ratchet 段落 / Context Rot / Long-Horizon / HaaS / 跨工程文化對照表）、[[Self-Improving-Agent]]（補「AI 自動 vs 人類引導 Ratchet」兩條路徑對照）、[[Claude Code]]（補 Fareed Khan 架構元件拆解）、[[Meta-Harness]]（補與 Addy「harness 移動」呼應）、[[CLAUDE-md]]（補「飛行員 checklist」「每條規則從失敗賺來」「工具描述安全議題」）、[[Agent-Skills]]（補「10 個職責清楚 vs 50 個重疊」原則）、[[MCP]]（補工具描述會進 prompt 的安全議題段落）
+
+## [2026-05-14] fetch-failure | akiraxclaw.com Claude App Flow 文章
+- URL：https://akiraxclaw.com/blog/claude-app-flow-documentation-trick-2026
+- 兩次擷取失敗：
+  - `fetch-url.sh`（markdown.new）→ exit 56 / `Crawl completely disallowed by robots.txt`
+  - WebFetch（Claude Code 內建）→ 拿到的是會員牆頁面殼，內文需「免費加入即可閱讀」
+- 解法：使用者手動複製貼上內文 → 存為 raw/akiraxclaw-app-flow-trick-content.md（原「轉址檔」保留作為投遞紀錄）
+
+## [2026-05-14] ingest | App Flow HTML + JSON 雙輸出技巧（Dave Jeffery / akiraxclaw）
+- 來源：akiraxclaw.com 整理 Dave Jeffery（X @DaveJ）原推
+- 核心：讓 Claude 生成「同一份資訊兩種呈現」——HTML 給人看、JSON 給 AI 看作為「系統記憶外掛」
+- 對應 [[Harness-Engineering]] 七元件中的 Memory + Search 條目
+- 與 [[Ratchet-Pattern]] 形成對照：Ratchet 是反應式累積（錯誤→規則），App Flow Doc 是前置式準備（一次寫好系統地圖）
+
+### 影響頁面
+- 新建：[[src-akiraxclaw-app-flow-trick]]
+- 更新：[[CLAUDE-md]]（同類規範檔對照表加 App Flow JSON 與「行為規範 vs 系統地圖」性質欄）、[[DESIGN-md]]（補同類設計檔家族）、[[Harness-Engineering]]（七元件 Memory + Search 條目補 App Flow JSON 範例）
+
+## [2026-05-14] lint | 健康檢查與新概念頁萃取
+- 掃描 wiki，使用 python regex（處理 markdown table `\|` escape）找出真正 dead links
+- 結果：
+  - **真正 dead links 4 個**，3 個在 log.md 歷史紀錄（不動），1 個 `[[wikilink]]` 是示範用 placeholder（依使用者選擇不動）
+  - **反向連結數**：本次 session 新增 9 頁全部有 4-12 個反向引用，無孤立頁
+  - **profile 一致性**：11 個新增/相關頁面全部有 confidence 欄位
+- **概念缺漏萃取**（已批准）：
+  - 建 [[MEMORY-md]]：在 10 個既有頁面中提及，且有 3 個獨立來源（Hermes / Claude Code 8 settings / Addy）
+  - 建 [[Context-Rot]]：在 6 個既有頁面中提及，且有 2 個獨立來源（Addy / Claude Code 上下文管理）
+- **中度推薦未建**（依使用者選擇）：Skill Factory / Long-Horizon Execution / Harness-as-a-Service 都已在主頁有專段
+- **人物實體未建**（弱證據）：Viv Trivedy、HumanLayer、Fareed Khan、Mitchell Hashimoto、Dave Jeffery、Ryan Lopopolo、Fred K. Schott — 都只在 Harness-Engineering 跨工程文化對照表中單行提及，未來如多來源引用再建
+
+### 影響頁面
+- 新建：[[MEMORY-md]], [[Context-Rot]]
+- 更新（首次提及處改 wikilink，避免過度連結）：[[Hermes-Agent]]、[[Self-Improving-Agent]]、[[Ratchet-Pattern]]、[[OpenClaw]]、[[src-hermes-agent-99-cases]]、[[Harness-Engineering]]、[[src-addy-osmani-harness-engineering]]、[[src-claude-code-context-management]]
+- 更新 index.md（最近新增 + 概念區追加 MEMORY-md 與 Context-Rot）
+
+## [2026-05-14] fetch-failure | Dave Jeffery 原推（X.com）
+- URL：https://x.com/DaveJ/status/2053867258653339746
+- WebFetch 結果：**HTTP 402 Payment Required**（X.com 對 unauthenticated server-side 擷取要求 paid API tier）
+- 決議：跳過，不獨立成 source
+- 影響頁面：[[src-akiraxclaw-app-flow-trick]]（更新「信心評估」與「未來可延伸」段落，刪除線標註原推擷取已嘗試）
+
+### 來源擷取成功率經驗法則（本次累積）
+| 來源類型 | 範例 | 擷取成功率 |
+|---|---|---|
+| 靜態部落格 / GitHub Pages | gaskhuang、aapd | 高 — markdown.new 直接抓 |
+| Newsletter / 會員制 | akiraxclaw | 中 — 拿到「殼」，需手動複製內文 |
+| X / Twitter（unauthenticated）| Dave Jeffery 推文 | **零** — HTTP 402 直接擋 |

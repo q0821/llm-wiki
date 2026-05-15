@@ -1,9 +1,9 @@
 ---
 title: Agent Skills
 type: concept
-sources: [2026-03-12-Marketing-Skills-for-AI-Agents.md, asgard-ai-platform-skills.md, 只要 5 分鐘！Claude Code 無縫整合 NotebookLM 實戰.md, 推薦的 Claude Code  skill.md, "Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "科技翰林院怎麼用 Claude Code 終端機？8 個實戰設定全公開.md"]
+sources: [2026-03-12-Marketing-Skills-for-AI-Agents.md, asgard-ai-platform-skills.md, 只要 5 分鐘！Claude Code 無縫整合 NotebookLM 實戰.md, 推薦的 Claude Code  skill.md, "Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "科技翰林院怎麼用 Claude Code 終端機？8 個實戰設定全公開.md", "Hermes Agent 成功案例 — 你的 AI 代理可以做什麼.md", "未命名.md"]
 created: 2026-04-15
-updated: 2026-05-09
+updated: 2026-05-14
 tags: [技術, AI, 工具, 概念]
 confidence: 強
 ---
@@ -69,6 +69,7 @@ Skill 的封裝優勢：
 - [[src-asgard-skills|Asgard Skills]] — 263 個跨領域技能（理論模型、演算法、商業框架等），附確定性計算腳本
 - **NotebookLM Skill**（[[notebooklm-py]] 配套）— 讓 Claude Code 操作 [[NotebookLM]]，把研究外包給 Gemini。詳見 [[src-claude-code-notebooklm]]
 - **yt-search Skill**（自製範例）— 用 yt-dlp 搜尋 YouTube 並回傳結構化結果（含「觀看數/訂閱數」爆款比率）
+- **Hermes Skills**（[[Hermes-Agent]] 生態系）— 99 案例中橫跨 13 個分類，含 awesome-hermes-agent 精選清單；特色是 **Skill Factory**（靜默監看工作流，自動生成 SKILL.md）。詳見 [[src-hermes-agent-99-cases]]
 
 ## Skill 自我優化 Meta-Pattern
 
@@ -96,12 +97,15 @@ Skill 的封裝優勢：
 
 ## Skill 設計模式比較
 
-| 面向 | marketingskills | Asgard Skills |
-|------|----------------|---------------|
-| 定位 | 行銷實務操作 | 跨領域理論與演算法 |
-| 規模 | ~30 skills | 263 skills |
-| 特色 | `product-marketing-context` 共用基底 | Iron Law / Gotchas 設計 + Python 計算腳本 |
-| 適用 | SEO/CRO/文案/廣告 | 股票分析、策略、統計、設計 |
+| 面向 | marketingskills | Asgard Skills | Hermes Skills（[[Hermes-Agent]] 生態系）|
+|------|----------------|---------------|------|
+| 定位 | 行銷實務操作 | 跨領域理論與演算法 | 跨平台 agent 用例 |
+| 規模 | ~30 skills | 263 skills | 99 案例 / 13 分類 |
+| 特色 | `product-marketing-context` 共用基底 | Iron Law / Gotchas 設計 + Python 計算腳本 | **Skill Factory（自動生成）** + MEMORY.md 整合 |
+| 適用 | SEO/CRO/文案/廣告 | 股票分析、策略、統計、設計 | 訊息平台、企業、加密、家庭自動化 |
+| 生成方式 | 人類撰寫 | 人類撰寫 + 確定性腳本 | **AI 自動生成**（靜默監看 → 寫 SKILL.md） |
+
+> **Skill Factory** 的設計哲學最特殊——把 [[Self-Improving-Agent]] 概念落實為 Skill 自動萃取。這與 marketingskills / Asgard 的「人類精心設計」形成兩種典型。
 
 ## 與 Continue（VS Code 擴充）的對照
 
@@ -130,3 +134,10 @@ Skill 的封裝優勢：
 - [[MCP]] — 概念對照：Skills 封裝工作流、MCP 連接外部工具
 - [[BrowseForge]] / [[Playwright]] — AI agent 操作瀏覽器的應用場景（多帳號管理、爬蟲、表單填寫）
 - [[GEO]] — 「網站暴露 Agent Skills」是 Agent-Ready 的前沿項（[[Cloudflare]] Radar 2026-04 採用率僅 0.015%）
+- [[Hermes-Agent]] — 第三大 Skill 生態系，自動生成 Skill 的代表
+- [[Self-Improving-Agent]] — Skill Factory 是該範式的關鍵元件
+- [[src-hermes-agent-99-cases]] — Hermes Skill 生態的 99 案例彙整
+- [[Harness-Engineering]] — Skills 是 harness 七元件中「Tools / 工具箱」的一部分
+- [[Ratchet-Pattern]] — Skill 是 Ratchet 累積的高層形式（把「應該怎麼做」固化）
+- [[Addy-Osmani]] — 提出「10 個職責清楚的工具勝過 50 個功能重疊」原則
+- [[src-addy-osmani-harness-engineering]] — Harness 七元件視角下的 Skills 定位

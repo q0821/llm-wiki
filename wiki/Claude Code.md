@@ -1,10 +1,10 @@
 ---
 title: Claude Code
 type: entity
-sources: ["Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "科技翰林院怎麼用 Claude Code 終端機？8 個實戰設定全公開.md", "只要 5 分鐘！Claude Code 無縫整合 NotebookLM 實戰.md"]
+sources: ["Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "科技翰林院怎麼用 Claude Code 終端機？8 個實戰設定全公開.md", "只要 5 分鐘！Claude Code 無縫整合 NotebookLM 實戰.md", "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md", "Hermes Agent 成功案例 — 你的 AI 代理可以做什麼.md", "未命名.md"]
 created: 2026-05-09
-updated: 2026-05-09
-tags: [agent, cli, anthropic, claude, second-brain]
+updated: 2026-05-14
+tags: [agent, cli, anthropic, claude, second-brain, design-workflow, harness]
 confidence: 強
 ---
 
@@ -93,6 +93,31 @@ Claude Code 即扮演那個 "programmer" 角色——在 [[Obsidian]] 上編輯�
 
 Managed Agents 的設計哲學「Python SDK 薄層 + 重活 delegate Claude Code CLI subprocess」：本機 Claude Code 與雲端 Managed Agents 共用同一個底層 agent loop。詳見 [[src-az9713-managed-agents-tutorial]]。
 
+## 作為 Harness 的元件拆解（[[Addy-Osmani]] / Fareed Khan 視角）
+
+[[src-addy-osmani-harness-engineering|Addy Osmani]] 引述 Fareed Khan 對 Claude Code 架構的估計拆解，可作為理解 Claude Code 為何「比同底層模型的 agent 更穩」的工程視角：
+
+| 架構元件 | 角色 | 與本知識庫機制的對應 |
+|---|---|---|
+| **Context injection** | 知識層——把必要背景送進 agent | `CLAUDE.md` 自動載入機制 |
+| **Loop state** | memory store + worktree isolator | session 持久層 + 隔離工作區 |
+| **Destructive-action hooks** | permission gate——危險操作前安全檢查 | 編輯前 read、執行前 confirm |
+| **Subagent context firewall** | 多 agent 隔離——避免看到不該看的資訊 | Subagent 平行處理時的 context 切割 |
+| **Tool dispatch registry** | 「工具總機」——MCP servers + bash 的接入點 | [[MCP]] 註冊與工具調用 |
+
+> Addy 結論：「Claude Code 的演進，不只是底層模型變強，至少同樣程度是 harness 的演進。」這對應本知識庫觀察到的「Claude Code 三大設定機制」（CLAUDE.md / Skills / Memory + Handoff）就是 harness 七元件的具體實作。
+
+## 與 [[Claude-Design]] 的 Hand-off 關係（[[Simon-Lin|Simon]] [[src-aapd-claude-design-figma-workflow|Demo]]）
+
+[[Claude-Design]] 右上角 share → 「**Hand off to Claude Code**」自動產生 prompt 銜接。這條原生通道是「Claude 生態系真正的價值所在」（Simon 語）：
+
+- [[Claude-Design]]：適合 0→1 探索與快速 Demo
+- [[Claude Code]]：產品化階段的主力（解決 Claude Design 的 hard-coded、無 component、無版本控制問題）
+
+可在 Claude Desktop App、Cursor、VS Code、Google Antigravity 等 IDE 的 terminal 呼叫。
+
+**搭配 [[Figma]] [[MCP]]**：Claude Code 透過 Figma MCP 雙向操作 [[Figma]]（指令 `Figma capture` + `Figma delay`），實現 Code↔Figma 同步迭代。
+
 ## 信心評估
 
 - **強**：核心能力與三大機制 — 多來源（[[科技翰林院]] 兩篇、[[HC-AI-說人話]]、Anthropic 官方文件）一致
@@ -110,4 +135,10 @@ Managed Agents 的設計哲學「Python SDK 薄層 + 重活 delegate Claude Code
 - [[Meta-Harness]] / [[Harness-Engineering]] — 背後的設計範式
 - [[Gemma]] / [[LM-Studio]] — 本地 AI 對照組
 - [[BrowseForge]] / [[Playwright]] — AI agent 操作瀏覽器的工具（透過 MCP / 自動化框架）
-- [[src-claude-code-context-management]] / [[src-techhanlin-claude-code-8-settings]] — 詳細工作流來源
+- [[Claude-Design]] — Hand off 來源
+- [[Figma]] — 透過 [[MCP]] 雙向操作的設計工具
+- [[Simon-Lin]] — 提供 Claude Design × Claude Code × Figma 整合工作流的實作 Demo
+- [[Hermes-Agent]] — 互補的開源 agent；[[src-hermes-agent-99-cases]] 「跨代理統一記憶」case 將 Claude Code + Hermes + Cursor 串成同記憶層
+- [[Harness-Engineering]] — Claude Code 是 harness 七元件的成熟實作；[[Addy-Osmani]] 引 Fareed Khan 對其架構分解
+- [[Addy-Osmani]] — 對 Claude Code 架構提出元件拆解視角
+- [[src-claude-code-context-management]] / [[src-techhanlin-claude-code-8-settings]] / [[src-aapd-claude-design-figma-workflow]] / [[src-hermes-agent-99-cases]] / [[src-addy-osmani-harness-engineering]] — 詳細工作流來源

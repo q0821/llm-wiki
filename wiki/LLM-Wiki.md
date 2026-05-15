@@ -1,9 +1,9 @@
 ---
 title: LLM Wiki
 type: concept
-sources: ["Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md"]
+sources: ["Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "Hermes Agent 成功案例 — 你的 AI 代理可以做什麼.md"]
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-14
 tags: [方法論, 知識管理, AI, llm-wiki, second-brain, karpathy]
 confidence: 強
 ---
@@ -117,6 +117,22 @@ LLM Wiki 可視為 [[Memex]] 在 LLM 時代的可實現版本。
 
 差異：本知識庫額外加上「**外部發布層**」（[[Quartz|Quartz v4]] → wiki.jackie-yeh.com）與「**手機投遞層**」（iCloud Obsidian inbox vault），這在 Karpathy 原版未涵蓋。
 
+## 路線分歧：人類引導 vs 全自動
+
+[[src-hermes-agent-99-cases]] 中有「**自我改進的 LLM Wiki 第二大腦**」case（連結 medium 原文標題含 "and why I'm not using Obsidian"），代表另一條路線——**完全自動的 LLM Wiki**，AI 自動爬取、自動更新、靜態網站自動發布。
+
+| 路線 | 代表 | 主張 | 風險 |
+|---|---|---|---|
+| **人類引導**（本知識庫） | [[Andrej-Karpathy]] + [[Obsidian]] + [[Claude Code]] | 來源不可變、矛盾並列、人類監督摘要 | 維護成本仍在（雖然 LLM 大量分擔） |
+| **全自動**（Hermes 生態系）| [[Hermes-Agent]] | AI 自動爬取 + AI 自動更新 + 自動發布 → 「永不腐爛」 | [[AI-Quality-Collusion]] 風險：AI 自寫自更新失去人類審視 |
+
+兩者對「**維護負擔**」的回應不同：
+
+- Karpathy 觀點：「LLM 不會無聊、不會忘記更新交叉引用、一次能動 15 個檔案」——但人類仍是策展者
+- Hermes 觀點：連策展也外包，AI 全包了
+
+這是 [[Self-Improving-Agent]] 範式在知識管理領域的延伸應用。對本知識庫而言，這提供了一個有意義的對照組——保留「人類引導」路線是有意識選擇，不是技術限制。
+
 ## 信心評估
 
 - **強**：核心方法論（三步驟、人機分工、與 RAG 的差異）— Karpathy 原始 gist 直接定義，多處被獨立引用
@@ -132,3 +148,6 @@ LLM Wiki 可視為 [[Memex]] 在 LLM 時代的可實現版本。
 - [[Agent-Skills]] — `/llm-wiki` skill 的實作位置
 - [[src-techhanlin-llm-wiki-tutorial]] — 中文圈代表性介紹文（本頁主要依據）
 - [[科技翰林院]]、[[HC-AI-說人話]] — 中文圈推廣者
+- [[Hermes-Agent]] — 全自動 LLM Wiki 路線的代表
+- [[Self-Improving-Agent]] — 自我改進範式在 LLM Wiki 領域的應用
+- [[src-hermes-agent-99-cases]] — 含「自我改進 LLM Wiki」對照路線

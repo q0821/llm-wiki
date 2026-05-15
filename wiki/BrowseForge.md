@@ -66,6 +66,7 @@ BrowseForge 屬於一個正在浮現的工具類別：讓 LLM 透過 API/MCP 操
 | **BrowseForge** | 本頁主題；反偵測 + 多 Profile + MCP | 強項是「多帳號隔離」|
 | [[Playwright]] | 底層自動化框架 | BrowseForge 用它當引擎；單純 Playwright 無反偵測/多指紋 |
 | Browser-use / Skyvern 等 | LLM 驅動的瀏覽器 agent | 偏「自動完成任務」，BrowseForge 偏「環境隔離」|
+| **Vessel Browser**（[[Hermes-Agent]] 生態）| 以 agent 為主角的瀏覽器，Nous Research 黑客松誕生 | 設計哲學差異：BrowseForge 仍以「人開啟瀏覽器 + AI 操作」為前提；Vessel Browser 主張「agent 是主要操作者，人是監督批准角色」|
 | Claude in Chrome / Computer Use | 廠商內建的瀏覽器控制 | 雲端服務，非自架 |
 
 ## 與本知識庫的關聯
@@ -75,6 +76,7 @@ BrowseForge 屬於一個正在浮現的工具類別：讓 LLM 透過 API/MCP 操
 - [[Playwright]] — 底層引擎管理 + v1.4.0 開放外部直連
 - [[Claude Code]] / [[Agent-Skills]] — AI agent 自動化應用
 - [[OpenClaw]] / [[Cloudflare]] — 同為自架/開源開發工具類
+- [[Hermes-Agent]] — 另一個 agent-first 生態系，含同類別的 Vessel Browser；[[src-hermes-agent-99-cases]] 中還有「桌面電腦完整控制模組：截圖、滑鼠、鍵盤」等 Browser/桌面控制案例
 
 ## 倫理提示
 

@@ -1,9 +1,9 @@
 ---
 title: Meta-Harness
 type: concept
-sources: [scaling-managed-agents-decoupling-the-brain-from-the-hands-anthropic.md, Harness Engineering（AI駕馭工程）入門篇：OpenAI最新編程標準，教你輕鬆做到Lv.1.md]
+sources: [scaling-managed-agents-decoupling-the-brain-from-the-hands-anthropic.md, Harness Engineering（AI駕馭工程）入門篇：OpenAI最新編程標準，教你輕鬆做到Lv.1.md, "未命名.md"]
 created: 2026-04-20
-updated: 2026-04-20
+updated: 2026-05-14
 tags: [架構設計, AI, Agent, 設計哲學]
 confidence: 中
 ---
@@ -100,11 +100,32 @@ Harness:  wake(sessionId) → harness_instance
 
 差異點：meta-harness 特別強調「**對未來未知的變化**（如新模型能力）保持開放」，這是 AI 系統設計的新挑戰。
 
+## 與 [[Addy-Osmani|Addy Osmani]] 「Harness 移動而非萎縮」的呼應
+
+[[src-addy-osmani-harness-engineering]] 中的關鍵觀察：
+
+> 「模型變強後，harness 不會消失，只會移動。每個 harness 元件本質上都編碼了『這件事模型自己做不好』的假設。」
+
+這與 Meta-harness 的「介面 outlast 實作」是**同一原則的兩個視角**：
+
+| 視角 | 重點 |
+|---|---|
+| **Anthropic Meta-Harness** | 介面層面：抽象 outlast 具體實作 |
+| **Google Addy Osmani** | 元件層面：harness 元件隨能力邊界移動，不萎縮 |
+
+兩者都拒絕「模型變強就不需要 harness」的天真假設，但解法不同：
+- Anthropic 用「**穩定介面**」吸收變化
+- Addy 用「**Ratchet 克制原則**」保證每個元件都有現實的失敗根據
+
+詳見 [[Harness-Engineering#Harness 不會萎縮，只會移動]]。
+
 ## 相關頁面
 
-- [[Harness-Engineering]] — OpenAI 提出的互補概念，從約束與回饋系統角度切入
+- [[Harness-Engineering]] — OpenAI / Google / LangChain / HumanLayer 各方視角整合
 - [[src-harness-engineering-openai]] — OpenAI Harness Engineering 的來源摘要
-- [[Managed-Agents]] — 第一個 meta-harness 實作
+- [[src-addy-osmani-harness-engineering]] — Google Addy Osmani 視角來源
+- [[Managed-Agents]] — 第一個 meta-harness 實作，也是 Harness-as-a-Service 代表
 - [[src-anthropic-managed-agents-engineering]] — 原始設計文件
 - [[Agent-Skills]] — 可視為 harness 層對 agent 能力的模組化抽象
+- [[Ratchet-Pattern]] — Addy 視角下的 harness 進化機制
 - [[src-claude-code-context-management]] — Claude Code 的 harness 設計中的 context 處理策略
