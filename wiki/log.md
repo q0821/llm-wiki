@@ -620,3 +620,20 @@
 | 靜態部落格 / GitHub Pages | gaskhuang、aapd | 高 — markdown.new 直接抓 |
 | Newsletter / 會員制 | akiraxclaw | 中 — 拿到「殼」，需手動複製內文 |
 | X / Twitter（unauthenticated）| Dave Jeffery 推文 | **零** — HTTP 402 直接擋 |
+
+## [2026-05-15] ingest | 5 個 AI Coding 反模式 / 工作流 concept（漂白版）
+- 性質：個人實作累積的反模式、工作流、技術洞察，**已去識別**
+- 原始 retro（含客戶識別、admin URL、具體 schema、商業措辭）已從 git 歷史撤回（force push），未進 wiki
+- 漂白版保留：純 pattern、設計原理、generic 範例、公開 framework API
+- 漂白版移除：客戶識別、admin URL 路徑、具體 model schema 名稱、phase 編號、commit/test 數字、商業措辭
+
+### 影響頁面
+- 新建：[[Subagent-Driven-Development]], [[Adversarial-Code-Review]], [[Hybrid-XSS-Defense]], [[Fields-Without-Enforcement-Anti-Pattern]], [[Verify-Framework-Version-First]]
+- 5 個 concept 的 sources frontmatter 均為 `[]`，頁首註明「來源：個人實作累積（已去識別）」
+- index.md 概念區追加 5 條，來源數標 `-` 表示無公開來源
+- 不還原 src 入口頁（內容過於 case-specific）
+
+### 與既有 wiki 的連結
+- [[Ratchet-Pattern]] — 5 個概念中至少 3 個直接引用此 pattern
+- [[AI-Quality-Collusion]] — Subagent-Driven 與 Adversarial-Code-Review 都是該反模式的對抗工具
+- [[Agentic-AI-Workflow]] / [[Claude Code]] / [[Specification-by-Example]] / [[CLAUDE-md]] — 各 concept 對應上位範式

@@ -8,6 +8,16 @@ title: 索引
 
 ## 最近新增
 
+### 2026-05-15
+
+| 頁面 | 摘要 |
+|------|------|
+| [[Subagent-Driven-Development]] | Fresh subagent per task + spec reviewer + code quality reviewer 兩階段獨立審查 |
+| [[Adversarial-Code-Review]] | 對抗式 AI review，抓跨檔組合 bug；Codex `--scope branch --base <初始 commit>` 審全 codebase |
+| [[Hybrid-XSS-Defense]] | escape at substitution 薄層 + sanitize at storage 厚層；`{{var}}` placeholder 用 uniqid token 防 collision |
+| [[Fields-Without-Enforcement-Anti-Pattern]] | Schema 有欄位、邏輯不檢查的反模式（含 silent backdoor 變體與時序狀態變體） |
+| [[Verify-Framework-Version-First]] | 新專案第一件事驗 lockfile 版本；AI 把框架 vN 帶到 vN+1 codebase 的踩雷對策 |
+
 ### 2026-05-14
 
 | 頁面 | 摘要 |
@@ -242,6 +252,11 @@ title: 索引
 | [[Ratchet-Pattern]] | 每次錯誤編碼成永久規則的設計模式；CLAUDE.md / hook / reviewer subagent 三層編碼 | 2 |
 | [[MEMORY-md\|MEMORY.md]] | AI Agent 跨 session 持久記憶層；與 CLAUDE.md 形成「AI 寫 vs 人類寫」對；Claude Code / Hermes 雙實作 | 3 |
 | [[Context-Rot]] | 上下文衰損；compaction / offloading / progressive disclosure 三招；Claude Code 五招（rewind / clear / compact / subagent / continue）| 2 |
+| [[Subagent-Driven-Development]] | Implementer + spec reviewer + code quality reviewer 兩階段獨立審查的 agentic workflow | - |
+| [[Adversarial-Code-Review]] | 對抗式 AI review，抓 human review 看不見的跨檔組合 bug；OWASP focus 為常見起點 | - |
+| [[Hybrid-XSS-Defense]] | 雙層 stored XSS 防護（escape variables at substitution + sanitize at storage）| - |
+| [[Fields-Without-Enforcement-Anti-Pattern]] | 反模式：schema 有欄位、邏輯不檢查；含 silent backdoor 變體與時序狀態變體 | - |
+| [[Verify-Framework-Version-First]] | 新專案第一件事驗 lockfile 版本；ratchet pattern 的具體應用 | - |
 
 ## 綜整與分析
 
