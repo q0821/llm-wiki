@@ -75,7 +75,7 @@ Skills 是封裝化工作流範本，`/<name>` 觸發。比 prompt 優勢：流�
 | 工具 | 廠商 | 與 Claude Code 的差異 |
 |---|---|---|
 | **Claude Code** | Anthropic | 本頁主題；CLAUDE.md / Skills / Memory 三大機制最完整 |
-| OpenAI Codex CLI | OpenAI | `AGENTS.md` 規範檔；harness 設計參考 [[Harness-Engineering]] |
+| [[OpenAI-Codex-CLI]] | OpenAI | `AGENTS.md` 規範檔；harness 設計參考 [[Harness-Engineering]]；含 `codex adversarial-review` 對抗式 review CLI |
 | Gemini CLI | Google | 整合 [[NotebookLM]] 等 Google 生態 |
 | Cursor | Anysphere | 編輯器級而非 CLI；用 `.cursorrules` |
 
@@ -141,4 +141,5 @@ Managed Agents 的設計哲學「Python SDK 薄層 + 重活 delegate Claude Code
 - [[Hermes-Agent]] — 互補的開源 agent；[[src-hermes-agent-99-cases]] 「跨代理統一記憶」case 將 Claude Code + Hermes + Cursor 串成同記憶層
 - [[Harness-Engineering]] — Claude Code 是 harness 七元件的成熟實作；[[Addy-Osmani]] 引 Fareed Khan 對其架構分解
 - [[Addy-Osmani]] — 對 Claude Code 架構提出元件拆解視角
+- [[OpenAI-Codex-CLI]] — 同類 agentic CLI 的對照產品
 - [[src-claude-code-context-management]] / [[src-techhanlin-claude-code-8-settings]] / [[src-aapd-claude-design-figma-workflow]] / [[src-hermes-agent-99-cases]] / [[src-addy-osmani-harness-engineering]] — 詳細工作流來源

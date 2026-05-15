@@ -637,3 +637,20 @@
 - [[Ratchet-Pattern]] — 5 個概念中至少 3 個直接引用此 pattern
 - [[AI-Quality-Collusion]] — Subagent-Driven 與 Adversarial-Code-Review 都是該反模式的對抗工具
 - [[Agentic-AI-Workflow]] / [[Claude Code]] / [[Specification-by-Example]] / [[CLAUDE-md]] — 各 concept 對應上位範式
+
+## [2026-05-15] ingest | Codex × HyperFrames 30 秒 Demo Prompt Pack
+- 來源：公開課程課後 Notion 匯出（`paddy19981205.github.io/FLPDF/#17`）
+- 942 行：7 個 Prompt Pack（00-06）+ 12 Visual Beats + 6 類 Fix Prompts + 3 個範例專案
+- 通過 CLAUDE.md「公開度與資安」檢查（無客戶識別 / admin URL / 私人 schema）
+- 知識庫首次有「短影片產製」主題；HyperFrames 是第一個影片生成工具實體
+
+### 影響頁面
+- 新建：[[src-codex-hyperframes-prompt-pack]], [[HyperFrames]], [[OpenAI-Codex-CLI]], [[Prompt-Pack-Pattern]]
+- 更新：[[DESIGN-md]]（應用領域從 UI 擴張到短影片，加對照表）、[[Vibe-Coding]]（補影片 vibe coding 案例）、[[Agentic-AI-Workflow]]（補 Codex × HyperFrames 影片工作流案例）、[[Agent-Skills]]（補與 Prompt Pack Pattern 對照）、[[Claude Code]]（強化與 OpenAI Codex CLI 對照）
+- 更新 index.md（最近新增追加 2026-05-15 下午區塊 + 來源/實體/概念條目 + 來源數調整）
+
+### 待 lint / 後續可延伸
+- 補抓 HyperFrames 官方文件作獨立來源（驗證透過 prompt 內容推斷的架構與 CLI）
+- 探討 HyperFrames 與 Remotion（React-based 影片框架）的關係——同類設計哲學
+- 課程簡報 `paddy19981205.github.io/FLPDF` 可考慮另外 ingest
+- 範例 3 中「ChatGPT 生圖 + Gemini 生影片 + HyperFrames 剪 Reels」的多 AI 串接工作流值得另外抽出 pattern

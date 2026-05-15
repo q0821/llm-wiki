@@ -1,10 +1,10 @@
 ---
 title: Vibe Coding
 type: concept
-sources: ["(5) Will AI Kill SaaS系列：... - Yu-Chih Edward Hwang.md"]
+sources: ["(5) Will AI Kill SaaS系列：... - Yu-Chih Edward Hwang.md", "課後 Prompt & 資源懶人包：Codex × HyperFrames 30 秒 Demo 3615edfc91bd80d19acee2ae9f0c5547.md"]
 created: 2026-04-28
-updated: 2026-04-28
-tags: [ai-coding, development-paradigm]
+updated: 2026-05-15
+tags: [ai-coding, development-paradigm, video]
 confidence: 中
 ---
 
@@ -46,8 +46,19 @@ Vibe Coding（直覺式開發）是一種以**自然語言直接驅動 LLM 生�
 - [[Harness-Engineering]]：Vibe Coding 的工程嚴謹補丁
 - [[Managed-Agents]]：把 Vibe Coding 的「prompt → code」過程託管化
 - [[Agent-Skills]]：擴充 Vibe Coding 在特定領域的能力
+- [[Prompt-Pack-Pattern]]：把單一 prompt 拆成多段串接的 Vibe Coding 進階範式
+- [[HyperFrames]]：影片領域 Vibe Coding 的代表工具
 
 ## 應用與案例
 
 - **適合場景**：原型開發、概念驗證（POC）、個人小工具、Hackathon 作品
 - **不適合場景**：企業級系統、長期維護專案、需嚴格品牌一致性的前端介面（除非搭配 [[DESIGN-md]] 等約束）
+
+### 領域擴張：從 code 到影片
+
+Vibe Coding 不限於程式碼。[[src-codex-hyperframes-prompt-pack]] 展示了**短影片 vibe coding**——用 [[OpenAI-Codex-CLI]] + [[HyperFrames]]，透過自然語言 prompt 驅動 LLM 產出影片 composition（HTML + CSS + GSAP timeline），最終 render 成 MP4。
+
+「Vision → AI → 輸出」的鏈條依然成立，只是輸出從 code 換成影片。配套補強機制同樣適用：
+- [[DESIGN-md]] 提供視覺約束（色票 / 字體 / 不可做事項）
+- [[Prompt-Pack-Pattern]] 取代單一巨型 prompt，分階段控制節奏
+- [[Specification-by-Example]] 的影片版（Visual Beats Library）凍結畫面節奏

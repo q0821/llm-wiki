@@ -141,3 +141,4 @@ Skill 的封裝優勢：
 - [[Ratchet-Pattern]] — Skill 是 Ratchet 累積的高層形式（把「應該怎麼做」固化）
 - [[Addy-Osmani]] — 提出「10 個職責清楚的工具勝過 50 個功能重疊」原則
 - [[src-addy-osmani-harness-engineering]] — Harness 七元件視角下的 Skills 定位
+- [[Prompt-Pack-Pattern]] — 與 Skill 對照的另一種重用範式（人類控制節奏 vs Agent 自動觸發）

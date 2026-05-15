@@ -1,10 +1,10 @@
 ---
 title: DESIGN.md
 type: concept
-sources: [designmd-革命一個純文字檔案讓-ai-coding-agent-秒生成-stripelinear-等級的-ui.md, oh-my-design-design-system-generator.md, github-voltagentawesome-design-md-a-collection-of-designmd-files-inspired-by-popular-brand-design-systems-drop-one-into-your-project-and-let-coding-agents-generate-a-matching-ui-github.md, "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md"]
+sources: [designmd-革命一個純文字檔案讓-ai-coding-agent-秒生成-stripelinear-等級的-ui.md, oh-my-design-design-system-generator.md, github-voltagentawesome-design-md-a-collection-of-designmd-files-inspired-by-popular-brand-design-systems-drop-one-into-your-project-and-let-coding-agents-generate-a-matching-ui-github.md, "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md", "課後 Prompt & 資源懶人包：Codex × HyperFrames 30 秒 Demo 3615edfc91bd80d19acee2ae9f0c5547.md"]
 created: 2026-04-16
-updated: 2026-05-14
-tags: [設計系統, AI工具, UI, Markdown]
+updated: 2026-05-15
+tags: [設計系統, AI工具, UI, Markdown, video]
 confidence: 強
 ---
 
@@ -60,3 +60,17 @@ Claude Code、Cursor、Gemini CLI、GitHub Copilot、Windsurf
 - [[src-claude-code-context-management]] — Claude Code 讀取 DESIGN.md 時的上下文策略
 - [[src-aapd-claude-design-figma-workflow]] — 「邊走邊建規則」流派的代表來源
 - [[src-akiraxclaw-app-flow-trick]] — 同類設計：App Flow JSON 是「系統地圖」型的 AI 可讀規範檔（DESIGN.md 是「視覺規範」型）
+
+## 應用領域擴張：從 UI 到短影片
+
+DESIGN.md 原本針對 UI 設計，但 [[src-codex-hyperframes-prompt-pack]] 把它擴展到**短影片領域**——「Style Prompt / Colors 5-8 token / Typography / Shapes And Layout / Motion Principles / What Not To Do（至少 6 條）」這個 schema 對影片同樣適用：
+
+| DESIGN.md 欄位 | UI 領域 | 短影片領域（[[HyperFrames]]）|
+|---|---|---|
+| Colors | 背景 / 主文字 / 重點色 | 同左 + accent 用在 active state / CTA / 游標 |
+| Typography | 標題 / 內文 / UI label | 主字幕 / 副字幕 / UI label（手機可讀為主）|
+| Shapes And Layout | 卡片 / 按鈕 / 容器 | 安全區 / 卡片 / 工具介面 / **9:16 比例** |
+| Motion Principles | 動畫速度 / easing | 同左 + 互動節奏 / 轉場原則 |
+| What Not To Do | 跑版 / 風格失控規則 | 同左 + 避免霓虹 / 粒子 / 厚重科技感 |
+
+這證實 DESIGN.md 是「**AI 可讀的視覺規範**」的領域中性 schema——任何「需要 AI 生成視覺輸出」的任務都適用。

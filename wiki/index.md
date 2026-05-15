@@ -8,6 +8,15 @@ title: 索引
 
 ## 最近新增
 
+### 2026-05-15（下午追加）
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-codex-hyperframes-prompt-pack\|Codex × HyperFrames 30 秒 Demo Prompt Pack]] | 公開課程課後資料：用 OpenAI Codex CLI + HyperFrames 製作 30 秒短影片的 7-prompt 鏈 + 12 Visual Beats + Fix Prompts |
+| [[HyperFrames]] | Code-first 短影片框架（HTML+CSS+GSAP timeline → MP4）；本知識庫第一個影片生成工具 |
+| [[OpenAI-Codex-CLI]] | OpenAI 推出的 agentic CLI，[[Claude Code]] 對照產品；含 `codex adversarial-review` |
+| [[Prompt-Pack-Pattern]] | 多段 prompt 串成完整工作流的設計模式；與 Agent Skills 形成「人類控制節奏 vs Agent 自動觸發」對照 |
+
 ### 2026-05-15
 
 | 頁面 | 摘要 |
@@ -191,6 +200,7 @@ title: 索引
 | [[src-hermes-agent-99-cases\|Hermes Agent 99 個成功案例]] | Gas Khuang 整理；13 分類 + 跨平台訊息 + 自我改進 + Skill Factory | 1 |
 | [[src-addy-osmani-harness-engineering\|Addy Osmani Harness Engineering]] | Google 視角的 Harness 七元件 + Ratchet + Context Rot + HaaS（FB 中文整理）| 1 |
 | [[src-akiraxclaw-app-flow-trick\|App Flow HTML+JSON 雙輸出技巧]] | Dave Jeffery 推文整理：給人看的 HTML + 給 AI 看的 JSON 作為記憶外掛 | 2 |
+| [[src-codex-hyperframes-prompt-pack\|Codex × HyperFrames 30 秒 Demo Prompt Pack]] | 7-prompt 鏈 + 12 Visual Beats + Fix Prompts + 3 範例專案 | 1 |
 
 ## 實體
 
@@ -224,6 +234,8 @@ title: 索引
 | [[Hermes-Agent]] | Nous Research 出品的開源 agent 框架，跨平台 + 自我改進，OpenClaw 遷移目標 | 1 |
 | [[Gas-Khuang]] | Hermes 99 案例網站整理者 | 1 |
 | [[Addy-Osmani]] | Google Cloud AI 總監；Harness 七元件分解 + Ratchet 機制 + HaaS 趨勢 | 1 |
+| [[HyperFrames]] | Code-first 短影片框架（HTML+CSS+GSAP+timeline）；本知識庫第一個影片生成工具 | 1 |
+| [[OpenAI-Codex-CLI]] | OpenAI agentic CLI；AGENTS.md / `codex adversarial-review` 等特色 | 2 |
 
 ## 概念
 
@@ -241,13 +253,13 @@ title: 索引
 | [[MCP]] | Anthropic 推出的開放協議，AI 連外部工具的「USB」標準；含工具描述安全議題 | 8 |
 | [[GEO]] | Generative Engine Optimization / Agent-Ready 網站，SEO 的 AI 時代延伸 | 2 |
 | [[顧客終身價值]] | CLV，衡量顧客經營成效的核心指標 | 1 |
-| [[DESIGN-md\|DESIGN.md]] | 純 Markdown 設計系統規範，讓 AI coding agent 生成風格一致的 UI | 5 |
+| [[DESIGN-md\|DESIGN.md]] | 純 Markdown 設計系統規範，讓 AI coding agent 生成風格一致的 UI / 短影片 | 6 |
 | [[Managed-Agents\|Claude Managed Agents]] | Anthropic 託管 agent 服務，session/harness/sandbox 三層架構 | 3 |
 | [[Meta-Harness]] | 為「尚未想出的程式」設計的 agent 架構模式 | 3 |
 | [[Harness-Engineering\|Harness Engineering]] | AI 代理環境設計範式：約束 + 上下文 + 熵管理；含 OpenAI 三支柱與 Google Addy 七元件兩視角 | 2 |
 | [[WordPress-接手檢查SOP]] | 接手 WordPress 網站的六步檢查流程，辨識「前人的遺產」 | 1 |
-| [[Vibe-Coding]] | 自然語言直接驅動 LLM 生成程式碼的開發範式（演化光譜第 2 階段） | 1 |
-| [[Agentic-AI-Workflow]] | 同心圓迭代範式，含 Design to Code / Code to Design 雙向流動 | 2 |
+| [[Vibe-Coding]] | 自然語言直接驅動 LLM 生成程式碼／影片的開發範式（演化光譜第 2 階段） | 2 |
+| [[Agentic-AI-Workflow]] | 同心圓迭代範式，含 Design to Code / Code to Design 雙向流動 + 短影片產製鏈 | 3 |
 | [[Self-Improving-Agent]] | 自我改進代理範式：MEMORY.md + Skill Factory + 偏好學習，Hermes 是代表實作 | 2 |
 | [[Ratchet-Pattern]] | 每次錯誤編碼成永久規則的設計模式；CLAUDE.md / hook / reviewer subagent 三層編碼 | 2 |
 | [[MEMORY-md\|MEMORY.md]] | AI Agent 跨 session 持久記憶層；與 CLAUDE.md 形成「AI 寫 vs 人類寫」對；Claude Code / Hermes 雙實作 | 3 |
@@ -257,6 +269,7 @@ title: 索引
 | [[Hybrid-XSS-Defense]] | 雙層 stored XSS 防護（escape variables at substitution + sanitize at storage）| - |
 | [[Fields-Without-Enforcement-Anti-Pattern]] | 反模式：schema 有欄位、邏輯不檢查；含 silent backdoor 變體與時序狀態變體 | - |
 | [[Verify-Framework-Version-First]] | 新專案第一件事驗 lockfile 版本；ratchet pattern 的具體應用 | - |
+| [[Prompt-Pack-Pattern]] | 多段 prompt 串成完整工作流的設計模式；與 Agent Skills 形成「人類控制節奏 vs Agent 自動觸發」對照 | 1 |
 
 ## 綜整與分析
 

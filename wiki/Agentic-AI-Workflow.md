@@ -1,10 +1,10 @@
 ---
 title: Agentic AI Workflow
 type: concept
-sources: ["(5) Will AI Kill SaaS系列：... - Yu-Chih Edward Hwang.md", "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md"]
+sources: ["(5) Will AI Kill SaaS系列：... - Yu-Chih Edward Hwang.md", "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md", "課後 Prompt & 資源懶人包：Codex × HyperFrames 30 秒 Demo 3615edfc91bd80d19acee2ae9f0c5547.md"]
 created: 2026-04-28
-updated: 2026-05-14
-tags: [ai-coding, agent, development-paradigm, design-to-code, code-to-design]
+updated: 2026-05-15
+tags: [ai-coding, agent, development-paradigm, design-to-code, code-to-design, video]
 confidence: 強
 ---
 
@@ -83,3 +83,4 @@ Agentic AI Workflow（代理式工作流）是 AI 開發路徑演化的第四階
 - [[Claude Code]]：具備 Agent 能力的編程助手
 - [[NotebookLM]] / [[notebooklm-py]]：把 NotebookLM 的閉合 RAG 包成 Agent 可呼叫的 skill，是 Agentic Workflow 的子模組
 - **Simon 工作流**（[[src-aapd-claude-design-figma-workflow]]）：[[Claude-Design]] → Hand off → [[Claude Code]] → [[Figma]] [[MCP]] 雙向同步的具體實作鏈，代表「同心圓迭代」的當前最佳實踐
+- **Codex × HyperFrames 影片工作流**（[[src-codex-hyperframes-prompt-pack]]）：[[OpenAI-Codex-CLI]] + [[Prompt-Pack-Pattern]] 7 個串連 prompt → DESIGN.md / script.md / storyboard.md → HTML composition → MP4。把 Agentic Workflow 從 code 領域延伸到**短影片產製**
