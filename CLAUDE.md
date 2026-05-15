@@ -37,6 +37,24 @@
 - 專有名詞首次出現時附註原文，後續可省略
 - index.md 各分類使用表格格式，欄位為「頁面」、「摘要」、「來源數」
 
+## 公開度與資安（從失敗中累積）
+
+本知識庫是 GitHub **public repo**，push 後即成公開記錄（即使有 noindex/nofollow 也只擋搜尋引擎，擋不了 GitHub clone / search / API）。
+
+- **客戶案件 retro / 學習不直接進 wiki/**：原始 retro 含客戶識別、admin URL、schema、版本快照、商業措辭 → 一律不入 git
+- **要公開必須先漂白**：抽出純 pattern / 反模式 / 工作流，移除以下識別資訊後才可入 wiki：
+  - 客戶名稱（含暱稱、領域標記、可被反查的描述）
+  - admin URL / 路由前綴 / 內部 API endpoint
+  - 具體 model / table / schema 名稱（改用 generic 代稱：`Coupon`、`Batch`、`User`）
+  - 精確版本快照（lockfile 級的 patch 版本）
+  - phase 編號 / commit / test / 時程數字
+  - 商業措辭（簽約狀態、報價、客戶評論、跟業主的關係描述）
+- **commit 前自查**：`grep` wiki/*.md 掃敏感詞清單（客戶名、URL、schema 名等），確認 0 命中才 push
+- **連描述都要去識別**：log.md 或 commit message 描述「漂白移除了什麼」時不要列出具體敏感詞——「移除客戶名」而不是「移除『XX 王國』」
+- **要保留具體 case 細節** → private repo（如 `client-case-learnings`）或本地不入版控目錄
+
+對應 [[Ratchet-Pattern]]：每次失敗編碼成永久規則。本規則來自 2026-05-15 的一次實際事件（force push 撤回）。
+
 ## 素材投遞（Inbox 機制）
 本專案不放在 iCloud（避免 .git 損毀、node_modules 同步衝突），但有獨立的 iCloud Obsidian vault 作為手機投遞口：
 
