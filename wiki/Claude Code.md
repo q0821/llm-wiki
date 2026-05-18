@@ -76,6 +76,7 @@ Skills 是封裝化工作流範本，`/<name>` 觸發。比 prompt 優勢：流�
 |---|---|---|
 | **Claude Code** | Anthropic | 本頁主題；CLAUDE.md / Skills / Memory 三大機制最完整 |
 | [[OpenAI-Codex-CLI]] | OpenAI | `AGENTS.md` 規範檔；harness 設計參考 [[Harness-Engineering]]；含 `codex adversarial-review` 對抗式 review CLI |
+| [[OpenCode]] | 開源（社群）| **伺服器優先 SDK**；Cloudflare 提交 45+ PR；可程式化包裝（[[src-cloudflare-ai-code-review|case]]）|
 | Gemini CLI | Google | 整合 [[NotebookLM]] 等 Google 生態 |
 | Cursor | Anysphere | 編輯器級而非 CLI；用 `.cursorrules` |
 

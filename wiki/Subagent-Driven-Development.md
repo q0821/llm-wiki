@@ -1,10 +1,10 @@
 ---
 title: Subagent-Driven Development（多 subagent 兩階段審查工作流）
 type: concept
-sources: []
+sources: ["cloudflare-ai-code-review.md"]
 created: 2026-05-15
-updated: 2026-05-15
-tags: [agentic-ai-workflow, subagent, code-review, tdd, anti-pattern-prevention]
+updated: 2026-05-18
+tags: [agentic-ai-workflow, subagent, code-review, tdd, anti-pattern-prevention, cloudflare, production]
 confidence: 強
 ---
 
@@ -96,6 +96,38 @@ Final Reviewer（整 branch ready to merge）
 Merge + Push
 ```
 
+## Production 對照：[[Cloudflare]] AI Code Review
+
+[[src-cloudflare-ai-code-review]] 是該範式的 **production-grade 標本**——同 pattern 從個人實作擴大到 **131,246 次審查 / 5,169 repo / $0.98 中位數**規模。
+
+### 關鍵工程細節
+
+| Cloudflare 工程設計 | 解決什麼 |
+|---|---|
+| **`spawn_reviewers` tool**（最多 7 並行） | 協調者 LLM 透過 tool call 動態啟動子 session |
+| **`shared-mr-context.txt` 共用脈絡檔** | 寫磁碟、子 reviewer 讀檔 → 避免 token 成本 ×7 |
+| **`session.idle` 事件 + 3 秒輪詢備援** | 判斷 LLM 工作階段「完成」很棘手 |
+| **三層 timeout**（task 5min / 整體 25min / 重試預算 2min）| 避免 hang 拖垮整個審查 |
+| **斷路器 + 故障回退鏈** | `opus-4-7 → opus-4-6` 應對 provider 中斷與限速 |
+| **提示詞注入防範** | 完全濾除使用者控制的邊界標籤（`mr_input` / `mr_comments` 等） |
+| **`reason: "length"` 自動重試** | `step_finish` 帶這個 reason 表示達 max_tokens |
+| **心跳記錄**（30 秒一次「模型正在思考……」）| 解決使用者誤認為卡住的 UX 問題 |
+| **break glass 緊急出口** | 人工 reviewer 留評論可強制核准（30 天 0.6%） |
+
+### 與個人實作版的差異
+
+| 維度 | 個人實作 | Cloudflare production |
+|---|---|---|
+| 規模 | 13 task 樣本 | 130K+ 次 |
+| Subagent 數量 | 3 個（implementer + 2 reviewer） | 7 個（協調者 + 6 領域專精） |
+| Reviewer 分工 | spec / code-quality | 安全 / 效能 / 品質 / 文件 / 合規 / 發布 / [[AGENTS-md\|AGENTS.md]] |
+| Subagent 啟動 | 人類手動 dispatch | `spawn_reviewers` tool 由 LLM 自動 |
+| Context 處理 | inline 帶 plan 全文 | 共用脈絡檔卸載到磁碟 |
+| 容錯 | 失敗 → 人工 fallback | 斷路器 + 故障回退鏈 + 增量 retry |
+| 模型分配 | 全程同一個 | 三層分配（Opus / Sonnet / Kimi）+ trivial 層降級 |
+
+兩者**範式同源**，差別在規模對應的工程嚴謹度。
+
 ## 連結
 
 - 上位範式：[[Agentic-AI-Workflow]]、[[Claude Code]]
@@ -103,3 +135,4 @@ Merge + Push
 - 反模式防護：[[AI-Quality-Collusion]]（AI 同時寫 code + test 的隱形共謀）
 - 規格依賴：[[Specification-by-Example]]（plan / spec 的具體性決定 reviewer 能不能驗）
 - 規則固化：[[Ratchet-Pattern]]（每次 reviewer 抓到的反模式應該編成永久規則）
+- Production 標本：[[src-cloudflare-ai-code-review]] / [[OpenCode]]

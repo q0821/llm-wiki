@@ -64,8 +64,10 @@ Codex CLI 是 OpenAI [[Harness-Engineering]] 的「**工程紀律**」面向的�
 ## 相關實體
 
 - [[Claude Code]] — 同類產品（Anthropic 對應方）
+- [[OpenCode]] — 開源 agentic CLI 同類；[[Cloudflare]] 系統用 `@opencode-reviewer/codex` 外掛整合 Codex 做合規檢查
 - [[HyperFrames]] — Codex CLI 的領域應用代表（短影片生成）
 - [[Hermes-Agent]] — 開源 agent 框架，可與 Codex CLI 互通
+- [[Cloudflare]] — Codex CLI 在 Cloudflare AI code review 系統中扮演合規檢查角色
 
 ## 相關概念
 

@@ -91,6 +91,7 @@ confidence: 中
 |---|---|---|---|
 | **Hermes Agent** | CLI + 多訊息平台 | 自我改進、社群 Skill、跨模型 | 本頁主題 |
 | [[Claude Code]] | CLI（terminal） | CLAUDE.md / Skills / Memory；Anthropic 親生 | **互補**——「跨代理統一記憶」case：Hermes + Claude Code + Cursor 共用記憶層 |
+| [[OpenCode]] | CLI + SDK（伺服器優先） | 開源、可程式化包裝；[[Cloudflare]] 在其上建 production AI code review | **企業基礎建設路線** vs Hermes 的「SMB / 個人」路線；同為開源但定位不同 |
 | [[Managed-Agents]] | Anthropic 雲端 | session / harness / sandbox 三層 | 對比：商業託管 vs 開源自架 |
 | [[OpenClaw]] | Telegram/Discord/Slack | 較早的開源 agent 框架 | **被替代**——多個 case 提到「從 OpenClaw 換到 Hermes，再也不回頭」，有完整遷移手冊（Shadow Mode 並行測試） |
 

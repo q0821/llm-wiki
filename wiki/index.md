@@ -8,6 +8,14 @@ title: 索引
 
 ## 最近新增
 
+### 2026-05-18
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-cloudflare-ai-code-review\|Cloudflare 大規模協同運作 AI 程式碼審查]] | OpenCode + 7 subagent + 斷路器 + Risk Tier；130K 次審查 / $0.98 中位數 / 1200 億 tokens production 數據 |
+| [[OpenCode]] | 開源伺服器優先 agentic CLI；Cloudflare 提交 45+ PR；本知識庫 agentic CLI 地圖缺角 |
+| [[AGENTS-md\|AGENTS.md]] | 與 CLAUDE.md 平行對照的規範檔；Cloudflare 設專門審查者監控更新時機 |
+
 ### 2026-05-15（下午追加）
 
 | 頁面 | 摘要 |
@@ -201,6 +209,7 @@ title: 索引
 | [[src-addy-osmani-harness-engineering\|Addy Osmani Harness Engineering]] | Google 視角的 Harness 七元件 + Ratchet + Context Rot + HaaS（FB 中文整理）| 1 |
 | [[src-akiraxclaw-app-flow-trick\|App Flow HTML+JSON 雙輸出技巧]] | Dave Jeffery 推文整理：給人看的 HTML + 給 AI 看的 JSON 作為記憶外掛 | 2 |
 | [[src-codex-hyperframes-prompt-pack\|Codex × HyperFrames 30 秒 Demo Prompt Pack]] | 7-prompt 鏈 + 12 Visual Beats + Fix Prompts + 3 範例專案 | 1 |
+| [[src-cloudflare-ai-code-review\|Cloudflare AI Code Review 系統]] | Production-grade case study：OpenCode + 7 subagent + Risk Tier + Circuit Breaker；130K 次 / $0.98 中位數 | 1 |
 
 ## 實體
 
@@ -208,7 +217,7 @@ title: 索引
 |------|------|--------|
 | [[攝影工作室A]] | 攝影工作室客戶，商業攝影網站優化中 | 1 |
 | [[OKX]] | 加密貨幣交易所，使用雙幣贏產品 | 1 |
-| [[Cloudflare]] | 雲端平台，免費方案可部署 RAG 系統 | 1 |
+| [[Cloudflare]] | 雲端平台 + AI agent 標準推手 + 內部 AI 工程文化（AI code review production case）| 3 |
 | [[Asgard-AI-Platform\|Asgard AI Platform]] | AI 平台，以 Skills + MCP 組合打造場景化 agent 外掛 | 1 |
 | [[OpenClaw]] | AI Agent 框架，支援 Telegram/Discord/Slack，RAG MVP 使用；2026 起被 Hermes 取代趨勢 | 2 |
 | [[NotebookLM]] | Google 免費閉合式 RAG 工具，Gemini 模型，可生成圖表/podcast | 1 |
@@ -236,6 +245,7 @@ title: 索引
 | [[Addy-Osmani]] | Google Cloud AI 總監；Harness 七元件分解 + Ratchet 機制 + HaaS 趨勢 | 1 |
 | [[HyperFrames]] | Code-first 短影片框架（HTML+CSS+GSAP+timeline）；本知識庫第一個影片生成工具 | 1 |
 | [[OpenAI-Codex-CLI]] | OpenAI agentic CLI；AGENTS.md / `codex adversarial-review` 等特色 | 2 |
+| [[OpenCode]] | 開源伺服器優先 agentic CLI；Cloudflare AI code review 系統底層 | 1 |
 
 ## 概念
 
@@ -250,26 +260,27 @@ title: 索引
 | [[CLAUDE-md\|CLAUDE.md]] | Claude Code 持久記憶層，兼任 LLM Wiki schema 規範；Ratchet 編碼主要載體 | 4 |
 | [[AI-Quality-Collusion]] | AI 同時生成 code 與 test 的隱形共謀反模式 | 2 |
 | [[Specification-by-Example\|SBE]] | 以具體範例凍結需求，AI 品質共謀的結構性對策之一 | 1 |
-| [[MCP]] | Anthropic 推出的開放協議，AI 連外部工具的「USB」標準；含工具描述安全議題 | 8 |
+| [[MCP]] | Anthropic 推出的開放協議，AI 連外部工具的「USB」標準；含工具描述安全議題 | 9 |
 | [[GEO]] | Generative Engine Optimization / Agent-Ready 網站，SEO 的 AI 時代延伸 | 2 |
 | [[顧客終身價值]] | CLV，衡量顧客經營成效的核心指標 | 1 |
 | [[DESIGN-md\|DESIGN.md]] | 純 Markdown 設計系統規範，讓 AI coding agent 生成風格一致的 UI / 短影片 | 6 |
 | [[Managed-Agents\|Claude Managed Agents]] | Anthropic 託管 agent 服務，session/harness/sandbox 三層架構 | 3 |
 | [[Meta-Harness]] | 為「尚未想出的程式」設計的 agent 架構模式 | 3 |
-| [[Harness-Engineering\|Harness Engineering]] | AI 代理環境設計範式：約束 + 上下文 + 熵管理；含 OpenAI 三支柱與 Google Addy 七元件兩視角 | 2 |
+| [[Harness-Engineering\|Harness Engineering]] | AI 代理環境設計範式：約束 + 上下文 + 熵管理；含 OpenAI 三支柱、Google Addy 七元件、Cloudflare production-grade 標本 + Circuit Breaker for AI | 3 |
 | [[WordPress-接手檢查SOP]] | 接手 WordPress 網站的六步檢查流程，辨識「前人的遺產」 | 1 |
 | [[Vibe-Coding]] | 自然語言直接驅動 LLM 生成程式碼／影片的開發範式（演化光譜第 2 階段） | 2 |
 | [[Agentic-AI-Workflow]] | 同心圓迭代範式，含 Design to Code / Code to Design 雙向流動 + 短影片產製鏈 | 3 |
 | [[Self-Improving-Agent]] | 自我改進代理範式：MEMORY.md + Skill Factory + 偏好學習，Hermes 是代表實作 | 2 |
 | [[Ratchet-Pattern]] | 每次錯誤編碼成永久規則的設計模式；CLAUDE.md / hook / reviewer subagent 三層編碼 | 2 |
 | [[MEMORY-md\|MEMORY.md]] | AI Agent 跨 session 持久記憶層；與 CLAUDE.md 形成「AI 寫 vs 人類寫」對；Claude Code / Hermes 雙實作 | 3 |
-| [[Context-Rot]] | 上下文衰損；compaction / offloading / progressive disclosure 三招；Claude Code 五招（rewind / clear / compact / subagent / continue）| 2 |
-| [[Subagent-Driven-Development]] | Implementer + spec reviewer + code quality reviewer 兩階段獨立審查的 agentic workflow | - |
-| [[Adversarial-Code-Review]] | 對抗式 AI review，抓 human review 看不見的跨檔組合 bug；OWASP focus 為常見起點 | - |
+| [[Context-Rot]] | 上下文衰損；compaction / offloading / progressive disclosure 三招；Claude Code 五招（rewind / clear / compact / subagent / continue）；Cloudflare 共用脈絡檔 production 案例 | 3 |
+| [[Subagent-Driven-Development]] | Implementer + spec reviewer + code quality reviewer 兩階段獨立審查的 agentic workflow；含 Cloudflare 130K production 對照 | 1 |
+| [[Adversarial-Code-Review]] | 對抗式 AI review，抓 human review 看不見的跨檔組合 bug；OWASP focus 為常見起點；含 Risk Tier 分配 | 1 |
 | [[Hybrid-XSS-Defense]] | 雙層 stored XSS 防護（escape variables at substitution + sanitize at storage）| - |
 | [[Fields-Without-Enforcement-Anti-Pattern]] | 反模式：schema 有欄位、邏輯不檢查；含 silent backdoor 變體與時序狀態變體 | - |
 | [[Verify-Framework-Version-First]] | 新專案第一件事驗 lockfile 版本；ratchet pattern 的具體應用 | - |
 | [[Prompt-Pack-Pattern]] | 多段 prompt 串成完整工作流的設計模式；與 Agent Skills 形成「人類控制節奏 vs Agent 自動觸發」對照 | 1 |
+| [[AGENTS-md\|AGENTS.md]] | OpenAI Codex / OpenCode 等 agentic CLI 的規範檔；與 CLAUDE.md 平行對照 | 2 |
 
 ## 綜整與分析
 

@@ -112,7 +112,7 @@ confidence: 強
 |---|---|---|---|
 | **CLAUDE.md** | [[Claude Code]] | AI 助理規範 | 行為規範（怎麼做事）|
 | [[DESIGN-md\|DESIGN.md]] | AI Coding Agent（多家） | UI 設計系統規範 | 行為規範（視覺風格）|
-| `AGENTS.md` | OpenAI Codex / 其他 agentic CLI | 任務代理人規範 | 行為規範 |
+| [[AGENTS-md\|AGENTS.md]] | [[OpenAI-Codex-CLI]] / [[OpenCode]] / 其他 agentic CLI | 任務代理人規範 | 行為規範（CLAUDE.md 平行對照組） |
 | `.cursorrules` | Cursor | 編輯器級規範 | 行為規範 |
 | **App Flow JSON** | AI coding agent（[[src-akiraxclaw-app-flow-trick]]）| 系統核心流程結構化描述 | **系統地圖（系統長什麼樣）** |
 

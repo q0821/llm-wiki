@@ -89,6 +89,22 @@ Filesystem 不只是儲存，也是 context rot 的解藥。
 
 > 同一個 agent 既當考生又當考官，會有正面偏差；同一個 agent 既要做事又要記住所有歷史，context rot 必定發生。
 
+## Production 案例：[[Cloudflare]] AI Code Review 的工程處理
+
+[[src-cloudflare-ai-code-review]] 對 context rot 採取**三層防護**：
+
+| 招式 | 具體做法 |
+|---|---|
+| **Tool-call offloading** | 不在 prompt 嵌入完整 diff，將各檔案 patch 寫入 `diff_directory` 並傳路徑；子 reviewer 只讀與其領域相關的 patch |
+| **共用脈絡檔** | 提取 `shared-mr-context.txt` 寫磁碟，子 reviewer 讀檔而非各自 prompt 嵌入——**避免 token 成本增加 7 倍** |
+| **預估警告** | 協調者的提示詞超過預估脈絡視窗 **50% 時自動警告** |
+
+這幾招把「七個 subagent 並行」這種理論上會 7×token 的設計，壓回近乎 1×（透過共用脈絡檔），加上 **85.7% cache hit rate** 進一步降成本。
+
+---
+
+> 「藉由共用脈絡節省 token——避免 token 成本增加七倍。」 — [[Cloudflare]] AI code review 系統
+
 ## 信心評估
 
 - **強**：核心定義與三招對抗策略 — 兩個獨立來源（Addy Osmani / Claude Code 上下文管理）同源描述

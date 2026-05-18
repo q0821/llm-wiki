@@ -180,4 +180,5 @@ Anthropic 推出的**開放協議標準**，定義 AI 模型如何與外部工�
 - [[Hermes-Agent]] — `hermes mcp serve` 把 agent 包成 MCP server 的代表
 - [[Harness-Engineering]] — MCP 是七元件中「Tools / 工具箱」的代表
 - [[Addy-Osmani]] — 提出 MCP 工具描述安全議題
-- [[src-papaya-gemma-lm-studio]] / [[src-browseforge]] / [[src-anthropic-managed-agents-engineering]] / [[src-techhanlin-llm-wiki-tutorial]] / [[src-welly-seo-2026-04]] / [[src-aapd-claude-design-figma-workflow]] / [[src-hermes-agent-99-cases]] / [[src-addy-osmani-harness-engineering]] — 提及 MCP 的來源
+- [[Cloudflare]] — `@opencode-reviewer/gitlab` 外掛中的「MCP 評論伺服器」與 GitLab MR 整合（[[src-cloudflare-ai-code-review]]）
+- [[src-papaya-gemma-lm-studio]] / [[src-browseforge]] / [[src-anthropic-managed-agents-engineering]] / [[src-techhanlin-llm-wiki-tutorial]] / [[src-welly-seo-2026-04]] / [[src-aapd-claude-design-figma-workflow]] / [[src-hermes-agent-99-cases]] / [[src-addy-osmani-harness-engineering]] / [[src-cloudflare-ai-code-review]] — 提及 MCP 的來源

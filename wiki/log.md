@@ -654,3 +654,36 @@
 - 探討 HyperFrames 與 Remotion（React-based 影片框架）的關係——同類設計哲學
 - 課程簡報 `paddy19981205.github.io/FLPDF` 可考慮另外 ingest
 - 範例 3 中「ChatGPT 生圖 + Gemini 生影片 + HyperFrames 剪 Reels」的多 AI 串接工作流值得另外抽出 pattern
+
+## [2026-05-18] ingest | Cloudflare 大規模協同運作 AI 程式碼審查
+- 來源：https://blog.cloudflare.com/zh-tw/ai-code-review/（Ryan Skidmore，2026-04-20，Cloudflare Agents Week）
+- 擷取：`fetch-url.sh` markdown.new 超時 60 秒失敗 → 改用 WebFetch 成功（公開技術部落格無會員牆）
+- 本知識庫第一個跨 5+ 既有概念頁的 production 標本——把 [[Adversarial-Code-Review]]、[[Subagent-Driven-Development]]、[[Harness-Engineering]] 等概念接上實際 production 數據（131K 次審查 / 5169 repo / $0.98 中位數 / 1200 億 tokens / 85.7% cache hit）
+- 通過 CLAUDE.md「公開度與資安」grep 自查（純公開技術內容）
+
+### 影響頁面
+- 新建：[[src-cloudflare-ai-code-review]], [[OpenCode]], [[AGENTS-md]]
+- 更新：
+  - [[Cloudflare]]（擴張第三面向「內部 AI 工程文化」+ AI code review 系統段落）
+  - [[Adversarial-Code-Review]]（補 Risk Tier 分配 + Cloudflare production 數據 + prompt 設計實例）
+  - [[Subagent-Driven-Development]]（補「Production 對照」段落：spawn_reviewers / shared context / 三層 timeout / 斷路器 / 提示詞注入防範 / 心跳記錄 / break glass）
+  - [[Harness-Engineering]]（補「Circuit Breaker for AI」段落含 Netflix Hystrix 啟發、故障回退鏈、錯誤分類、協調者層獨立故障回退；跨工程文化對照表加 Cloudflare 一行）
+  - [[CLAUDE-md]]（AGENTS.md 條目從純文字升級為 wikilink）
+  - [[Claude Code]]（agentic CLI 對照表加 OpenCode）
+  - [[OpenAI-Codex-CLI]]（補與 OpenCode 整合：`@opencode-reviewer/codex`）
+  - [[Hermes-Agent]]（agent 工具對比表加 OpenCode，「企業基礎建設 vs SMB」對照）
+  - [[Context-Rot]]（補 Cloudflare production 三層防護案例：tool-call offloading + 共用脈絡檔 + 50% 警告）
+  - [[MCP]]（補 Cloudflare MCP 評論伺服器與 GitLab 整合）
+- 更新 index.md（最近新增追加 2026-05-18 區塊 + 來源/實體/概念條目 + 來源數調整）
+
+### 形成的新對話組
+- [[src-cloudflare-ai-code-review]] ↔ [[Subagent-Driven-Development]] / [[Adversarial-Code-Review]] 兩個漂白後 concept：個人實作累積 vs Cloudflare 130K production，數量級不同但 pattern 同源
+- [[OpenCode]] 補齊本知識庫 agentic CLI 地圖：[[Claude Code]] / [[OpenAI-Codex-CLI]] / [[OpenCode]] / [[Hermes-Agent]] 四強
+- [[AGENTS-md]] ↔ [[CLAUDE-md]] 平行對照組終於完整成形
+- Netflix Hystrix「Circuit Breaker」從微服務延伸到 AI 模型呼叫——產業共識正在形成
+
+### 待後續處理
+- Cloudflare 內部 AI 工程堆棧（文中連結 `internal-ai-engineering-stack`）可獨立 ingest
+- Agents Week 其他發布
+- OpenCode 官方 GitHub repo / 文件可獨立 ingest 補強 entity 頁
+- fetch-url.sh markdown.new API 卡 60 秒問題——若反覆出現可考慮加 WebFetch fallback 機制

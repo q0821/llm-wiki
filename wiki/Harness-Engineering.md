@@ -1,10 +1,10 @@
 ---
 title: Harness Engineering（駕馭工程）
 type: concept
-sources: [Harness Engineering（AI駕馭工程）入門篇：OpenAI最新編程標準，教你輕鬆做到Lv.1.md, "未命名.md"]
+sources: [Harness Engineering（AI駕馭工程）入門篇：OpenAI最新編程標準，教你輕鬆做到Lv.1.md, "未命名.md", "cloudflare-ai-code-review.md"]
 created: 2026-04-21
-updated: 2026-05-14
-tags: [AI, Agent, 軟體工程, 架構設計, harness, ratchet]
+updated: 2026-05-18
+tags: [AI, Agent, 軟體工程, 架構設計, harness, ratchet, circuit-breaker, production]
 confidence: 強
 ---
 
@@ -144,6 +144,46 @@ Typecheck 通過 → agent 不需要看到任何東西；Typecheck 失敗 → �
 
 代表：harness 不是靜態設定檔，而是會跟模型一起演化的 living system。模型會 overfit 到 harness 設計者重視的動作（filesystem ops、bash、subagent dispatch）。
 
+## Circuit Breaker for AI（[[src-cloudflare-ai-code-review|Cloudflare production]]）
+
+把 Netflix Hystrix 的 **斷路器模式** 從微服務延伸到 AI 模型呼叫——七元件中 **Orchestration logic** 的 production-grade 補強。
+
+### 模型故障回退鏈
+
+```javascript
+const DEFAULT_FAILBACK_CHAIN = {
+  "opus-4-7":   "opus-4-6",    // Fall back to previous generation
+  "opus-4-6":   null,          // End of chain
+  "sonnet-4-6": "sonnet-4-5",
+  "sonnet-4-5": null,
+};
+```
+
+- 每個模型系列獨立健康狀態追蹤
+- 斷路器「開啟」時，兩分鐘冷卻期後允許**一個探測請求**通過
+- 模型分三層分配工作：頂級（Opus 4.7 / GPT-5.4）給協調者、標準（Sonnet 4.6）給子 reviewer、輕量（Kimi K2.5）給文字密集任務
+
+### 錯誤分類：哪些可故障回退
+
+```javascript
+switch (err.name) {
+  case "APIError":            return { shouldFailback: data.isRetryable };
+  case "ProviderAuthError":   return { shouldFailback: false };
+  case "ContextOverflowError":return { shouldFailback: false };
+  case "MessageAbortedError": return { shouldFailback: false };
+}
+```
+
+**只有可重試 API 錯誤觸發故障回退**——auth / 脈絡溢出 / abort / 結構化輸出錯誤都不會。對應 [[Ratchet-Pattern]] 的「克制原則」：規則只對真正能解決的失敗類型生效。
+
+### 控制平面：Workers KV 5 秒切換
+
+Cloudflare 系統用 [[Cloudflare|Workers KV]] 存模型路由設定，**provider 停用開關可在 5 秒內讓所有執行中 CI 繞過**——比改 code、deploy、重啟更快。
+
+### 協調者層的獨立故障回退
+
+協調者自己也可能掛——掃 stderr「overloaded」「503」模式偵測，熱交換 `opencode.json` 中的協調者模型重試。**故障回退要做兩層**（reviewer 層 + 協調者層），不能假設「掛的只會是 worker」。
+
 ## 概念層次關係
 
 ```
@@ -175,11 +215,13 @@ Agent Engineering     → 代理內部（路由、記憶、工具呼叫）
 | **Google** | [[Addy-Osmani]] | 七元件 + Ratchet + Context Rot + HaaS 趨勢 | [[src-addy-osmani-harness-engineering]] |
 | **LangChain** | Viv Trivedy | 「Agent = Model + Harness」定義 | （引述於 Addy） |
 | **HumanLayer** | — | 「不是模型問題，是設定問題」 | （引述於 Addy） |
+| **Cloudflare** | Ryan Skidmore | **七元件 production-grade 標本** + Circuit Breaker for AI + Risk Tier | [[src-cloudflare-ai-code-review]] |
 
 ## 相關頁面
 
 - [[src-harness-engineering-openai]] — OpenAI 視角來源
 - [[src-addy-osmani-harness-engineering]] — Google Addy Osmani 視角來源
+- [[src-cloudflare-ai-code-review]] — Cloudflare production 標本，含 Circuit Breaker for AI
 - [[Meta-Harness]] — Anthropic 的互補設計哲學
 - [[Managed-Agents]] — Meta-harness / Harness-as-a-Service 的第一個實作
 - [[Agent-Skills]] — Level 1 harness 的具體實踐
@@ -187,4 +229,5 @@ Agent Engineering     → 代理內部（路由、記憶、工具呼叫）
 - [[Ratchet-Pattern]] — Harness 進化機制的核心
 - [[Self-Improving-Agent]] — Ratchet 與 MEMORY.md 形成的另一面範式
 - [[Addy-Osmani]] — Google Cloud AI 總監，七元件分解的提出者
+- [[OpenCode]] — Cloudflare 系統的底層 agentic CLI
 - [[src-claude-code-context-management]] — Claude Code 的 context 管理策略
