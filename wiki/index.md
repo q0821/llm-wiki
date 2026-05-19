@@ -12,6 +12,9 @@ title: 索引
 
 | 頁面 | 摘要 |
 |------|------|
+| [[src-claude-code-in-large-codebases\|Claude Code in Large Codebases — Anthropic 官方 best practices]] | Anthropic 官方版 Harness 7 個 extension points + agentic search vs RAG embedding 官方定位 + 3-6 月 review 維護週期 |
+| [[Plugins-Claude-Code]] | Bundle skills/hooks/MCP 成可安裝套件，managed marketplaces 分發 |
+| [[LSP-Integrations]] | 透過 Language Server Protocol 給 Claude symbol-level precision |
 | [[src-bnext-claude-md-12-rules\|CLAUDE.md 12 條規則 — Forrest Chang 4 條 + Mnimiy 8 條擴充]] | Karpathy 3 缺失 → 12 條 production CLAUDE.md 範本；30 codebase 盲測 41% → 11% → 3% 錯誤率 |
 | [[src-honglong0420-asgard-x-thread\|Asgard Skills 263 個 agent skills 開源推廣（X 推文）]] | @honglong0420 親述視角 + 四件套思維模型（辯證法 / 九宮格 / 精實創業 / 敘事）+ 「啟動成本是瓶頸」核心論點 |
 | [[src-asgard-skills-audit-2026-05-19\|Asgard Skills Repo 本地審計]] | A 結構 / B 安全 / D 抽樣 / E 適用性四向審計；301 個 skill 校正 + 26 個 `tw-ecom-*` skeleton 警示 + Iron Law 100% 驗證 |
@@ -194,6 +197,7 @@ title: 索引
 | [[src-asgard-skills\|Asgard Skills Repository]] | 開源 301 個 AI agent skills（2026-05-19 審計快照；初版 263 個），涵蓋股票分析、策略、SEO、設計等 | 1 |
 | [[src-honglong0420-asgard-x-thread\|Asgard Skills 開源推廣（X 推文）]] | @honglong0420 親述視角 + 四件套思維模型 skill + 「啟動成本是瓶頸」 | 2 |
 | [[src-asgard-skills-audit-2026-05-19\|Asgard Skills Repo 本地審計（2026-05-19）]] | A 結構 / B 安全 / D 抽樣 / E 適用性四向審計；補強客觀整理與作者親述兩個既有來源 | 0 |
+| [[src-claude-code-in-large-codebases\|Claude Code in Large Codebases — Anthropic 官方]] | 官方 Harness 7 個 extension points + agentic search 定位 + 企業導入 DRI / Agent Manager 模式 | 1 |
 | [[src-customer-diagnostic-50-questions\|50 個顧客自我診斷問題]] | 含 ABC 分級與 CLV 概念 | 1 |
 | [[src-claude-code-context-management\|Claude Code 上下文管理攻略]] | 含 rewind/compact/subagent 策略 | 1 |
 | [[src-design-md-revolution\|DESIGN.md 革命]] | awesome-design-md 專案介紹，AI UI 設計新標準 | 3 |
@@ -243,7 +247,7 @@ title: 索引
 | [[Andrej-Karpathy]] | 前 Tesla AI 總監、OpenAI 共同創辦成員，LLM Wiki 提出者；AI 寫程式 3 缺失觀察是 12 條規則的源頭 | 2 |
 | [[科技翰林院]] | 中文圈 AI 工具實戰部落格，主筆 AI 導演林思翰 Hans | 2 |
 | [[Obsidian]] | Local-first markdown 筆記工具，LLM Wiki 工作流最佳載體 | 2 |
-| [[Claude Code]] | Anthropic 2025 推出的 agentic CLI，本知識庫核心執行 agent | 5 |
+| [[Claude Code]] | Anthropic 2025 推出的 agentic CLI，本知識庫核心執行 agent；含官方 Harness 7 個 extension points | 7 |
 | [[Quartz]] | jackyzha0 的 digital garden SSG，本知識庫的發布層工具 | 2 |
 | [[PAPAYA-電腦教室]] | 中文 YouTube 創作者，AI 教學者地圖中的入門層 | 1 |
 | [[Gemma]] | Google open-weight LLM 系列，本地 AI 代表模型 | 1 |
@@ -266,33 +270,35 @@ title: 索引
 | [[雙幣贏]] | 選擇權賣方策略的零售包裝版，非存款非利息 | 2 |
 | [[RAG]] | 檢索增強生成，讓 AI 根據自有資料回答（含 vs LLM Wiki 對比）| 3 |
 | [[Embedding]] | 向量化，把文字轉成語意向量供搜尋 | 1 |
-| [[Agent-Skills\|Agent Skills]] | AI Agent 可擴充任務能力的技能規範；「啟動成本是瓶頸」核心論點 | 9 |
-| [[LLM-Wiki]] | Karpathy 提出的 wiki 化知識管理範式，本知識庫的方法論基礎；含人類引導 vs 全自動兩條路線對照 | 2 |
+| [[Agent-Skills\|Agent Skills]] | AI Agent 可擴充任務能力的技能規範；「啟動成本是瓶頸」核心論點；Anthropic 官方確認 progressive disclosure 設計 | 10 |
+| [[LLM-Wiki]] | Karpathy 提出的 wiki 化知識管理範式，本知識庫的方法論基礎；含人類引導 vs 全自動 + agentic search vs RAG embedding 官方版對照 | 3 |
 | [[Memex]] | Vannevar Bush 1945 提出，LLM Wiki 的歷史先驅 | 1 |
-| [[CLAUDE-md\|CLAUDE.md]] | Claude Code 持久記憶層，兼任 LLM Wiki schema 規範；Ratchet 編碼主要載體；含 12 條 production 範本 + 30 codebase 盲測數據 | 5 |
+| [[CLAUDE-md\|CLAUDE.md]] | Claude Code 持久記憶層，兼任 LLM Wiki schema 規範；Ratchet 編碼主要載體；含 12 條 production 範本 + Anthropic 官方 3-6 月 review 維護週期 | 6 |
 | [[AI-Quality-Collusion]] | AI 同時生成 code 與 test 的隱形共謀反模式；含 CLAUDE.md Rule 9 個人版對策 | 3 |
 | [[Specification-by-Example\|SBE]] | 以具體範例凍結需求，AI 品質共謀的結構性對策之一 | 1 |
-| [[MCP]] | Anthropic 推出的開放協議，AI 連外部工具的「USB」標準；含工具描述安全議題 | 9 |
+| [[MCP]] | Anthropic 推出的開放協議，AI 連外部工具的「USB」標準；含工具描述安全議題；官方背書 MCP for structured search | 10 |
 | [[GEO]] | Generative Engine Optimization / Agent-Ready 網站，SEO 的 AI 時代延伸 | 2 |
 | [[顧客終身價值]] | CLV，衡量顧客經營成效的核心指標 | 1 |
 | [[DESIGN-md\|DESIGN.md]] | 純 Markdown 設計系統規範，讓 AI coding agent 生成風格一致的 UI / 短影片 | 6 |
 | [[Managed-Agents\|Claude Managed Agents]] | Anthropic 託管 agent 服務，session/harness/sandbox 三層架構 | 3 |
 | [[Meta-Harness]] | 為「尚未想出的程式」設計的 agent 架構模式 | 3 |
-| [[Harness-Engineering\|Harness Engineering]] | AI 代理環境設計範式：約束 + 上下文 + 熵管理；含 OpenAI 三支柱、Google Addy 七元件、Cloudflare production-grade 標本 + Circuit Breaker for AI | 3 |
+| [[Harness-Engineering\|Harness Engineering]] | AI 代理環境設計範式；含 OpenAI 三支柱 / Google Addy 七元件 / Anthropic Claude Code 7 個 extension points / Cloudflare production 四組視角 | 4 |
 | [[WordPress-接手檢查SOP]] | 接手 WordPress 網站的六步檢查流程，辨識「前人的遺產」 | 1 |
 | [[Vibe-Coding]] | 自然語言直接驅動 LLM 生成程式碼／影片的開發範式（演化光譜第 2 階段） | 2 |
 | [[Agentic-AI-Workflow]] | 同心圓迭代範式，含 Design to Code / Code to Design 雙向流動 + 短影片產製鏈 | 3 |
 | [[Self-Improving-Agent]] | 自我改進代理範式：MEMORY.md + Skill Factory + 偏好學習，Hermes 是代表實作 | 2 |
-| [[Ratchet-Pattern]] | 每次錯誤編碼成永久規則的設計模式；CLAUDE.md / hook / reviewer subagent 三層編碼；含 41% → 3% 量化實證 | 3 |
+| [[Ratchet-Pattern]] | 每次錯誤編碼成永久規則的設計模式；CLAUDE.md / hook / reviewer subagent 三層編碼；含 41% → 3% 量化實證；Anthropic 官方為第 4 個獨立來源 | 4 |
 | [[MEMORY-md\|MEMORY.md]] | AI Agent 跨 session 持久記憶層；與 CLAUDE.md 形成「AI 寫 vs 人類寫」對；Claude Code / Hermes 雙實作 | 3 |
-| [[Context-Rot]] | 上下文衰損；compaction / offloading / progressive disclosure 三招；Claude Code 五招；Cloudflare 共用脈絡檔 production 案例；CLAUDE.md Rule 6 個人版 token budget | 4 |
-| [[Subagent-Driven-Development]] | Implementer + spec reviewer + code quality reviewer 兩階段獨立審查的 agentic workflow；含 Cloudflare 130K production 對照 | 1 |
+| [[Context-Rot]] | 上下文衰損；含 Cloudflare 共用脈絡檔 / Anthropic progressive disclosure 官方版 / CLAUDE.md Rule 6 個人版 token budget 三層對抗 | 5 |
+| [[Subagent-Driven-Development]] | Implementer + spec reviewer + code quality reviewer 兩階段獨立審查；含 Cloudflare 130K production 對照 + Anthropic 官方「split exploration from editing」定義 | 2 |
 | [[Adversarial-Code-Review]] | 對抗式 AI review，抓 human review 看不見的跨檔組合 bug；OWASP focus 為常見起點；含 Risk Tier 分配 | 1 |
 | [[Hybrid-XSS-Defense]] | 雙層 stored XSS 防護（escape variables at substitution + sanitize at storage）| - |
 | [[Fields-Without-Enforcement-Anti-Pattern]] | 反模式：schema 有欄位、邏輯不檢查；含 silent backdoor 變體與時序狀態變體 | - |
 | [[Verify-Framework-Version-First]] | 新專案第一件事驗 lockfile 版本；ratchet pattern 的具體應用 | - |
 | [[Prompt-Pack-Pattern]] | 多段 prompt 串成完整工作流的設計模式；與 Agent Skills 形成「人類控制節奏 vs Agent 自動觸發」對照；含三大反模式警示 | 2 |
 | [[AGENTS-md\|AGENTS.md]] | OpenAI Codex / OpenCode 等 agentic CLI 的規範檔；與 CLAUDE.md 平行對照 | 2 |
+| [[Plugins-Claude-Code]] | Claude Code 的 Plugins 機制：bundle skills/hooks/MCP 成可安裝套件 | 1 |
+| [[LSP-Integrations]] | Language Server Protocol 整合：給 Claude symbol-level precision | 1 |
 
 ## 綜整與分析
 
@@ -302,6 +308,8 @@ title: 索引
 | [[WordPress-接案工作筆記]] | WordPress 接案三階段工作流：獲客 → 接手 → 加值 | 3 |
 | [[presentation-攝影工作室A-網站優化\|攝影工作室A — 網站健檢與優化簡報]] | Marp 簡報：SEO + GEO 雙軌體檢，含實地抓取 client-site.example 數據 | 1 |
 | [[synthesis-asgard-install-for-my-topics\|Asgard Skills 個人 install 候選清單]] | 從 301 個挑出 ~50 個對接案 / 投資 / 思維三主題強相關的 skill；含安裝建議 | 3 |
+
+
 
 ## 比較
 

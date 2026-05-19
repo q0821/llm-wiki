@@ -788,3 +788,45 @@
 - 實際試跑推文四件套並記 case study
 - 接案 SEO 體檢時試 `mkt-seo-audit` + `algo-seo-*` 系列
 - 投資決策時試 `tw-stock-analysis` + `biz-dcf` 組合
+
+## [2026-05-19] ingest | Claude Code in Large Codebases — Anthropic 官方 best practices
+- 來源：https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start
+- 作者：Anthropic Applied AI team / 2026-05-14（Customer mention：Zoox）
+- fetch-url.sh 跳過直接 WebFetch（前次 cloudflare blog 經驗）
+
+### 核心發現
+- **Anthropic 官方版 Harness 7 個 extension points**：CLAUDE.md / Hooks / Skills（progressive disclosure）/ Plugins / LSP / MCP / Subagents
+- **「The Harness Matters as Much as the Model」**——副標題層級官方論述
+- **Agentic search vs RAG embedding** 官方定位：「Unlike RAG-powered tools that embed entire codebases, Claude Code uses agentic search, avoiding failures where indices become stale.」
+- **CLAUDE.md 3-6 月 review 維護週期**——Anthropic 官方版 Ratchet 克制原則
+- **新組織角色**：Agent Manager（hybrid PM/engineer）/ DRI for Claude Code
+
+### 影響頁面
+- 新建：[[src-claude-code-in-large-codebases]], [[Plugins-Claude-Code]], [[LSP-Integrations]]
+- 更新 9 個既有頁：
+  - [[Claude Code]]：**大幅擴充**——加 Anthropic 官方版 Harness 7 個 extension points + Agentic Search 官方論述 + 適用範圍限制
+  - [[CLAUDE-md]]：補「Anthropic 官方版 CLAUDE.md 維護指引」段（3-6 月 review 週期 + lean/layered 配置）
+  - [[Harness-Engineering]]：跨工程文化對照表分拆 Anthropic 為兩列（雲端 agent / Claude Code 視角）
+  - [[Subagent-Driven-Development]]：補官方版「split exploration from editing」定義 + isolated context window 確認
+  - [[Agent-Skills]]：補 progressive disclosure 設計原則官方確認 + 與既有「啟動成本」論點形成三層機制
+  - [[Context-Rot]]：補 Anthropic 官方版「progressive disclosure 產品內建」+ subagent only return final results 確認
+  - [[MCP]]：補「structured search MCP server」官方背書 + 「企業 codebase 自帶 MCP」第三種典型
+  - [[Ratchet-Pattern]]：補第 4 個獨立來源（Anthropic 官方）—— 業界共識升級為廠商在內全方位共識
+  - [[LLM-Wiki]]：補「Agentic Search vs RAG Embedding」官方論述對照（從個人知識庫延伸到 codebase 導覽）
+- 更新 index.md（最近新增區追加 3 條 + 來源摘要 + 概念追加 2 條 + 9 個既有頁面來源數調整）
+
+### 形成的新對話組
+- [[src-claude-code-in-large-codebases]]（官方視角）↔ [[src-cloudflare-ai-code-review]]（client production 視角）：Anthropic harness 7 元件 ↔ Cloudflare OpenCode 7 外掛實作
+- [[src-claude-code-in-large-codebases]] ↔ [[src-addy-osmani-harness-engineering]]：兩家獨立的 7-元件 harness 分解（Google vs Anthropic）
+- [[src-claude-code-in-large-codebases]] ↔ [[src-bnext-claude-md-12-rules]]：官方「3-6 月 review」↔ Mnimiy「規則只應防止實際遇過的失敗」——同源克制原則第 4 個來源
+- [[LLM-Wiki]] ↔ [[Claude Code]]：兩個層次都採用 agentic search vs RAG embedding 設計
+
+### 新候選概念 (未獨立)
+- Agent Manager 角色（單句描述、弱證據）
+- DRI for Claude Code（同上）
+- 兩者都先記在 [[src-claude-code-in-large-codebases]] 中，未來累積再萃取
+
+### 待後續處理
+- 待 Anthropic 官方文件補 Plugins marketplace 機制細節後更新 [[Plugins-Claude-Code]]
+- 待 LSP integration 具體技術細節（哪些 LSP 已支援 / 如何啟用）更新 [[LSP-Integrations]]
+- Zoox 是否有具體 Claude Code 部署案例可獨立 ingest

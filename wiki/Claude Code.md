@@ -1,9 +1,9 @@
 ---
 title: Claude Code
 type: entity
-sources: ["Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "科技翰林院怎麼用 Claude Code 終端機？8 個實戰設定全公開.md", "只要 5 分鐘！Claude Code 無縫整合 NotebookLM 實戰.md", "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md", "Hermes Agent 成功案例 — 你的 AI 代理可以做什麼.md", "未命名.md"]
+sources: ["Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "科技翰林院怎麼用 Claude Code 終端機？8 個實戰設定全公開.md", "只要 5 分鐘！Claude Code 無縫整合 NotebookLM 實戰.md", "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md", "Hermes Agent 成功案例 — 你的 AI 代理可以做什麼.md", "未命名.md", "claude-blog-large-codebases.md"]
 created: 2026-05-09
-updated: 2026-05-14
+updated: 2026-05-19
 tags: [agent, cli, anthropic, claude, second-brain, design-workflow, harness]
 confidence: 強
 ---
@@ -94,6 +94,34 @@ Claude Code 即扮演那個 "programmer" 角色——在 [[Obsidian]] 上編輯�
 
 Managed Agents 的設計哲學「Python SDK 薄層 + 重活 delegate Claude Code CLI subprocess」：本機 Claude Code 與雲端 Managed Agents 共用同一個底層 agent loop。詳見 [[src-az9713-managed-agents-tutorial]]。
 
+## Anthropic 官方版 Harness 7 個 Extension Points（[[src-claude-code-in-large-codebases|2026-05-14 官方 blog]]）
+
+> 「**The Harness Matters as Much as the Model.**」 — Anthropic Applied AI team
+
+| Extension Point | 一句話定位 | 對應本 wiki |
+|---|---|---|
+| **CLAUDE.md Files Come First** | Root + subdirectory layered，「focused on what applies broadly」| [[CLAUDE-md]] |
+| **Hooks Make the Setup Self-Improving** | Scripts at key moments；**stop hooks 提議 CLAUDE.md 更新、start hooks 動態載入 context** | （wiki 缺角，本來源首提）|
+| **Skills On-Demand（progressive disclosure）** | 特定 workflow 在需要時才載入；can be scoped to specific paths | [[Agent-Skills]]、[[Context-Rot]] |
+| **Plugins Distribute What Works** | Bundle skills/hooks/MCP 成可安裝套件；managed marketplaces 分發 | [[Plugins-Claude-Code]] |
+| **LSP Integrations** | Symbol-level precision（「go to definition」/「find all references」）| [[LSP-Integrations]] |
+| **MCP Servers Extend Everything** | 連接 internal tools / data sources / APIs；最 sophisticated teams 用 MCP 暴露 structured search | [[MCP]] |
+| **Subagents Split Exploration from Editing** | Isolated Claude instances + separate context windows | [[Subagent-Driven-Development]] |
+
+### Agentic Search vs RAG Embedding（官方論述）
+
+> 「Claude Code navigates codebases like a software engineer—traversing file systems, reading files, using grep for precise searches, and following cross-codebase references. **It operates locally without requiring a codebase index.**」
+>
+> 「**Unlike RAG-powered tools that embed entire codebases, Claude Code uses agentic search**, avoiding failures where indices become stale. However, this approach **requires sufficient starting context** to navigate effectively.」
+
+對應本知識庫 [[LLM-Wiki]] vs [[RAG]] 對話組——Anthropic 官方確認 agentic search 的設計選擇。
+
+### 適用範圍限制（官方標示）
+
+設計給「**conventional software engineering environments**」：工程師為主貢獻者、Git 版控、標準目錄結構。
+
+非傳統 setup（**game engines with large binary assets / unconventional VCS / non-engineers contributing**）需要額外配置——Anthropic 官方明白標示的不適用邊界。
+
 ## 作為 Harness 的元件拆解（[[Addy-Osmani]] / Fareed Khan 視角）
 
 [[src-addy-osmani-harness-engineering|Addy Osmani]] 引述 Fareed Khan 對 Claude Code 架構的估計拆解，可作為理解 Claude Code 為何「比同底層模型的 agent 更穩」的工程視角：
@@ -143,4 +171,5 @@ Managed Agents 的設計哲學「Python SDK 薄層 + 重活 delegate Claude Code
 - [[Harness-Engineering]] — Claude Code 是 harness 七元件的成熟實作；[[Addy-Osmani]] 引 Fareed Khan 對其架構分解
 - [[Addy-Osmani]] — 對 Claude Code 架構提出元件拆解視角
 - [[OpenAI-Codex-CLI]] — 同類 agentic CLI 的對照產品
-- [[src-claude-code-context-management]] / [[src-techhanlin-claude-code-8-settings]] / [[src-aapd-claude-design-figma-workflow]] / [[src-hermes-agent-99-cases]] / [[src-addy-osmani-harness-engineering]] — 詳細工作流來源
+- [[Plugins-Claude-Code]] / [[LSP-Integrations]] — Anthropic 官方版 Harness 7 個 extension points 中的兩個
+- [[src-claude-code-context-management]] / [[src-techhanlin-claude-code-8-settings]] / [[src-aapd-claude-design-figma-workflow]] / [[src-hermes-agent-99-cases]] / [[src-addy-osmani-harness-engineering]] / [[src-claude-code-in-large-codebases]] — 詳細工作流來源

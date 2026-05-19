@@ -1,10 +1,10 @@
 ---
 title: CLAUDE.md
 type: concept
-sources: ["Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "科技翰林院怎麼用 Claude Code 終端機？8 個實戰設定全公開.md", "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md", "未命名.md", "bnext-claude-md-12-rules.md"]
+sources: ["Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "科技翰林院怎麼用 Claude Code 終端機？8 個實戰設定全公開.md", "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md", "未命名.md", "bnext-claude-md-12-rules.md", "claude-blog-large-codebases.md"]
 created: 2026-05-09
 updated: 2026-05-19
-tags: [claude-code, configuration, schema, persistent-memory, llm-wiki, design-workflow, harness, ratchet, production]
+tags: [claude-code, configuration, schema, persistent-memory, llm-wiki, design-workflow, harness, ratchet, production, anthropic-official]
 confidence: 強
 ---
 
@@ -137,6 +137,28 @@ confidence: 強
 
 → 完美對應 [[Ratchet-Pattern]] 跨工程文化共識：規則只應防止實際遇過的失敗。本 wiki [[CLAUDE-md|CLAUDE.md]] 「公開度與資安」段也用同原則累積。
 
+## Anthropic 官方版 CLAUDE.md 維護指引（[[src-claude-code-in-large-codebases|2026-05-14 官方 blog]]）
+
+### CLAUDE.md Files Come First（Harness 7 元件之首）
+
+> 「**Context files loaded automatically each session—root files for big-picture overview, subdirectory files for local conventions.** Should remain '**focused on what applies broadly**' to maintain performance.」
+
+關鍵設計：
+- **Layered**：root 看大局 + subdirectory 管 local conventions
+- **Initialize in subdirectories** rather than repo root（官方明白建議）
+- **Scope test / lint commands per subdirectory**
+
+### 3-6 月主動維護週期（**官方版 Ratchet 克制原則**）
+
+> 「**As models improve, previous instructions may become unnecessary or constraining.** A rule forcing single-file refactors may hinder newer models capable of coordinated cross-file edits. **Teams should review configurations every three to six months or after major model releases.**」
+
+具體建議 review 時機：
+- 每 **3-6 個月** 一次定期掃
+- **重大模型發布**後立即掃
+- 範例：「強制單檔 refactor」的規則在新模型可以做跨檔協調編輯時，反而 hinder
+
+對應 [[Ratchet-Pattern]] 「克制原則」的第 4 個獨立來源——Anthropic 官方加入 Google Addy / OpenAI Mitchell Hashimoto / 個人工程師 Mnimiy 的同源共識。
+
 ## 與其他 Schema 規範的關係
 
 | 檔名 | 工具 | 作用範圍 | 性質 |
@@ -185,11 +207,12 @@ CLAUDE.md 是 Claude Code 自己最熟的格式，遇到要新增規則直接跟
 - [[LLM-Wiki]] — 把 CLAUDE.md 當 schema 使用的範式
 - [[Agent-Skills]] — 與 skill 機制互補（CLAUDE.md 是規範、Skill 是流程）
 - [[src-claude-code-context-management]] — Memory / Handoff / Token 管理相關
-- [[src-techhanlin-llm-wiki-tutorial]]、[[src-techhanlin-claude-code-8-settings]]、[[src-aapd-claude-design-figma-workflow]]、[[src-addy-osmani-harness-engineering]]、[[src-bnext-claude-md-12-rules]] — 來源
+- [[src-techhanlin-llm-wiki-tutorial]]、[[src-techhanlin-claude-code-8-settings]]、[[src-aapd-claude-design-figma-workflow]]、[[src-addy-osmani-harness-engineering]]、[[src-bnext-claude-md-12-rules]]、[[src-claude-code-in-large-codebases]] — 來源
 - [[DESIGN-md]] — 同類設計：給 AI Agent 讀的規範檔
 - [[AGENTS-md]] — 平行對照規範檔
 - [[Simon-Lin]] — 提供設計領域具體規則範例的設計師
-- [[Ratchet-Pattern]] — CLAUDE.md 是 Ratchet 的主要編碼載體
-- [[Harness-Engineering]] — CLAUDE.md 是 harness 七元件之一
+- [[Ratchet-Pattern]] — CLAUDE.md 是 Ratchet 的主要編碼載體；Anthropic 官方版 3-6 月 review 是第 4 個獨立來源
+- [[Harness-Engineering]] — CLAUDE.md 是 harness 七元件之一；也是 Anthropic 官方 7 個 extension points 之首
 - [[Addy-Osmani]] — 提出「飛行員檢查清單」隱喻
 - [[Andrej-Karpathy]] — AI 寫程式 3 缺失觀察是 12 條規則的源頭
+- [[Plugins-Claude-Code]] / [[LSP-Integrations]] — CLAUDE.md 的同級 Harness extension points

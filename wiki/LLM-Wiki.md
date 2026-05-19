@@ -117,6 +117,23 @@ LLM Wiki 可視為 [[Memex]] 在 LLM 時代的可實現版本。
 
 差異：本知識庫額外加上「**外部發布層**」（[[Quartz|Quartz v4]] → wiki.jackie-yeh.com）與「**手機投遞層**」（iCloud Obsidian inbox vault），這在 Karpathy 原版未涵蓋。
 
+## Anthropic 官方版「Agentic Search vs RAG Embedding」（[[src-claude-code-in-large-codebases|2026-05-14]]）
+
+Anthropic 官方對 [[Claude Code]] 的 codebase 導覽設計選擇做了明白論述：
+
+> 「Claude Code navigates codebases like a software engineer—traversing file systems, reading files, using grep for precise searches, and following cross-codebase references. **It operates locally without requiring a codebase index.**」
+>
+> 「**Unlike RAG-powered tools that embed entire codebases, Claude Code uses agentic search**, avoiding failures where indices become stale.」
+
+這對應本頁「**[[LLM-Wiki]] vs [[RAG]]**」的核心對話組——但場景從「個人知識庫」延伸到「**程式碼導覽**」。共通設計選擇：
+
+| 層次 | 選 RAG embedding 的代價 | 選 agentic / wiki 的代價 |
+|---|---|---|
+| 個人知識庫 | 索引過期 / 每次重新拼湊 | 維護成本（但 LLM 可大量代勞）|
+| Codebase 導覽 | Index 過期失敗 | 需要充足 starting context（即 [[CLAUDE-md|CLAUDE.md]]）|
+
+**共通結論**：「**累積結構化知識 + agent 即時遍歷**」比「**索引 + embedding**」更耐久。Anthropic 官方在 Claude Code 產品層做了同樣的設計選擇。
+
 ## 路線分歧：人類引導 vs 全自動
 
 [[src-hermes-agent-99-cases]] 中有「**自我改進的 LLM Wiki 第二大腦**」case（連結 medium 原文標題含 "and why I'm not using Obsidian"），代表另一條路線——**完全自動的 LLM Wiki**，AI 自動爬取、自動更新、靜態網站自動發布。

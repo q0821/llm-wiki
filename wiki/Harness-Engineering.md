@@ -211,7 +211,8 @@ Agent Engineering     → 代理內部（路由、記憶、工具呼叫）
 | 工程文化 | 代表 | 主要切角 | 來源 |
 |---|---|---|---|
 | **OpenAI** | Ryan Lopopolo / Mitchell Hashimoto | 三支柱 + 級別實踐路徑 | [[src-harness-engineering-openai]] |
-| **Anthropic** | 工程團隊 | [[Meta-Harness]]、Long-running app design | [[src-anthropic-managed-agents-engineering]] |
+| **Anthropic（雲端 agent 視角）** | 工程團隊 | [[Meta-Harness]]、Long-running app design | [[src-anthropic-managed-agents-engineering]] |
+| **Anthropic（Claude Code 視角）** | Applied AI team | **7 個 extension points**（CLAUDE.md / Hooks / Skills / Plugins / LSP / MCP / Subagents）+ 企業導入 DRI / Agent Manager 角色 | [[src-claude-code-in-large-codebases]] |
 | **Google** | [[Addy-Osmani]] | 七元件 + Ratchet + Context Rot + HaaS 趨勢 | [[src-addy-osmani-harness-engineering]] |
 | **LangChain** | Viv Trivedy | 「Agent = Model + Harness」定義 | （引述於 Addy） |
 | **HumanLayer** | — | 「不是模型問題，是設定問題」 | （引述於 Addy） |

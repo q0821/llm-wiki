@@ -89,6 +89,20 @@ Filesystem 不只是儲存，也是 context rot 的解藥。
 
 > 同一個 agent 既當考生又當考官，會有正面偏差；同一個 agent 既要做事又要記住所有歷史，context rot 必定發生。
 
+## Anthropic 官方版確認：Progressive Disclosure（[[src-claude-code-in-large-codebases|2026-05-14 官方 blog]]）
+
+Anthropic 把 [[Agent-Skills]] 列為 Harness 7 個 extension points 之一，明白標示**progressive disclosure** 是其核心設計原則：
+
+> 「**Skills Keep the Right Expertise Available On-Demand**: Specialized workflows load when needed through **progressive disclosure**, preventing all expertise from competing for context space in every session.」
+
+也就是說，[[Addy-Osmani]] 提出的「對抗 Context Rot 三招」第三招 progressive disclosure，**Anthropic 官方在 Claude Code 產品層直接內建**——不只是個 best practice 建議，是產品內建的擴展機制。
+
+同篇文章對 [[Subagent-Driven-Development|Subagents]] 的設計也呼應 context rot 對抗：
+
+> 「Subagents Split Exploration from Editing: Isolated Claude instances with **separate context windows** that take tasks and **return final results to the parent agent**.」
+
+Subagent 只傳「final results」回父 agent —— 對應 tool-call offloading 招式的產品內建版。
+
 ## 個人版對抗工具：[[CLAUDE-md|CLAUDE.md]] 12 條規則中的 Rule 6
 
 [[src-bnext-claude-md-12-rules|Mnimiy]] 把 token budget 直接寫進 CLAUDE.md 規則：

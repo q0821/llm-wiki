@@ -30,7 +30,11 @@ Mitchell Hashimoto 在 [[src-harness-engineering-openai|OpenAI Harness Engineeri
 >
 > 「**不要盲目套用這 12 條規則，每一條寫進去的規則都必須能回答一個問題：這能防止我實際遇過的什麼錯誤？**」
 
-→ Google / OpenAI / 個人工程師三個獨立工程社群得出同一原則，這個 pattern 已是跨界共識。
+**第四個獨立來源**——**Anthropic 官方**（[[src-claude-code-in-large-codebases|2026-05-14 Claude Code in Large Codebases]]）：
+
+> 「**As models improve, previous instructions may become unnecessary or constraining.** A rule forcing single-file refactors may hinder newer models capable of coordinated cross-file edits. **Teams should review configurations every three to six months or after major model releases.**」
+
+→ Google / OpenAI / 個人工程師 / **Anthropic 廠商官方**四個獨立工程社群得出同一原則，這個 pattern **從業界共識升級為包含廠商在內的全方位共識**。
 
 ## 實證數據：4 條 → 12 條對 [[CLAUDE-md]] 錯誤率的影響
 

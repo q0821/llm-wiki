@@ -32,6 +32,19 @@ confidence: 強
 - **.claude/commands/**：本機專案層級，逐字 prompt 範本，無腳本邏輯
 - **Agent Skills**：跨專案分發、可含腳本（Python、shell）、有 frontmatter metadata 與觸發條件描述
 
+## Anthropic 官方版 Skills 設計原則：Progressive Disclosure
+
+[[src-claude-code-in-large-codebases|2026-05-14 官方 blog]] 把 Skills 列為 [[Claude Code]] Harness 7 個 extension points 之一，並確認設計原則：
+
+> 「**Skills Keep the Right Expertise Available On-Demand**：Specialized workflows load when needed through **progressive disclosure**, preventing all expertise from competing for context space in every session. Can be scoped to specific paths.」
+
+關鍵設計：
+- **On-demand**：不在 session 啟動就全載入（會 context rot）
+- **Progressive disclosure**：需要時才載入特定 workflow（對應 [[Context-Rot]] 三招之一）
+- **Path-scoped**：可綁定到特定目錄 / 路徑——例如 `WordPress/` 下才載入 WP 相關 skill
+
+對應本頁先前提到 [[科技翰林院]]「每次都跟 AI 說一樣的話就該建 skill」與 Asgard @honglong0420「人不會主動叫出方法論」兩個論點——Anthropic 官方版加上**第三層機制**：「skill 載入是 progressive，避免擠佔 context」。
+
 ## 為什麼把 Prompt 變成 Skill？
 
 [[科技翰林院]] [[src-techhanlin-claude-code-8-settings|8 個設定]]提出的核心啟發：

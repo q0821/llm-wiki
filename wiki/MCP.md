@@ -111,6 +111,17 @@ Anthropic 推出的**開放協議標準**，定義 AI 模型如何與外部工�
 
 這驗證了 [[BrowseForge]] 之外的另一個典型「**工具自帶 MCP server**」模式——[[Figma]] 把自家能力暴露為 MCP server，AI 不必知道 Figma REST API 細節。
 
+## Anthropic 官方背書：MCP for Structured Search（[[src-claude-code-in-large-codebases|2026-05-14]]）
+
+> 「**Most sophisticated teams built MCP servers exposing structured search as a tool Claude can call directly.**」
+
+對應本知識庫 [[Claude Code]] 的 agentic search vs RAG embedding 設計：
+- 預設 Claude Code 用 agentic search（grep + traversal）
+- LSP integrations 提供 symbol-level 精度
+- **MCP servers 暴露 structured search**——是「**最進階企業**」的做法，把領域知識索引透過 MCP 提供給 Claude 調用
+
+也驗證了既有「**工具自帶 MCP server**」/「**agent 自帶 MCP server**」之外的第三個典型：「**企業 codebase 自帶 MCP server 提供 structured search**」。
+
 ## 安全議題：工具描述會進到 prompt
 
 [[src-addy-osmani-harness-engineering|Addy Osmani]] 提出的重要警示：

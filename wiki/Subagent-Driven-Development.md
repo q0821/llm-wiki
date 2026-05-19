@@ -96,6 +96,17 @@ Final Reviewer（整 branch ready to merge）
 Merge + Push
 ```
 
+## Anthropic 官方版定義（[[src-claude-code-in-large-codebases|2026-05-14 官方 blog]]）
+
+[[src-claude-code-in-large-codebases]] 把 Subagent 列為 [[Claude Code]] Harness 7 個 extension points 之一：
+
+> 「**Subagents Split Exploration from Editing**：Isolated Claude instances with **separate context windows** that take tasks and return final results to the parent agent.」
+
+關鍵設計確認：
+- **隔離 context window**（防 context bleed）
+- **Split exploration from editing**（探索與編輯職責分離）—— 對應本頁 Spec reviewer / Code quality reviewer 分工的官方版同源
+- 「Return **final results** to parent agent」—— 而不是 full context，這對應 [[Context-Rot]] 「tool-call offloading」官方確認
+
 ## Production 對照：[[Cloudflare]] AI Code Review
 
 [[src-cloudflare-ai-code-review]] 是該範式的 **production-grade 標本**——同 pattern 從個人實作擴大到 **131,246 次審查 / 5,169 repo / $0.98 中位數**規模。
