@@ -3,7 +3,7 @@ title: Asgard Skills Repository
 type: source
 sources: [asgard-ai-platform-skills.md]
 created: 2026-04-16
-updated: 2026-04-16
+updated: 2026-05-19
 tags: [技術, 工具, AI, Agent-Skills, 股票分析, 策略, 設計, SEO]
 confidence: 強
 ---
@@ -78,9 +78,23 @@ npx skills add asgard-ai-platform/skills
 
 > This repository serves as the "ingredient library" for the Asgard AI Platform, combining with MCPs (Model Context Protocol servers) to create specialized coding agent plugins for specific scenarios (stock analysis, e-commerce operations, policy research).
 
+## 作者推薦四件套思維模型（依 [[src-honglong0420-asgard-x-thread|2026-05 X 推文]]）
+
+[[Asgard-AI-Platform]] 內部人員 @honglong0420 推薦串成「**爭議路線 → 商業模型 → 驗證 → 說服**」完整決策路徑的四支 skill：
+
+| Skill | 經典方法論 | Iron Law |
+|---|---|---|
+| `hum-dialectics` | 辯證法（正反合）| **Synthesis ≠ Compromise**——各退一步不算解答，重新 frame 問題才算 |
+| `ops-business-model-canvas` | Alex Osterwalder 商業模式九宮格 | **漏一格就是許願** |
+| `ux-lean-startup` | Eric Ries 精實創業 | 列風險最高假設、做 MVP、**直接逼你看數據** |
+| `hum-narrative` | 敘事方法論 | **Every Story Needs Tension**——沒衝突的不是故事，是報告 |
+
+「重點不是 AI 多懂方法論，而是這套方法論終於可以**按一個鍵就跑一遍**」——對應 [[Agent-Skills]] 「啟動成本是瓶頸」論點。
+
 ## 相關頁面
 
 - [[Asgard-AI-Platform]] — 開發此技能庫的平台
+- [[src-honglong0420-asgard-x-thread]] — 內部人員親述視角，補本頁客觀整理
 - [[Agent-Skills]] — 技能規範概念
 - [[src-marketing-skills-ai-agents]] — 另一套 Agent Skills 集合（行銷導向），可互補使用
 - [[src-claude-code-notebooklm]] — 另一種 skill 應用模式（自製 + 整合外部工具，與 Asgard 的「理論模型 + 計算腳本」對照）

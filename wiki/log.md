@@ -719,3 +719,33 @@
 - 補抓 Mnimiy 原 X 貼文（X.com unauthenticated 抓不到，需登入態手動貼上）
 - 補抓 Forrest Chang GitHub CLAUDE.md 原 repo
 - inbox 那個「等紅燈朋友」X 貼文擱置——等使用者補完整內容
+
+## [2026-05-19] ingest | Asgard Skills 開源推廣（@honglong0420 X 推文）
+- 來源：使用者手動提供 X 推文內文（X.com unauthenticated 抓不到，前車之鑑 HTTP 402）
+- 補強既有 [[src-asgard-skills]]（2026-04 客觀整理）→ 2026-05 內部人員親述視角
+- 核心論點：「**缺的不是 AI 知不知道，而是人不會記得主動把它叫出來**」——精準回答 [[Agent-Skills]] 範式為什麼比 prompt 有效
+- 四件套思維模型（決策完整路徑）：hum-dialectics → ops-business-model-canvas → ux-lean-startup → hum-narrative；含三條 Iron Law（Synthesis ≠ Compromise / 漏一格就是許願 / Every Story Needs Tension）
+
+### 影響頁面
+- 新建：[[src-honglong0420-asgard-x-thread]]
+- 更新（3 個既有頁）：
+  - [[src-asgard-skills]]：補「作者推薦四件套思維模型」段落
+  - [[Asgard-AI-Platform]]：補內部人員 @honglong0420、主打定位「台灣中小企業」、領域涵蓋（含台灣專屬：勞健保 / 營業稅）、核心設計論點段落
+  - [[Agent-Skills]]：補「為什麼 skill 化有效」第二觀點（節省 token vs 對抗遺漏啟動），與 [[科技翰林院]] 觀點形成互補
+- 更新 index.md（最近新增 2026-05-19 加新條目 + 來源摘要 / 實體 / 概念區條目調整 + 4 個既有頁來源數調整）
+- raw/ 新增 `honglong0420-asgard-x-thread.md` 含完整貼文內容（補先前只有 share link 的 inbox 投遞紀錄）
+
+### 形成的對話組
+- **同主題雙來源**：[[src-asgard-skills]]（GitHub 客觀整理）↔ [[src-honglong0420-asgard-x-thread]]（內部人員親述）
+- **「為什麼 Skill 化有效」雙論點**：[[科技翰林院]]「節省 token」↔ Asgard「對抗遺漏啟動」
+- **Ratchet 切角擴張**：原版「防失敗」↔ Asgard 切角「**防遺漏 / 防偷懶**」
+
+### 四件套對應的經典方法論（未獨立成頁，單來源證據弱）
+- hum-dialectics → 黑格爾辯證法
+- ops-business-model-canvas → Alex Osterwalder
+- ux-lean-startup → Eric Ries
+- hum-narrative → Robert McKee / Joseph Campbell
+- 待累積更多獨立來源討論再考慮萃取
+
+### 擱置處理
+- inbox 那則含 newline 的 X share link 檔保留（與 honglong0420-asgard-x-thread.md 配對：share link + 內文兩檔）

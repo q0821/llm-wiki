@@ -13,6 +13,7 @@ title: 索引
 | 頁面 | 摘要 |
 |------|------|
 | [[src-bnext-claude-md-12-rules\|CLAUDE.md 12 條規則 — Forrest Chang 4 條 + Mnimiy 8 條擴充]] | Karpathy 3 缺失 → 12 條 production CLAUDE.md 範本；30 codebase 盲測 41% → 11% → 3% 錯誤率 |
+| [[src-honglong0420-asgard-x-thread\|Asgard Skills 263 個 agent skills 開源推廣（X 推文）]] | @honglong0420 親述視角 + 四件套思維模型（辯證法 / 九宮格 / 精實創業 / 敘事）+ 「啟動成本是瓶頸」核心論點 |
 
 ### 2026-05-18
 
@@ -189,6 +190,7 @@ title: 索引
 | [[src-photography-studio-proposal\|攝影工作室A網站優化提案]] | 網站內容優化提案 | 1 |
 | [[src-openclaw-wordpress-rag\|OpenClaw × WordPress 輕量 RAG]] | Cloudflare 免費方案實作筆記 | 1 |
 | [[src-asgard-skills\|Asgard Skills Repository]] | 開源 263 個 AI agent skills，涵蓋股票分析、策略、SEO、設計等 | 1 |
+| [[src-honglong0420-asgard-x-thread\|Asgard Skills 開源推廣（X 推文）]] | @honglong0420 親述視角 + 四件套思維模型 skill + 「啟動成本是瓶頸」 | 2 |
 | [[src-customer-diagnostic-50-questions\|50 個顧客自我診斷問題]] | 含 ABC 分級與 CLV 概念 | 1 |
 | [[src-claude-code-context-management\|Claude Code 上下文管理攻略]] | 含 rewind/compact/subagent 策略 | 1 |
 | [[src-design-md-revolution\|DESIGN.md 革命]] | awesome-design-md 專案介紹，AI UI 設計新標準 | 3 |
@@ -225,7 +227,7 @@ title: 索引
 | [[攝影工作室A]] | 攝影工作室客戶，商業攝影網站優化中 | 1 |
 | [[OKX]] | 加密貨幣交易所，使用雙幣贏產品 | 1 |
 | [[Cloudflare]] | 雲端平台 + AI agent 標準推手 + 內部 AI 工程文化（AI code review production case）| 3 |
-| [[Asgard-AI-Platform\|Asgard AI Platform]] | AI 平台，以 Skills + MCP 組合打造場景化 agent 外掛 | 1 |
+| [[Asgard-AI-Platform\|Asgard AI Platform]] | AI 平台，以 Skills + MCP 組合打造場景化 agent 外掛；主打台灣中小企業日常工作場景 | 2 |
 | [[OpenClaw]] | AI Agent 框架，支援 Telegram/Discord/Slack，RAG MVP 使用；2026 起被 Hermes 取代趨勢 | 2 |
 | [[NotebookLM]] | Google 免費閉合式 RAG 工具，Gemini 模型，可生成圖表/podcast | 1 |
 | [[notebooklm-py]] | 林探開發的 NotebookLM CLI 工具，提供 Claude Code 整合 | 1 |
@@ -261,7 +263,7 @@ title: 索引
 | [[雙幣贏]] | 選擇權賣方策略的零售包裝版，非存款非利息 | 2 |
 | [[RAG]] | 檢索增強生成，讓 AI 根據自有資料回答（含 vs LLM Wiki 對比）| 3 |
 | [[Embedding]] | 向量化，把文字轉成語意向量供搜尋 | 1 |
-| [[Agent-Skills\|Agent Skills]] | AI Agent 可擴充任務能力的技能規範 | 8 |
+| [[Agent-Skills\|Agent Skills]] | AI Agent 可擴充任務能力的技能規範；「啟動成本是瓶頸」核心論點 | 9 |
 | [[LLM-Wiki]] | Karpathy 提出的 wiki 化知識管理範式，本知識庫的方法論基礎；含人類引導 vs 全自動兩條路線對照 | 2 |
 | [[Memex]] | Vannevar Bush 1945 提出，LLM Wiki 的歷史先驅 | 1 |
 | [[CLAUDE-md\|CLAUDE.md]] | Claude Code 持久記憶層，兼任 LLM Wiki schema 規範；Ratchet 編碼主要載體；含 12 條 production 範本 + 30 codebase 盲測數據 | 5 |
