@@ -67,6 +67,23 @@ confidence: 強
    - 不能用「沒報 bug」當作「沒 bug」的證明
    - 低使用量產品需刻意設計使用場景驗證
 
+### 個人版直接對策：[[CLAUDE-md|CLAUDE.md]] 12 條規則的 Rule 9
+
+[[src-bnext-claude-md-12-rules|Mnimiy]] 把這條反模式直接編成 CLAUDE.md 規則：
+
+```
+## Rule 9 — Tests verify intent, not just behavior
+Every test must encode WHY the behavior matters, not just WHAT it does.
+A test like expect(getUserName()).toBe('John') is worthless if the function
+takes a hardcoded ID.
+If you can't write a test that would fail when business logic changes,
+the function is wrong.
+```
+
+核心判準：**「如果你寫不出一個會在業務邏輯改變時 fail 的測試，那個 function 就是錯的。」**
+
+這比結構性對策（隔離 context）輕量得多，適合個人專案或小團隊作為**第一道牆**——AI 自己在寫 test 時就被規則約束去思考「這個 test 在驗證什麼業務語意」。但仍需配合結構性 / 流程性對策才完整。
+
 ## 與其他概念的關係
 
 ### 本知識庫對應
@@ -96,6 +113,9 @@ confidence: 強
 ## 相關頁面
 
 - [[src-spt-ai-quality-collusion]] — 來源摘要頁
+- [[src-bnext-claude-md-12-rules]] — Rule 9「Tests verify intent」是該反模式的個人版對策
 - [[Vibe-Coding]] / [[Agentic-AI-Workflow]] — AI 主導開發範式
 - [[Meta-Harness]] / [[Managed-Agents]] — subagent 隔離設計
 - [[Agent-Skills]] — 不同 skills 實現職責分離
+- [[CLAUDE-md]] — Rule 9 編碼位置
+- [[Adversarial-Code-Review]] — 對抗式 AI review 是該反模式的另一道對策

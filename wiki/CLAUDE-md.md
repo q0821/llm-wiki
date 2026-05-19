@@ -1,10 +1,10 @@
 ---
 title: CLAUDE.md
 type: concept
-sources: ["Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "科技翰林院怎麼用 Claude Code 終端機？8 個實戰設定全公開.md", "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md", "未命名.md"]
+sources: ["Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "科技翰林院怎麼用 Claude Code 終端機？8 個實戰設定全公開.md", "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md", "未命名.md", "bnext-claude-md-12-rules.md"]
 created: 2026-05-09
-updated: 2026-05-14
-tags: [claude-code, configuration, schema, persistent-memory, llm-wiki, design-workflow, harness, ratchet]
+updated: 2026-05-19
+tags: [claude-code, configuration, schema, persistent-memory, llm-wiki, design-workflow, harness, ratchet, production]
 confidence: 強
 ---
 
@@ -106,6 +106,37 @@ confidence: 強
 
 這把 CLAUDE.md 從「工程協作備忘錄」擴展為「**跨工具品牌一致性的錨點**」——[[DESIGN-md]] 強調事前定義，CLAUDE.md 則收斂為「給當下 agent 看的具體規則」。
 
+## Production 範本：12 條規則（[[src-bnext-claude-md-12-rules|Forrest Chang 4 + Mnimiy 8]]）
+
+由 [[Andrej-Karpathy]] 2026 初指出 AI 寫程式 3 缺失 → Forrest Chang 整理成 4 條（GitHub 12 萬星）→ Mnimiy 補 8 條應對複雜 agent 場景。30 codebase / 6 週盲測：**41% → 11% → 3% 錯誤率**，指令遵循度幾乎沒掉（78% → 76%）。
+
+| # | 規則 | 一句話 |
+|---|---|---|
+| 1 | Think Before Coding | 不清楚就停下發問，別假設 |
+| 2 | Simplicity First | 最少 code 解問題，拒過度工程 |
+| 3 | Surgical Changes | 只動需求相關，不順手改別處 |
+| 4 | Goal-Driven Execution | 任務化為可驗證目標 |
+| 5 | Use the model only for judgment calls | 分類/摘要用 AI；status code/retry 用 code |
+| 6 | Token budgets | per-task 4,000 / per-session 30,000（[[Context-Rot]] 對抗工具）|
+| 7 | Surface conflicts | 相衝模式選一、解釋為什麼，不要 average 兩種 |
+| 8 | Read before you write | 寫前讀 exports / immediate caller / shared utilities |
+| 9 | Tests verify intent | 業務邏輯改變時測試會 fail = 有效（[[AI-Quality-Collusion]] 對策）|
+| 10 | Checkpoint after every step | 每步回報「已完成/已驗證/剩餘」|
+| 11 | Match conventions | conformance > taste；不同意則 surface 不要 silently fork |
+| 12 | Fail loud | 任何 silently skip 都是錯；surface uncertainty > hiding |
+
+完整英文範本見 [[src-bnext-claude-md-12-rules]]。
+
+### Mnimiy 三大 prompt 反模式（實測）
+
+1. **抽象規則 > 具體範例**：3 個範例 ≈ 10 條規則的 token，AI 對範例過度擬合變不知變通
+2. **情緒喊話與角色扮演是純雜訊**：「請仔細思考」「像資深工程師」的遵循度跌到 30%——指令必須是具體動作
+3. **依賴特定工具的死指令**：「永遠使用 ESLINT」一旦沒裝就靜默失效；用工具中性說法
+
+> 「**一個針對你真實痛點量身打造的 6 條規則，絕對勝過一個塞滿 6 條你永遠用不到的 12 條規則範本。**」 —— Mnimiy
+
+→ 完美對應 [[Ratchet-Pattern]] 跨工程文化共識：規則只應防止實際遇過的失敗。本 wiki [[CLAUDE-md|CLAUDE.md]] 「公開度與資安」段也用同原則累積。
+
 ## 與其他 Schema 規範的關係
 
 | 檔名 | 工具 | 作用範圍 | 性質 |
@@ -154,9 +185,11 @@ CLAUDE.md 是 Claude Code 自己最熟的格式，遇到要新增規則直接跟
 - [[LLM-Wiki]] — 把 CLAUDE.md 當 schema 使用的範式
 - [[Agent-Skills]] — 與 skill 機制互補（CLAUDE.md 是規範、Skill 是流程）
 - [[src-claude-code-context-management]] — Memory / Handoff / Token 管理相關
-- [[src-techhanlin-llm-wiki-tutorial]]、[[src-techhanlin-claude-code-8-settings]]、[[src-aapd-claude-design-figma-workflow]]、[[src-addy-osmani-harness-engineering]] — 來源
+- [[src-techhanlin-llm-wiki-tutorial]]、[[src-techhanlin-claude-code-8-settings]]、[[src-aapd-claude-design-figma-workflow]]、[[src-addy-osmani-harness-engineering]]、[[src-bnext-claude-md-12-rules]] — 來源
 - [[DESIGN-md]] — 同類設計：給 AI Agent 讀的規範檔
+- [[AGENTS-md]] — 平行對照規範檔
 - [[Simon-Lin]] — 提供設計領域具體規則範例的設計師
 - [[Ratchet-Pattern]] — CLAUDE.md 是 Ratchet 的主要編碼載體
 - [[Harness-Engineering]] — CLAUDE.md 是 harness 七元件之一
 - [[Addy-Osmani]] — 提出「飛行員檢查清單」隱喻
+- [[Andrej-Karpathy]] — AI 寫程式 3 缺失觀察是 12 條規則的源頭

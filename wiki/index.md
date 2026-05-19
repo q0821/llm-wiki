@@ -8,6 +8,12 @@ title: 索引
 
 ## 最近新增
 
+### 2026-05-19
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-bnext-claude-md-12-rules\|CLAUDE.md 12 條規則 — Forrest Chang 4 條 + Mnimiy 8 條擴充]] | Karpathy 3 缺失 → 12 條 production CLAUDE.md 範本；30 codebase 盲測 41% → 11% → 3% 錯誤率 |
+
 ### 2026-05-18
 
 | 頁面 | 摘要 |
@@ -210,6 +216,7 @@ title: 索引
 | [[src-akiraxclaw-app-flow-trick\|App Flow HTML+JSON 雙輸出技巧]] | Dave Jeffery 推文整理：給人看的 HTML + 給 AI 看的 JSON 作為記憶外掛 | 2 |
 | [[src-codex-hyperframes-prompt-pack\|Codex × HyperFrames 30 秒 Demo Prompt Pack]] | 7-prompt 鏈 + 12 Visual Beats + Fix Prompts + 3 範例專案 | 1 |
 | [[src-cloudflare-ai-code-review\|Cloudflare AI Code Review 系統]] | Production-grade case study：OpenCode + 7 subagent + Risk Tier + Circuit Breaker；130K 次 / $0.98 中位數 | 1 |
+| [[src-bnext-claude-md-12-rules\|CLAUDE.md 12 條規則]] | Forrest Chang 4 條（GitHub 12 萬星）+ Mnimiy 8 條擴充；30 codebase 盲測 41% → 3% 錯誤率 + 三大 prompt 反模式 | 1 |
 
 ## 實體
 
@@ -228,7 +235,7 @@ title: 索引
 | [[Adobe]] | 設計軟體龍頭，Creative Cloud 全家桶，面臨教育綁定鬆動 | 1 |
 | [[Claude-Design]] | Anthropic 2026 推出的 AI 原生設計產品，繞過設計稿直接產 React | 2 |
 | [[Yu-Chih-Edward-Hwang]] | 「Will AI Kill SaaS」系列作者，FB user fatality1117 | 1 |
-| [[Andrej-Karpathy]] | 前 Tesla AI 總監、OpenAI 共同創辦成員，LLM Wiki 提出者 | 1 |
+| [[Andrej-Karpathy]] | 前 Tesla AI 總監、OpenAI 共同創辦成員，LLM Wiki 提出者；AI 寫程式 3 缺失觀察是 12 條規則的源頭 | 2 |
 | [[科技翰林院]] | 中文圈 AI 工具實戰部落格，主筆 AI 導演林思翰 Hans | 2 |
 | [[Obsidian]] | Local-first markdown 筆記工具，LLM Wiki 工作流最佳載體 | 2 |
 | [[Claude Code]] | Anthropic 2025 推出的 agentic CLI，本知識庫核心執行 agent | 5 |
@@ -257,8 +264,8 @@ title: 索引
 | [[Agent-Skills\|Agent Skills]] | AI Agent 可擴充任務能力的技能規範 | 8 |
 | [[LLM-Wiki]] | Karpathy 提出的 wiki 化知識管理範式，本知識庫的方法論基礎；含人類引導 vs 全自動兩條路線對照 | 2 |
 | [[Memex]] | Vannevar Bush 1945 提出，LLM Wiki 的歷史先驅 | 1 |
-| [[CLAUDE-md\|CLAUDE.md]] | Claude Code 持久記憶層，兼任 LLM Wiki schema 規範；Ratchet 編碼主要載體 | 4 |
-| [[AI-Quality-Collusion]] | AI 同時生成 code 與 test 的隱形共謀反模式 | 2 |
+| [[CLAUDE-md\|CLAUDE.md]] | Claude Code 持久記憶層，兼任 LLM Wiki schema 規範；Ratchet 編碼主要載體；含 12 條 production 範本 + 30 codebase 盲測數據 | 5 |
+| [[AI-Quality-Collusion]] | AI 同時生成 code 與 test 的隱形共謀反模式；含 CLAUDE.md Rule 9 個人版對策 | 3 |
 | [[Specification-by-Example\|SBE]] | 以具體範例凍結需求，AI 品質共謀的結構性對策之一 | 1 |
 | [[MCP]] | Anthropic 推出的開放協議，AI 連外部工具的「USB」標準；含工具描述安全議題 | 9 |
 | [[GEO]] | Generative Engine Optimization / Agent-Ready 網站，SEO 的 AI 時代延伸 | 2 |
@@ -271,15 +278,15 @@ title: 索引
 | [[Vibe-Coding]] | 自然語言直接驅動 LLM 生成程式碼／影片的開發範式（演化光譜第 2 階段） | 2 |
 | [[Agentic-AI-Workflow]] | 同心圓迭代範式，含 Design to Code / Code to Design 雙向流動 + 短影片產製鏈 | 3 |
 | [[Self-Improving-Agent]] | 自我改進代理範式：MEMORY.md + Skill Factory + 偏好學習，Hermes 是代表實作 | 2 |
-| [[Ratchet-Pattern]] | 每次錯誤編碼成永久規則的設計模式；CLAUDE.md / hook / reviewer subagent 三層編碼 | 2 |
+| [[Ratchet-Pattern]] | 每次錯誤編碼成永久規則的設計模式；CLAUDE.md / hook / reviewer subagent 三層編碼；含 41% → 3% 量化實證 | 3 |
 | [[MEMORY-md\|MEMORY.md]] | AI Agent 跨 session 持久記憶層；與 CLAUDE.md 形成「AI 寫 vs 人類寫」對；Claude Code / Hermes 雙實作 | 3 |
-| [[Context-Rot]] | 上下文衰損；compaction / offloading / progressive disclosure 三招；Claude Code 五招（rewind / clear / compact / subagent / continue）；Cloudflare 共用脈絡檔 production 案例 | 3 |
+| [[Context-Rot]] | 上下文衰損；compaction / offloading / progressive disclosure 三招；Claude Code 五招；Cloudflare 共用脈絡檔 production 案例；CLAUDE.md Rule 6 個人版 token budget | 4 |
 | [[Subagent-Driven-Development]] | Implementer + spec reviewer + code quality reviewer 兩階段獨立審查的 agentic workflow；含 Cloudflare 130K production 對照 | 1 |
 | [[Adversarial-Code-Review]] | 對抗式 AI review，抓 human review 看不見的跨檔組合 bug；OWASP focus 為常見起點；含 Risk Tier 分配 | 1 |
 | [[Hybrid-XSS-Defense]] | 雙層 stored XSS 防護（escape variables at substitution + sanitize at storage）| - |
 | [[Fields-Without-Enforcement-Anti-Pattern]] | 反模式：schema 有欄位、邏輯不檢查；含 silent backdoor 變體與時序狀態變體 | - |
 | [[Verify-Framework-Version-First]] | 新專案第一件事驗 lockfile 版本；ratchet pattern 的具體應用 | - |
-| [[Prompt-Pack-Pattern]] | 多段 prompt 串成完整工作流的設計模式；與 Agent Skills 形成「人類控制節奏 vs Agent 自動觸發」對照 | 1 |
+| [[Prompt-Pack-Pattern]] | 多段 prompt 串成完整工作流的設計模式；與 Agent Skills 形成「人類控制節奏 vs Agent 自動觸發」對照；含三大反模式警示 | 2 |
 | [[AGENTS-md\|AGENTS.md]] | OpenAI Codex / OpenCode 等 agentic CLI 的規範檔；與 CLAUDE.md 平行對照 | 2 |
 
 ## 綜整與分析

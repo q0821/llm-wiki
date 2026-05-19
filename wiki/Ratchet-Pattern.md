@@ -1,9 +1,9 @@
 ---
 title: Ratchet Pattern（棘輪模式：規則只增不減）
 type: concept
-sources: ["未命名.md", "Harness Engineering（AI駕馭工程）入門篇：OpenAI最新編程標準，教你輕鬆做到Lv.1.md"]
+sources: ["未命名.md", "Harness Engineering（AI駕馭工程）入門篇：OpenAI最新編程標準，教你輕鬆做到Lv.1.md", "bnext-claude-md-12-rules.md"]
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-19
 tags: [harness-engineering, design-pattern, agent, error-handling, configuration]
 confidence: 強
 ---
@@ -23,6 +23,31 @@ Mitchell Hashimoto 在 [[src-harness-engineering-openai|OpenAI Harness Engineeri
 > 「每當你發現代理犯了一個錯誤，你就花時間設計一個解決方案，確保代理再也不會犯同樣的錯。」
 
 兩個獨立工程文化的同範式表述——是這個 pattern 已收斂為共識的證據。
+
+**第三個獨立來源**（[[src-bnext-claude-md-12-rules]] / Mnimiy）：
+
+> 「**一個針對你真實痛點量身打造的 6 條規則，絕對勝過一個塞滿 6 條你永遠用不到的 12 條規則範本。**」
+>
+> 「**不要盲目套用這 12 條規則，每一條寫進去的規則都必須能回答一個問題：這能防止我實際遇過的什麼錯誤？**」
+
+→ Google / OpenAI / 個人工程師三個獨立工程社群得出同一原則，這個 pattern 已是跨界共識。
+
+## 實證數據：4 條 → 12 條對 [[CLAUDE-md]] 錯誤率的影響
+
+[[src-bnext-claude-md-12-rules|Mnimiy 30 codebase / 6 週盲測]]提供 ratchet 累積規則的**量化效果**：
+
+| 條件 | AI 寫程式錯誤率 | 指令遵循度 |
+|---|---|---|
+| 無規則 | 41% | — |
+| 4 條規則（Forrest Chang 原版）| 11% | 78% |
+| 12 條規則（Mnimiy 擴充）| **3%** | 76% |
+
+關鍵觀察：
+- 錯誤率**兩階段驟降**（41% → 11% → 3%）
+- 規則數從 4 加到 12，遵循度幾乎沒掉（78% → 76%）—— **打破「規則越多越失控」迷思**
+- 但 24% 規則仍不被主動套用，**ratchet 不是萬靈丹**——只是大幅降低錯誤率
+
+這量化證明 ratchet pattern 的工程價值：**從失敗累積出來的具體規則，每增加一條都有邊際效益**（在合理範圍內）。
 
 ## 操作步驟
 
@@ -83,8 +108,10 @@ Ratchet **不是無限累積**——Addy Osmani 明確警告：
 
 - **[[src-addy-osmani-harness-engineering]]**：定義來源
 - **[[src-harness-engineering-openai]]**：Mitchell Hashimoto 同源表述、OpenAI Codex 經驗
+- **[[src-bnext-claude-md-12-rules]]**：Mnimiy 12 條 CLAUDE.md 範本 + 30 codebase 盲測量化證明 ratchet 的工程價值
 - **[[Hermes-Agent]] / [[src-hermes-agent-99-cases]]**：「審計自己 23 天 129 個 session，發現合規問題」案例是 Ratchet 的延伸——agent 自我審計過往行為，找出應該被編碼的失敗
-- **本知識庫的實踐**：CLAUDE.md 中的「raw/ 中的檔案不可修改」「使用 [[wikilink]] 格式交叉引用」就是 Ratchet 編碼的結果——每條都對應一個「如果不寫死，AI 會搞錯」的歷史失敗
+- **[[src-cloudflare-ai-code-review]]**：Cloudflare AGENTS.md 審查者監控規則更新時機 + 反模式扣分（通用填充內容 / 超 200 行 / 無命令工具名稱）= Ratchet 在 production 的具體執行
+- **本知識庫的實踐**：CLAUDE.md 中的「raw/ 中的檔案不可修改」「使用 [[wikilink]] 格式交叉引用」「公開度與資安」段（從 2026-05-15 客戶 retro 事件累積）就是 Ratchet 編碼的結果
 
 ## 信心評估
 

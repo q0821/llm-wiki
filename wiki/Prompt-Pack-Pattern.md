@@ -1,9 +1,9 @@
 ---
 title: Prompt Pack Pattern（多段 prompt 串成完整工作流）
 type: concept
-sources: ["課後 Prompt & 資源懶人包：Codex × HyperFrames 30 秒 Demo 3615edfc91bd80d19acee2ae9f0c5547.md"]
+sources: ["課後 Prompt & 資源懶人包：Codex × HyperFrames 30 秒 Demo 3615edfc91bd80d19acee2ae9f0c5547.md", "bnext-claude-md-12-rules.md"]
 created: 2026-05-15
-updated: 2026-05-15
+updated: 2026-05-19
 tags: [prompt-engineering, workflow, design-pattern, vibe-coding]
 confidence: 中
 ---
@@ -99,6 +99,34 @@ Prompt Pack 是一種 **prompt engineering 範式**——把一個複雜任務�
 - 任務很簡單，一個 prompt 就能搞定
 - 任務需要 agent 自動探索（Prompt Pack 限制太多）
 - 跨多個專案重用 → 直接做成 [[Agent-Skills|Skill]] 或 `SKILL.md`
+
+## 三大實測反模式（[[src-bnext-claude-md-12-rules|Mnimiy]] 警示）
+
+設計 Prompt Pack 時容易踩的坑：
+
+### 反模式 1：寫範例不如寫規則
+
+- **3 個範例 ≈ 10 條抽象規則的 token 消耗**
+- AI 會對範例**過度擬合**，變得不知變通
+- **應用**：抽象規則 > 具體範例。對應本頁「設計原則 4：預期填空具體到『不超過 N 個中文字』」——用**量化限制**取代「給範例參考」
+
+### 反模式 2：情緒喊話與角色扮演是純雜訊
+
+- 「請仔細思考」「你要表現得像個資深工程師」遵循度暴跌至 **30%**
+- 無法被驗證的空泛指令 = 無效
+
+> 對應本頁設計原則「Prompt 結構統一」——每個 prompt 都要有「輸入填空 → 限制 → 預期輸出」三段式，**情緒指令不在三段中任何一段**，應該刪除。
+
+### 反模式 3：依賴特定工具的死指令
+
+- 「永遠使用 ESLINT」一旦專案沒裝就**靜默失效**
+- 應改用工具中性說法
+
+> 對應 [[Ratchet-Pattern]] 的克制原則：規則應該追溯到失敗，而非預設「工具一定會在」。
+
+### 三大反模式的共同點
+
+三者都是「**表面看似有用、實際靜默無效**」的 prompt——加進去看起來合理，但被驗證後對遵循度沒有正面貢獻，甚至有負面影響。設計 Prompt Pack 時應主動刪除這類成分。
 
 ## 相關概念
 

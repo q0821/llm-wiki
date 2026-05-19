@@ -687,3 +687,35 @@
 - Agents Week 其他發布
 - OpenCode 官方 GitHub repo / 文件可獨立 ingest 補強 entity 頁
 - fetch-url.sh markdown.new API 卡 60 秒問題——若反覆出現可考慮加 WebFetch fallback 機制
+
+## [2026-05-19] inbox-pull | iCloud 權限解鎖
+- 之前的 `Operation not permitted` 解除（使用者授權 Terminal 存取 iCloud）
+- 搬入 1 個檔案：`原來是擅長等紅燈的朋友 (@honglong0420)\n272 個喜歡 · 1 則回覆.md`（140 bytes，只有 X 貼文 share link）
+- 因 X.com unauthenticated 抓不到（HTTP 402，前車之鑑）→ 擱置，需登入態手動貼上才能 ingest
+
+## [2026-05-19] ingest | bnext「CLAUDE.md 12 條規則」
+- 來源：bnext.com.tw / 蘇柔瑋 / 2026-05-18，二次整理 Mnimiy（X @Mnilax）原始實證
+- fetch-url.sh 跳過直接 WebFetch（上次 cloudflare 經驗：markdown.new 對大型網站 blog 易超時）
+- 演化鏈：[[Andrej-Karpathy]] 3 缺失 → Forrest Chang 4 條（GitHub 12 萬星）→ Mnimiy 8 條擴充（30 codebase 盲測 41% → 11% → 3% 錯誤率）
+- 通過 CLAUDE.md「公開度與資安」grep 自查
+
+### 影響頁面
+- 新建：[[src-bnext-claude-md-12-rules]]
+- 更新（5 個既有頁）：
+  - [[CLAUDE-md]]：**大幅擴充**——加「12 條 production 範本」段落（簡表 + 完整範本指向 src）+ Mnimiy 三大反模式
+  - [[Ratchet-Pattern]]：補 Mnimiy 同源原則「規則只應防止你實際遇過的失敗」+ 30 codebase 量化實證數據
+  - [[Andrej-Karpathy]]：補「2026 初 AI 寫程式 3 缺失」段落 + 演化鏈位置（問題定義者角色）
+  - [[Context-Rot]]：補「個人版對抗工具」段落，Rule 6 token budget 直接對應
+  - [[AI-Quality-Collusion]]：補 Rule 9「Tests verify intent」個人版對策
+  - [[Prompt-Pack-Pattern]]：補三大反模式警示（範例 vs 規則 / 情緒喊話 / 工具死指令）
+- 更新 index.md（最近新增追加 2026-05-19 區塊 + 來源/概念條目 + 7 個既有頁來源數調整）
+
+### 形成的新對話組
+- [[Ratchet-Pattern]] 跨工程文化共識（第三個獨立來源）：Google Addy ↔ OpenAI Mitchell Hashimoto ↔ 個人工程師 Mnimiy
+- [[CLAUDE-md]] 從「方法論說明」升級為「含具體可貼上範本 + 30 codebase 實證數據」的完整參考頁
+- [[Andrej-Karpathy]] 在「LLM Wiki gist」之外多了「AI 寫程式 3 缺失」第二個影響鏈
+
+### 待後續處理
+- 補抓 Mnimiy 原 X 貼文（X.com unauthenticated 抓不到，需登入態手動貼上）
+- 補抓 Forrest Chang GitHub CLAUDE.md 原 repo
+- inbox 那個「等紅燈朋友」X 貼文擱置——等使用者補完整內容

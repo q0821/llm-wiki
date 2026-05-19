@@ -1,9 +1,9 @@
 ---
 title: Context Rot（上下文衰損）
 type: concept
-sources: ["未命名.md", "Claude Code 上下文管理攻略.md"]
+sources: ["未命名.md", "Claude Code 上下文管理攻略.md", "bnext-claude-md-12-rules.md"]
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-19
 tags: [context-engineering, llm, agent, performance, harness]
 confidence: 強
 ---
@@ -88,6 +88,24 @@ Filesystem 不只是儲存，也是 context rot 的解藥。
 [[src-addy-osmani-harness-engineering]] 的 Long-Horizon Execution 三招（Loop / Planning / Split），其中 **Split**（產出與評估拆給不同 agent）和 **Subagents** 同源——都是把單一 agent 的 context 壓力**分散到多個小 context**。
 
 > 同一個 agent 既當考生又當考官，會有正面偏差；同一個 agent 既要做事又要記住所有歷史，context rot 必定發生。
+
+## 個人版對抗工具：[[CLAUDE-md|CLAUDE.md]] 12 條規則中的 Rule 6
+
+[[src-bnext-claude-md-12-rules|Mnimiy]] 把 token budget 直接寫進 CLAUDE.md 規則：
+
+```
+Per-task budget: 4,000 tokens.
+Per-session budget: 30,000 tokens.
+If a task is approaching budget, summarize and start fresh. Do not push through.
+Surfacing the breach > silently overrunning.
+```
+
+關鍵設計：
+- **量化具體**：4,000 / 30,000 是具體數字不是模糊「不要太長」
+- **預警 > 突破**：「surface the breach」對應 Cloudflare 「協調者 prompt 超過 50% 警告」同源
+- **主動觸發 compaction**：「summarize and start fresh」對應 [[src-claude-code-context-management]]「主動提早觸發 /compact」
+
+這是 context rot 從「工程實作」（Cloudflare 共用脈絡檔）到「個人規範」（CLAUDE.md 規則）的兩種對抗形式——後者更輕量但需要 agent 自覺遵守。
 
 ## Production 案例：[[Cloudflare]] AI Code Review 的工程處理
 
