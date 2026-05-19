@@ -18,10 +18,17 @@ confidence: 強
 
 - **@honglong0420**（X，暱稱「原來是擅長等紅燈的朋友」）—— 撰寫 2026-05 開源推廣文，自稱「老闆之前很瘋狂，想要整理一份台灣中小企業日常工作場景用得上的 agent skills」
 
+## 公司資訊
+
+- **法人**：Asgard Inc. 肆佳科技股份有限公司
+- **License**：MIT（全套開源）
+
 ## 核心產品
 
-- **Skills Repository**（開源）：263 個 coding agent skills，涵蓋理論模型、演算法、商業框架等 21 類。詳見 [[src-asgard-skills]]
+- **Skills Repository**（開源）：**301 個** coding agent skills（2026-05-19 [[src-asgard-skills-audit-2026-05-19|審計]]快照；初次發布 263 個 / 21 類，2026-05 推文 263 個 / 22 類），涵蓋理論模型、演算法、商業框架、台灣專屬等 25 個前綴分類。詳見 [[src-asgard-skills]]
 - **MCP Servers**：搭配 skills 組合成場景化外掛（股票分析、電商營運、政策研究等）
+
+> ⚠️ **承諾 vs 現況落差**：作者推文「主打台灣中小企業電商」現階段大部分仍是骨架——`tw-ecom-*` 分類 38 個中 26 個是 `status: skeleton`。詳見 [[src-asgard-skills-audit-2026-05-19#26 個 skeleton 完整清單]]。
 
 ## 架構理念
 

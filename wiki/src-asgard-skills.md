@@ -10,11 +10,29 @@ confidence: 強
 
 # Asgard Skills Repository
 
-> 來源：GitHub repo `asgard-ai-platform/skills`｜擷取日期：2026-04-16
+> 來源：GitHub repo `asgard-ai-platform/skills`｜擷取日期：2026-04-16｜2026-05-19 [[src-asgard-skills-audit-2026-05-19|本地審計]]更新數字
 
 ## 摘要
 
-[[Asgard-AI-Platform]] 開源的 [[Agent-Skills]] 技能庫，包含 **263 個 coding agent skills**，以 Markdown 檔案（`SKILL.md`）形式存在，遵循 Claude Agent Skills 規範。定位為 Asgard 平台的「食材庫」(ingredient library)，搭配 MCP (Model Context Protocol) servers 組合成特定場景的 AI agent 外掛。
+[[Asgard-AI-Platform]] 開源的 [[Agent-Skills]] 技能庫，以 Markdown 檔案（`SKILL.md`）形式存在，遵循 Claude Agent Skills 規範。定位為 Asgard 平台的「食材庫」(ingredient library)，搭配 MCP (Model Context Protocol) servers 組合成特定場景的 AI agent 外掛。
+
+### 規模時間線
+
+| 時間點 | skill 總數 | 分類數 | 來源 |
+|---|---|---|---|
+| 2026-04-16（本頁初版）| 263 | 21 類 | 當時 GitHub repo 抓取 |
+| 2026-05 推文 | 263 | 22 個分類 | [[src-honglong0420-asgard-x-thread]] |
+| **2026-05-19 審計** | **301** | **25 個前綴**（含 tools / eval / docs 三個 repo 工具目錄）| [[src-asgard-skills-audit-2026-05-19]] |
+
+> Repo 持續成長中。以下分類結構為 2026-04-16 快照（21 類），審計版見 audit 來源頁。
+
+## ⚠️ Skeleton 狀態警示（2026-05-19 審計）
+
+**26 個 SKILL.md 標記 `status: skeleton`，內文「body pending」**——全部集中在 `tw-ecom-*` 分類（佔該分類 38 個中的 68%）。
+
+意味著：作者推文「主打台灣中小企業電商」的承諾**現階段大部分還是骨架**。完成版的 12 個 `tw-` 都不是電商主題（stock-analysis / einvoice / fintech / healthcare / manufacturing / payment-integration / retail / startup-legal / tax-basics / ecom-dtc-shopline / ecom-invoice-ezpay / ecom-payment-newebpay）。
+
+詳完整 skeleton 清單與適用性建議見 [[src-asgard-skills-audit-2026-05-19]]。
 
 ## 分類結構（21 類，以前綴區分）
 

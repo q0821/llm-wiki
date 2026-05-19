@@ -106,6 +106,20 @@ confidence: 強
 - **中**：22 個分類（與 [[src-asgard-skills]] 記錄的 21 個略有出入）——可能 repo 持續新增；不嚴重的不一致
 - **中**：「全部 MIT 開源」「263 份」與既有 wiki 記錄一致
 
+### 2026-05-19 審計校正
+
+[[src-asgard-skills-audit-2026-05-19|本地審計]]於 2026-05-19 git clone repo 實測：
+
+| 推文當下（2026-05）| 審計（2026-05-19） | 解釋 |
+|---|---|---|
+| 263 份 skill | **301 個 SKILL.md** | Repo 持續成長 |
+| 22 個分類 | **25 個前綴**（含 tools / eval / docs 工具目錄）| 同上 |
+| 「主打台灣中小企業電商」 | **`tw-ecom-*` 38 個中 26 個是 `status: skeleton`** | 推文是願景，現況尚未完工 |
+| Iron Law 設計慣例 | **301/301（100%）** ✅ | 含全大寫 `IRON LAW:` / 中文「鐵律」「核心法則」各種寫法 |
+| MIT License | ✅ Copyright Asgard Inc. **肆佳科技股份有限公司** | 確認台灣公司 |
+
+推文中提到的「四件套思維模型」(`hum-dialectics` / `ops-business-model-canvas` / `ux-lean-startup` / `hum-narrative`) **全部已完成且品質佳**（不在 skeleton 清單中）——作者推薦的具體 skill 是可立即使用的。
+
 ## 與 Wiki 的關聯
 
 ### 補強既有來源

@@ -14,6 +14,8 @@ title: 索引
 |------|------|
 | [[src-bnext-claude-md-12-rules\|CLAUDE.md 12 條規則 — Forrest Chang 4 條 + Mnimiy 8 條擴充]] | Karpathy 3 缺失 → 12 條 production CLAUDE.md 範本；30 codebase 盲測 41% → 11% → 3% 錯誤率 |
 | [[src-honglong0420-asgard-x-thread\|Asgard Skills 263 個 agent skills 開源推廣（X 推文）]] | @honglong0420 親述視角 + 四件套思維模型（辯證法 / 九宮格 / 精實創業 / 敘事）+ 「啟動成本是瓶頸」核心論點 |
+| [[src-asgard-skills-audit-2026-05-19\|Asgard Skills Repo 本地審計]] | A 結構 / B 安全 / D 抽樣 / E 適用性四向審計；301 個 skill 校正 + 26 個 `tw-ecom-*` skeleton 警示 + Iron Law 100% 驗證 |
+| [[synthesis-asgard-install-for-my-topics]] | 從 301 個挑出 ~50 個與接案 / 投資 / 思維三主題強相關的 install 候選清單 |
 
 ### 2026-05-18
 
@@ -189,8 +191,9 @@ title: 索引
 | [[src-marketing-skills-ai-agents\|Marketing Skills for AI Agents]] | AI Agent 行銷技能集，涵蓋 SEO/CRO/文案等 | 1 |
 | [[src-photography-studio-proposal\|攝影工作室A網站優化提案]] | 網站內容優化提案 | 1 |
 | [[src-openclaw-wordpress-rag\|OpenClaw × WordPress 輕量 RAG]] | Cloudflare 免費方案實作筆記 | 1 |
-| [[src-asgard-skills\|Asgard Skills Repository]] | 開源 263 個 AI agent skills，涵蓋股票分析、策略、SEO、設計等 | 1 |
+| [[src-asgard-skills\|Asgard Skills Repository]] | 開源 301 個 AI agent skills（2026-05-19 審計快照；初版 263 個），涵蓋股票分析、策略、SEO、設計等 | 1 |
 | [[src-honglong0420-asgard-x-thread\|Asgard Skills 開源推廣（X 推文）]] | @honglong0420 親述視角 + 四件套思維模型 skill + 「啟動成本是瓶頸」 | 2 |
+| [[src-asgard-skills-audit-2026-05-19\|Asgard Skills Repo 本地審計（2026-05-19）]] | A 結構 / B 安全 / D 抽樣 / E 適用性四向審計；補強客觀整理與作者親述兩個既有來源 | 0 |
 | [[src-customer-diagnostic-50-questions\|50 個顧客自我診斷問題]] | 含 ABC 分級與 CLV 概念 | 1 |
 | [[src-claude-code-context-management\|Claude Code 上下文管理攻略]] | 含 rewind/compact/subagent 策略 | 1 |
 | [[src-design-md-revolution\|DESIGN.md 革命]] | awesome-design-md 專案介紹，AI UI 設計新標準 | 3 |
@@ -298,6 +301,7 @@ title: 索引
 | [[diagnostic-customer-answers\|顧客管理自我診斷 — 作答記錄]] | 對 50 題顧客自我診斷問卷的個人作答 | 1 |
 | [[WordPress-接案工作筆記]] | WordPress 接案三階段工作流：獲客 → 接手 → 加值 | 3 |
 | [[presentation-攝影工作室A-網站優化\|攝影工作室A — 網站健檢與優化簡報]] | Marp 簡報：SEO + GEO 雙軌體檢，含實地抓取 client-site.example 數據 | 1 |
+| [[synthesis-asgard-install-for-my-topics\|Asgard Skills 個人 install 候選清單]] | 從 301 個挑出 ~50 個對接案 / 投資 / 思維三主題強相關的 skill；含安裝建議 | 3 |
 
 ## 比較
 

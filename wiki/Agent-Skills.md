@@ -81,7 +81,7 @@ Skill 的封裝優勢：
 ## 已知的 Skills 集合
 
 - [[src-marketing-skills-ai-agents|marketingskills]] — 行銷任務技能集（SEO、CRO、文案等）
-- [[src-asgard-skills|Asgard Skills]] — 263 個跨領域技能（理論模型、演算法、商業框架等），附確定性計算腳本
+- [[src-asgard-skills|Asgard Skills]] — 301 個跨領域技能（2026-05-19 審計快照；初版 2026-04 為 263 個），附確定性計算腳本；含 26 個 `tw-ecom-*` skeleton 狀態，詳見 [[src-asgard-skills-audit-2026-05-19]]
 - **NotebookLM Skill**（[[notebooklm-py]] 配套）— 讓 Claude Code 操作 [[NotebookLM]]，把研究外包給 Gemini。詳見 [[src-claude-code-notebooklm]]
 - **yt-search Skill**（自製範例）— 用 yt-dlp 搜尋 YouTube 並回傳結構化結果（含「觀看數/訂閱數」爆款比率）
 - **Hermes Skills**（[[Hermes-Agent]] 生態系）— 99 案例中橫跨 13 個分類，含 awesome-hermes-agent 精選清單；特色是 **Skill Factory**（靜默監看工作流，自動生成 SKILL.md）。詳見 [[src-hermes-agent-99-cases]]

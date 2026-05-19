@@ -41,7 +41,7 @@ confidence: 強
 Wiki 已有的 Skills 相關來源：
 
 - [[src-marketing-skills-ai-agents]] — 本清單第 6 項 `marketingskills` 的完整介紹
-- [[src-asgard-skills]] — 此清單之外的另一大型 skills 集合（263 個，跨領域）
+- [[src-asgard-skills]] — 此清單之外的另一大型 skills 集合（301 個 / 2026-05-19 審計快照，初版 263 個；跨領域）
 - [[src-claude-code-notebooklm]] — NotebookLM Skill 與 yt-search Skill 的實戰案例
 
 本清單的獨特之處：**按熱度排序的精選**，比整包 repo 更適合「要不要裝」的決策。

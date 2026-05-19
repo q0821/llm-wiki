@@ -229,7 +229,7 @@ Hermes 把自己包裝成 [[MCP]] server，讓其他 agent 可呼叫 Hermes 的�
 
 ### 形成的對話組
 
-- **本來源 vs [[src-asgard-skills]]**：兩個 agent skill 生態系（Asgard 263 skills vs Hermes 99 cases）的並排比較
+- **本來源 vs [[src-asgard-skills]]**：兩個 agent skill 生態系（Asgard 301 skills / 2026-05-19 審計 vs Hermes 99 cases）的並排比較
 - **本來源 vs [[src-anthropic-managed-agents-engineering]]**：開源 agent（Hermes）vs 商業託管 agent（Claude Managed Agents）的範式選擇
 - **本來源 vs [[src-techhanlin-llm-wiki-tutorial]]**：「自我改進 LLM Wiki」vs「人類引導 + Obsidian 監督」的兩條 LLM Wiki 路線
 

@@ -749,3 +749,42 @@
 
 ### 擱置處理
 - inbox 那則含 newline 的 X share link 檔保留（與 honglong0420-asgard-x-thread.md 配對：share link + 內文兩檔）
+
+## [2026-05-19] audit | Asgard Skills Repo 本地審計
+- 觸發：使用者問「repo 裡面的 skill 是不是都沒有問題」
+- 範圍：A 結構 / B 安全 / D 品質抽樣 / E 適用性 四向掃描
+- 方法：`git clone --depth 1` 後 bash 命令統計、grep 掃描、10 個 skill 詳看
+- 結論：**整體可信、品質高、安全乾淨**——301/301 frontmatter 完整、安全 0 紅旗、抽樣品質佳
+- 重要新發現：
+  - **26 個 `tw-ecom-*` 是 `status: skeleton`**（佔 tw- 類 68%）——主打台灣電商承諾與現況落差
+  - **Iron Law 普及率實際 100%**（前期 grep 誤判 18%，case-sensitive heading 漏掉 `IRON LAW:` 全大寫 / 中文「鐵律」/ 「核心法則」寫法）
+  - **規模時間線**：263（2026-04）→ 263（2026-05 推文）→ **301**（2026-05-19）；分類 21 → 22 → 25
+
+### 影響頁面
+- 新建：[[src-asgard-skills-audit-2026-05-19]]（audit src，frontmatter sources []）
+- 新建：[[synthesis-asgard-install-for-my-topics]]（綜整頁，3 主題 install 候選 ~50 個）
+- 事實校正：
+  - [[src-asgard-skills]]：263 → 301、21 類 → 25 前綴、補規模時間線 + skeleton 警示段
+  - [[Asgard-AI-Platform]]：263 → 301、補公司資訊（肆佳科技股份有限公司）+ 承諾 vs 現況落差段
+  - [[Agent-Skills]]：對照表「Asgard 263 → 301」校正
+  - [[src-honglong0420-asgard-x-thread]]：補「2026-05-19 審計校正」對照表（推文快照數字 vs 審計）
+  - [[src-hermes-agent-99-cases]]：「Asgard 263 → 301」校正
+  - [[src-recommended-claude-code-skills]]：同校正
+
+### Asgard 主題三來源視角完整成型
+| Source | 視角 | 時間 |
+|---|---|---|
+| [[src-asgard-skills]] | 客觀整理（GitHub repo 結構描述）| 2026-04 |
+| [[src-honglong0420-asgard-x-thread]] | 內部人員親述（推廣 + 推薦四件套）| 2026-05 |
+| [[src-asgard-skills-audit-2026-05-19]] | 獨立審計（安全 + 品質 + 適用性 + 校正）| 2026-05-19 |
+
+### 自我審計流程觀察
+- 第一遍 grep `Iron Law` heading 找到 55 個 → **誤判普及率 18%**
+- 第二遍寬鬆掃描含 `IRON LAW:` 全大寫 / 中文寫法 → **修正為 100%**
+- 教訓：審計報告中明確記下這個誤判 + 修正，作為 [[Ratchet-Pattern]] 「規則從失敗賺來」的小範例
+
+### 待後續處理
+- 三個月後（~2026-08）回頭看 26 個 `tw-ecom-*` skeleton 是否完工
+- 實際試跑推文四件套並記 case study
+- 接案 SEO 體檢時試 `mkt-seo-audit` + `algo-seo-*` 系列
+- 投資決策時試 `tw-stock-analysis` + `biz-dcf` 組合
