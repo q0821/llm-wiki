@@ -8,6 +8,15 @@ title: 索引
 
 ## 最近新增
 
+### 2026-05-20（lint 補建）
+
+| 頁面 | 摘要 |
+|------|------|
+| [[Anthropic]] | 廠商 entity 補建（195+ 次提及無獨立頁）；含 Claude 3+1 個 surfaces 完整地圖、核心員工、跨廠商共識中的位置 |
+| [[OpenAI]] | 對標廠商 entity 補建；與 Anthropic 的對標關係表（surface / 規範檔 / 工程論述等 8 維對比） |
+| [[Mnimiy]] | 社群實驗者 entity 補建；CLAUDE.md 8 條擴充作者 + Ratchet 第 3 個獨立來源 + 30 codebase 盲測量化實證 |
+| [[comparison-ai-native-vs-lean-startup\|AI-Native vs Lean Startup 比較頁]] | 4 階段 vs 6 階段對映 + 反模式對照 + Anthropic 為何重新框架 4 大原因 |
+
 ### 2026-05-20
 
 | 頁面 | 摘要 |
@@ -280,6 +289,9 @@ title: 索引
 | [[OpenAI-Codex-CLI]] | OpenAI agentic CLI；AGENTS.md / `codex adversarial-review` 等特色 | 2 |
 | [[OpenCode]] | 開源伺服器優先 agentic CLI；Cloudflare AI code review 系統底層 | 1 |
 | [[Claude-Cowork]] | Anthropic Claude 3 product surfaces 之一（folder access + connectors + skills + scheduled runs）；Airtree 「運營核心」實戰 | 1 |
+| [[Anthropic]] | 本知識庫核心廠商（195+ 次提及）；Claude 3+1 個 surfaces + 核心員工地圖 + 跨廠商工程共識位置 | 4 |
+| [[OpenAI]] | 對標廠商（92 次提及）；Codex CLI / AGENTS.md / Harness Engineering 的對應位置；與 Anthropic 8 維對比 | 2 |
+| [[Mnimiy]] | 社群實驗者 / X @Mnilax；CLAUDE.md 12 條規則的 8 條擴充作者 + Ratchet 第 3 個獨立來源 + 30 codebase 盲測 | 1 |
 
 ## 概念
 
@@ -337,3 +349,4 @@ title: 索引
 | 頁面 | 摘要 | 來源數 |
 |------|------|--------|
 | [[加密貨幣收益工具比較]] | 活期賺幣 / 網格 / 雙幣贏 / Deribit 自賣選擇權的並排比較 | 2 |
+| [[comparison-ai-native-vs-lean-startup\|AI-Native vs Lean Startup]] | 4 階段 vs 6 階段對映 + 反模式對照 + Anthropic 為何重新框架的 4 大原因 | 1 |

@@ -10,7 +10,7 @@ confidence: 強
 
 # The Founder's Playbook — Building an AI-Native Startup
 
-**出版方**：Anthropic 官方
+**出版方**：[[Anthropic|Anthropic 官方]]
 **發布日期**：2026-05-06（檔名 v3）
 **原始連結**：https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/69fe2a55b93bb0732b1fe33c_The-Founders-Playbook-05062026_v3%20(1).pdf
 **規模**：36 頁 / 7 章 + Resources

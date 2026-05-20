@@ -164,11 +164,22 @@ if ($success === 0 && ($failed > 0 || $skipped > 0)) {
 2. **每條規則都有 regression 測試證明 enforcement 真的會檢查**——正例（生效）+ 反例（不該生效時真的沒生效）
 3. **Security-relevant 欄位避免 non-null default**——nullable + 明確 setter > default value
 
-## 對應 OWASP
+## 對應 OWASP Top 10（2021）完整映射
 
-- **A04 Insecure Design** — 設計層級沒把 enforcement 跟欄位接上
-- **A01 Broken Access Control**（案例 B 子集）— role default backdoor
-- **A09 Logging Failures**（案例 C 子集）— audit 紀錄與實際狀態不符
+| OWASP | Anthropic Inexperience 對應 | Fields-Without-Enforcement 範式 | 本 wiki 相關頁 |
+|---|---|---|---|
+| **A01 Broken Access Control** | Broken access controls | 案例 B：non-null default 升權 backdoor | [[Adversarial-Code-Review]] OWASP focus 必查項 |
+| **A02 Cryptographic Failures** | （隱含）Exposed customer data | （本頁未直接涵蓋——加密處理算另一範式） | — |
+| **A03 Injection** | Injection vulnerabilities | 案例 C 變種：audit log 紀錄被 inject | [[Hybrid-XSS-Defense]] |
+| **A04 Insecure Design** | — | **核心命中**：enforcement 與欄位設計分離 | 本頁 |
+| **A05 Security Misconfiguration** | — | 案例 A 變種：framework default 開太大 | [[Verify-Framework-Version-First]] |
+| **A06 Vulnerable Components** | — | （本頁未直接涵蓋——依賴管理另一範式） | — |
+| **A07 Identification & Auth Failures** | Weak authentication | （本頁未列，但同源） | — |
+| **A08 Software & Data Integrity** | — | 案例 C 子集：state 紀錄 ≠ 實際結果 | — |
+| **A09 Security Logging & Monitoring Failures** | Lack of audit trails | **案例 C 核心命中**：成功訊息與實際結果不符 | — |
+| **A10 SSRF** | — | （本頁未直接涵蓋） | — |
+
+→ 本反模式**主要命中 A04（核心）+ A01（案例 B）+ A09（案例 C）**，是「設計層級」的問題而非單純實作 bug。
 
 ## Anthropic 官方版根因命名：「Insecure by Inexperience」（[[src-anthropic-founders-playbook-2026]]）
 

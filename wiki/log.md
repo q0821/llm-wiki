@@ -917,3 +917,30 @@
 - Anthropic / OpenAI / Mnimiy entity 頁建立（高頻提及但無獨立頁）
 - Anthropic Applied AI team blog 系列補 ingest
 - AI-Native 4 階段 vs lean startup 6 階段比較頁
+
+## [2026-05-20] lint 補建 | 缺漏實體頁 + AI-Native vs Lean Startup 比較頁
+- 對應上次 lint 報告中的「低優先項目」批次處理
+- **新建 3 個 entity 頁**（高頻提及但無獨立頁，依次補建）：
+  - [[Anthropic]]（195+ 次提及）：核心廠商，Claude 3+1 個 surfaces 完整地圖 + 核心員工（Boris/Thariq/Karpathy）+ 跨廠商工程共識位置 + 對標廠商關係
+  - [[OpenAI]]（92 次提及）：對標廠商，與 Anthropic 在 surface/規範檔/工程論述 8 維對比 + 跨廠商共識（Hashimoto Ratchet / Harness Engineering）
+  - [[Mnimiy]]（30 次提及）：社群實驗者 / X @Mnilax，CLAUDE.md 12 條規則的 8 條擴充作者 + Ratchet 第 3 個獨立來源 + 三大 prompt 反模式實證者
+- **新建 1 個 comparison 頁**：
+  - [[comparison-ai-native-vs-lean-startup]]：Lean Startup（Eric Ries 2011）vs AI-Native Startup（Anthropic 2026）4 階段對映 + 4 個 AI 時代新反模式對照 + Anthropic 為何重新框架的 4 大原因
+- **補強既有頁**：
+  - [[Fields-Without-Enforcement-Anti-Pattern]]：擴充對應 OWASP 區塊為「OWASP Top 10 完整映射表」+ Anthropic Inexperience 5 大漏洞映射；標出本頁核心命中 A04 + A01 + A09
+  - [[src-anthropic-founders-playbook-2026]]：把上次 lint 漂白成純文字的「Anthropic 官方」改回 [[Anthropic|Anthropic 官方]] wikilink（entity 頁已建）
+- 驗證：broken link 0 命中 + 敏感詞 grep 0 命中
+- 影響頁面：4 個新頁 + 2 個既有頁補強 + index.md = 7
+- 知識庫規模：117 → 121 頁
+
+### 形成的新對話組
+- [[Anthropic]] ↔ [[OpenAI]] entity 頁完整對映後，[[CLAUDE-md]] ↔ [[AGENTS-md]] / [[Claude Code]] ↔ [[OpenAI-Codex-CLI]] / [[Boris-Cherny]] ↔ Hashimoto 等多組「Anthropic vs OpenAI」雙向連結可清晰追溯
+- [[Mnimiy]] entity 頁填補 Ratchet 跨工程文化共識的「個人實證者」角色
+- [[comparison-ai-native-vs-lean-startup]] 是本 wiki 第二個 comparison 頁（首個為加密貨幣收益工具比較），開啟「框架對比」這個新文體
+
+### 仍待後續處理
+- 資料缺口（需要外部 ingest）：
+  - Anthropic Applied AI team blog 系列補 ingest
+  - Boris Cherny 公開講座 / 訪談 ingest
+  - Anthropic engineering blog 中 Boris / Thariq 的署名文章
+- 等使用者提供 URL 或場景再處理
