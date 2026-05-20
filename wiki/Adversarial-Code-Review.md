@@ -91,6 +91,12 @@ human review 強的是：
 - prototype 階段（review 的 baseline 還沒定）
 - spec 還沒定型（會抓出一堆「spec 沒寫」誤判）
 
+## 在 [[PGE-Principle]] 中的位置
+
+[[src-zeuikli-claude-code-best-practices|zeuikli]] 把本 pattern 歸納為 [[PGE-Principle|PGE 原則]] 的「**層 3：AI evaluator**」——是「另一個 LLM 做 evaluator」的**強化版**（加 focus prompt + 自訂角色）。
+
+仍是 LLM 評估 LLM，所以**比層 1 機械檢查、層 2 人類審查弱**。三層疊加最強。
+
 ## Risk Tier 分配（[[Cloudflare]] production）
 
 [[src-cloudflare-ai-code-review|Cloudflare production 案例]]提供具體的「**diff 規模分層投入 reviewer**」做法。依 diff 大小分三層：

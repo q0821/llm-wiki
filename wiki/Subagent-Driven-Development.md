@@ -96,6 +96,16 @@ Final Reviewer（整 branch ready to merge）
 Merge + Push
 ```
 
+## 上位原則：[[PGE-Principle|PGE]]（Generator ≠ Evaluator）
+
+[[src-zeuikli-claude-code-best-practices|zeuikli 章 10.1]] 把本頁「兩階段 reviewer subagent」設計歸納為 [[PGE-Principle]]——**產生程式碼的模型不應是評估程式碼的模型**。
+
+本頁的 implementer subagent / spec reviewer subagent 隔離 context 設計，正是 PGE 原則層 3「**另一個 AI（context 隔離）**」的具體實踐。
+
+### Advisor 模式（[[src-zeuikli-claude-code-best-practices|zeuikli 章 4.5]]）
+
+新 subagent 子類：「**不寫程式碼，只給意見**」。適合 architecture review / design critique / 安全評估等不需要寫 code 的 evaluator 任務。
+
 ## Anthropic 官方版定義（[[src-claude-code-in-large-codebases|2026-05-14 官方 blog]]）
 
 [[src-claude-code-in-large-codebases]] 把 Subagent 列為 [[Claude Code]] Harness 7 個 extension points 之一：

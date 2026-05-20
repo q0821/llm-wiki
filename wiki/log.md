@@ -830,3 +830,46 @@
 - 待 Anthropic 官方文件補 Plugins marketplace 機制細節後更新 [[Plugins-Claude-Code]]
 - 待 LSP integration 具體技術細節（哪些 LSP 已支援 / 如何啟用）更新 [[LSP-Integrations]]
 - Zoox 是否有具體 Claude Code 部署案例可獨立 ingest
+
+## [2026-05-20] ingest | zeuikli「Claude Code 各面向最佳實踐完整研究報告」（社群第二手整合）
+- 來源：https://github.com/zeuikli/claude-code-workspace/blob/main/docs/2026-05-16-claude-code-best-practices.md
+- 整理者：GitHub `zeuikli`（個人 workspace repo）
+- 規模：1254 行 / 10 章 + 2 附錄；引用 research/best-practices/ 29 篇 + research/claude-blog/ 52 篇 + Boris Cherny / Thariq Shihipar 引言
+- 擷取：WebFetch 暫時 unavailable → 改用 `curl` 直接抓 raw GitHub content
+- 通過 CLAUDE.md「公開度與資安」grep 自查（公開 GitHub repo + 公開技術內容）
+
+### 重要新發現
+- **PGE 原則（Generator ≠ Evaluator）**：多個既有反模式對策（Subagent-Driven / AI-Quality-Collusion / Adversarial-Code-Review）的上位原則官方版命名
+- **Cache as Uptime**（[[Thariq-Shihipar]]）：「Cache rules everything. We treat it like uptime.」+ Sonnet 4.6 節省 90% 成本（$3 → $0.30/MTok）
+- **CLAUDE.md 60 行最佳 / 200 行門檻**：超過 200 行遵從率 76% → 52%（補 [[src-bnext-claude-md-12-rules]] 的 76% 為「上限值」）
+- **Context Engineering 是真正的工程護城河**：整篇核心論點，補 [[Harness-Engineering]] 第一支柱細部展開
+- **[[Boris-Cherny]] 完成驗證心法**：「資深工程師會核准這個嗎？否 → 先修再報」—— Ratchet 規則的判準工具，第 5 個獨立來源
+
+### 影響頁面
+- 新建（5 個）：[[src-zeuikli-claude-code-best-practices]], [[PGE-Principle]], [[Context-Engineering]], [[Boris-Cherny]], [[Thariq-Shihipar]]
+- 更新（12 個既有頁，多為精準補小段）：
+  - [[Claude Code]]：補「補充機制」（Path-Scoped / Auto Memory / Routines / Effort Level / Tool Search / PGE）+「核心論述者」（Boris / Thariq）
+  - [[CLAUDE-md]]：補黃金法則新數字（60 行最佳 / 200 行門檻 / 76% → 52%）+ Path-Scoped Rules
+  - [[Context-Rot]]：補 Thariq「Cache as Uptime」+ 90% cache 節省
+  - [[Subagent-Driven-Development]]：補 PGE 原則上位 + Advisor 模式
+  - [[AI-Quality-Collusion]]：補 PGE 原則作為對策上位
+  - [[Adversarial-Code-Review]]：補在 PGE 中的「層 3 AI evaluator」位置
+  - [[Agent-Skills]]：補 Description 寫法 / 自由度分層 / 生命週期管理
+  - [[MCP]]：補 Transport 三模式 / Scope 優先序 / Tool Search / 輸出控制
+  - [[MEMORY-md]]：補 Auto Memory 機制官方稱呼
+  - [[Ratchet-Pattern]]：補第 5 個獨立來源（Boris Cherny）+ 「資深工程師會核准嗎」判準工具
+  - [[src-claude-code-context-management]]：補 Thariq 新引言 + 連結 [[Thariq-Shihipar]] entity
+  - [[src-bnext-claude-md-12-rules]]：補 60 行 / 200 行 / 76% → 52% 數字對照
+- 更新 index.md（最近新增 + 來源摘要 + 實體 + 概念區條目）
+
+### 形成的新對話組
+- [[src-zeuikli-claude-code-best-practices]]（社群第二手整合）↔ [[src-claude-code-in-large-codebases]]（Anthropic 官方）：同主題兩種視角
+- [[PGE-Principle]] 統合本 wiki 三個既有反模式對策概念為一個上位原則
+- Anthropic Claude Code 論述者地圖完整：[[Andrej-Karpathy]]（源頭）/ [[Boris-Cherny]] / [[Thariq-Shihipar]] / Applied AI team
+- Ratchet 克制原則第 5 個獨立來源（Google Addy / OpenAI Hashimoto / Mnimiy / Anthropic Applied AI / Boris Cherny）
+
+### 待後續處理
+- 補抓 zeuikli 81 篇 reference 中與本 wiki 重疊度高的 5-10 篇
+- Boris Cherny 公開講座 / 訪談（特別 Routines 章節）
+- Anthropic engineering blog 中 Boris / Thariq 的署名文章
+- 附錄 A 5 個範本可考慮放進 `.claude/snippets/` 之類可重用位置

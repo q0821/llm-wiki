@@ -116,6 +116,25 @@ Managed Agents 的設計哲學「Python SDK 薄層 + 重活 delegate Claude Code
 
 對應本知識庫 [[LLM-Wiki]] vs [[RAG]] 對話組——Anthropic 官方確認 agentic search 的設計選擇。
 
+### 補充機制（[[src-zeuikli-claude-code-best-practices|zeuikli 2026-05 整合報告]]）
+
+| 機制 | 一句話 |
+|---|---|
+| **Path-Scoped Rules** | [[CLAUDE-md]] 規則可按路徑觸發（如 `WordPress/` 下才啟用） |
+| **Auto Memory** | [[MEMORY-md]] 的對外稱呼——使用者糾正時自動存、跨 session 注入 |
+| **Routines** | Cron-like 排程任務（[[Boris-Cherny]] 實戰：每日 standup / PR review / backlog 維護）|
+| **Effort Level** | low / medium / high reasoning effort 選擇——成本控制機制 |
+| **Tool Search**（MCP）| 大量工具時不一次塞 schema，先註冊 search 元 tool |
+| **PGE 驗證流程** | [[PGE-Principle]]：generator 與 evaluator 分離，禁止口頭聲稱「測試通過」|
+
+### 核心論述者（Anthropic 內部）
+
+| 人物 | 論述焦點 |
+|---|---|
+| [[Boris-Cherny]] | 完成驗證心法 / Routines / CLAUDE.md 設計 |
+| [[Thariq-Shihipar]] | Cache 與 Context 工程 / Session 管理 |
+| Applied AI team | 企業導入 best practices |
+
 ### 適用範圍限制（官方標示）
 
 設計給「**conventional software engineering environments**」：工程師為主貢獻者、Git 版控、標準目錄結構。
@@ -172,4 +191,6 @@ Managed Agents 的設計哲學「Python SDK 薄層 + 重活 delegate Claude Code
 - [[Addy-Osmani]] — 對 Claude Code 架構提出元件拆解視角
 - [[OpenAI-Codex-CLI]] — 同類 agentic CLI 的對照產品
 - [[Plugins-Claude-Code]] / [[LSP-Integrations]] — Anthropic 官方版 Harness 7 個 extension points 中的兩個
-- [[src-claude-code-context-management]] / [[src-techhanlin-claude-code-8-settings]] / [[src-aapd-claude-design-figma-workflow]] / [[src-hermes-agent-99-cases]] / [[src-addy-osmani-harness-engineering]] / [[src-claude-code-in-large-codebases]] — 詳細工作流來源
+- [[Boris-Cherny]] / [[Thariq-Shihipar]] — Anthropic Claude Code 核心論述者
+- [[PGE-Principle]] / [[Context-Engineering]] — 統整多個概念的上位原則
+- [[src-claude-code-context-management]] / [[src-techhanlin-claude-code-8-settings]] / [[src-aapd-claude-design-figma-workflow]] / [[src-hermes-agent-99-cases]] / [[src-addy-osmani-harness-engineering]] / [[src-claude-code-in-large-codebases]] / [[src-zeuikli-claude-code-best-practices]] — 詳細工作流來源

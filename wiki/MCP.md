@@ -111,6 +111,29 @@ Anthropic 推出的**開放協議標準**，定義 AI 模型如何與外部工�
 
 這驗證了 [[BrowseForge]] 之外的另一個典型「**工具自帶 MCP server**」模式——[[Figma]] 把自家能力暴露為 MCP server，AI 不必知道 Figma REST API 細節。
 
+## 進階 MCP 工程細節（[[src-zeuikli-claude-code-best-practices|zeuikli 章 6]]）
+
+### 三種 Transport 模式
+
+- `stdio` — 子處理序 + JSON-RPC over stdin/stdout（最常見）
+- `HTTP` — 跨機器 / 遠端 server
+- `SSE`（Server-Sent Events）— 串流回應
+
+### Scope 優先序
+
+**local > project > user** —— 同名 tool 多 scope 定義時的解析順序。
+
+### Tool Search（**新概念**）
+
+按需載入工具 Schema——當 MCP server 提供大量工具時，不要一次塞 schema 進 system prompt（會破層 1 cache）；改為**先註冊 tool search 元 tool，Claude 搜尋後才載入具體工具 schema**。
+
+對應 [[Context-Engineering]] 的「**Cache 寫入成本控制**」。
+
+### MCP 輸出控制
+
+- Response truncation：避免一次回大量資料破 context
+- Structured output：用 schema 約束 LLM 解析
+
 ## Anthropic 官方背書：MCP for Structured Search（[[src-claude-code-in-large-codebases|2026-05-14]]）
 
 > 「**Most sophisticated teams built MCP servers exposing structured search as a tool Claude can call directly.**」

@@ -148,6 +148,16 @@ confidence: 強
 - **Initialize in subdirectories** rather than repo root（官方明白建議）
 - **Scope test / lint commands per subdirectory**
 
+### 黃金法則新數字（[[src-zeuikli-claude-code-best-practices|zeuikli 2026-05]]）
+
+- **最佳 60 行、≤200 行**（vs 本頁先前紀錄「100 行以內」更精準）
+- 「**超過 200 行後，模型對規則的遵從率從 76% 跌至 52%**」—— 補 [[src-bnext-claude-md-12-rules]] 的 76% 為「上限值」
+- 每行測試：「移除這行，Claude 會犯錯嗎？答案『否』→ 立即刪除」
+
+### Path-Scoped Rules（路徑觸發規則，[[src-zeuikli-claude-code-best-practices|zeuikli 章 1.2]]）
+
+可依路徑觸發特定規則——例如 `WordPress/` 下才載入 WP 相關規則。對應 [[Agent-Skills|Skills]] 的「can be scoped to specific paths」官方版設計。
+
 ### 3-6 月主動維護週期（**官方版 Ratchet 克制原則**）
 
 > 「**As models improve, previous instructions may become unnecessary or constraining.** A rule forcing single-file refactors may hinder newer models capable of coordinated cross-file edits. **Teams should review configurations every three to six months or after major model releases.**」

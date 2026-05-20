@@ -121,6 +121,16 @@ Surfacing the breach > silently overrunning.
 
 這是 context rot 從「工程實作」（Cloudflare 共用脈絡檔）到「個人規範」（CLAUDE.md 規則）的兩種對抗形式——後者更輕量但需要 agent 自覺遵守。
 
+## Cache as Uptime（[[Thariq-Shihipar]]）
+
+[[src-zeuikli-claude-code-best-practices]] 章 3.1 引用 [[Thariq-Shihipar]]：
+
+> 「**Cache rules everything. We treat it like uptime. When it drops, we have an incident.**」
+
+Cache Hit Rate 監控指標化——命中率下降時立即排查根因（通常是三個原因：system prompt 動態修改 / 工具定義增刪 / mid-session 切換模型）。
+
+成本對比（Sonnet 4.6）：一般輸入 $3/MTok → cache 命中 **$0.30/MTok（節省 90%）**。詳分層快取結構見 [[Context-Engineering#分層快取結構]]。
+
 ## Production 案例：[[Cloudflare]] AI Code Review 的工程處理
 
 [[src-cloudflare-ai-code-review]] 對 context rot 採取**三層防護**：

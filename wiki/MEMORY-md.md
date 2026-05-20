@@ -65,6 +65,16 @@ MEMORY.md 是「**AI 自動學習路徑**」的主要載體，與 [[Ratchet-Patt
 - AI 自動處理「使用者個人偏好」「日常工作風格」
 - 人類引導 Ratchet 處理「曾經出事的失敗模式」「不能繞過的硬規則」
 
+## Auto Memory（[[src-zeuikli-claude-code-best-practices|zeuikli 章 1.3]]）
+
+[[Claude Code]] 的長期記憶機制——區別於 [[CLAUDE-md|CLAUDE.md]] 的靜態規則，Auto Memory 是**動態累積的學習結果**：
+
+- 使用者糾正 AI 時自動存
+- 重複出現的偏好自動萃取
+- 跨 session 持續注入
+
+對應本頁先前段落的 Claude Code Memory 四類（user / feedback / project / reference）—— zeuikli 整理為「Auto Memory」是這個機制的對外稱呼。
+
 ## 與 Handoff 機制的差異（Claude Code 視角）
 
 [[src-techhanlin-claude-code-8-settings]] 區分兩種跨 session 機制：

@@ -16,6 +16,8 @@ confidence: 強
 
 Claude Code 的核心使用技巧在於**上下文視窗管理**，而非功能操作。擁有 100 萬 token 的上下文不代表越多越好——[[Context-Rot|上下文衰損（Context Rot）]] 才是影響輸出品質的關鍵變數。
 
+> **作者：** [[Thariq-Shihipar]]（Anthropic 工程師，[[Claude Code]] 核心團隊）。2026-05 [[src-zeuikli-claude-code-best-practices]] 補強他的另一句經典引言：「**Cache rules everything. We treat it like uptime.**」
+
 ## 核心概念
 
 ### 上下文衰損（Context Rot）

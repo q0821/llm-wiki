@@ -8,6 +8,16 @@ title: 索引
 
 ## 最近新增
 
+### 2026-05-20
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-zeuikli-claude-code-best-practices\|Claude Code 最佳實踐完整研究報告（zeuikli）]] | 1254 行 / 10 章整合報告；Anthropic 81 篇來源 + Boris Cherny / Thariq Shihipar 核心引言；含 PGE 原則、Cache as Uptime |
+| [[PGE-Principle]] | Generator ≠ Evaluator——多個既有反模式對策的上位原則 |
+| [[Context-Engineering]] | 「真正的工程護城河」；Harness 第一支柱的細部展開 + 分層快取結構 |
+| [[Boris-Cherny]] | Anthropic Claude Code 核心；完成驗證心法 + Routines 實戰 |
+| [[Thariq-Shihipar]] | Anthropic Claude Code 核心；Cache as Uptime + Context 工程；[[src-claude-code-context-management]] 原作者 |
+
 ### 2026-05-19
 
 | 頁面 | 摘要 |
@@ -198,6 +208,7 @@ title: 索引
 | [[src-honglong0420-asgard-x-thread\|Asgard Skills 開源推廣（X 推文）]] | @honglong0420 親述視角 + 四件套思維模型 skill + 「啟動成本是瓶頸」 | 2 |
 | [[src-asgard-skills-audit-2026-05-19\|Asgard Skills Repo 本地審計（2026-05-19）]] | A 結構 / B 安全 / D 抽樣 / E 適用性四向審計；補強客觀整理與作者親述兩個既有來源 | 0 |
 | [[src-claude-code-in-large-codebases\|Claude Code in Large Codebases — Anthropic 官方]] | 官方 Harness 7 個 extension points + agentic search 定位 + 企業導入 DRI / Agent Manager 模式 | 1 |
+| [[src-zeuikli-claude-code-best-practices\|Claude Code 最佳實踐完整研究報告（zeuikli）]] | 1254 行 / 10 章整合報告；Anthropic 81 篇來源 + Boris Cherny / Thariq Shihipar 引言；PGE 原則 + Cache as Uptime | 1 |
 | [[src-customer-diagnostic-50-questions\|50 個顧客自我診斷問題]] | 含 ABC 分級與 CLV 概念 | 1 |
 | [[src-claude-code-context-management\|Claude Code 上下文管理攻略]] | 含 rewind/compact/subagent 策略 | 1 |
 | [[src-design-md-revolution\|DESIGN.md 革命]] | awesome-design-md 專案介紹，AI UI 設計新標準 | 3 |
@@ -259,6 +270,8 @@ title: 索引
 | [[Hermes-Agent]] | Nous Research 出品的開源 agent 框架，跨平台 + 自我改進，OpenClaw 遷移目標 | 1 |
 | [[Gas-Khuang]] | Hermes 99 案例網站整理者 | 1 |
 | [[Addy-Osmani]] | Google Cloud AI 總監；Harness 七元件分解 + Ratchet 機制 + HaaS 趨勢 | 1 |
+| [[Boris-Cherny]] | Anthropic Claude Code 核心；完成驗證心法（資深工程師會核准嗎）+ Routines 實戰 | 1 |
+| [[Thariq-Shihipar]] | Anthropic Claude Code 核心；Cache as Uptime + Context 工程；既有 context-management 教學原作者 | 2 |
 | [[HyperFrames]] | Code-first 短影片框架（HTML+CSS+GSAP+timeline）；本知識庫第一個影片生成工具 | 1 |
 | [[OpenAI-Codex-CLI]] | OpenAI agentic CLI；AGENTS.md / `codex adversarial-review` 等特色 | 2 |
 | [[OpenCode]] | 開源伺服器優先 agentic CLI；Cloudflare AI code review 系統底層 | 1 |
@@ -299,6 +312,8 @@ title: 索引
 | [[AGENTS-md\|AGENTS.md]] | OpenAI Codex / OpenCode 等 agentic CLI 的規範檔；與 CLAUDE.md 平行對照 | 2 |
 | [[Plugins-Claude-Code]] | Claude Code 的 Plugins 機制：bundle skills/hooks/MCP 成可安裝套件 | 1 |
 | [[LSP-Integrations]] | Language Server Protocol 整合：給 Claude symbol-level precision | 1 |
+| [[PGE-Principle]] | Generator ≠ Evaluator——多個既有反模式對策（Subagent-Driven / AI-Quality-Collusion / Adversarial-Code-Review）的上位原則 | 1 |
+| [[Context-Engineering]] | 「真正的工程護城河」；Harness 第一支柱細部展開 + 分層快取結構 | 2 |
 
 ## 綜整與分析
 

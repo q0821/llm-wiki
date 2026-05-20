@@ -67,6 +67,12 @@ confidence: 強
    - 不能用「沒報 bug」當作「沒 bug」的證明
    - 低使用量產品需刻意設計使用場景驗證
 
+### 上位原則：[[PGE-Principle|PGE]]（Generator ≠ Evaluator）
+
+[[src-zeuikli-claude-code-best-practices|zeuikli 章 10.1]] 把本反模式的結構性對策歸納為 PGE 原則：「**產生程式碼的模型不應是評估程式碼的模型**」。
+
+詳見 [[PGE-Principle]] 概念頁——本反模式是 PGE 違反的主要表現形式。
+
 ### 個人版直接對策：[[CLAUDE-md|CLAUDE.md]] 12 條規則的 Rule 9
 
 [[src-bnext-claude-md-12-rules|Mnimiy]] 把這條反模式直接編成 CLAUDE.md 規則：

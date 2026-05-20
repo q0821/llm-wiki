@@ -32,6 +32,30 @@ confidence: 強
 - **.claude/commands/**：本機專案層級，逐字 prompt 範本，無腳本邏輯
 - **Agent Skills**：跨專案分發、可含腳本（Python、shell）、有 frontmatter metadata 與觸發條件描述
 
+## Skill 設計細節（[[src-zeuikli-claude-code-best-practices|zeuikli 章 5]]）
+
+### Description 的寫法
+
+> 「**Description 是給模型看的，不是給人看的。**」
+
+- 用模型能識別 trigger 條件的具體 phrase（如 "use when the user needs to..."）
+- 含 negative trigger（"do NOT use for ..."）
+- 比起人類可讀的優雅 prose，模型友善的「**trigger phrase 清單**」效果更好
+
+### 自由度分層原則
+
+- **高自由度**：探索性任務 / 非標準流程 → skill 給原則不給步驟
+- **低自由度**：標準 SOP / 合規檢查 → skill 給逐步腳本
+
+### 生命週期管理
+
+| 階段 | 動作 |
+|---|---|
+| 建立 | 從重複的 prompt 提煉 |
+| 評估 | 用真實任務測 trigger 率與輸出品質 |
+| 修訂 | 失敗 case 加 negative trigger |
+| 退役 | 模型變強後刪除（呼應 [[Ratchet-Pattern]] 克制原則）|
+
 ## Anthropic 官方版 Skills 設計原則：Progressive Disclosure
 
 [[src-claude-code-in-large-codebases|2026-05-14 官方 blog]] 把 Skills 列為 [[Claude Code]] Harness 7 個 extension points 之一，並確認設計原則：

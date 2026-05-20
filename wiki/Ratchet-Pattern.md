@@ -36,6 +36,12 @@ Mitchell Hashimoto 在 [[src-harness-engineering-openai|OpenAI Harness Engineeri
 
 → Google / OpenAI / 個人工程師 / **Anthropic 廠商官方**四個獨立工程社群得出同一原則，這個 pattern **從業界共識升級為包含廠商在內的全方位共識**。
 
+**第五個獨立來源**——[[Boris-Cherny]]（Anthropic Claude Code 核心，[[src-zeuikli-claude-code-best-practices]] 章 10.2 引言）：
+
+> 「**宣告完成前自問：資深工程師會核准這個嗎？否 → 先修再報。**」
+
+提供 Ratchet 規則的**判準工具**：「資深工程師會皺眉」是個強過「應該防止失敗」的具體標準——主觀但有效，因為失敗模式跟「資深工程師會質疑的點」高度重疊。
+
 ## 實證數據：4 條 → 12 條對 [[CLAUDE-md]] 錯誤率的影響
 
 [[src-bnext-claude-md-12-rules|Mnimiy 30 codebase / 6 週盲測]]提供 ratchet 累積規則的**量化效果**：
