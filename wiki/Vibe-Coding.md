@@ -29,6 +29,19 @@ Vibe Coding（直覺式開發）是一種以**自然語言直接驅動 LLM 生�
 | 3. Contextual Coding（Cursor / Copilot） | (Vision + Context) → AI Assistant + Engineer → Code | 工程師主導，AI 為外骨骼 |
 | 4. [[Agentic-AI-Workflow]] | Vision ↔ AI Agents（同心圓迭代） | 人類為 Reviewer + 指揮家 |
 
+## Agentic Technical Debt（Anthropic 官方版命名）
+
+[[src-anthropic-founders-playbook-2026|Anthropic Founder's Playbook]] 章 4 把本頁所述「沒架構的 Vibe Coding 災難」官方版命名為 **「Agentic Technical Debt」**：
+
+> 「Because AI essentially **removes every natural bottleneck** that once controlled what reaches production, **speed is guaranteed**. But when speed is the only variable that founders factor into their MVP build, they risk accruing technical debt they'll struggle to pay off.」
+
+特性：
+- AI 移除「**寫 code 的時間成本**」這個 natural bottleneck
+- 累積比舊範式更快（因為產出速度太快）
+- 沒有 specs/architecture/CLAUDE.md 時尤其嚴重——「each session re-derives foundational decisions from scratch」
+
+對應 [[AI-Native-Startup]] 反模式列表。
+
 ## 缺陷與補強機制
 
 **缺陷**：缺乏架構、規格、品牌約束 → 技術債、UI 風格不一致、難維護。

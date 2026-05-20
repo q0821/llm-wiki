@@ -12,6 +12,9 @@ title: 索引
 
 | 頁面 | 摘要 |
 |------|------|
+| [[src-anthropic-founders-playbook-2026\|Anthropic Founder's Playbook（2026-05 官方）]] | 36 頁 PDF / 7 章；AI-Native 創業 4 階段框架 + Claude 3 surfaces 分工 + 4 個 AI 時代反模式 + 9-10 家 customer cases |
+| [[Claude-Cowork]] | Anthropic Claude 3 product surfaces 之一（folder access + connectors + skills + scheduled runs）；Airtree 「運營核心」實戰 |
+| [[AI-Native-Startup]] | 「10-person unicorn」官方範式；4 階段 + exit criteria 框架；4 個反模式（Agentic technical debt / Zero-friction scope creep / False PMF / Loss of Objectivity） |
 | [[src-zeuikli-claude-code-best-practices\|Claude Code 最佳實踐完整研究報告（zeuikli）]] | 1254 行 / 10 章整合報告；Anthropic 81 篇來源 + Boris Cherny / Thariq Shihipar 核心引言；含 PGE 原則、Cache as Uptime |
 | [[PGE-Principle]] | Generator ≠ Evaluator——多個既有反模式對策的上位原則 |
 | [[Context-Engineering]] | 「真正的工程護城河」；Harness 第一支柱的細部展開 + 分層快取結構 |
@@ -237,6 +240,7 @@ title: 索引
 | [[src-codex-hyperframes-prompt-pack\|Codex × HyperFrames 30 秒 Demo Prompt Pack]] | 7-prompt 鏈 + 12 Visual Beats + Fix Prompts + 3 範例專案 | 1 |
 | [[src-cloudflare-ai-code-review\|Cloudflare AI Code Review 系統]] | Production-grade case study：OpenCode + 7 subagent + Risk Tier + Circuit Breaker；130K 次 / $0.98 中位數 | 1 |
 | [[src-bnext-claude-md-12-rules\|CLAUDE.md 12 條規則]] | Forrest Chang 4 條（GitHub 12 萬星）+ Mnimiy 8 條擴充；30 codebase 盲測 41% → 3% 錯誤率 + 三大 prompt 反模式 | 1 |
+| [[src-anthropic-founders-playbook-2026\|Anthropic Founder's Playbook（2026-05 官方）]] | 36 頁 PDF / 7 章；AI-Native 創業 4 階段框架 + Claude 3 surfaces 分工 + 4 個 AI 時代反模式 + 9-10 家 customer cases | 2 |
 
 ## 實體
 
@@ -275,6 +279,7 @@ title: 索引
 | [[HyperFrames]] | Code-first 短影片框架（HTML+CSS+GSAP+timeline）；本知識庫第一個影片生成工具 | 1 |
 | [[OpenAI-Codex-CLI]] | OpenAI agentic CLI；AGENTS.md / `codex adversarial-review` 等特色 | 2 |
 | [[OpenCode]] | 開源伺服器優先 agentic CLI；Cloudflare AI code review 系統底層 | 1 |
+| [[Claude-Cowork]] | Anthropic Claude 3 product surfaces 之一（folder access + connectors + skills + scheduled runs）；Airtree 「運營核心」實戰 | 1 |
 
 ## 概念
 
@@ -286,27 +291,27 @@ title: 索引
 | [[Agent-Skills\|Agent Skills]] | AI Agent 可擴充任務能力的技能規範；「啟動成本是瓶頸」核心論點；Anthropic 官方確認 progressive disclosure 設計 | 10 |
 | [[LLM-Wiki]] | Karpathy 提出的 wiki 化知識管理範式，本知識庫的方法論基礎；含人類引導 vs 全自動 + agentic search vs RAG embedding 官方版對照 | 3 |
 | [[Memex]] | Vannevar Bush 1945 提出，LLM Wiki 的歷史先驅 | 1 |
-| [[CLAUDE-md\|CLAUDE.md]] | Claude Code 持久記憶層，兼任 LLM Wiki schema 規範；Ratchet 編碼主要載體；含 12 條 production 範本 + Anthropic 官方 3-6 月 review 維護週期 | 6 |
+| [[CLAUDE-md\|CLAUDE.md]] | Claude Code 持久記憶層，兼任 LLM Wiki schema 規範；Ratchet 編碼主要載體；含 12 條 production 範本 + Anthropic 官方 3-6 月 review 維護週期 + MVP stage Day Zero 建立官方要求 | 7 |
 | [[AI-Quality-Collusion]] | AI 同時生成 code 與 test 的隱形共謀反模式；含 CLAUDE.md Rule 9 個人版對策 | 3 |
 | [[Specification-by-Example\|SBE]] | 以具體範例凍結需求，AI 品質共謀的結構性對策之一 | 1 |
 | [[MCP]] | Anthropic 推出的開放協議，AI 連外部工具的「USB」標準；含工具描述安全議題；官方背書 MCP for structured search | 10 |
 | [[GEO]] | Generative Engine Optimization / Agent-Ready 網站，SEO 的 AI 時代延伸 | 2 |
-| [[顧客終身價值]] | CLV，衡量顧客經營成效的核心指標 | 1 |
+| [[顧客終身價值]] | CLV，衡量顧客經營成效的核心指標；Anthropic 官方版列為 Launch 階段 exit criteria | 2 |
 | [[DESIGN-md\|DESIGN.md]] | 純 Markdown 設計系統規範，讓 AI coding agent 生成風格一致的 UI / 短影片 | 6 |
 | [[Managed-Agents\|Claude Managed Agents]] | Anthropic 託管 agent 服務，session/harness/sandbox 三層架構 | 3 |
 | [[Meta-Harness]] | 為「尚未想出的程式」設計的 agent 架構模式 | 3 |
 | [[Harness-Engineering\|Harness Engineering]] | AI 代理環境設計範式；含 OpenAI 三支柱 / Google Addy 七元件 / Anthropic Claude Code 7 個 extension points / Cloudflare production 四組視角 | 4 |
 | [[WordPress-接手檢查SOP]] | 接手 WordPress 網站的六步檢查流程，辨識「前人的遺產」 | 1 |
-| [[Vibe-Coding]] | 自然語言直接驅動 LLM 生成程式碼／影片的開發範式（演化光譜第 2 階段） | 2 |
-| [[Agentic-AI-Workflow]] | 同心圓迭代範式，含 Design to Code / Code to Design 雙向流動 + 短影片產製鏈 | 3 |
+| [[Vibe-Coding]] | 自然語言直接驅動 LLM 生成程式碼／影片的開發範式（演化光譜第 2 階段）；Anthropic 官方版命名「Agentic Technical Debt」| 3 |
+| [[Agentic-AI-Workflow]] | 同心圓迭代範式，含 Design to Code / Code to Design 雙向流動 + 短影片產製鏈；含 Anthropic 官方版 founder = orchestrator of agents 擴展 | 4 |
 | [[Self-Improving-Agent]] | 自我改進代理範式：MEMORY.md + Skill Factory + 偏好學習，Hermes 是代表實作 | 2 |
 | [[Ratchet-Pattern]] | 每次錯誤編碼成永久規則的設計模式；CLAUDE.md / hook / reviewer subagent 三層編碼；含 41% → 3% 量化實證；Anthropic 官方為第 4 個獨立來源 | 4 |
 | [[MEMORY-md\|MEMORY.md]] | AI Agent 跨 session 持久記憶層；與 CLAUDE.md 形成「AI 寫 vs 人類寫」對；Claude Code / Hermes 雙實作 | 3 |
 | [[Context-Rot]] | 上下文衰損；含 Cloudflare 共用脈絡檔 / Anthropic progressive disclosure 官方版 / CLAUDE.md Rule 6 個人版 token budget 三層對抗 | 5 |
 | [[Subagent-Driven-Development]] | Implementer + spec reviewer + code quality reviewer 兩階段獨立審查；含 Cloudflare 130K production 對照 + Anthropic 官方「split exploration from editing」定義 | 2 |
-| [[Adversarial-Code-Review]] | 對抗式 AI review，抓 human review 看不見的跨檔組合 bug；OWASP focus 為常見起點；含 Risk Tier 分配 | 1 |
+| [[Adversarial-Code-Review]] | 對抗式 AI review，抓 human review 看不見的跨檔組合 bug；OWASP focus 為常見起點；含 Risk Tier 分配；含 Anthropic 官方「跨四階段創業 use case」擴展 | 2 |
 | [[Hybrid-XSS-Defense]] | 雙層 stored XSS 防護（escape variables at substitution + sanitize at storage）| - |
-| [[Fields-Without-Enforcement-Anti-Pattern]] | 反模式：schema 有欄位、邏輯不檢查；含 silent backdoor 變體與時序狀態變體 | - |
+| [[Fields-Without-Enforcement-Anti-Pattern]] | 反模式：schema 有欄位、邏輯不檢查；含 silent backdoor 變體與時序狀態變體；Anthropic 官方版根因命名「Insecure by inexperience」| 1 |
 | [[Verify-Framework-Version-First]] | 新專案第一件事驗 lockfile 版本；ratchet pattern 的具體應用 | - |
 | [[Prompt-Pack-Pattern]] | 多段 prompt 串成完整工作流的設計模式；與 Agent Skills 形成「人類控制節奏 vs Agent 自動觸發」對照；含三大反模式警示 | 2 |
 | [[AGENTS-md\|AGENTS.md]] | OpenAI Codex / OpenCode 等 agentic CLI 的規範檔；與 CLAUDE.md 平行對照 | 2 |
@@ -314,6 +319,7 @@ title: 索引
 | [[LSP-Integrations]] | Language Server Protocol 整合：給 Claude symbol-level precision | 1 |
 | [[PGE-Principle]] | Generator ≠ Evaluator——多個既有反模式對策（Subagent-Driven / AI-Quality-Collusion / Adversarial-Code-Review）的上位原則 | 1 |
 | [[Context-Engineering]] | 「真正的工程護城河」；Harness 第一支柱細部展開 + 分層快取結構 | 2 |
+| [[AI-Native-Startup]] | Anthropic 官方版 AI 時代創業範式（「10-person unicorn」）；4 階段 + exit criteria 框架 + 4 個 AI 時代反模式 | 1 |
 
 ## 綜整與分析
 

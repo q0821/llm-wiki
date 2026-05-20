@@ -18,7 +18,8 @@ Anthropic 於 2026 年推出的 AI 原生設計產品，被視為對 [[Figma]] �
 - **發布時間**：約 2026 年 4 月（依 [[src-will-ai-kill-saas-design]] 撰文時間推算為「前幾天」）
 - **核心定位**：把 UI 設計與前端開發融合，直接產出「活的、可點擊的 React 元件」
 - **可用範圍**（2026-05-05 [[Simon-Lin|Simon]] 直播揭露）：瀏覽器版，桌面 App 尚未開放
-- **產品兄弟**：Claude Code（編程 Agent）、[[Managed-Agents|Claude Managed Agents]]（託管 agent 服務）
+- **產品兄弟**：Claude Code（編程 Agent）、[[Claude-Cowork|Claude Cowork]]（運營層 surface）、[[Managed-Agents|Claude Managed Agents]]（託管 agent 服務）
+- **Claude 4 個產品 surfaces 對照**（[[src-anthropic-founders-playbook-2026|Founder's Playbook]] 列 3 個 + 本頁 Design 為第 4）：Chat / Cowork / Code + Design（Research Preview）
 
 ## 介面結構（依 [[src-aapd-claude-design-figma-workflow|Simon Demo]]）
 

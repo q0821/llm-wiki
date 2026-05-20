@@ -77,6 +77,22 @@ Agentic AI Workflow（代理式工作流）是 AI 開發路徑演化的第四階
 - [[DESIGN-md]]：為 Code to Design 提供「美學約束來源」
 - [[RAG]] / [[Embedding]]：Code to Design 中讓 Agent 理解 codebase 與設計脈絡的技術基礎
 
+## Founder 層的同心圓迭代（[[src-anthropic-founders-playbook-2026|Anthropic 官方 2026-05]]）
+
+本頁前述「同心圓迭代」是**工程層**範式。Anthropic Founder's Playbook 把同範式延伸到 **founder / 創業者層**：
+
+> 「The founder role becomes much less individual contributor and **much more orchestrator of agents**—specialized AI assistants that can read files, run commands, execute code, and even browse the web.」
+
+新 founder 工作模式對照本頁第 4 階段：
+
+| 維度 | 工程層 Agentic AI Workflow | Founder 層 |
+|---|---|---|
+| 角色 | 工程師 = Reviewer + 指揮家 | Founder = **Orchestrator of agents** |
+| Agent 分工 | 同時 Design + Code + Spec | Conversational research + Agentic coding + Workflow automation |
+| Bottleneck | What you **can** build | What you **choose** to build |
+
+詳見 [[AI-Native-Startup]] 概念頁——是「10-person unicorn」「founder 路徑壓縮」的 Anthropic 官方版範式名。
+
 ## 應用與案例
 
 - [[Claude-Design]]：Anthropic 把 UI 設計與前端開發融合的 Agentic 產品

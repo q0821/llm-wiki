@@ -91,6 +91,23 @@ human review 強的是：
 - prototype 階段（review 的 baseline 還沒定）
 - spec 還沒定型（會抓出一堆「spec 沒寫」誤判）
 
+## 跨四階段創業 use case（[[src-anthropic-founders-playbook-2026|Anthropic 官方擴展]]）
+
+> 「**Use Claude as structured devil's advocate is a core use case at every stage of the AI startup life cycle.**」
+
+Anthropic 官方把對抗式 review 從「code review」**延伸到「商業 / 創業決策 review」**——對抗 [[AI-Native-Startup]] 中提到的「**Loss of Objectivity**」反模式（「Confirmation bias now comes with a research engine」）。
+
+跨四階段應用：
+
+| Stage | Devil's advocate 用法 |
+|---|---|
+| Idea | Pressure-test 問題假設 / 競品「為什麼會贏」分析 |
+| MVP | Adversarial review 自家 PMF 數據（什麼會被 skeptic 質疑）|
+| Launch | 對自家 growth / CAC / LTV 數字做 adversarial 分析 |
+| Scale | 評估「**well-funded incumbent 抄你的產品，使用者會留下嗎**」 |
+
+→ 對應 [[AI-Quality-Collusion]] 反模式擴展到「商業判斷層」。
+
 ## 在 [[PGE-Principle]] 中的位置
 
 [[src-zeuikli-claude-code-best-practices|zeuikli]] 把本 pattern 歸納為 [[PGE-Principle|PGE 原則]] 的「**層 3：AI evaluator**」——是「另一個 LLM 做 evaluator」的**強化版**（加 focus prompt + 自訂角色）。

@@ -158,6 +158,16 @@ confidence: 強
 
 可依路徑觸發特定規則——例如 `WordPress/` 下才載入 WP 相關規則。對應 [[Agent-Skills|Skills]] 的「can be scoped to specific paths」官方版設計。
 
+### MVP Stage 起即 Day Zero 建立（[[src-anthropic-founders-playbook-2026|Founder's Playbook]] 官方）
+
+Anthropic Founder's Playbook 章 4「MVP Stage」明白標示：
+
+> 「**Investing in persistent context from day one** is what keeps AI a force multiplier instead of a source of entropy. In an AI-native startup, your codebase is something you collaborate with AI on session after session, which makes legibility foundational. **Founders who skip specs, architectural decisions, and context files (like CLAUDE.md) hit a predictable wall**.」
+
+對應本 wiki 既有[[src-bnext-claude-md-12-rules|12 條規則]]與 [[Boris-Cherny]] 完成驗證心法——但這是「**創業階段時間軸**」上的具體要求：**從 MVP 階段第一個 session 就要寫**，不要等到 Launch 才補救。
+
+對應 [[AI-Native-Startup]] 4 階段框架。
+
 ### 3-6 月主動維護週期（**官方版 Ratchet 克制原則**）
 
 > 「**As models improve, previous instructions may become unnecessary or constraining.** A rule forcing single-file refactors may hinder newer models capable of coordinated cross-file edits. **Teams should review configurations every three to six months or after major model releases.**」

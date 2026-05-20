@@ -94,6 +94,18 @@ Claude Code 即扮演那個 "programmer" 角色——在 [[Obsidian]] 上編輯�
 
 Managed Agents 的設計哲學「Python SDK 薄層 + 重活 delegate Claude Code CLI subprocess」：本機 Claude Code 與雲端 Managed Agents 共用同一個底層 agent loop。詳見 [[src-az9713-managed-agents-tutorial]]。
 
+## Claude 3 個 Product Surfaces（[[src-anthropic-founders-playbook-2026|Anthropic Founder's Playbook]]）
+
+Claude 產品家族官方分工——三者「**共用同一個 Claude，不同的是周圍工作環境**」：
+
+| Surface | 工作環境 | 何時用 |
+|---|---|---|
+| **Chat** | 純對話（no setup） | 快速問答 / brainstorm / 小任務 |
+| **[[Claude-Cowork]]** | folder access + connectors + skills + **scheduled runs** | 跨多來源整合知識工作、運營層 |
+| **Claude Code**（本頁主題）| codebase / diffs / git / dev environments | Codebase 級編程任務 |
+
+本頁聚焦 Claude Code；其他兩者見對應 entity 頁。
+
 ## Anthropic 官方版 Harness 7 個 Extension Points（[[src-claude-code-in-large-codebases|2026-05-14 官方 blog]]）
 
 > 「**The Harness Matters as Much as the Model.**」 — Anthropic Applied AI team

@@ -170,9 +170,28 @@ if ($success === 0 && ($failed > 0 || $skipped > 0)) {
 - **A01 Broken Access Control**（案例 B 子集）— role default backdoor
 - **A09 Logging Failures**（案例 C 子集）— audit 紀錄與實際狀態不符
 
+## Anthropic 官方版根因命名：「Insecure by Inexperience」（[[src-anthropic-founders-playbook-2026]]）
+
+Anthropic Founder's Playbook 章 4 把「欄位有 / enforcement 漏」這類**漏洞的根因**從技術面提升到創業情境面，官方命名為 **「Insecure by inexperience」**：
+
+> 「Many AI-native founders are building applications without traditional engineering backgrounds, leaving them susceptible to security gaps a more experienced engineer wouldn't miss—**injection vulnerabilities, broken access controls, weak authentication, exposed customer data, and lack of audit trails**.」
+
+Anthropic 列舉的 5 大 inexperience-driven 漏洞——本頁三範式都對應其中：
+
+| Anthropic 列的 | 對應本頁範式 |
+|---|---|
+| Injection vulnerabilities | 案例 C 的審計 log 紀錄事實不符（log injection 變種） |
+| **Broken access controls** | **案例 B 的 role default backdoor** |
+| Weak authentication | （本頁未列，但同源） |
+| Exposed customer data | （案例 B 升權即此） |
+| **Lack of audit trails** | **案例 C 的 state 紀錄 ≠ 實際結果** |
+
+→ 解法上，Anthropic 推薦把 [[Adversarial-Code-Review|Claude as structured devil's advocate]] 視為「**沒有資深 senior engineer reviewer 時的補位**」——這正是本頁「防護三件套」第 2 條（regression test + adversarial review）的官方背書。
+
 ## 連結
 
 - 抓 bug 工具：[[Adversarial-Code-Review]]（最有效的探測手段）
 - 防護機制：[[Subagent-Driven-Development]]（regression test in TDD 流程內建）
 - 規則固化：[[Ratchet-Pattern]]（每次踩雷後編碼成永久 regression test）
+- 創業情境根因：[[AI-Native-Startup]] / [[src-anthropic-founders-playbook-2026]] 的「Insecure by inexperience」官方命名
 - 一句話總結：「明確 > 隱含」的具體展開

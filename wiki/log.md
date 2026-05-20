@@ -873,3 +873,28 @@
 - Boris Cherny 公開講座 / 訪談（特別 Routines 章節）
 - Anthropic engineering blog 中 Boris / Thariq 的署名文章
 - 附錄 A 5 個範本可考慮放進 `.claude/snippets/` 之類可重用位置
+
+## [2026-05-20] ingest | Anthropic Founder's Playbook（2026-05 官方）
+- 來源：https://cdn.prod.website-files.com/.../The-Founders-Playbook-05062026_v3.pdf（36 頁 / 7 章）
+- 入 raw/：anthropic-founders-playbook-2026-05.pdf（PDF 二進位）+ anthropic-founders-playbook-2026-05.md（metadata 指引）
+- 採用「中度」策略：新建 1 個 source page + 2 個概念/實體頁 + 補強 8 個既有頁，不大幅重寫
+- 建立來源摘要頁：[[src-anthropic-founders-playbook-2026]]
+- 建立實體頁：[[Claude-Cowork]]（Anthropic Claude 3 product surfaces 之一）
+- 建立概念頁：[[AI-Native-Startup]]（Anthropic 官方版「10-person unicorn」範式 + 4 階段 + 4 反模式）
+- 補強既有頁：
+  - [[Claude Code]]：補 Chat / Cowork / Code 3 surfaces 完整分工表
+  - [[Claude-Design]]：補產品家族對照（Chat / Cowork / Code + Design 4 個 surfaces）
+  - [[CLAUDE-md]]：補「MVP stage Day Zero 建立 CLAUDE.md」官方版要求
+  - [[Vibe-Coding]]：補「Agentic Technical Debt」官方版命名 + 「AI removes every natural bottleneck」核心論點
+  - [[Agentic-AI-Workflow]]：補「Founder = orchestrator of agents」官方版範式，把同心圓迭代從工程層延伸到 founder 層
+  - [[Adversarial-Code-Review]]：補「Claude as structured devil's advocate」跨四階段創業 use case，對抗 Loss of Objectivity 反模式
+  - [[顧客終身價值]]：補 CAC / LTV / payback 在 Launch 階段 exit criteria 的官方版位置
+  - [[Fields-Without-Enforcement-Anti-Pattern]]：補「Insecure by inexperience」官方版根因命名 + Anthropic 列的 5 大 inexperience-driven 漏洞
+- 更新 index.md（2026-05-20 區塊 + 來源摘要 + 實體 + 概念，含既有頁來源數調整）
+- 影響頁面：3 新 + 8 既有 + index.md = 12
+
+### 形成的新對話組
+- AI-Native 創業範式：[[AI-Native-Startup]]（Anthropic 官方）+ [[Vibe-Coding]] + [[Agentic-AI-Workflow]] 三層銜接（時代論述 → 開發範式光譜）
+- Claude 產品家族官方分工首次完整：[[Claude Code]] / [[Claude-Cowork]] / [[Claude-Design]] + Chat
+- CAC/LTV 從「商業概念孤島」連到「AI 創業階段框架」
+- Insecure by inexperience：本 wiki 的 anti-pattern 集合與 Anthropic 官方根因命名對齊
