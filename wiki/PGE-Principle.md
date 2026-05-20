@@ -76,7 +76,7 @@ PGE 原則本身就是 [[CLAUDE-md|CLAUDE.md]] 的**飛行員 checklist** 級規
 
 - [[src-zeuikli-claude-code-best-practices]]：章 10「官方驗證心法與完成標準」首次明白命名為「PGE 原則」；引用 [[Boris-Cherny]] 完成驗證心法
 - [[src-spt-ai-quality-collusion]]：先前 [[AI-Quality-Collusion]] 反模式的來源，描述了「需要結構性隔離 Generator 與 Evaluator」但未用 PGE 名詞
-- [[src-mani-kingdom-phase-3-7-3-9-retro]]（已從 git 撤回）：個人實作累積的「reviewer subagent 與 implementer 分開」是 PGE 的個人版實作
+- 個人實作累積的「reviewer subagent 與 implementer 分開」是 PGE 的個人版實作（具體案例不入版控）
 
 ## 信心評估
 

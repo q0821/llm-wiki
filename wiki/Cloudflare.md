@@ -67,7 +67,7 @@ Cloudflare 自家用 **[[OpenCode]] + AI Gateway + Workers KV** 建了一套 CI 
 這套系統在本知識庫中扮演的角色：
 - [[Adversarial-Code-Review]] / [[Subagent-Driven-Development]] 兩個概念頁的 **production-grade 對照組**
 - [[Harness-Engineering]] [[Addy-Osmani]] 七元件的具體 production 標本
-- [[Circuit-Breaker-for-AI|Circuit Breaker 機制]]（Netflix Hystrix 啟發）的代表案例
+- Circuit Breaker 機制（Netflix Hystrix 啟發，失敗達門檻自動跳脫降級）的 AI agentic 系統代表案例
 
 ## 相關頁面
 

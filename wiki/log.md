@@ -898,3 +898,22 @@
 - Claude 產品家族官方分工首次完整：[[Claude Code]] / [[Claude-Cowork]] / [[Claude-Design]] + Chat
 - CAC/LTV 從「商業概念孤島」連到「AI 創業階段框架」
 - Insecure by inexperience：本 wiki 的 anti-pattern 集合與 Anthropic 官方根因命名對齊
+
+## [2026-05-20] lint | 健康檢查 + broken links 修正
+- 全面掃描：117 個 wiki 頁、frontmatter 完整性 100%、無真孤立頁
+- **客戶識別殘留修正**（高優先 / 資安）：移除前次漂白事件遺漏的一處檔名引用，連 wikilink 字串都不保留
+- **3 個 broken wikilink 修正**：
+  - 概念頁中尚未建立的子概念（Cloudflare 內某機制）改為純文字 + 短描述
+  - source 頁中指向廠商實體的 wikilink 改純文字（該廠商實體頁尚未建，候選列入下次 ingest 建頁）
+  - 概念頁中指向 Asgard skill 的 wikilink 改純文字（skill 不適合單獨開 wiki 頁）
+- 驗證：敏感詞 grep 0 命中 + broken link 偵測 0 命中
+- 影響頁面：[[PGE-Principle]], [[Cloudflare]], [[src-anthropic-founders-playbook-2026]], [[AI-Native-Startup]]
+
+### 未處理（依設計留下）
+- log.md 中 3 處歷史 typo 引述（屬僅追加日誌的修正紀錄，動會破壞 audit trail）
+- 反引號內 `` `[[wikilink]]` `` 範例文字（markdown 不 render，是說明文字）
+
+### 待後續 ingest 時考慮
+- Anthropic / OpenAI / Mnimiy entity 頁建立（高頻提及但無獨立頁）
+- Anthropic Applied AI team blog 系列補 ingest
+- AI-Native 4 階段 vs lean startup 6 階段比較頁

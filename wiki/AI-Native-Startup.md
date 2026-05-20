@@ -106,7 +106,7 @@ agentic 工具讓 early traction（朋友、投資人 portfolio companies、HN h
 | [[Specification-by-Example]] | Exit criteria 是「stage 級」的 SBE |
 | [[Ratchet-Pattern]] | 「Use Claude as devil's advocate」可固化為 SOP |
 | [[PGE-Principle]] | Exit criteria 是「外部 evaluator」原則的 founder 應用 |
-| [[ux-lean-startup]]（Asgard skill）| AI-Native Startup 是 lean startup 的 Anthropic 廠商版本 |
+| Lean Startup（Eric Ries）| AI-Native Startup 是 lean startup 的 Anthropic 廠商版本——同樣強調 measure → learn → iterate，但時間軸壓縮（AI 大幅縮短 build 階段）|
 
 ## 對使用者的應用
 
