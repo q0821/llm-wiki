@@ -1,10 +1,10 @@
 ---
 title: Vibe Coding
 type: concept
-sources: ["(5) Will AI Kill SaaS系列：... - Yu-Chih Edward Hwang.md", "課後 Prompt & 資源懶人包：Codex × HyperFrames 30 秒 Demo 3615edfc91bd80d19acee2ae9f0c5547.md"]
+sources: ["(5) Will AI Kill SaaS系列：... - Yu-Chih Edward Hwang.md", "課後 Prompt & 資源懶人包：Codex × HyperFrames 30 秒 Demo 3615edfc91bd80d19acee2ae9f0c5547.md", "未命名-20260526-031034.md"]
 created: 2026-04-28
-updated: 2026-05-15
-tags: [ai-coding, development-paradigm, video]
+updated: 2026-05-26
+tags: [ai-coding, development-paradigm, video, smb-critique]
 confidence: 中
 ---
 
@@ -19,6 +19,7 @@ Vibe Coding（直覺式開發）是一種以**自然語言直接驅動 LLM 生�
 - [[src-will-ai-kill-saas-design]]（Yu-Chih Edward Hwang）：Vibe Coding 是 AI 開發路徑演化的第二階段（傳統接力之後），「爽快但缺乏工程嚴謹性與可維護性」。原型階段美好，專案變大則「迅速演變成技術債災難」。
 - [[src-design-md-revolution]]（DESIGN.md 革命）：將 Vibe Coding 定位為「美中不足」的現狀——AI 能寫程式但無法保證 UI 風格一致性與品牌完整性。`DESIGN.md` 是補強 Vibe Coding 的關鍵約束機制。
 - [[src-harness-engineering-openai]]（Harness Engineering）：未直接討論 Vibe Coding，但「沒有 harness 的 AI 編程」即為 Vibe Coding 的失控版本——強調必須加上「約束 + 上下文 + 熵管理」三根支柱才能規模化。
+- [[src-gask-ai-agent-vs-vibe-coding]]（[[Gas-Khuang|Gask Huang-Kai]]，中小企業視角）：Vibe Coding 對 5-50 人中小企業是錯誤路徑，因為「公司業務是動態的，每次變動就要改/測/部署」。替代路徑不是「寫得更好的 code」，而是 [[Agent-Skills|Agent + Skill]] 架構 + 通訊軟體載體（[[HermesOS]] / [[OpenClaw]] 等）。論點延伸到「訂閱型 Agent vs API Key」成本結構差異。
 
 ## 演化光譜中的位置
 
@@ -51,6 +52,20 @@ Vibe Coding（直覺式開發）是一種以**自然語言直接驅動 LLM 生�
 - [[Harness-Engineering]]：在 AI 周圍建立約束、上下文、熵管理三層機制
 - [[Agent-Skills]]：把領域知識封裝成可複用的能力擴充
 - [[Meta-Harness]]：為「尚未想出的程式」設計 agent 架構模式
+
+## 中小企業視角：根本替代而非補強
+
+[[src-gask-ai-agent-vs-vibe-coding|Gask Huang-Kai 2026-05 論述]]提出另一條路：對 5-50 人台灣中小企業而言，補強 Vibe Coding **不如直接換路徑**——改用 [[Agent-Skills|Agent + Skill]] 架構放進通訊軟體群組。
+
+論點摘要：
+- **動態性矛盾**：公司業務是動態的（「今天加財務審批、明天刪舊回報格式、後天加客戶分群」），把需求寫死在 code 裡每次改都要改/測/部署
+- **彈性對位**：Agent + Skill 架構下，加/改/刪 skill 不需要重新部署 agent
+- **成本結構**：訂閱型 Agent（[[HermesOS]] $9.99/月起、context window 大、BYO key 零加成）vs 自寫 API Key 整合（按 token 計費 + 自維護整合）
+- **場景前提**：員工不在電腦前，工具必須能在手機通訊軟體裡用——這個前提下「寫一個 web app」（即使是 vibe coding 寫的）也是錯誤路徑
+
+這跟「DESIGN.md / Harness Engineering / Skills 補強 Vibe Coding」是不同思路：**不是讓 Vibe Coding 變更好，而是繞過 Vibe Coding 的整個適用場景**。
+
+> 注意該論述的目標市場限定（5-50 人 SMB）+ 作者立場（[[HermesOS]] 推廣者）——是「特定場景的根本替代論」，不是對所有 vibe coding 場景的否定。
 
 ## 相關概念
 

@@ -944,3 +944,75 @@
   - Boris Cherny 公開講座 / 訪談 ingest
   - Anthropic engineering blog 中 Boris / Thariq 的署名文章
 - 等使用者提供 URL 或場景再處理
+
+## [2026-05-26] ingest | Gask Huang-Kai 論述貼文 + HermesOS 官方落地頁
+- **觸發**：inbox-pull 拉進 5 個新檔，使用者選擇按優先順序逐一處理 #1
+- **主來源**：raw/未命名-20260526-031034.md（[[Gas-Khuang|Gask Huang-Kai]] FB 貼文「為什麼我不推 vibe coding，而是推 AI Agent 自動化」）
+- **延伸 fetch**：https://hermesos.cloud/ → raw/hermesos-your-ai-agents-always-on.md（為釐清 Hermes OS 與既有 [[Hermes-Agent]] 關係）
+
+### 新建頁
+- [[src-gask-ai-agent-vs-vibe-coding]]（source / 信心中）：7 個論點完整摘要 + 與 wiki 既有 entity 對位表 + 觀點限制標註
+- [[src-hermesos-cloud-landing]]（source / 信心強）：hermesos.cloud 首頁全文 + 定價結構 + 商業承接 OpenClaw 的官方證據
+- [[HermesOS]]（entity / 信心強）：**新 entity**——hermesos.cloud 的 managed cloud 商品，建立在 Nous Research 的 [[Hermes-Agent]] 之上。釐清「框架／託管／競品」三層
+
+### 更新既有頁
+- [[Gas-Khuang]]：補真實全名 **Gask Huang-Kai** + Facebook handle GaskHuang + 補「[[HermesOS]] 中文圈推廣者」身分；信心弱→中
+- [[OpenClaw]]：補中文別名 **「龍蝦 AI」** + 「遷移趨勢」段重寫為「商業承接 + 社群遷移 + 並存推薦」三層；補 HermesOS 商業承接證據（首屏 tagline + OpenClaw migration built in + FAQ）
+- [[Hermes-Agent]]：補開篇層次差異說明 + 新增「商業包裝層：HermesOS」段 + 對比表加入 HermesOS row
+- [[Vibe-Coding]]：「不同觀點」加入 Gask Huang-Kai 中小企業視角 + 新增「中小企業視角：根本替代而非補強」段（與 DESIGN.md / Harness Engineering 補強路徑並列對照）
+
+### 關鍵釐清成果
+- **HermesOS ≠ Hermes Agent**：前者是商業 managed cloud（hermesos.cloud），後者是 Nous Research 開源框架。文章與社群討論常混用，此次 ingest 把三層分開
+- **「龍蝦 AI」= OpenClaw** 的中文行銷別名（claw → 蝦螯 → 龍蝦），此次首度納入 aliases
+- **同一人三身分匯流**：Gas Khuang（GitHub username）= Gask Huang-Kai（真實全名）= [[src-hermes-agent-99-cases|99 案例整理者]] = 中文圈 HermesOS 推廣者
+- **「OpenClaw → Hermes 取代趨勢」的商業機制**：不是技術自然取代，是 HermesOS 把「OpenClaw migration built in」做成商品功能主動承接
+
+### 觀察到的對話組
+- [[Vibe-Coding]] 的批判視角從 [[src-anthropic-founders-playbook-2026|Anthropic「Agentic Technical Debt」]]（startup / AI-Native 視角）+ [[src-will-ai-kill-saas-design|Yu-Chih Edward Hwang]]（SaaS 演化視角）擴展到「**台灣 SMB 顧問視角**」——三條獨立論述線
+- [[Managed-Agents]]（Anthropic 親生）↔ [[HermesOS]]（開源底層 + BYO key）形成「同一 managed agent 趨勢的兩個切片」雙向連結
+
+### 影響頁面
+[[src-gask-ai-agent-vs-vibe-coding]], [[src-hermesos-cloud-landing]], [[HermesOS]], [[Gas-Khuang]], [[OpenClaw]], [[Hermes-Agent]], [[Vibe-Coding]], index.md = 8 頁
+
+### 餘下 inbox 來源（後續 ingest）
+- 台灣家具廠/品牌清單（task #2）
+- calcom/cal.diy URL fetch（task #3）
+- AKIRAXCLAW GitHub 精選 URL fetch（task #4）
+- MBP 短感想 4 行（task #5 待定）
+
+## [2026-05-26] ingest | 批次處理 inbox 餘下 4 來源 (#2-5)
+- **觸發**：使用者選擇「一次把 #2-5 都跑完」
+- 同日 wave B，承接 wave A (#1) 完成後
+
+### 新建 4 個 source 頁
+- [[src-taiwan-made-brands]]（信心弱）：FB 貼文整理 11 品類 30 品牌索引；保留嚴格標準「台灣監製、產地中國的不算」；單一來源 + 未驗證個別品牌實際產地
+- [[src-cal-diy-github]]（信心強）：Cal.com 100% MIT 開源社群版（移除 EE features，僅 self-host）；與 [[HermesOS]] 形成**商業↔開源反向案例**對位（HermesOS 是「開源框架包成商業 cloud」，cal.diy 是「商業 SaaS 剝掉 EE 變回純開源」）
+- [[src-akiraxclaw-github-trending-2026-05-20]]（fetch 失敗 / deferred）：三方法均失敗（markdown.new 超時 / WebFetch 抓不到 body / curl 確認是 Next.js SPA）；建 placeholder 頁保留 URL + 後續手動投遞指引
+- [[src-mbp-failure-hardware-pivot]]（信心強）：MBP 三年保固剛過顯示晶片損壞無法修；策略轉向「MBA M5 24g + Framework Desktop 128g + SSH remote」；對應「fungible client / persistent server」設計哲學
+
+### 不為 cal.diy / Cal.com / Taiwan 品牌個別建 entity 的決策理由
+- Cal.com / cal.diy：wiki 既有對 Cal.com 僅 1 處引用（DESIGN.md 範例品牌之一），未到「需要 entity 頁支撐多處交叉引用」門檻；以 src 頁形式保留即可
+- 台灣品牌 30+ 個：價值密度低 + 「未來真用到再升級」原則；source 頁的索引表已可滿足「查找起手」用途
+
+### Fetch 失敗的工程觀察（記錄為未來經驗）
+- **markdown.new API**：對 GitHub repo 與部分 SPA 站點處理慢 / 超時。fetch-url.sh 60s 超時門檻對複雜頁不夠用
+- **WebFetch tool**：可以拿到 GitHub README 但對 client-side render 的 Next.js SPA 內容拿不到（只有 nav + meta）
+- **curl + UA spoof**：80KB HTML 但無實質內容才能確認是 SPA——是判斷 fetch 為何失敗的最後手段
+- **GitHub repo 的權威路徑**：`gh api repos/<owner>/<name>/readme --jq '.content' | base64 -d` 比 fetch URL 穩定許多
+
+### 影響頁面
+[[src-taiwan-made-brands]], [[src-cal-diy-github]], [[src-akiraxclaw-github-trending-2026-05-20]], [[src-mbp-failure-hardware-pivot]], index.md = 5 頁
+
+### 整日 ingest 累積
+| Wave | 來源 | 新頁 | 更新頁 |
+|------|------|------|--------|
+| A (#1) | Gask 論述 + HermesOS 官網 | 3 | 4 |
+| B (#2-5) | 4 inbox 來源 | 4 | 0 |
+| **合計** | **6 來源** | **7 新頁** | **4 更新頁** |
+
+知識庫規模：121 → 128 頁。
+
+### 仍待後續
+- AKIRAXCLAW 文章內容手動投遞後再 ingest
+- 若採購 MBA M5 24g 後實際 SSH remote 體驗有觀察，回頭補 [[src-mbp-failure-hardware-pivot]]
+- Framework Desktop 128g 跑本地 LLM 的實測（若有，與 [[LM-Studio]] / [[Gemma]] 對照）

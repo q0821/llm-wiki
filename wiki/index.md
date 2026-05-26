@@ -8,6 +8,31 @@ title: 索引
 
 ## 最近新增
 
+### 2026-05-26
+
+inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更新頁。
+
+#### Wave A：vibe coding × HermesOS 生態釐清
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-gask-ai-agent-vs-vibe-coding\|Gask Huang-Kai — 為什麼我不推 vibe coding]] | FB 論述貼文：5-50 人台灣 SMB 不該走 vibe coding，應改 [[Agent-Skills]] 架構放進通訊軟體；7 論點 + 觀點限制 |
+| [[src-hermesos-cloud-landing\|HermesOS 官方落地頁]] | hermesos.cloud 首頁全文 + 三階定價 + 商業承接 OpenClaw 的官方證據（「OpenClaw forgets. Hermes compounds.」）|
+| [[HermesOS]] | **新 entity**：建立在 [[Hermes-Agent]]（Nous Research 開源）之上的 managed cloud 商品；釐清「框架／託管／競品」三層差異 |
+| [[Gas-Khuang]]（更新） | 補真實全名 **Gask Huang-Kai** + FB handle + 中文圈 [[HermesOS]] 推廣者身分；信心弱→中 |
+| [[OpenClaw]]（更新） | 補中文別名 **「龍蝦 AI」** + 遷移趨勢段重寫為「商業承接 + 社群遷移 + 並存推薦」三層 |
+| [[Hermes-Agent]]（更新） | 補商業包裝層 [[HermesOS]] 段 + 三層層次差異釐清開篇 |
+| [[Vibe-Coding]]（更新） | 補「中小企業視角：根本替代而非補強」段（與 DESIGN.md / Harness Engineering 補強路徑並列對照）|
+
+#### Wave B：其他 4 個 inbox 來源
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-taiwan-made-brands\|全台灣製造品牌推薦清單]] | FB 貼文整理，11 品類 30 品牌索引表（嚴格標準「台灣監製、產地中國的不算」）|
+| [[src-cal-diy-github\|calcom/cal.diy GitHub repo]] | Cal.com 的 100% MIT 開源社群版（移除所有 EE features，僅 self-host）；與 [[HermesOS]] 形成「商業 ↔ 開源」反向案例對位 |
+| [[src-akiraxclaw-github-trending-2026-05-20\|AKIRAXCLAW GitHub 精選 2026-05-20]] | **fetch 失敗**（Next.js SPA）→ deferred；URL + 推測範圍 + 後續手動投遞指引 |
+| [[src-mbp-failure-hardware-pivot\|MBP 故障與個人開發硬體採購策略轉向]] | MBP 三年保固剛過就掛 → 改採「MBA M5 + Framework Desktop 128g + SSH remote」模型；對應「fungible client / persistent server」設計哲學 |
+
 ### 2026-05-20（lint 補建）
 
 | 頁面 | 摘要 |
@@ -250,6 +275,12 @@ title: 索引
 | [[src-cloudflare-ai-code-review\|Cloudflare AI Code Review 系統]] | Production-grade case study：OpenCode + 7 subagent + Risk Tier + Circuit Breaker；130K 次 / $0.98 中位數 | 1 |
 | [[src-bnext-claude-md-12-rules\|CLAUDE.md 12 條規則]] | Forrest Chang 4 條（GitHub 12 萬星）+ Mnimiy 8 條擴充；30 codebase 盲測 41% → 3% 錯誤率 + 三大 prompt 反模式 | 1 |
 | [[src-anthropic-founders-playbook-2026\|Anthropic Founder's Playbook（2026-05 官方）]] | 36 頁 PDF / 7 章；AI-Native 創業 4 階段框架 + Claude 3 surfaces 分工 + 4 個 AI 時代反模式 + 9-10 家 customer cases | 2 |
+| [[src-gask-ai-agent-vs-vibe-coding\|為什麼我不推 vibe coding — Gask Huang-Kai]] | 中文圈 SMB 視角 vibe coding 批判 + Agent + Skill 架構替代論 + HermesOS / OpenClaw 推廣；信心中 | 1 |
+| [[src-hermesos-cloud-landing\|HermesOS 官方落地頁]] | hermesos.cloud 首頁全文；釐清 Hermes Agent / HermesOS / OpenClaw 三層關係的權威來源；信心強 | 1 |
+| [[src-taiwan-made-brands\|全台灣製造品牌推薦清單]] | 11 品類 30 品牌索引；嚴格標準「台灣監製、產地中國的不算」；信心弱 | 1 |
+| [[src-cal-diy-github\|calcom/cal.diy]] | Cal.com 100% MIT 開源社群版；無 EE features 僅 self-host；與 [[HermesOS]] 形成商業↔開源反向案例 | 1 |
+| [[src-akiraxclaw-github-trending-2026-05-20\|AKIRAXCLAW GitHub 精選 2026-05-20]] | **fetch 失敗 / deferred**（Next.js SPA）；URL 保留待手動投遞 | 1 |
+| [[src-mbp-failure-hardware-pivot\|MBP 故障與個人硬體採購轉向]] | 三年保固剛過就掛 → MBA M5 + Framework Desktop 128g + SSH remote 模型 | 1 |
 
 ## 實體
 
@@ -259,7 +290,7 @@ title: 索引
 | [[OKX]] | 加密貨幣交易所，使用雙幣贏產品 | 1 |
 | [[Cloudflare]] | 雲端平台 + AI agent 標準推手 + 內部 AI 工程文化（AI code review production case）| 3 |
 | [[Asgard-AI-Platform\|Asgard AI Platform]] | AI 平台，以 Skills + MCP 組合打造場景化 agent 外掛；主打台灣中小企業日常工作場景 | 2 |
-| [[OpenClaw]] | AI Agent 框架，支援 Telegram/Discord/Slack，RAG MVP 使用；2026 起被 Hermes 取代趨勢 | 2 |
+| [[OpenClaw]] | open-source desktop agent 框架（中文別名「龍蝦 AI」）；RAG MVP 使用；2026 起被 [[HermesOS]] 主動承接遷移 | 4 |
 | [[NotebookLM]] | Google 免費閉合式 RAG 工具，Gemini 模型，可生成圖表/podcast | 1 |
 | [[notebooklm-py]] | 林探開發的 NotebookLM CLI 工具，提供 Claude Code 整合 | 1 |
 | [[HC-AI-說人話]] | YouTube 創作者，推廣 Claude Code + 第二大腦工作流 | 1 |
@@ -280,8 +311,9 @@ title: 索引
 | [[Playwright]] | Microsoft 跨瀏覽器自動化框架，多工具的底層引擎 | 3 |
 | [[Simon-Lin]] | Product Designer，台灣→東京→雪梨，Claude Design × Claude Code × Figma 工作流實作者 | 1 |
 | [[AAPD]] | 繁中產品設計教育平台 | 1 |
-| [[Hermes-Agent]] | Nous Research 出品的開源 agent 框架，跨平台 + 自我改進，OpenClaw 遷移目標 | 1 |
-| [[Gas-Khuang]] | Hermes 99 案例網站整理者 | 1 |
+| [[Hermes-Agent]] | Nous Research 出品的開源 agent 框架，跨平台 + 自我改進；[[HermesOS]] 是其商業 managed cloud 包裝 | 2 |
+| [[HermesOS]] | hermesos.cloud 的 managed cloud 商品（建立在 [[Hermes-Agent]] 上）；BYO key + 通訊整合 + OpenClaw migration built in | 2 |
+| [[Gas-Khuang]] | 真實全名 Gask Huang-Kai；Hermes 99 案例整理者 + 中文圈 HermesOS / OpenClaw 推廣者 | 2 |
 | [[Addy-Osmani]] | Google Cloud AI 總監；Harness 七元件分解 + Ratchet 機制 + HaaS 趨勢 | 1 |
 | [[Boris-Cherny]] | Anthropic Claude Code 核心；完成驗證心法（資深工程師會核准嗎）+ Routines 實戰 | 1 |
 | [[Thariq-Shihipar]] | Anthropic Claude Code 核心；Cache as Uptime + Context 工程；既有 context-management 教學原作者 | 2 |
@@ -314,7 +346,7 @@ title: 索引
 | [[Meta-Harness]] | 為「尚未想出的程式」設計的 agent 架構模式 | 3 |
 | [[Harness-Engineering\|Harness Engineering]] | AI 代理環境設計範式；含 OpenAI 三支柱 / Google Addy 七元件 / Anthropic Claude Code 7 個 extension points / Cloudflare production 四組視角 | 4 |
 | [[WordPress-接手檢查SOP]] | 接手 WordPress 網站的六步檢查流程，辨識「前人的遺產」 | 1 |
-| [[Vibe-Coding]] | 自然語言直接驅動 LLM 生成程式碼／影片的開發範式（演化光譜第 2 階段）；Anthropic 官方版命名「Agentic Technical Debt」| 3 |
+| [[Vibe-Coding]] | 自然語言直接驅動 LLM 生成程式碼／影片的開發範式（演化光譜第 2 階段）；含 Anthropic「Agentic Technical Debt」+ Yu-Chih Edward Hwang SaaS 演化 + Gask Huang-Kai 中小企業根本替代三條獨立批判線 | 4 |
 | [[Agentic-AI-Workflow]] | 同心圓迭代範式，含 Design to Code / Code to Design 雙向流動 + 短影片產製鏈；含 Anthropic 官方版 founder = orchestrator of agents 擴展 | 4 |
 | [[Self-Improving-Agent]] | 自我改進代理範式：MEMORY.md + Skill Factory + 偏好學習，Hermes 是代表實作 | 2 |
 | [[Ratchet-Pattern]] | 每次錯誤編碼成永久規則的設計模式；CLAUDE.md / hook / reviewer subagent 三層編碼；含 41% → 3% 量化實證；Anthropic 官方為第 4 個獨立來源 | 4 |

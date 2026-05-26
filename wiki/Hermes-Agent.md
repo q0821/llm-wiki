@@ -1,9 +1,9 @@
 ---
 title: Hermes Agent
 type: entity
-sources: ["Hermes Agent 成功案例 — 你的 AI 代理可以做什麼.md"]
+sources: ["Hermes Agent 成功案例 — 你的 AI 代理可以做什麼.md", hermesos-your-ai-agents-always-on.md]
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-26
 tags: [agent, open-source, self-improving, multi-platform, nous-research]
 confidence: 中
 ---
@@ -11,6 +11,8 @@ confidence: 中
 # Hermes Agent
 
 由 **Nous Research** 推出的開源 AI agent 框架，主打**自我改進**與**跨平台訊息控制**。代表性特徵：跨多家模型、多訊息平台、社群可貢獻 Skill 函式庫、MEMORY.md 持久記憶層。透過 [[src-hermes-agent-99-cases]] 整理出的 99 個社群案例可看出生態系規模——從個人 Jarvis、企業 Azure 部署、加密交易代理到「自我改進的 [[LLM-Wiki]] 第二大腦」皆有實作。
+
+> **注意層次差異**：Hermes Agent 是 Nous Research 的**開源 agent 框架**；[[HermesOS]] 是 hermesos.cloud 提供的**商業 managed cloud**，把 Hermes Agent 包成 5 分鐘部署服務。文章與社群討論常混用兩個名詞，但商業性、出品方、自由度都不同。詳見 [[#商業包裝層：HermesOS]] 段。
 
 ## 基本資訊
 
@@ -89,11 +91,29 @@ confidence: 中
 
 | 工具 | 主要載體 | 特徵 | 與 Hermes 的關係 |
 |---|---|---|---|
-| **Hermes Agent** | CLI + 多訊息平台 | 自我改進、社群 Skill、跨模型 | 本頁主題 |
+| **Hermes Agent** | CLI + 多訊息平台 | 自我改進、社群 Skill、跨模型 | 本頁主題（開源框架） |
+| [[HermesOS]] | Managed cloud（hermesos.cloud） | 5 分鐘部署 + BYO key + 通訊整合 + $HermesOS token | **商業包裝層**——把本框架做成 managed cloud 商品 |
 | [[Claude Code]] | CLI（terminal） | CLAUDE.md / Skills / Memory；Anthropic 親生 | **互補**——「跨代理統一記憶」case：Hermes + Claude Code + Cursor 共用記憶層 |
 | [[OpenCode]] | CLI + SDK（伺服器優先） | 開源、可程式化包裝；[[Cloudflare]] 在其上建 production AI code review | **企業基礎建設路線** vs Hermes 的「SMB / 個人」路線；同為開源但定位不同 |
-| [[Managed-Agents]] | Anthropic 雲端 | session / harness / sandbox 三層 | 對比：商業託管 vs 開源自架 |
-| [[OpenClaw]] | Telegram/Discord/Slack | 較早的開源 agent 框架 | **被替代**——多個 case 提到「從 OpenClaw 換到 Hermes，再也不回頭」，有完整遷移手冊（Shadow Mode 並行測試） |
+| [[Managed-Agents]] | Anthropic 雲端 | session / harness / sandbox 三層 | 對比：商業託管 vs 開源自架（HermesOS 是其開源底層 + BYO key 對位版本） |
+| [[OpenClaw]] | Desktop framework（Telegram/Discord/Slack） | 較早的開源 agent 框架 | **被 HermesOS 主動承接**——「OpenClaw forgets. Hermes compounds.」+ OpenClaw migration built in；多個 case 提到「從 OpenClaw 換到 Hermes，再也不回頭」 |
+
+## 商業包裝層：[[HermesOS]]
+
+[[HermesOS]]（hermesos.cloud）2026-05 上線，是 Hermes Agent 的 **managed cloud 商業服務**：
+
+| 維度 | Hermes Agent（本頁） | [[HermesOS]] |
+|------|----------------|----------|
+| 性質 | 開源框架 | 商業服務 |
+| 出品 | Nous Research | hermesos.cloud（獨立公司） |
+| 部署 | self-host（一個週末） | managed cloud（5 分鐘） |
+| 成本 | 開源免費 + 自運維 | $0 / $9.99 / $19.99 月費 + BYO API key |
+| 通訊整合 | 13 平台 gateway 模式 | Telegram/Discord/Slack/WhatsApp 原生 |
+| 目標 | 開發者 / Power user | SMB / 個人不想折騰 |
+
+商業模型細節見 [[src-hermesos-cloud-landing|官方落地頁全文]]。
+
+對「Hermes 在中文圈的成長路徑」而言：[[Gas-Khuang|Gask Huang-Kai]]（同時是本框架 99 案例的整理者）2026-05 的論述貼文 [[src-gask-ai-agent-vs-vibe-coding]] 力推 HermesOS，論點對應 5-50 人台灣中小企業市場——這是「框架 → 託管 → 在地化推廣」的完整鏈條。
 
 ## 與 [[OpenClaw]] 的遷移敘事
 
