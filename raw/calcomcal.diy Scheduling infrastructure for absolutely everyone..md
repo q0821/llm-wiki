@@ -1,0 +1,1 @@
+[calcom/cal.diy: Scheduling infrastructure for absolutely everyone.](https://github.com/calcom/cal.diy)
