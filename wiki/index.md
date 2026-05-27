@@ -8,6 +8,12 @@ title: 索引
 
 ## 最近新增
 
+### 2026-05-28
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-tsao-hsing-cheng-tsmc-rca-history-2026-05\|曹興誠回應川普「台灣偷半導體」]] | 1976 RCA 350 萬美元當事人視角；對外駁川普 + 對內補刀台積電歷史恩怨；wiki 第 1 個半導體 / 台美地緣主題；**首次加入「個人吸收」段**（記錄使用者答 quiz 結果 + LLM 觀察的論點/應用場合錯位）|
+
 ### 2026-05-26
 
 inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更新頁。
@@ -281,6 +287,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 | [[src-cal-diy-github\|calcom/cal.diy]] | Cal.com 100% MIT 開源社群版；無 EE features 僅 self-host；與 [[HermesOS]] 形成商業↔開源反向案例 | 1 |
 | [[src-akiraxclaw-github-trending-2026-05-20\|AKIRAXCLAW GitHub 精選 2026-05-20]] | **fetch 失敗 / deferred**（Next.js SPA）；URL 保留待手動投遞 | 1 |
 | [[src-mbp-failure-hardware-pivot\|MBP 故障與個人硬體採購轉向]] | 三年保固剛過就掛 → MBA M5 + Framework Desktop 128g + SSH remote 模型 | 1 |
+| [[src-tsao-hsing-cheng-tsmc-rca-history-2026-05\|曹興誠回應川普「台灣偷半導體」（今周刊）]] | 1976 RCA 350 萬美元 + 4 億 NT 「國家賭注」；首篇含「個人吸收」段的 src 頁；信心中 | 1 |
 
 ## 實體
 
