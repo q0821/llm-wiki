@@ -1047,3 +1047,46 @@
 ### 待回測
 - 2026-06-10 前後請使用者回答：「曹興誠 RCA 那篇你還記得什麼？」驗證 spaced retrieval 效果
 - 若使用者真在某個場合（客戶 / FB 貼文）用到本文論點，回頭在「個人吸收」段補應用紀錄
+
+## [2026-05-28] ingest | 雷小蒙週報 — 三棲遷移 + 雙 AI 對辯儀式
+
+### 來源
+- 雷蒙 / Kairos「雷小蒙」第一人稱 FB 貼文（2026-05-08 ~ 05-26 共 18 天工作復盤）
+- raw/2026-05-26-雷小蒙-AI分身上班紀錄-三棲遷移與雙AI對辯儀式.md
+
+### 新建頁
+- [[src-leikairos-tri-platform-migration-dual-ai-ritual-2026-05]]（信心中）：7 條核心論點 — 不被綁死策略 / 描述清楚=真資產 / Pro-kit08 雙棲清單 / 雙 AI 對辯儀式 / 工具資產化 / 不務正業正向觀察 / AI vs 人類回饋風格差異
+
+### 流程：第 2 次使用「個人吸收」段
+本次依照 2026-05-28 確立的論點型 ingest 流程：
+- ingest 前 quiz：「不看文章用自己的話講 1 個重點 + 你會用在什麼場合」
+- 使用者答案：重點「不被任何 AI 公司綁死的策略」+ 場合「規劃自己 Skill / Workflow 怎麼寫才能跨平台」
+- **LLM 觀察的對位結果**：**方向對位但層級錯位**（vs 上次曹興誠的完全錯位）
+  - 方向對：「不被綁死 = why」「跨平台 workflow = how」是因果關係
+  - 層級錯位：使用者記的是「綱領」，真要寫 Skill 用得上的是文章裡的下位執行細節（Pro-kit08 模式 / 描述清楚原則 / 不互讀再寫）
+- 在 src 頁記錄 2 條重組路徑（往下擴一層 vs 改變應用場合）+ spaced retrieval 7-14 天後回測
+
+### 不主動建 entity 的決策
+- 雷蒙 / Kairos / 雷小蒙：第 1 次出現，標記為「再出現 1 次即建」
+- Antigravity（Google agent CLI）：第 1 次出現，同上標記
+- consensus-builder / Pro-kit08：個別工具 / 課程材料，優先序低
+- 「Dual-AI-Review-Ritual」「Tool-Assetization」標為 concept 候選——若第二個案例出現可獨立成 concept 頁
+
+### 與既有頁面建立的對話
+- vs [[src-gask-ai-agent-vs-vibe-coding]]：同期 AI 工作流論述，角度不同（Gask 講「正確使用 AI」/ 雷蒙講「即使用對也要可遷移」）→ 可作對比閱讀
+- vs [[HermesOS]]：「商業包裝層」vs「個人 OS 層」對位（同樣解決可遷移性，路徑不同）
+- vs [[Ratchet-Pattern]]：「描述清楚 = 真資產」幾乎是 Ratchet 孿生 sibling（失敗側 vs 生產側）
+- vs [[HyperFrames]]：本文補了 HyperFrames 一個額外的影片 broll 使用場景
+
+### 影響頁面
+[[src-leikairos-tri-platform-migration-dual-ai-ritual-2026-05]], index.md = 2 頁
+
+### 連續觀察
+- 第 1 次（曹興誠）：完全錯位
+- 第 2 次（雷小蒙）：方向對 + 層級錯位
+- 兩次都需要「重組記憶」才能真用——這個 quiz/觀察循環本身是有產出的（不只是「存了」）
+- 樣本還太少；持續 3-5 次後可累積錯位類型 taxonomy
+
+### 待回測
+- 2026-06-10 前後合併問：「曹興誠 + 雷小蒙兩篇你還記得什麼？特別是雷小蒙的『跨平台 workflow』具體該怎麼寫？」
+- 看 Pro-kit08 / 描述清楚 / 不互讀這三個下位執行細節有沒有留下來，或仍只記「不被綁死」綱領
