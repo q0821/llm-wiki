@@ -1090,3 +1090,54 @@
 ### 待回測
 - 2026-06-10 前後合併問：「曹興誠 + 雷小蒙兩篇你還記得什麼？特別是雷小蒙的『跨平台 workflow』具體該怎麼寫？」
 - 看 Pro-kit08 / 描述清楚 / 不互讀這三個下位執行細節有沒有留下來，或仍只記「不被綁死」綱領
+
+## [2026-05-29] ingest | WP AI 小聚 — 歐陽嘉隆 / 羊羊數位 AI 設計網頁工作流
+
+### 來源
+- 歐陽嘉隆（羊羊數位科技創辦人）2026 春季 WordPress AI 小聚 12 張投影片簡報
+- URL: https://dev-ys.wppro.cloud/WP-MEETUP/
+- 公開度判斷：dev subdomain + noindex robots，但講者主動分享 URL 推廣 + 完整自家品牌標示 + 列入官方 demo → 屬「intentionally shareable」公開內容
+- raw/2026-05-29-WP-MEETUP-歐陽嘉隆-羊羊數位-AI設計網頁工作流.md
+
+### 新建頁
+- [[src-yangsheep-wp-ai-meetup-2026-spring]]（信心中）：7 條核心論點群 — 帶雛型去談案 / 給對資料 / Claude Design vs 本地+Codex / 5 套工具 toolchain / 提示詞範本 / GreenLight WP 整合 / 自家產品延伸
+
+### 流程：第 3 次使用「個人吸收」段
+- 使用者答案：重點「給對資料 + 好的參考網站是 AI 設計關鍵」+ 場合「評估自己接案工作流跨不跨得過這套水準」
+- **LLM 觀察的對位結果**：**方向對位但尺度錯位**——記住 slide 3 一個論點，但要 benchmark 整套工作流需要 cross-check slide 2/4/5/6/8 全部
+- 在 src 頁明確列出 6 個 benchmark 檢核點 + 2 條重組路徑 + spaced retrieval 7-14 天回測
+
+### 連續觀察的對位類型累積（3 次）
+| 序 | 來源 | 對位類型 |
+|---|------|---------|
+| 1 | 曹興誠 RCA | 完全錯位（商業決策 vs 地緣政治）|
+| 2 | 雷小蒙週報 | 方向對 + 層級錯位（綱領 vs 下位執行）|
+| 3 | 歐陽嘉隆 WP 小聚 | 方向對 + 尺度錯位（單點論點 vs 整體 benchmark）|
+
+**初步浮現 pattern**：使用者每次記住「單一最 stick 的點」（CMOS 商業決策 / 不被綁死 / 給對資料），但應用場合需要「結構化全貌」（地緣論述彈藥 / 跨平台 workflow 執行 / 完整工作流 benchmark）。
+
+若後續 3-5 次 ingest 此 pattern 持續，獨立為 [[Single-Point-Recall-Bias]] 元 pattern 頁。
+
+### 不主動建 entity 的決策
+- 歐陽嘉隆 / 羊羊數位 / YS CART：第 1 次出現，「再出現 1 次即建」候選
+- GreenShift / GreenLight Skills (greenlight-vibe)：第 1 次出現但是「AI 設計→WP 上線」最後一哩橋的關鍵元件，標「再出現 1 次即建」高優先
+- design-md-chrome / web-interface-guidelines：個別 skill，等實際安裝使用再升級
+- marketing-skills / claude-gpt-image-bridge / superpowers / webdesignclip / Awwwards：個別資源，優先序低
+
+### 與既有頁面建立的對話
+- vs [[src-gask-ai-agent-vs-vibe-coding]]：兩個台灣 WP 接案者視角互補（Gask 講架構面替代論，歐陽嘉隆給執行面 toolchain）
+- vs [[src-leikairos-tri-platform-migration-dual-ai-ritual-2026-05]]：抽象 ↔ 具體（雷蒙跨平台設計原則 ↔ 歐陽嘉隆中文圈具體 toolchain）
+- vs [[Vibe-Coding]]：歐陽嘉隆的工作流是 vibe coding 的「結構化進階版」（5 skill 串接 + 標準提示詞）
+- vs [[DESIGN-md]]：design-md-chrome 是 design.md 的取得方式之一
+- vs [[Claude-Design]]：slide 4 的「Claude Design 限制」可寫進其適用 / 不適用場景段
+- vs [[Prompt-Pack-Pattern]]：slide 6 提示詞範本是此 pattern 的最簡實例
+- vs [[WordPress-接案工作筆記]]：直接補充「加值階段（AI / RAG）」可操作 toolchain
+- vs [[Plugins-Claude-Code]]：GreenLight + GreenShift 是「AI skill ↔ WordPress plugin 雙向整合」具體案例
+
+### 影響頁面
+[[src-yangsheep-wp-ai-meetup-2026-spring]], index.md = 2 頁
+
+### 待回測
+- 2026-06-12 前後（提早幾天，因為這篇對使用者工作直接相關，預期可用性高）：「歐陽嘉隆 / 羊羊數位的 WP AI 工作流你還記得什麼？特別是『benchmark 自己工作流』的話，你會列哪幾個檢核點？」
+- 看是否能從 slide 3 自然擴展到 slide 5 / 6 / 8 的具體執行細節
+- 同步累積到第 3 次的「單點記憶 vs 整體應用」pattern 觀察

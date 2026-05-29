@@ -8,6 +8,12 @@ title: 索引
 
 ## 最近新增
 
+### 2026-05-29
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-yangsheep-wp-ai-meetup-2026-spring\|WP AI 小聚 — 歐陽嘉隆 / 羊羊數位 AI 設計網頁工作流]] | 2026 春季 WP AI 小聚 12 張投影片；接案者實戰 toolchain（5 套工具 + 標準提示詞 + GreenLight WP 整合 + Claude Design vs 本地 + Codex 選型）；含個人吸收段（**第 3 次：方向對 + 尺度錯位**，單點 vs 整體 benchmark）|
+
 ### 2026-05-28
 
 | 頁面 | 摘要 |
@@ -290,6 +296,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 | [[src-mbp-failure-hardware-pivot\|MBP 故障與個人硬體採購轉向]] | 三年保固剛過就掛 → MBA M5 + Framework Desktop 128g + SSH remote 模型 | 1 |
 | [[src-tsao-hsing-cheng-tsmc-rca-history-2026-05\|曹興誠回應川普「台灣偷半導體」（今周刊）]] | 1976 RCA 350 萬美元 + 4 億 NT 「國家賭注」；首篇含「個人吸收」段的 src 頁；信心中 | 1 |
 | [[src-leikairos-tri-platform-migration-dual-ai-ritual-2026-05\|雷小蒙週報 — 三棲遷移 + 雙 AI 對辯儀式]] | 雷蒙 / Kairos FB 貼文；不被 AI 公司綁死策略 + 描述清楚=真資產 + Pro-kit08 雙棲清單 + 雙 AI 對辯儀式 + 工具資產化 7 條論點；含個人吸收段；信心中 | 1 |
+| [[src-yangsheep-wp-ai-meetup-2026-spring\|WP AI 小聚 — 歐陽嘉隆 / 羊羊數位 AI 設計網頁工作流]] | 2026 春季 WordPress AI 小聚 12 張投影片；中文圈接案者實戰 toolchain（5 套工具 + 提示詞範本 + GreenLight WP 區塊整合 + 工具選型決策）；含個人吸收段；信心中 | 1 |
 
 ## 實體
 
