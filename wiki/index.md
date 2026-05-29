@@ -13,6 +13,8 @@ title: 索引
 | 頁面 | 摘要 |
 |------|------|
 | [[src-yangsheep-wp-ai-meetup-2026-spring\|WP AI 小聚 — 歐陽嘉隆 / 羊羊數位 AI 設計網頁工作流]] | 2026 春季 WP AI 小聚 12 張投影片；接案者實戰 toolchain（5 套工具 + 標準提示詞 + GreenLight WP 整合 + Claude Design vs 本地 + Codex 選型）；含個人吸收段（**第 3 次：方向對 + 尺度錯位**，單點 vs 整體 benchmark）|
+| [[src-shopline-payments-wp-meetup-2026-spring\|支付決勝 — Winston Wen / SHOPLINE Payments]] | 同場 WP 小聚姊妹簡報（贊助商 BD）；6 張投影片；3 結帳殺手 framework + 現代支付 4 要素 + 4 成靠分期數據；含個人吸收段（**第 4 次：方向對 + 階段窄化錯位**，結帳階段 vs 整體轉換）|
+| [[SHOPLINE-Payments]] | **新 entity**：第 2 次出現觸發；支付方式 + 接案決策參考 + 競品 placeholder + 數據可信度評估 |
 
 ### 2026-05-28
 
@@ -297,6 +299,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 | [[src-tsao-hsing-cheng-tsmc-rca-history-2026-05\|曹興誠回應川普「台灣偷半導體」（今周刊）]] | 1976 RCA 350 萬美元 + 4 億 NT 「國家賭注」；首篇含「個人吸收」段的 src 頁；信心中 | 1 |
 | [[src-leikairos-tri-platform-migration-dual-ai-ritual-2026-05\|雷小蒙週報 — 三棲遷移 + 雙 AI 對辯儀式]] | 雷蒙 / Kairos FB 貼文；不被 AI 公司綁死策略 + 描述清楚=真資產 + Pro-kit08 雙棲清單 + 雙 AI 對辯儀式 + 工具資產化 7 條論點；含個人吸收段；信心中 | 1 |
 | [[src-yangsheep-wp-ai-meetup-2026-spring\|WP AI 小聚 — 歐陽嘉隆 / 羊羊數位 AI 設計網頁工作流]] | 2026 春季 WordPress AI 小聚 12 張投影片；中文圈接案者實戰 toolchain（5 套工具 + 提示詞範本 + GreenLight WP 區塊整合 + 工具選型決策）；含個人吸收段；信心中 | 1 |
+| [[src-shopline-payments-wp-meetup-2026-spring\|支付決勝 — Winston Wen / SHOPLINE Payments]] | 同場 WP 小聚 BD 簡報（6 張投影片）；3 結帳殺手 + 現代支付 4 要素 + 4 成靠分期數據；含個人吸收段；信心中 | 1 |
 
 ## 實體
 
@@ -340,6 +343,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 | [[Anthropic]] | 本知識庫核心廠商（195+ 次提及）；Claude 3+1 個 surfaces + 核心員工地圖 + 跨廠商工程共識位置 | 4 |
 | [[OpenAI]] | 對標廠商（92 次提及）；Codex CLI / AGENTS.md / Harness Engineering 的對應位置；與 Anthropic 8 維對比 | 2 |
 | [[Mnimiy]] | 社群實驗者 / X @Mnilax；CLAUDE.md 12 條規則的 8 條擴充作者 + Ratchet 第 3 個獨立來源 + 30 codebase 盲測 | 1 |
+| [[SHOPLINE-Payments]] | SHOPLINE 集團金流產品；支援信用卡分期 / LINE Pay / Apple Pay / zingala / 街口；2026 春季 WP 小聚贊助商 + 專題 BD 主題；接案決策矩陣 + 自家數據可信度評估 | 2 |
 
 ## 概念
 

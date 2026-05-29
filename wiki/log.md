@@ -1141,3 +1141,53 @@
 - 2026-06-12 前後（提早幾天，因為這篇對使用者工作直接相關，預期可用性高）：「歐陽嘉隆 / 羊羊數位的 WP AI 工作流你還記得什麼？特別是『benchmark 自己工作流』的話，你會列哪幾個檢核點？」
 - 看是否能從 slide 3 自然擴展到 slide 5 / 6 / 8 的具體執行細節
 - 同步累積到第 3 次的「單點記憶 vs 整體應用」pattern 觀察
+
+## [2026-05-29] ingest | 支付決勝 — Winston Wen / SHOPLINE Payments（同場 WP 小聚姊妹簡報）
+
+### 來源
+- Winston Wen 溫文（SHOPLINE Payments 台灣商務拓展負責人）2026 春季 WP 小聚 6 張投影片
+- URL: https://wordpress-shoplinepayments.netlify.app/
+- 公開度：netlify 公開部署 + 對外 BD 用，無內部資訊；安全可入 git
+- raw/2026-05-29-WP-MEETUP-Winston-Wen-SHOPLINE-Payments-支付決勝.md
+
+### 新建頁
+- [[src-shopline-payments-wp-meetup-2026-spring]]（信心中）：論點型 + 銷售 pitch 混合；4 個 framework — AI 時代支付位階重塑 / 3 結帳殺手 / 現代支付 4 要素 / 3 組平台數據
+- [[SHOPLINE-Payments]]（新 entity）：第 2 次出現觸發；含支付方式 / 接案決策矩陣 / 競品 placeholder（藍新/綠界/紅陽/Stripe）/ 自家數據可信度評估
+
+### 流程：第 4 次使用「個人吸收」段
+- 使用者答案：重點「3 結帳殺手 framework」+ 場合「診斷客戶電商/課程/服務網站為什麼轉換不好」
+- **LLM 觀察的對位結果**：**方向對位但階段窄化錯位** — 3 殺手是「結帳階段」工具，但「整體轉換診斷」還需要流量質量 / CRO / 信任設計 / 加購物車前 / 結帳後 4 個漏斗階段
+- 在 src 頁明確列出更大轉換漏斗的 5 階段 + 2 條重組路徑 + spaced retrieval 約定
+
+### 連續觀察的對位類型累積（4 次）
+| 序 | 來源 | 對位類型 |
+|---|------|---------|
+| 1 | 曹興誠 RCA | 完全錯位 |
+| 2 | 雷小蒙週報 | 方向對 + 層級錯位 |
+| 3 | 歐陽嘉隆 WP 工作流 | 方向對 + 尺度錯位 |
+| 4 | SHOPLINE Payments | 方向對 + 階段窄化錯位 |
+
+**4 次後的觀察更新**：對位 fit 度逐次提升（完全錯位 → 層級錯位 → 尺度錯位 → 階段窄化錯位）。可能的初步規律：
+- 來源**本身就是 framework** 時（雙 AI 對辯 / 5 工具串接 / 3 殺手），對位比較容易
+- 來源是**單點 insight** 時（曹興誠 CMOS 決策），對位最容易完全偏掉
+- **依然存在的模式**：使用者記住的是「單點 / 單一 framework」，但實際應用場合的範圍**幾乎都比工具的 cover 範圍大**——這個 pattern 4 次都成立
+
+樣本仍嫌少；後續 2-3 次若持續，獨立為 [[Single-Point-Recall-Bias]] / [[Tool-Coverage-Mismatch]] 元 pattern。
+
+### 為什麼建 SHOPLINE-Payments entity 但不建其他 entity
+- SHOPLINE-Payments：第 2 次出現符合「再出現 1 次即建」+ 對使用者接案有實務決策價值
+- Winston Wen、SHOPLINE（母公司）：第 1 次，「再出現 1 次即建」候選
+- zingala / LINE Pay / Apple Pay / 街口支付 / 藍新 / 綠界 / 紅陽 / Stripe / TapPay：個別金流，等需要做 [[comparison-tw-payment-gateways]] 比較頁時一併建
+
+### 與既有頁面建立的對話
+- vs [[src-yangsheep-wp-ai-meetup-2026-spring]]：**同場小聚姊妹簡報**——做網站 ↔ 收錢的閉環兩端
+- vs [[WordPress-接案工作筆記]]：「加值階段」新增「金流升級建議」子服務 + 3 結帳殺手是其診斷工具
+- vs [[顧客終身價值]]：高客單服務（> 1 萬）+ 分期影響 CLV 計算的具體機制
+- vs [[src-customer-diagnostic-50-questions]]：3 殺手是「為什麼不買」結帳階段的細展開
+
+### 影響頁面
+[[src-shopline-payments-wp-meetup-2026-spring]], [[SHOPLINE-Payments]], index.md = 3 頁
+
+### 待回測
+- 2026-06-12 合併問：「SHOPLINE 那篇 3 個結帳殺手是哪 3 個？你拿來診斷客戶的話，前面 4 個漏斗階段你會怎麼補？」
+- 同步累積到第 4 次的「fit 度逐步提升」觀察是否持續
