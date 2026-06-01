@@ -8,6 +8,13 @@ title: 索引
 
 ## 最近新增
 
+### 2026-06-01
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-nvidia-gtc-taipei-2026-jensen-keynote\|NVIDIA GTC Taipei 2026 黃仁勳主題演講]] | 2 小時 keynote / 2318 段 transcript；5 條主軸 — Agentic AI / CUDA 護城河 / Vera Rubin 路線圖 / Action Model / Taiwan ecosystem partner；含個人吸收段（**第 5 種錯位類型：Source Bias 錯位**，廠商敘事 vs 中立投資分析）|
+| [[TSMC]] | **新 entity**：第 2 次出現觸發；含曹興誠 RCA 爭議視角 + NVIDIA AI 供應鏈核心定位 |
+
 ### 2026-05-29
 
 | 頁面 | 摘要 |
@@ -300,6 +307,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 | [[src-leikairos-tri-platform-migration-dual-ai-ritual-2026-05\|雷小蒙週報 — 三棲遷移 + 雙 AI 對辯儀式]] | 雷蒙 / Kairos FB 貼文；不被 AI 公司綁死策略 + 描述清楚=真資產 + Pro-kit08 雙棲清單 + 雙 AI 對辯儀式 + 工具資產化 7 條論點；含個人吸收段；信心中 | 1 |
 | [[src-yangsheep-wp-ai-meetup-2026-spring\|WP AI 小聚 — 歐陽嘉隆 / 羊羊數位 AI 設計網頁工作流]] | 2026 春季 WordPress AI 小聚 12 張投影片；中文圈接案者實戰 toolchain（5 套工具 + 提示詞範本 + GreenLight WP 區塊整合 + 工具選型決策）；含個人吸收段；信心中 | 1 |
 | [[src-shopline-payments-wp-meetup-2026-spring\|支付決勝 — Winston Wen / SHOPLINE Payments]] | 同場 WP 小聚 BD 簡報（6 張投影片）；3 結帳殺手 + 現代支付 4 要素 + 4 成靠分期數據；含個人吸收段；信心中 | 1 |
+| [[src-nvidia-gtc-taipei-2026-jensen-keynote\|NVIDIA GTC Taipei 2026 黃仁勳主題演講]] | 2 小時 keynote 完整 transcript + 5 主軸結構化整理（Agentic / CUDA / Vera Rubin / Action Model / Taiwan partner）；含個人吸收段 + 廠商敘事 source bias 警示；信心中 | 1 |
 
 ## 實體
 
@@ -344,6 +352,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 | [[OpenAI]] | 對標廠商（92 次提及）；Codex CLI / AGENTS.md / Harness Engineering 的對應位置；與 Anthropic 8 維對比 | 2 |
 | [[Mnimiy]] | 社群實驗者 / X @Mnilax；CLAUDE.md 12 條規則的 8 條擴充作者 + Ratchet 第 3 個獨立來源 + 30 codebase 盲測 | 1 |
 | [[SHOPLINE-Payments]] | SHOPLINE 集團金流產品；支援信用卡分期 / LINE Pay / Apple Pay / zingala / 街口；2026 春季 WP 小聚贊助商 + 專題 BD 主題；接案決策矩陣 + 自家數據可信度評估 | 2 |
+| [[TSMC]] | 台積電；含曹興誠 RCA 歷史爭議視角 + NVIDIA GTC Taipei 2026 AI 供應鏈核心定位；待第三方驗證標記 + 未來追蹤候選表 | 2 |
 
 ## 概念
 

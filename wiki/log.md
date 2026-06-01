@@ -1201,3 +1201,58 @@
 ### 待回測
 - 2026-06-12 合併問：「SHOPLINE 那篇 3 個結帳殺手是哪 3 個？你拿來診斷客戶的話，前面 4 個漏斗階段你會怎麼補？」
 - 同步累積到第 4 次的「fit 度逐步提升」觀察是否持續
+
+## [2026-06-01] ingest | NVIDIA GTC Taipei 2026 黃仁勳 keynote（首例 YouTube 長片 + 首例 intent quiz）
+
+### 來源
+- 2026-05-30 ~ 06-01 期間 NVIDIA GTC Taipei 2026 直播；天下雜誌 video 轉播（AI 即時中字翻譯版本）
+- URL: https://www.youtube.com/watch?v=tUE2RV9hqWI
+- Transcript：2318 段 / ~2 小時（英文 auto-caption）
+- raw/2026-06-01-yt-nvidia-gtc-taipei-2026-jensen-keynote.md（完整 transcript）
+
+### 新建頁
+- [[src-nvidia-gtc-taipei-2026-jensen-keynote]]（信心中）：5 條主軸結構化（Agentic AI / CUDA 護城河 / Vera Rubin 路線圖 / Action Model / Taiwan ecosystem partner）+ 7 項論點群 + 投資視角的廠商敘事 bias 警示
+- [[TSMC]]（新 entity）：第 2 次出現觸發；含曹興誠歷史爭議視角 + NVIDIA AI 供應鏈核心定位
+
+### 流程變化：首次 intent quiz（非 memory test）
+前 4 篇都是「已讀後 quiz memory」，本篇因為使用者可能還沒看（2 小時長），改成 **intent quiz**：「你想從這場拿走什麼 + 用在什麼場合」。
+- 使用者答案：想拿走「Agentic AI / Jensen AI / Action Model narrative」+ 用在「評估 NVIDIA / 台積電 / AI 供應鏈股票投資決策」
+- LLM 觀察到**新類型錯位**：**Source bias 錯位**——想拿走的是 NVIDIA 自家 selling narrative，但用在投資決策需要中立 / 反向懷疑的工具
+
+### 連續觀察的對位類型累積（5 次後）
+| 序 | 來源 | 錯位類型 | 種類 |
+|---|------|---------|------|
+| 1 | 曹興誠 RCA | 完全錯位 | 拿錯工具 |
+| 2 | 雷小蒙週報 | 層級錯位 | 場合 > 工具 |
+| 3 | 歐陽嘉隆 WP 工作流 | 尺度錯位 | 場合 > 工具 |
+| 4 | SHOPLINE Payments | 階段窄化錯位 | 場合 > 工具 |
+| 5 | NVIDIA GTC keynote | **Source bias 錯位** | **工具類型不對**（廠商敘事 vs 中立分析）|
+
+**5 次後 taxonomy 更新（3 大類）**：
+- 拿錯工具型（1/5）
+- 場合 > 工具型（3/5，仍是主流）
+- **Source bias 錯位（1/5，新類型）**：當來源是廠商 keynote / BD pitch / 自家 LP 等「有商業立場」的講者時，即使「拿到了正確論點」，用在需要反向懷疑的場合（投資 / 採購 / 競品分析）會自帶 bias 風險
+
+### 為什麼建 TSMC entity 但不建 NVIDIA entity
+- TSMC：在 [[src-tsao-hsing-cheng-tsmc-rca-history-2026-05]] 是第 1 次提及但只是「候選」，本次是第 2 次符合 trigger + 有「對話組」價值（曹興誠歷史視角 + Jensen ecosystem 視角形成兩層）
+- NVIDIA：本 src 是首次深度描述，第 2 次出現再建（避免單來源 entity）
+- Jensen Huang / Vera Rubin / Blackwell / CUDA / Stargate / 鴻海 / GR00T / Action Model：同上，「再出現 1 次即建」候選
+
+### 與既有頁面建立的對話
+- vs [[src-tsao-hsing-cheng-tsmc-rca-history-2026-05]]：**Taiwan 半導體敘事**的兩條獨立論述線——曹興誠對外駁 Trump + Jensen 廠商視角框架「ecosystem partner」
+- vs [[src-leikairos-tri-platform-migration-dual-ai-ritual-2026-05]]：**AI 分身**兩種尺度——雷蒙 Kairos 個人版 + Jensen AI 產業版（narrative 同方向但不同尺度）
+- vs [[Agent-Skills]] / [[Managed-Agents]] / [[Claude Code]]：「軟體層 agentic AI」vs Jensen 「硬體 + framework 層 agentic AI」對位
+- vs [[Vibe-Coding]]：Action Model 4 元素（perceiving / reasoning / planning / acting）與 vibe coding 「描述意圖讓 AI 全鏈執行」同方向
+- vs [[DESIGN-md]]：DSX blueprint 反映「規格 → AI 實作」橫向 pattern 已從 software 滲透到 data center 設計
+
+### 影響頁面
+[[src-nvidia-gtc-taipei-2026-jensen-keynote]], [[TSMC]], index.md = 3 頁
+
+### 工程觀察（首例 YouTube ingest）
+- `fetch-youtube.sh` 抓 transcript 正常但**保存到 OUTPUT_DIR 失敗**（疑似 shell scope 問題）→ 改 fallback 用 inline Python + `>` redirect 解決
+- YouTube auto-caption 英文 + 2 小時長度 → 必須先做「topic outline + keyword 掃描」才能結構化整理，不能逐段引用
+- intent quiz（vs memory test）是長片 / 未讀來源的合適流程變體
+
+### 待回測
+- 2026-06-15 前後（給時間讓投資判斷有實際決策時機）：「NVIDIA GTC Taipei 那場你還記得什麼？特別是 Agentic AI / Action Model narrative 你**怎麼用在投資決策**——是直接信還是有跟競品 / capex 數字 cross-check？」
+- 看是否能意識到 narrative 的 source bias 警示
