@@ -8,6 +8,13 @@ title: 索引
 
 ## 最近新增
 
+### 2026-06-02
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-google-ai-search-optimization-guide-2026-05\|Google 搜尋生成式 AI 功能最佳化指南（2026-05-21 更新版）]] | Google 官方明確反對 5 件事（llms.txt / 分塊內容 / 為 AI 重寫 / 找不實提及 / 過度依賴 schema）+ 把 GEO/AEO 定論為 SEO 子集；與既有 [[GEO]] / [[src-welly-seo-2026-04]] 形成**對話組**；含個人吸收段（**第 6 次：Source bias 錯位細分為 2 亞型 — 賣方敘事型 + 平台守門人型**，後者是新發現）|
+| [[GEO]]（更新）| 新增「Google 官方反論（2026-05-21）」段並列保存兩派立場；含立場對撞表 + 雙方如何同時為真 + audience 選用建議 + 立場演化時間軸；不刪原有 Welly / Cloudflare 立場（per CLAUDE.md「並列呈現，不擅自取捨」）|
+
 ### 2026-06-01
 
 | 頁面 | 摘要 |
@@ -308,6 +315,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 | [[src-yangsheep-wp-ai-meetup-2026-spring\|WP AI 小聚 — 歐陽嘉隆 / 羊羊數位 AI 設計網頁工作流]] | 2026 春季 WordPress AI 小聚 12 張投影片；中文圈接案者實戰 toolchain（5 套工具 + 提示詞範本 + GreenLight WP 區塊整合 + 工具選型決策）；含個人吸收段；信心中 | 1 |
 | [[src-shopline-payments-wp-meetup-2026-spring\|支付決勝 — Winston Wen / SHOPLINE Payments]] | 同場 WP 小聚 BD 簡報（6 張投影片）；3 結帳殺手 + 現代支付 4 要素 + 4 成靠分期數據；含個人吸收段；信心中 | 1 |
 | [[src-nvidia-gtc-taipei-2026-jensen-keynote\|NVIDIA GTC Taipei 2026 黃仁勳主題演講]] | 2 小時 keynote 完整 transcript + 5 主軸結構化整理（Agentic / CUDA / Vera Rubin / Action Model / Taiwan partner）；含個人吸收段 + 廠商敘事 source bias 警示；信心中 | 1 |
+| [[src-google-ai-search-optimization-guide-2026-05\|Google 搜尋生成式 AI 功能最佳化指南（2026-05-21）]] | Google 官方明確反對 5 件事（llms.txt / 分塊 / 為 AI 重寫 / 找不實提及 / 過度依賴 schema）+ GEO/AEO = SEO 的官方定論；與既有 [[GEO]] / Welly 月報直接對撞，並列保存；含個人吸收段（**第 6 次**：Source bias 細分 2 亞型，新增**平台守門人型**）；信心強（含 bias 警示） | 1 |
 
 ## 實體
 
@@ -368,7 +376,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 | [[AI-Quality-Collusion]] | AI 同時生成 code 與 test 的隱形共謀反模式；含 CLAUDE.md Rule 9 個人版對策 | 3 |
 | [[Specification-by-Example\|SBE]] | 以具體範例凍結需求，AI 品質共謀的結構性對策之一 | 1 |
 | [[MCP]] | Anthropic 推出的開放協議，AI 連外部工具的「USB」標準；含工具描述安全議題；官方背書 MCP for structured search | 10 |
-| [[GEO]] | Generative Engine Optimization / Agent-Ready 網站，SEO 的 AI 時代延伸 | 2 |
+| [[GEO]] | Generative Engine Optimization / Agent-Ready 網站，SEO 的 AI 時代延伸；含 Google 官方反論段（2026-05-21）並列保存兩派立場（llms.txt / Markdown negotiation / AEO 是否獨立策略等議題對撞） | 3 |
 | [[顧客終身價值]] | CLV，衡量顧客經營成效的核心指標；Anthropic 官方版列為 Launch 階段 exit criteria | 2 |
 | [[DESIGN-md\|DESIGN.md]] | 純 Markdown 設計系統規範，讓 AI coding agent 生成風格一致的 UI / 短影片 | 6 |
 | [[Managed-Agents\|Claude Managed Agents]] | Anthropic 託管 agent 服務，session/harness/sandbox 三層架構 | 3 |

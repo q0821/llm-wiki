@@ -1256,3 +1256,83 @@
 ### 待回測
 - 2026-06-15 前後（給時間讓投資判斷有實際決策時機）：「NVIDIA GTC Taipei 那場你還記得什麼？特別是 Agentic AI / Action Model narrative 你**怎麼用在投資決策**——是直接信還是有跟競品 / capex 數字 cross-check？」
 - 看是否能意識到 narrative 的 source bias 警示
+
+## [2026-06-02] ingest | Google 搜尋生成式 AI 功能最佳化指南（首例「平台守門人」對話組）
+
+### 來源
+- URL：https://developers.google.com/search/docs/fundamentals/ai-optimization-guide?hl=zh-tw
+- 文件最後更新：2026-05-21（世界標準時間）
+- 來源類型：官方文件型 + **強論點型**（含 5 個明確「不要做」+ 對 AEO/GEO 的官方定論）
+- raw/2026-06-02-google-ai-search-optimization-guide-zh-tw.md（WebFetch 快照，因 Google 文件會改版）
+
+### 新建頁
+- [[src-google-ai-search-optimization-guide-2026-05]]（信心強，含 bias 警示）：完整 5 個「不要做」清單 + 應該做清單 + RAG/查詢擴展機制 + AI Overview 引用條件 + 對話組對撞表 + 個人吸收段
+
+### 重要既有頁更新
+- [[GEO]]：新增「Google 官方反論（2026-05-21）」段（含立場對撞表 + 兩派如何同時為真的 audience 選用建議 + 立場演化時間軸 + Source bias 平台守門人型診斷）；**不刪除原本 Welly / Cloudflare 立場**（per CLAUDE.md「並列呈現，標註各自來源與時間，不擅自取捨」）；sources 從 2 → 3
+
+### 流程：第 6 次吸收檢核 + 對位 taxonomy 細分
+
+延續 5/28 確立的 [[src-tsao-hsing-cheng-tsmc-rca-history-2026-05|個人吸收段]] 流程，本次是 **第 6 次**，使用 [[src-nvidia-gtc-taipei-2026-jensen-keynote|前次]] 引入的 **intent quiz**（適合可能未細讀的官方文件）。
+
+**Quiz 答案**：
+- 想拿走：5 個「不要做」清單（全選）+ GEO/AEO = SEO 定論 + RAG/查詢擴展機制 + AI Overview 引用條件
+- 用在：客戶網站 SEO 建議 + 自家 wiki 優化 + 對抗 GEO/AEO 顧問業話術
+
+**LLM 觀察**：對位類型是 **Source bias 錯位（平台守門人型）—— 新亞型**
+
+### 6 次後 taxonomy 更新（3 大類 → 第 3 類細分 2 亞型）
+
+| 序 | 來源 | 錯位類型 | 大類 | 亞型 |
+|---|------|---------|------|------|
+| 1 | 曹興誠 RCA | 完全錯位 | 拿錯工具 | — |
+| 2 | 雷小蒙週報 | 層級錯位 | 場合 > 工具 | — |
+| 3 | 歐陽嘉隆 WP 工作流 | 尺度錯位 | 場合 > 工具 | — |
+| 4 | SHOPLINE Payments | 階段窄化錯位 | 場合 > 工具 | — |
+| 5 | NVIDIA GTC keynote | 廠商敘事 bias | Source bias 錯位 | **賣方敘事型** |
+| 6 | **Google AI 搜尋指南** | **平台守門人 bias** | Source bias 錯位 | **平台守門人型（新）** |
+
+**平台守門人型** vs **賣方敘事型** 的差別：
+
+| 軸 | 賣方敘事型（NVIDIA）| 平台守門人型（Google）|
+|---|---|---|
+| 講者身分 | 賣自家產品（直接利益）| 平台守門人（決定規則）|
+| Bias 來源 | 「我們最棒」selling narrative | 「不要做這件對手會受益的事」|
+| 偽裝形式 | 技術 + product roadmap | **客觀技術判斷 / 官方指南** |
+| 察覺難度 | 中（明顯是 keynote）| **高（藏在 developer doc 外衣下）**|
+| 診斷問題 | 「這個論點如果反過來，他自家會受損嗎？」| **「這個立場如果反過來成立，誰會受損？」**|
+
+**Google 反對 llms.txt 的結構性動機**：如果開發者普遍採用 llms.txt 等**平台無關標準**，OpenAI / Anthropic / Perplexity 可選擇優先抓 llms.txt，Google 在「平台無關優化」這條 axis 上會輸給對手。所以 Google 把 llms.txt 框成「沒必要 / 沒效果」是**自然的競爭立場**。
+
+### 與既有頁面建立的對話（對話組黃金案例）
+
+- **vs [[GEO]] + [[src-welly-seo-2026-04]]**：本次 ingest 直接觸發 [[GEO]] 頁實質更新，並列保存兩派立場。雙方論點對撞表已寫進 [[GEO#Google 官方反論（2026-05-21）|GEO 頁該段]]。
+- vs [[RAG]]：Google AI Overview 是 RAG 的一種應用（對自家 web index 做 RAG），跟一般化 RAG 同技術不同 corpus
+- vs [[DESIGN-md]]：「為 AI 提供 markdown」與 Google「不需為 AI 重寫」直接相反，但 [[DESIGN-md]] audience 是 coding agent 不是 search engine，所以**不衝突**
+- vs [[MCP]] / [[Agent-Skills]]：Google 指南未提，因為這些是給 agent 用不是給 Google index 用，立場上沒衝突
+- vs [[Ratchet-Pattern]]：本次擴充對位 taxonomy 是 Ratchet 第 N 次具體實例
+
+### 為什麼不直接建 Google entity / llms.txt concept / AI Overview concept
+- Google 在本知識庫出現很多次，但目前無獨立 entity 頁 → 列入 [[src-google-ai-search-optimization-guide-2026-05#未來追蹤候選 entity / concept|未來追蹤候選]]，等下次再實質出現時建
+- llms.txt 已成兩派交鋒點，再出現 1 次值得獨立成 concept 頁（含格式規範 + 雙方立場 + Cloudflare Radar 採用率追蹤）
+- AI Overview / E-E-A-T 同上，目前在既有頁面有夠用的子段
+
+### 影響頁面
+[[src-google-ai-search-optimization-guide-2026-05]], [[GEO]], index.md = 3 頁
+
+### 工程觀察
+- WebFetch + AI 摘要可作為 Google developer doc 的可靠 ingest 路徑（vs YouTube transcript 需 Python script）
+- 對話組型 ingest（既有頁與新頁立場相反）的處理 SOP：
+  1. 建新 src 頁完整保留新立場
+  2. 在既有概念頁加「XX 反論」段並列保存（**不改原有段落**）
+  3. 兩頁互相 `[[wikilink]]` 引用形成雙向連結
+  4. log.md 紀錄為「對話組」型 ingest（非常規更新）
+
+### 待回測（~2026-06-15）
+1. 不看本頁，能講出 Google 那 5 個「不要做」嗎？
+2. Google 反對 llms.txt 的**商業動機**是什麼？（不是只記「Google 說不要」，要記得**為什麼會這樣說**——平台守門人型 bias 的診斷問題）
+3. 最後幫客戶 / 自家 wiki 做了 llms.txt 沒有？理由？是看 Google 還是看其他平台訊號？
+4. 跟前 5 次合併回測：5 種錯位類型（拿錯工具 / 層級 / 尺度 / 階段窄化 / Source bias 兩亞型）你能憑記憶舉例嗎？
+
+### 知識庫規模
+135 → 136 頁（+1 新 src 頁；GEO.md 為更新，不算新增）

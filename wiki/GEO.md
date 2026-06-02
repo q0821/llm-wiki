@@ -1,10 +1,10 @@
 ---
 title: GEO (Generative Engine Optimization) / Agent-Ready 網站
 type: concept
-sources: ["welly-seo-2026-04-full.md", "2026-03-20-攝影工作室A_網站提案.md"]
+sources: ["welly-seo-2026-04-full.md", "2026-03-20-攝影工作室A_網站提案.md", "2026-06-02-google-ai-search-optimization-guide-zh-tw.md"]
 created: 2026-05-11
-updated: 2026-05-11
-tags: [seo, geo, ai-search, agent-ready, e-e-a-t, llms-txt, cloudflare]
+updated: 2026-06-02
+tags: [seo, geo, ai-search, agent-ready, e-e-a-t, llms-txt, cloudflare, source-bias-platform-gatekeeper]
 confidence: 中
 ---
 
@@ -25,6 +25,50 @@ confidence: 中
 | 互動 | 無（單向被讀）| AI 可呼叫「訂購」「查訂單」等商業動作 |
 
 > 兩者核心邏輯一致——都在「**提升網站內容的可發現性與可理解性**」（Welly 月報觀察）——GEO 是 SEO 的延伸而非取代。
+
+## Google 官方反論（2026-05-21）
+
+**重要對話組更新**：Google 在 2026-05-21 更新的官方 [[src-google-ai-search-optimization-guide-2026-05|AI 搜尋指南]] 中，對本頁前面採用的廠商立場（Welly 月報 / Cloudflare）**明確採取反對立場**。雙方框架未改變既有對 SEO vs GEO 概念差異的描述，但對「**應採取哪些具體技術做法**」有直接衝突。本知識庫採並列保存策略，不擅自取捨。
+
+### 立場對撞表
+
+| 議題 | Welly / Cloudflare 立場（本頁原本採用，2026-04 / 2026-05-11）| [[src-google-ai-search-optimization-guide-2026-05\|Google 官方指南]]（2026-05-21）|
+|---|---|---|
+| **llms.txt** | 推薦 Level 2 必備 | 「不需要建立新的機器可讀檔案、AI 文字檔案、標記或 Markdown」|
+| **Markdown negotiation** | 推薦（讓 AI agent 用較少成本理解）| 「不需要專為生成式 AI 搜尋撰寫內容」|
+| **AEO/GEO 是否為獨立策略** | **是**（與 SEO 不同的目標讀者、成功指標、互動模式）| **否**：「就是針對搜尋體驗最佳化，仍屬於 SEO」|
+| **新增特殊 schema** | 建議 Level 3（Website / Article / FAQ）| 「不需要新增任何特殊的 schema.org 標記」（既有 schema 仍可用）|
+| **MCP Server Card / WebMCP / Agent Skills** | 推薦 Level 4（先行者紅利）| 未提及 |
+
+### 兩派如何同時為真
+
+雙方都不算錯，但**目標讀者框架不同**：
+
+- **Welly / Cloudflare 框架**：「網站需準備好被**所有 AI agent**理解與互動」（多平台 + agent operation 視角）
+- **Google 框架**：「網站需準備好被**Google 搜尋系統 + AI Overview**引用」（單一平台 + retrieval 視角）
+
+選用建議：
+
+| 你的真實 audience | 建議採用立場 |
+|---|---|
+| 主要靠 Google 搜尋 + AI Overview 曝光 | Google 立場 → 把 llms.txt / 為 AI 重寫等 effort 省下 |
+| 主要靠 ChatGPT / Claude / Perplexity 引用 | Welly 立場仍有效（Google 立場不射程內）|
+| 想被 AI agent 主動操作（MCP / WebMCP）| Welly Level 4 立場仍有效（Google 指南未提）|
+| 多平台都在乎 / 不確定 | 雙軌（基本 SEO + 選擇性試做 llms.txt 等）|
+
+### 為什麼 Google 會反對 llms.txt：**Source bias 平台守門人型**
+
+如果開發者普遍採用 llms.txt 等**平台無關標準**，OpenAI / Anthropic / Perplexity 可以選擇優先抓 llms.txt，Google 在「平台無關優化」這條 axis 上會輸給對手。因此 Google 把 llms.txt 框成「沒必要 / 沒效果」是**自然的競爭立場**，未必純粹是技術判斷。
+
+這是本知識庫累積的**第 6 次吸收檢核**辨識出的新型 Source bias 亞型（**平台守門人型**），詳見 [[src-google-ai-search-optimization-guide-2026-05#個人吸收（第 6 次 / spaced retrieval 預定 2026-06-15）|該頁個人吸收段]] 與 [[Ratchet-Pattern]]。
+
+### 立場演化時間軸
+
+- 2026-04：Welly 月報出，推薦 llms.txt / Markdown negotiation 等
+- 2026-04-13：Cloudflare Radar 數據（llms.txt 採用率仍極低，先行者紅利期）
+- 2026-05-11：本頁建立，採 Welly / Cloudflare 立場
+- **2026-05-21：Google 官方指南更新，明確反對 llms.txt 等**
+- 2026-06-02：本知識庫 ingest Google 指南 → 本段並列保存
 
 ## 為什麼現在重要
 
@@ -105,7 +149,8 @@ Google 評估內容品質的框架，影響傳統 SEO 與 GEO 雙方：
 
 ## 與本知識庫的關聯
 
-- [[src-welly-seo-2026-04]] — 本概念頁的主要來源（Welly 2026-04 月報）
+- [[src-welly-seo-2026-04]] — 本概念頁的廠商立場主要來源（Welly 2026-04 月報）
+- [[src-google-ai-search-optimization-guide-2026-05]] — **對話組對手**（Google 官方反論，2026-05-21，明確反對 llms.txt / 為 AI 重寫內容等做法）
 - [[Cloudflare]] — agent-readiness 檢測工具的提供者
 - [[presentation-攝影工作室A-網站優化]] — 該簡報已含「SEO + GEO 雙軌體檢」
 - [[MCP]] / [[Agent-Skills]] — GEO Level 4 的核心標準（採用率仍極低）
