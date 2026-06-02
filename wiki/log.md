@@ -1336,3 +1336,49 @@
 
 ### 知識庫規模
 135 → 136 頁（+1 新 src 頁；GEO.md 為更新，不算新增）
+
+## [2026-06-02] concept | llms.txt 獨立成頁（兩派交鋒焦點 + 實測部署投票）
+
+### 觸發
+前一次 ingest（Google AI 搜尋指南）已標記 [[llms-txt]] 為「再出現 1 次即建」候選。本次未等再出現，**主動建頁**理由：
+- 已是 [[GEO]] / [[src-welly-seo-2026-04]] / [[src-google-ai-search-optimization-guide-2026-05]] **三頁共同焦點**
+- 接下來幫客戶 / 自家 wiki 做決策時會頻繁查閱，需單一查閱點
+- 三方立場（推薦 / 反對 / 行動）有結構性矛盾，獨立成頁才裝得下
+
+### 新建頁
+- [[llms-txt]]（信心中）：完整規範 + 採用率追蹤 + 三方立場對撞 + 「行動 > 表態」heuristic + 自家 wiki 決策框架 + 未來追蹤 trigger 清單
+
+### 重要既有頁更新
+- [[GEO]]：「相關概念與來源」段加入 [[llms-txt]] 雙向連結
+- [[src-google-ai-search-optimization-guide-2026-05]]：「未來追蹤候選」標記 ✅ 已建頁；「相關概念與來源」加入 [[llms-txt]]
+- [[src-welly-seo-2026-04]]：「與本知識庫的關聯」加入 [[llms-txt]] 與 [[src-google-ai-search-optimization-guide-2026-05]]（這頁原本沒連到 Google 反論，本次補回）
+
+### 研究方法：直接抓 URL 取代問「他們怎麼想」
+建頁前並行抓 4 個關鍵 URL 驗證實際部署狀態：
+
+| 域名路徑 | 結果 | 推導 |
+|---|---|---|
+| `https://platform.claude.com/docs/llms.txt`（[[Anthropic]]）| ✅ 11 語言 / 3000+ 連結 | **行動支持派** |
+| `https://stripe.com/llms.txt` | ✅ 含 llms-full.txt 雙檔 | 行動支持派 |
+| `https://platform.openai.com/llms.txt` | ❌ 404 | 未部署 |
+| `https://www.anthropic.com/llms.txt` | ❌ 404 | Anthropic 限縮在 docs 子域 |
+
+**方法論教訓**：對於有「平台守門人 bias」爭議的技術標準，**抓對方自家網站看實際部署 > 看官方表態文章**。Anthropic 沒發過「我們支持 llms.txt」聲明，但部署 3000+ 連結比任何聲明都強。本次正式編碼為兩條 heuristic 寫進 [[llms-txt]] 頁：
+1. **「行動 > 表態」**：實際部署的工程投入 = 對 ROI 為正的買單
+2. **「這個立場如果反過來成立，誰會受損？」**：用反向推導識別 Source bias
+
+### 從吸收檢核延伸出來的 concept 頁
+[[llms-txt]] 是本知識庫第一個**從「吸收檢核發現的對位類型」直接衍生**的 concept 頁。前 6 次吸收檢核是寫在 src 頁底部，本次擴充成獨立 concept 因為**累積證據夠多 + 三方立場互相 reference**。
+
+### 影響頁面
+[[llms-txt]], [[GEO]], [[src-google-ai-search-optimization-guide-2026-05]], [[src-welly-seo-2026-04]], index.md = 5 頁
+
+### 未來追蹤 trigger（已寫進 [[llms-txt#未來追蹤 trigger]]）
+- 任何 LLM 公司新增 / 移除 llms.txt 部署
+- Cloudflare Radar 發布含 llms.txt 直接數據的報告
+- Jeremy Howard 規範改版
+- 出現量化效益研究
+- OpenAI / Perplexity / Mistral 任一家官方表態
+
+### 知識庫規模
+136 → 137 頁（+1 新 concept 頁）

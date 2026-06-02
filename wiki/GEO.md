@@ -151,6 +151,7 @@ Google 評估內容品質的框架，影響傳統 SEO 與 GEO 雙方：
 
 - [[src-welly-seo-2026-04]] — 本概念頁的廠商立場主要來源（Welly 2026-04 月報）
 - [[src-google-ai-search-optimization-guide-2026-05]] — **對話組對手**（Google 官方反論，2026-05-21，明確反對 llms.txt / 為 AI 重寫內容等做法）
+- [[llms-txt]] — 兩派交鋒焦點的獨立 concept 頁；含實際部署投票證據（[[Anthropic]] 與 Stripe 已部署）+ 三方立場對撞 + 自家 wiki 決策框架
 - [[Cloudflare]] — agent-readiness 檢測工具的提供者
 - [[presentation-攝影工作室A-網站優化]] — 該簡報已含「SEO + GEO 雙軌體檢」
 - [[MCP]] / [[Agent-Skills]] — GEO Level 4 的核心標準（採用率仍極低）

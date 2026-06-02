@@ -108,6 +108,8 @@ confidence: 強
 ## 與本知識庫的關聯
 
 - [[GEO]] — 本來源是建立此概念頁的主要依據（Agent-Ready / AI 搜尋優化）
+- [[llms-txt]] — 本月報推薦的核心做法之一，於 2026-06-02 升級成獨立 concept 頁（含 Google 反對 + Anthropic 行動支持的三方對撞）
+- [[src-google-ai-search-optimization-guide-2026-05]] — 2026-05-21 Google 官方發布的反論立場，與本月報 Welly 推薦 llms.txt 的立場直接對撞
 - [[Cloudflare]] — "Is Your Site Agent-Ready?" 工具 + Cloudflare Radar 數據
 - [[MCP]] / [[Agent-Skills]] — Cloudflare Radar 採用率數據顯示這些標準仍極早期
 - [[presentation-攝影工作室A-網站優化]] — SEO + GEO 雙軌體檢，本月報補 2026-03 演算法 + agent-ready 時效資訊

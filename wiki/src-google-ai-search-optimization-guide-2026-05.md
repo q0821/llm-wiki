@@ -128,6 +128,7 @@ Google 沒有直接列出「AI Overview 怎麼決定引用誰」，但從應該�
 
 - [[GEO]] — **對話組核心**（Google 反論直接改寫了既有 Level 2 / Level 3 / Level 4 框架的解讀）
 - [[src-welly-seo-2026-04]] — **對話組核心**（廠商視角 vs 平台守門人視角）
+- [[llms-txt]] — 三方立場交鋒焦點的獨立 concept 頁；證據之一即本 src 頁 Google 反對立場
 - [[RAG]] — Google AI Overview 也是 RAG 的一種應用
 - [[Cloudflare]] — agent-readiness 工具的提供者，與 Google 立場分流
 - [[MCP]] — Google 指南未提及 MCP，但 MCP 是給 LLM agent 用，不是給 Google index 用，立場不衝突
@@ -137,7 +138,7 @@ Google 沒有直接列出「AI Overview 怎麼決定引用誰」，但從應該�
 ## 未來追蹤候選 entity / concept
 
 - **Google**（搜尋）entity —— Google 在本知識庫出現次數很多但無獨立 entity 頁；下次再實質出現時建議建立
-- **llms.txt** concept —— 已是兩派交鋒點，再出現 1 次值得獨立成頁（含格式規範 + 兩派立場並列）
+- ✅ **llms.txt** concept —— 已於 2026-06-02 建頁 [[llms-txt]]，含格式規範 + 三方立場 + Anthropic / Stripe 實際部署證據 + 自家 wiki 決策框架
 - **AI Overview** concept —— Google 自家功能名稱
 - **E-E-A-T** —— 目前在 [[GEO]] 頁有子段，看後續是否需獨立
 - **Generative AI Search** vs **Agent-Ready Web** 框架對比 concept
