@@ -8,6 +8,14 @@ title: 索引
 
 ## 最近新增
 
+### 2026-06-03
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-anthropic-dynamic-workflows-claude-code-2026-06-02\|A harness for every task — Dynamic Workflows in Claude Code（Anthropic 2026-06-02）]] | Anthropic 官方 blog（[[Thariq-Shihipar]] + Sid Bidasaria）；**三大 agent 失敗模式**首次並列命名（Agentic laziness / Self-preferential bias / Goal drift）+ **6 種 dynamic workflow 設計模式**（Classify-and-Act / Fan-out-and-Synthesize / Adversarial Verification / Generate-and-Filter / Tournament / Loop Until Done）+ 10 類使用案例 + 何時不用清單；含個人吸收段（**第 7 次：新發現「矩陣未對位錯位」**——當 intent / application 都全選 N×M 矩陣時，使用者誤以為「全方位有用」但實際只用對角線 cell）|
+| [[Harness-Engineering]]（更新）| 新增「Dynamic Harness Construction（Anthropic 2026-06-02）」段 + 概念層次關係加入 dynamic harness construction 層 + 跨工程文化對照表加入 Anthropic Dynamic Workflows 視角 |
+| [[Thariq-Shihipar]]（更新）| 補入第 3 個來源（Anthropic 官方 blog 首次具名）；論述軸從 context window 管理延伸到 dynamic harness construction；地圖更新 |
+
 ### 2026-06-02
 
 | 頁面 | 摘要 |
@@ -317,6 +325,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 | [[src-shopline-payments-wp-meetup-2026-spring\|支付決勝 — Winston Wen / SHOPLINE Payments]] | 同場 WP 小聚 BD 簡報（6 張投影片）；3 結帳殺手 + 現代支付 4 要素 + 4 成靠分期數據；含個人吸收段；信心中 | 1 |
 | [[src-nvidia-gtc-taipei-2026-jensen-keynote\|NVIDIA GTC Taipei 2026 黃仁勳主題演講]] | 2 小時 keynote 完整 transcript + 5 主軸結構化整理（Agentic / CUDA / Vera Rubin / Action Model / Taiwan partner）；含個人吸收段 + 廠商敘事 source bias 警示；信心中 | 1 |
 | [[src-google-ai-search-optimization-guide-2026-05\|Google 搜尋生成式 AI 功能最佳化指南（2026-05-21）]] | Google 官方明確反對 5 件事（llms.txt / 分塊 / 為 AI 重寫 / 找不實提及 / 過度依賴 schema）+ GEO/AEO = SEO 的官方定論；與既有 [[GEO]] / Welly 月報直接對撞，並列保存；含個人吸收段（**第 6 次**：Source bias 細分 2 亞型，新增**平台守門人型**）；信心強（含 bias 警示） | 1 |
+| [[src-anthropic-dynamic-workflows-claude-code-2026-06-02\|A harness for every task — Dynamic Workflows in Claude Code（Anthropic 2026-06-02）]] | Anthropic 官方 blog（[[Thariq-Shihipar]] + Sid Bidasaria）；三大 agent 失敗模式首次並列命名 + 6 種編排設計模式 + 10 類使用案例 + 何時不用清單；含個人吸收段（**第 7 次**：新發現「矩陣未對位錯位」型）；信心強 | 1 |
 
 ## 實體
 

@@ -187,11 +187,43 @@ Cloudflare 系統用 [[Cloudflare|Workers KV]] 存模型路由設定，**provide
 ## 概念層次關係
 
 ```
-Prompt Engineering    → 單次互動（怎麼寫 prompt）
-Context Engineering   → 上下文視窗（給什麼資訊）← Harness 的子集
-Harness Engineering   → 整個系統（環境 + 約束 + 回饋迴圈）
-Agent Engineering     → 代理內部（路由、記憶、工具呼叫）
+Prompt Engineering         → 單次互動（怎麼寫 prompt）
+Context Engineering        → 上下文視窗（給什麼資訊）← Harness 的子集
+Harness Engineering        → 整個系統（環境 + 約束 + 回饋迴圈）
+Dynamic Harness Construction → 任務特定的 harness 動態建構（Anthropic Workflows）← 2026-06-02 後 Anthropic 主推
+Agent Engineering          → 代理內部（路由、記憶、工具呼叫）
 ```
+
+## Dynamic Harness Construction（Anthropic 2026-06-02）
+
+[[src-anthropic-dynamic-workflows-claude-code-2026-06-02|Anthropic 官方 Workflows blog]]（[[Thariq-Shihipar]] + Sid Bidasaria，2026-06-02）提出 **dynamic workflows** 概念，把 harness 從「固定預設」升級為「任務時動態建構」：
+
+> "The default Claude Code harness is built for coding, it is also useful for many other types of tasks because, as it turns out, many tasks resemble coding tasks."
+
+關鍵升級：**Harness 本身是 first-class 動態建構物**，不再是預先設計好的靜態框架。Dynamic Workflows 用 JavaScript 動態生成 subagent 編排，每個 task 對應一個量身定製的 harness。
+
+### 三大 agent 失敗模式（Anthropic 命名）
+
+Workflows 設計動機是解決 3 個本知識庫過去散見但無統一命名的失敗模式：
+
+| 失敗模式 | 原文定義 | 對位的既有概念 |
+|---|---|---|
+| **Agentic laziness** | Claude 在複雜多步任務中過早停止 | [[Vibe-Coding\|Vibe 過早停止]] + [[Context-Rot]] |
+| **Self-preferential bias** | Claude 偏好自己的結果 / 發現 | [[AI-Quality-Collusion]] + [[PGE-Principle]] |
+| **Goal drift** | 多輪互動中對原始目標的逐漸偏離 | [[Context-Rot]] + [[CLAUDE-md\|CLAUDE.md]] rule dilution |
+
+### 六種 Workflow 設計模式
+
+Anthropic 整理 6 個可組合的編排模式（細節見 [[src-anthropic-dynamic-workflows-claude-code-2026-06-02#六種設計模式|該 src 頁]]）：
+
+1. **Classify-and-Act** — 分類後路由
+2. **Fan-out-and-Synthesize** — 平行展開後合成
+3. **Adversarial Verification** — 對抗驗證（對應 [[Adversarial-Code-Review]] 多 agent 版）
+4. **Generate-and-Filter** — 候選生成 + 過濾
+5. **Tournament** — 競爭配對比較
+6. **Loop Until Done** — 未知工作量按停止條件迴圈
+
+**vocabulary 中立 / 實作平台特定**：6 個模式可遷移到 [[OpenAI-Codex-CLI|Codex]] 等其他 agentic CLI，但 Anthropic 用 Workflows 把它們做成可執行 JS 模板。
 
 ## 與 Meta-Harness 的關係
 
@@ -213,6 +245,7 @@ Agent Engineering     → 代理內部（路由、記憶、工具呼叫）
 | **OpenAI** | Ryan Lopopolo / Mitchell Hashimoto | 三支柱 + 級別實踐路徑 | [[src-harness-engineering-openai]] |
 | **Anthropic（雲端 agent 視角）** | 工程團隊 | [[Meta-Harness]]、Long-running app design | [[src-anthropic-managed-agents-engineering]] |
 | **Anthropic（Claude Code 視角）** | Applied AI team | **7 個 extension points**（CLAUDE.md / Hooks / Skills / Plugins / LSP / MCP / Subagents）+ 企業導入 DRI / Agent Manager 角色 | [[src-claude-code-in-large-codebases]] |
+| **Anthropic（Dynamic Workflows 視角）** | [[Thariq-Shihipar]] + Sid Bidasaria | **Dynamic Harness Construction** + 3 大失敗模式 + 6 種設計模式 + 10 類使用案例 | [[src-anthropic-dynamic-workflows-claude-code-2026-06-02]] |
 | **Google** | [[Addy-Osmani]] | 七元件 + Ratchet + Context Rot + HaaS 趨勢 | [[src-addy-osmani-harness-engineering]] |
 | **LangChain** | Viv Trivedy | 「Agent = Model + Harness」定義 | （引述於 Addy） |
 | **HumanLayer** | — | 「不是模型問題，是設定問題」 | （引述於 Addy） |
@@ -223,6 +256,7 @@ Agent Engineering     → 代理內部（路由、記憶、工具呼叫）
 - [[src-harness-engineering-openai]] — OpenAI 視角來源
 - [[src-addy-osmani-harness-engineering]] — Google Addy Osmani 視角來源
 - [[src-cloudflare-ai-code-review]] — Cloudflare production 標本，含 Circuit Breaker for AI
+- [[src-anthropic-dynamic-workflows-claude-code-2026-06-02]] — Anthropic **Dynamic Harness Construction** 官方論述（Thariq Shihipar + Sid Bidasaria，2026-06-02）
 - [[Meta-Harness]] — Anthropic 的互補設計哲學
 - [[Managed-Agents]] — Meta-harness / Harness-as-a-Service 的第一個實作
 - [[Agent-Skills]] — Level 1 harness 的具體實踐

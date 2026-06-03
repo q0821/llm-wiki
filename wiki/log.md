@@ -1382,3 +1382,116 @@
 
 ### 知識庫規模
 136 → 137 頁（+1 新 concept 頁）
+
+## [2026-06-03] ingest | Anthropic Dynamic Workflows in Claude Code（首例「矩陣未對位錯位」+ 對話組擴展 7 個既有頁）
+
+### 來源
+- URL：https://claude.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code
+- 作者：[[Thariq-Shihipar]] + Sid Bidasaria（Anthropic 工程師）
+- 發佈：2026-06-02；本知識庫 06-03 ingest
+- 來源類型：強論點型 + Anthropic 官方
+- raw/2026-06-03-anthropic-dynamic-workflows-in-claude-code.md
+
+### 新建頁
+- [[src-anthropic-dynamic-workflows-claude-code-2026-06-02]]（信心強）：完整三大失敗模式 + 6 種設計模式 + 10 類使用案例 + 何時不用 + 對話組對位 + 第 7 次個人吸收段
+
+### 重要既有頁更新
+- [[Harness-Engineering]]：
+  - 「概念層次關係」段新增 **Dynamic Harness Construction** 層
+  - 新增獨立段「Dynamic Harness Construction（Anthropic 2026-06-02）」含三大失敗模式 + 6 種設計模式
+  - 「跨工程文化論述對照」表新增 Anthropic Dynamic Workflows 視角列
+  - 「相關頁面」加入新 src
+  - sources 隱含 +1（Anthropic 第 4 個獨立論述角度）
+- [[Thariq-Shihipar]]：
+  - sources 從 2 → 3
+  - 「核心論述」加新段「Dynamic Workflows / 三大失敗模式（2026-06-02 官方 blog）」
+  - 「論述者地圖」位置擴展為「Cache 與 Context 工程 / Session 管理 / Dynamic Harness Construction」
+  - 「未來可延伸」標記 ✅「Anthropic engineering blog 中 Thariq 的署名文章」已找到第一篇
+
+### 流程：第 7 次吸收檢核 + 對位 taxonomy 重大擴充
+
+延續 5/28 確立的個人吸收段流程，本次第 7 次。使用 intent quiz（適合可能未細讀的論述型來源）。
+
+**使用者答案**：intent 全選（4/4）+ application 全選（4/4） = 4×4 矩陣
+
+**關鍵 LLM 觀察：新型對位錯位浮現 ——「矩陣未對位錯位」**
+
+過去 6 次吸收檢核每次都是 1 source × 1 application 點對點分析。本次第一次遇到 N×M 矩陣型答案，發現新類型錯位：
+
+| 軸 | 描述 |
+|---|---|
+| **觸發條件** | intent 與 application 都「全選」（N×M 矩陣，N≥3 且 M≥3）|
+| **機制** | 使用者內心是「這篇對我全方位有用」，但實際使用時只有對角線 cell 真的會啟動，其他 cell 是 dead cell |
+| **危險性** | 中——比單點對位錯位**更隱蔽**，「全選」表面上看起來完美 |
+| **診斷問題** | 「如果只能用其中 1 個 intent × 1 個 application 組合，會選哪一個？剩下的 cell 真的會啟動嗎？」|
+| **對應對策** | 強制做 N×M 矩陣化拆解，標出 dead cell |
+
+### 完整對位 taxonomy（7 次後 → 4 大類）
+
+| 序 | 來源 | 大類 | 亞型 |
+|---|------|------|------|
+| 1 | 曹興誠 RCA | 拿錯工具 | — |
+| 2 | 雷小蒙週報 | 場合 > 工具 | — |
+| 3 | 歐陽嘉隆 WP 工作流 | 場合 > 工具 | — |
+| 4 | SHOPLINE Payments | 場合 > 工具 | — |
+| 5 | NVIDIA GTC keynote | Source bias 錯位 | 賣方敘事型 |
+| 6 | Google AI 搜尋指南 | Source bias 錯位 | 平台守門人型 |
+| 7 | **Anthropic Dynamic Workflows** | **矩陣未對位錯位（新）** | — |
+
+### 次要觀察：Source bias 平台守門人型可能要再細分
+
+本篇也是平台守門人來源（Anthropic 自家對 dynamic workflows 的論述），但 bias 性質與 Google 不同：
+
+| 亞型 | 行為特徵 | 案例 |
+|---|---|---|
+| **壓制型平台守門人** | 「叫你不要做某事」（對手會受益）| Google 反 llms.txt |
+| **開放型平台守門人** | 「鼓勵你用更多」（自家會受益）| Anthropic 推 Workflows |
+
+兩者都是平台守門人 bias，但前者隱藏 / 後者顯性。**本次尚未到要修 taxonomy 的證據量，待第 3 次平台守門人型出現再判斷**。
+
+### 對話組擴展（7 個既有頁延伸）
+
+本次來源是高密度論述，與多個既有頁形成對話：
+
+| 既有頁 | 對話面向 | 本次是否實際更新 |
+|---|---|---|
+| [[Harness-Engineering]] | Workflows = 動態化升級 | ✅ 更新（新段 + 概念層次 + 跨文化對照）|
+| [[Thariq-Shihipar]] | 第 3 個來源 + 論述軸擴展 | ✅ 更新 |
+| [[Subagent-Driven-Development]] | 兩階段審查 → 6 種模式擴展 | ❌ 未更新（已從新 src 反向 link 過去；待第二來源確認再實質補段）|
+| [[Adversarial-Code-Review]] | Adversarial Verification 模式 = ACR 多 agent 版 | ❌ 未更新 |
+| [[PGE-Principle]] | Generator ≠ Evaluator 可執行落地 | ❌ 未更新 |
+| [[Context-Rot]] | 三大失敗模式 = Context Rot 變體分類 | ❌ 未更新（待三大模式 vocabulary 升級成 concept 時一併補）|
+| [[Agentic-AI-Workflow]] | 同心圓 → dynamic 編排演化 | ❌ 未更新 |
+
+**策略**：本次只實質更新 [[Harness-Engineering]] 與 [[Thariq-Shihipar]]，其他 5 頁只從新 src 反向 link 過去——避免單來源就在多頁加段，等三大失敗模式 / 6 種模式有第二來源時再實質升級。
+
+### 未來追蹤候選 entity / concept
+
+| 候選 | 等級 | 建立 trigger |
+|---|---|---|
+| **Agent Failure Modes (3)** concept | 高 | 再出現 1 次 |
+| **Dynamic Workflow** concept | 高 | 本知識庫實戰引用 1-2 次內建頁 |
+| **Workflow Design Patterns** concept | 中 | 6 種模式 cluster；再出現 1 次 |
+| **Sid Bidasaria** entity | 中 | 再出現 1 次 |
+| **Bun** entity | 中 | Zig → Rust rewrite 案例再出現 1 次 |
+| **Tournament Pattern** | 低 | 暫不獨立建頁 |
+
+### 工程觀察
+- WebFetch + AI 摘要對 Anthropic 官方 blog 是可靠路徑
+- 對話組擴展型 ingest（N 個既有頁被牽動）的處理 SOP：
+  1. 標記**全部**會被牽動的頁面（本次 7 個）
+  2. 從中區分「**核心對位**」（需實質更新段落）與「**反向 link**」（只在新 src 連過去）
+  3. 通常只實質更新 2-3 個最核心，剩下等下次同主題來源出現再升級
+  4. 避免「單來源就全面改寫多頁」過度反應
+
+### 影響頁面
+[[src-anthropic-dynamic-workflows-claude-code-2026-06-02]], [[Harness-Engineering]], [[Thariq-Shihipar]], index.md = 4 頁實質更新
+
+### 待回測（~2026-06-17）
+1. 3 大失敗模式名稱 + 對應既有 wiki 概念
+2. 6 種設計模式你實際在 Claude Code 任務中用過幾種
+3. 「dead cell」觀念你還記得嗎？最近 task 有沒有「intent 全選但實際只用對角線」
+4. 你最後寫過 dynamic workflow 嗎？理由？
+
+### 知識庫規模
+137 → 138 頁（+1 新 src 頁；Harness-Engineering / Thariq-Shihipar 為更新）
