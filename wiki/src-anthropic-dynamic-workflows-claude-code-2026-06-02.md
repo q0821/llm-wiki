@@ -142,7 +142,7 @@ Anthropic 主張長期複雜任務在單一 context window 中容易出現三大
 Form competing theories about the race, and don't stop until one theory
 survives the evidence."
 ```
-→ 對位 [[Systematic-debugging]]？（如已有）
+→ 對位「systematic debugging」（本知識庫目前無獨立 concept 頁；若後續多次出現可建）
 
 ```
 "Use a workflow to rename our User model to Account everywhere."
@@ -173,7 +173,7 @@ the codebase using a workflow, I don't want to ship anything wrong."
 | [[OpenAI-Codex-CLI]] | Codex 也有 subagent / pipeline 機制但無 first-party 「dynamic workflow」對應物——這是 Anthropic 領先的軸 |
 | [[CLAUDE-md\|CLAUDE.md]] | 規則遵守使用案例直接連結 CLAUDE.md ratchet 機制 |
 | [[Ratchet-Pattern]] | 「挖掘歷史會話找反覆錯誤 → 提煉為規則」是 Ratchet 的官方 Workflows 落地 |
-| [[Anthropic-Founders-Playbook-2026]]（如已存在）/ [[src-anthropic-founders-playbook-2026]] | 「AI-Native」框架的工程層 next step |
+| [[src-anthropic-founders-playbook-2026]] | 「AI-Native」框架的工程層 next step |
 
 ## 未來追蹤候選 entity / concept
 
