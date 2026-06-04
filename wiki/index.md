@@ -8,6 +8,12 @@ title: 索引
 
 ## 最近新增
 
+### 2026-06-05
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-muki-plaud-workshop-ai-codev-2026-06-04\|MUKI 06-04 工作坊 — AI 協同開發與系統架構轉型]] | Plaud 錄音（58:50）；MUKI（張惠玲，muki.tw 部落格自 2008）分享自建 Hi Day 筆記軟體 + 5 大主題（Hi Day / CICD / 風險治理 / 共同語言 / 角色變革）+ 26 作業任務；主軸**聚焦 [[LLM-Wiki]] vs Hi Day 兩個實作對話組**；含 Plaud STT 錯誤校正表（Cloud Code → Claude Code 等）+ 個人吸收段（**第 8 次：新發現「Intent 廣 / Application 窄錯位」候選變體**）|
+
 ### 2026-06-03
 
 | 頁面 | 摘要 |
@@ -326,6 +332,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 | [[src-nvidia-gtc-taipei-2026-jensen-keynote\|NVIDIA GTC Taipei 2026 黃仁勳主題演講]] | 2 小時 keynote 完整 transcript + 5 主軸結構化整理（Agentic / CUDA / Vera Rubin / Action Model / Taiwan partner）；含個人吸收段 + 廠商敘事 source bias 警示；信心中 | 1 |
 | [[src-google-ai-search-optimization-guide-2026-05\|Google 搜尋生成式 AI 功能最佳化指南（2026-05-21）]] | Google 官方明確反對 5 件事（llms.txt / 分塊 / 為 AI 重寫 / 找不實提及 / 過度依賴 schema）+ GEO/AEO = SEO 的官方定論；與既有 [[GEO]] / Welly 月報直接對撞，並列保存；含個人吸收段（**第 6 次**：Source bias 細分 2 亞型，新增**平台守門人型**）；信心強（含 bias 警示） | 1 |
 | [[src-anthropic-dynamic-workflows-claude-code-2026-06-02\|A harness for every task — Dynamic Workflows in Claude Code（Anthropic 2026-06-02）]] | Anthropic 官方 blog（[[Thariq-Shihipar]] + Sid Bidasaria）；三大 agent 失敗模式首次並列命名 + 6 種編排設計模式 + 10 類使用案例 + 何時不用清單；含個人吸收段（**第 7 次**：新發現「矩陣未對位錯位」型）；信心強 | 1 |
+| [[src-muki-plaud-workshop-ai-codev-2026-06-04\|MUKI 06-04 工作坊 — AI 協同開發與系統架構轉型]] | Plaud 錄音 58:50（19K 字 transcript）；MUKI 自建 Hi Day 筆記軟體 + 5 大主題 + 26 作業；含 Plaud STT 錯誤校正表（Cloud Code → Claude Code 等系統性錯誤）+ 個人吸收段（**第 8 次：新發現「Intent 廣 / Application 窄錯位」候選**，待第 9-10 次再升級為獨立 taxonomy）；信心中（STT 校正後） | 2 |
 
 ## 實體
 

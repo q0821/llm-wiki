@@ -1495,3 +1495,115 @@
 
 ### 知識庫規模
 137 → 138 頁（+1 新 src 頁；Harness-Engineering / Thariq-Shihipar 為更新）
+
+## [2026-06-05] ingest | MUKI Plaud 工作坊（首例 Playwright MCP fetch + 首例 STT 系統性錯誤校正）
+
+### 來源
+- URL：https://web.plaud.ai/s/pub_a603637d-b309-4503-be01-c3e2774040f0::pg1VSEEyaVReIwZ7KnGLwak-Sfg1Wp0R6ieF3AkOCHVjaEd4UpmPos3o1JGVII1yM5S_PGFXOOqBdg0C
+- 錄音日期：2026-06-04 19:37（單場 58:50）；本知識庫 06-05 ingest
+- 講師：MUKI（張惠玲，muki.tw 部落格自 2008，台灣前端社群知名講者）
+- 來源類型：論點型 + 實戰經驗型 + 高密度工具鏈介紹
+- raw/2026-06-04-plaud-workshop-ai-codev-summary.md（Plaud AI summary 含 5 大主題 + 26 作業）
+- raw/2026-06-04-plaud-workshop-ai-codev-transcript-FULL.md（轉錄逐字稿 19K 字 / 225 行）
+
+### 新建頁
+- [[src-muki-plaud-workshop-ai-codev-2026-06-04]]（信心中）：主軸聚焦 Hi Day vs LLM-Wiki 兩個實作對話組 + STT 錯誤校正表 + 其他 4 面向標明對位強度（不展開）+ 第 8 次個人吸收段
+
+### 流程創新 1：首例 Playwright MCP fetch（SPA 內容）
+
+Plaud 是 SPA，WebFetch 只抓到頁面標題。本次首次使用 Playwright MCP tool：
+1. `browser_navigate` → URL
+2. `browser_wait_for` → SPA 渲染
+3. `browser_snapshot` → 抓 accessibility tree（拿到完整 AI summary，含 5 大主題 + 26 作業）
+4. `browser_evaluate` → 切換到「轉錄」tab 並 extract `iframe.contentDocument.body.innerText`
+5. 用 Python 解 JSON-encoded 字串還原成正規 markdown
+6. `browser_close`
+
+**工程教訓**：
+- iframe 內容需用 `iframe.contentDocument` 存取
+- `browser_evaluate` 加 `filename` 參數時，結果是 JSON-encoded（轉義 `\n`）的單行檔，需 `json.loads()` 還原
+- zsh `noclobber` 會擋 `>` 覆寫，要先 rm 或 `setopt clobber`
+
+### 流程創新 2：首例 STT 系統性錯誤校正
+
+中文 Plaud STT 把「Claude」系列術語**一律聽成「Cloud」**。校正：
+
+| Plaud STT | 校正 | 出現次數 |
+|---|---|---|
+| Cloud Code | Claude Code | 4 |
+| cloud.md | CLAUDE.md | 多次 |
+| Clocko / Codeless | Claude？/ Codex？ | 4 / 2（**未確認**）|
+| Cloud（其他） | Claude | 多處 |
+| NCP | MCP | 多次 |
+| super product | Superpowers | 1-2 |
+
+**校正策略**：src 頁開頭獨立段標明 STT 錯誤映射表，**ingest 後內文一律用正確術語**，讀者不必再校。Clocko / Codeless 待後續來源驗證。
+
+**SOP 編碼**：未來中文 STT 來源（Plaud / Otter / Whisper 中文 / 其他）ingest 前先掃「Cloud / cloud 出現次數 vs Claude 出現次數」，若 Cloud 多 Claude 少 → 90% 是 STT 錯誤，啟動校正表。
+
+### 流程：第 8 次吸收檢核
+
+Quiz 答案：intent 4/4 全選 + **application 只 1/4**（Hi Day vs LLM-wiki 對話）
+
+**新型對位類型候選浮現**：「Intent 廣 / Application 窄錯位」
+
+延續第 7 次「矩陣未對位錯位」（N×M 都全選），本次是其變體：
+
+| 維度 | 第 7 次（矩陣未對位）| 第 8 次候選（Intent 廣 / Application 窄）|
+|---|---|---|
+| 結構 | intent N + application M 全選 | intent N 全選 + **application 1** |
+| 危險性 | 中 | **較高**（75-90% intent 不啟動但易被誤吸收）|
+| 常見場合 | 高密度 N×M 矩陣型 source | **個人學習 / 累積認知**型 ingest |
+| 升級狀態 | 已升級為獨立大類 | **候選變體** —— 待第 9-10 次再出現 1-2 次確認 |
+
+**為什麼不直接升級**：N=1 樣本不足；跟第 7 類本質可能相同（intent 過多 vs application 過少）。**寫作紀律**：避免過早擴 taxonomy 後又要回滾。
+
+### 完整對位 taxonomy（8 次後）
+
+| 序 | 來源 | 大類 | 亞型 / 變體 |
+|---|------|------|------|
+| 1 | 曹興誠 RCA | 拿錯工具 | — |
+| 2 | 雷小蒙週報 | 場合 > 工具 | — |
+| 3 | 歐陽嘉隆 WP | 場合 > 工具 | — |
+| 4 | SHOPLINE Payments | 場合 > 工具 | — |
+| 5 | NVIDIA GTC | Source bias | 賣方敘事型 |
+| 6 | Google AI 指南 | Source bias | 平台守門人壓制型 |
+| 7 | Anthropic Workflows | 矩陣未對位錯位 | — |
+| 8 | **MUKI Plaud 工作坊** | **矩陣未對位錯位** | **Intent 廣 / App 窄候選變體** |
+
+### 寫作紀律新編碼：弱對位面向「標明 + 不展開」
+
+依使用者 quiz 真實對位寫 src 頁，**不平均展開所有 intent**：
+- 主軸（Hi Day vs LLM-Wiki 對話）= 完整對話組表 + 設計哲學差異 + 結論
+- 弱對位 3 個面向（MUKI 工具鏈 / 26 作業 / 三大架構）= 每段 1-2 段標明對位強度 + 不展開細節，**標出未來對應到哪個 application 時可拿來用**
+
+這避免 src 頁因「想吸收很多」變成全部論點都寫但每條都淺的雜訊版。
+
+### 對話組擴展策略：全部既有頁不實質更新
+
+主軸放在新 src 頁，**8 個牽動的既有頁全部不實質更新**（[[LLM-Wiki]] / [[Obsidian]] / [[Claude Code]] / [[CLAUDE-md]] / [[Agent-Skills]] / [[Ratchet-Pattern]] / [[using-git-worktrees]] / [[Andrej-Karpathy]] / [[NotebookLM]] / [[OpenClaw]]）。
+
+理由：(1) 本來源是個人實作分享，非廠商正式論述；(2) 單一資料點不夠 trigger 既有 entity 升級；(3) 對應前次 [[src-anthropic-dynamic-workflows-claude-code-2026-06-02|Anthropic Workflows ingest]] 確立的「對話組擴展紀律」——等第二來源出現再升級。
+
+### 未來追蹤候選 entity / concept
+
+| 候選 | 等級 | 建立 trigger |
+|---|---|---|
+| MUKI entity | 中 | 再出現 1 次 |
+| Hi Day entity | 中 | 再出現 1 次 |
+| Deep Wiki entity / concept | 中 | 再出現 1 次（對 NotebookLM / OpenClaw 第三條路徑）|
+| **「定義 / 決定 / 負責」三大核心** concept | **高** | 再出現 1 次（對客戶溝通強對位）|
+| Understand Anything skill family concept | 中 | 使用者實際試用 1 次再建 |
+| Checkpoint / 雙擊回退 concept | 低 | 累積 2 次再建 |
+
+### 影響頁面
+[[src-muki-plaud-workshop-ai-codev-2026-06-04]], index.md = 2 頁實質更新
+
+### 待回測（~2026-06-19）
+1. Hi Day vs LLM-Wiki 核心差別 2-3 條
+2. 你最後試了 Hi Day 嗎？
+3. 「Intent 廣 / Application 窄錯位」觀念你還記得嗎？最近 ingest / 學習有沒有同樣 pattern？
+4. MUKI「定義 / 決定 / 負責」三大核心你真的跟客戶講過嗎？
+
+### 知識庫規模
+138 → 139 頁（+1 新 src 頁；無既有頁實質更新）
