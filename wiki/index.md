@@ -8,6 +8,20 @@ title: 索引
 
 ## 最近新增
 
+### 2026-06-10
+
+| 頁面 | 摘要 |
+|------|------|
+| [[OpenCLI]] | **新 entity**：jackwener 開源（JS/TS, Apache-2.0），把任何網站變成 CLI、並用**你已登入的真實 Chrome**（Browser Bridge 擴充 + 本地 daemon + CDP）操作網頁；三用途（100+ 內建 adapter / `opencli-browser` skill 給 AI agent / 本地工具與 Electron app 的 CLI hub）；輸出 table/json/yaml/csv + sysexits.h exit codes；補進「AI 操作瀏覽器」三角（vs [[BrowseForge]] 反偵測養號、[[Playwright]] 通用底層，OpenCLI 走「已登入單人確定性 adapter」）|
+| [[mcp-cli]] | **新 entity**：doggy8088（Will 保哥）維護的 **Rust** fork（fork 自 philschmid 原版、Antigravity 重寫；npm `@willh/mcp-cli`, MIT）；把 [[MCP]] server 的 tools 變成 shell 指令（`info`/`grep`/`call` + jq）；**核心論點＝給 agent 按需載入 schema 省 token**，是 [[MCP]] 頁「Tool Search 按需載入」在 shell 層的實作；lazy-spawn daemon 連線池 + tool filtering；與 OpenCLI 對照「不同 stack 層的能力 CLI 化」|
+| [[src-opencli-github-2026-06]] / [[src-mcp-cli-doggy8088-2026-06]] | 兩個來源 README 摘要頁；[[MCP]] 頁同步新增 mcp-cli 為 CLI 形態 client + Tool Search 落地補述 |
+
+### 2026-06-09
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-doctor-lai-3c-eye-myths-myopia-2026\|五大傷眼迷思 — Doctor.賴 拆解 3C 傷眼真相與兒童近視關鍵]] | **本知識庫第一個健康／醫療領域來源**；YouTube ~18 分（放射腫瘤科醫師跨界，以「**劑量決定毒性**」母框架破 5 大護眼迷思）；核心結論：抗藍光眼鏡=智商稅 / 距離(<30cm)才是近視殺手 / PWM 調光是螢幕偏頭痛元兇 / 藍光真正危險是毀睡眠(ipRGC melanopsin) / 30-10-120 + 戶外多巴胺存摺；含個人吸收段（**第 9 次：新發現「受眾／適用對象錯位」第 5 大類候選**——使用者把「對小孩有效的距離/戶外」記成「要對自己成人落實」，漏掉對成人真正高槓桿的眨眼/選螢幕/睡前三項）；信心中（非眼科專科 + 商業導流，框架強但細節需查證）|
+
 ### 2026-06-05
 
 | 頁面 | 摘要 |
@@ -278,6 +292,8 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 
 | 頁面 | 摘要 | 來源數 |
 |------|------|--------|
+| [[src-opencli-github-2026-06\|OpenCLI README]] | 把任何網站變 CLI + 用已登入 Chrome 跑 browser automation；100+ adapter、Agent Skills、CLI hub | 1 |
+| [[src-mcp-cli-doggy8088-2026-06\|mcp-cli README（doggy8088 Rust fork）]] | 與 MCP server 互動的輕量 Rust CLI；按需載入 schema 省 token；fork philschmid 原版 | 1 |
 | [[src-btc-dual-currency-2026-03-09\|BTC 雙幣贏操作記錄]] | OKX 上 2,000 USDT 部署 | 1 |
 | [[src-taiwan-stock-2026-03-09\|台股大跌換股操作記錄]] | 富邦台50 → 00981A | 1 |
 | [[src-mega-bloks-pikachu\|MEGA BLOKS 皮卡丘積木組]] | 願望清單約 3,000 TWD | 1 |
@@ -361,6 +377,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 | [[LM-Studio]] | 跨平台本地 LLM GUI runtime | 1 |
 | [[BrowseForge]] | 多指紋反偵測瀏覽器（Go/開源），內建 MCP server | 3 |
 | [[Playwright]] | Microsoft 跨瀏覽器自動化框架，多工具的底層引擎 | 3 |
+| [[OpenCLI]] | jackwener 開源（JS/TS），把任何網站變 CLI + 用已登入真實 Chrome 操作網頁；「AI 操作瀏覽器」第三種路線（已登入單人確定性 adapter）| 1 |
 | [[Simon-Lin]] | Product Designer，台灣→東京→雪梨，Claude Design × Claude Code × Figma 工作流實作者 | 1 |
 | [[AAPD]] | 繁中產品設計教育平台 | 1 |
 | [[Hermes-Agent]] | Nous Research 出品的開源 agent 框架，跨平台 + 自我改進；[[HermesOS]] 是其商業 managed cloud 包裝 | 2 |
@@ -372,6 +389,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 | [[HyperFrames]] | Code-first 短影片框架（HTML+CSS+GSAP+timeline）；本知識庫第一個影片生成工具 | 1 |
 | [[OpenAI-Codex-CLI]] | OpenAI agentic CLI；AGENTS.md / `codex adversarial-review` 等特色 | 2 |
 | [[OpenCode]] | 開源伺服器優先 agentic CLI；Cloudflare AI code review 系統底層 | 1 |
+| [[mcp-cli]] | doggy8088（Will 保哥）維護的 Rust MCP client CLI（fork philschmid 原版）；把 MCP tools 變 shell 指令、給 agent 按需載入 schema 省 token | 1 |
 | [[Claude-Cowork]] | Anthropic Claude 3 product surfaces 之一（folder access + connectors + skills + scheduled runs）；Airtree 「運營核心」實戰 | 1 |
 | [[Anthropic]] | 本知識庫核心廠商（195+ 次提及）；Claude 3+1 個 surfaces + 核心員工地圖 + 跨廠商工程共識位置 | 4 |
 | [[OpenAI]] | 對標廠商（92 次提及）；Codex CLI / AGENTS.md / Harness Engineering 的對應位置；與 Anthropic 8 維對比 | 2 |

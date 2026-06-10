@@ -45,6 +45,9 @@ Anthropic 推出的**開放協議標準**，定義 AI 模型如何與外部工�
 | **Continue（VS Code 擴充）** | 支援 | 同上 |
 | **Kiro CLI** | 支援 | [[src-browseforge\|BrowseForge README]]提到 |
 | **[[Managed-Agents]]** | 內建 tool orchestration | [[src-anthropic-managed-agents-engineering\|Anthropic 工程部落格]]提到 |
+| **[[mcp-cli]]**（CLI client）| shell 形態通用 client（`info`/`grep`/`call`），給 agent 按需載入 schema 省 token | [[src-mcp-cli-doggy8088-2026-06\|mcp-cli README]] |
+
+> 補充：[[mcp-cli]] 把「Tool Search 按需載入」（見下方[[#Tool Search（**新概念**）|進階工程細節]]）落地到 shell 層——agent 用 `mcp-cli info <server> <tool>` 才取 schema，而非把整包 schema 常駐 context。是 MCP client 端「**省 token 存取**」的代表。
 
 ### MCP Server（提供能力端）— 範例
 
@@ -205,6 +208,7 @@ Anthropic 推出的**開放協議標準**，定義 AI 模型如何與外部工�
 - [[LM-Studio]] — 本地 AI 透過 MCP 接外部工具（client 端範例）
 - [[BrowseForge]] — 工具自帶 MCP server（server 端範例）
 - [[Playwright]] — 瀏覽器類 MCP server 的常見底層
+- [[mcp-cli]] — CLI 形態的 MCP client，把「Tool Search 按需載入」落地到 shell 層省 token
 - [[Gemma]] — 透過 MCP 突破本地模型限制的代表
 - [[Managed-Agents]] — Anthropic 雲端 agent 服務也用 MCP
 - [[Agent-Skills]] — 概念對照：Skills 封裝工作流，MCP 連接外部工具

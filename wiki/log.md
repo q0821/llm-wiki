@@ -1607,3 +1607,34 @@ Quiz 答案：intent 4/4 全選 + **application 只 1/4**（Hi Day vs LLM-wiki �
 
 ### 知識庫規模
 138 → 139 頁（+1 新 src 頁；無既有頁實質更新）
+
+## [2026-06-09] ingest | 五大傷眼迷思 — Doctor.賴 護眼科普（YouTube）
+- 來源：https://youtu.be/sW4aRxV60V8（放射腫瘤科醫師跨界護眼科普 ~18:20）
+- **本知識庫第一個健康／醫療領域來源**（先前全為 AI／技術／投資）
+- 建立來源摘要頁：[[src-doctor-lai-3c-eye-myths-myopia-2026]]
+- 母框架「劑量決定毒性」+ 5 大盲點（抗藍光智商稅 / 距離才是近視殺手 / PWM 調光 / 藍光毀睡眠 / 30-10-120 戶外存摺）
+- 刻意不抽 concept/entity 頁（第一個全新領域，避免 orphan，待第 2 個健康來源再建）
+- 影響頁面：[[src-doctor-lai-3c-eye-myths-myopia-2026]], index.md
+
+## [2026-06-09] reflect | 個人吸收第 9 次 — 新發現「受眾／適用對象錯位」
+- 對應來源：[[src-doctor-lai-3c-eye-myths-myopia-2026]]
+- Quiz：使用者答「近距離才是重點+要休息」/「自己落實到生活」
+- 觀察：recall 對位母主軸（距離>藍光）但**對位到錯誤受眾**——記得「對小孩有效的距離/戶外存摺」，漏掉「對成人自己高槓桿的眨眼/選螢幕(DC調光)/睡前斷捨離」
+- **新類型**：對位 taxonomy 第 5 大類候選「受眾／適用對象錯位」（主張對 + 套錯受眾族群）；樣本僅 1 次未固化
+- 新 heuristic：「你記得的主張原本講給誰聽？跟你打算套用的對象是同一群人嗎？」
+- 領域觀察：健康/醫療衛教類來源天然高頻觸發受眾錯位（兒童/成人/銀髮處方常相反）
+- Spaced retrieval 約定：~2026-06-23（14 天後）
+- 對應 [[Ratchet-Pattern]]
+
+## [2026-06-10] ingest | OpenCLI + mcp-cli 兩個 agentic CLI 工具（GitHub README）
+- 來源：https://github.com/jackwener/opencli 、 https://github.com/doggy8088/mcp-cli
+- 擷取方式備忘：markdown.new API（fetch-url.sh）對 GitHub 連線**超時失敗**，改用 `gh api repos/.../readme` 抓 README raw + `gh repo view --json` 補 metadata（star/license/lang/parent）→ 之後 GitHub repo ingest 優先走 gh
+- 補到關鍵事實：doggy8088 的 mcp-cli 是 **fork 自 philschmid 原版（Bun/TS）、由 Antigravity 重寫為純 Rust**；npm `@willh/mcp-cli`
+- 建立來源摘要頁：[[src-opencli-github-2026-06]], [[src-mcp-cli-doggy8088-2026-06]]
+- 建立實體頁：[[OpenCLI]], [[mcp-cli]]
+- 更新既有頁：[[MCP]]（client 表新增 mcp-cli + Tool Search 落地補述 + 相關頁面）
+- 核心整理：兩者都「把某層能力 CLI 化給人與 AI」但**處於不同 stack 層**——OpenCLI 在網頁存取層（對象=網站/瀏覽器）、mcp-cli 在 MCP 協定存取層（對象=MCP server）；可疊用（OpenCLI 包成 MCP server → mcp-cli 呼叫）
+- OpenCLI 補進「AI 操作瀏覽器」三角：vs [[BrowseForge]]（反偵測養號）/ [[Playwright]]（通用底層），OpenCLI 走「已登入單人確定性 adapter」
+- mcp-cli 核心論點接上 [[MCP]] 既有「Tool Search 按需載入」概念——shell 層省 token 實作，對應 [[Context-Engineering]]
+- 來源分類：工具/官方文件型 README → 依 CLAUDE.md 表預設不加個人吸收段（選型決策吸收段待使用者確認）
+- 影響頁面：[[OpenCLI]], [[mcp-cli]], [[src-opencli-github-2026-06]], [[src-mcp-cli-doggy8088-2026-06]], [[MCP]], index.md
