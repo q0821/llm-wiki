@@ -8,6 +8,13 @@ title: 索引
 
 ## 最近新增
 
+### 2026-06-13
+
+| 頁面 | 摘要 |
+|------|------|
+| [[html2pptx]] | **新 entity**：HTML/CSS → 完全可編輯 PPTX 的 SaaS（REST API / Skill / [[MCP]] / CLI 四形態 + localhost bridge 回寫源 HTML）；補「AI 生成 HTML 投影片 → 交付可編輯檔」缺口（vs 本人 Marp 工作流不產 PPTX）；開發者 @taiyo_ai_gakuse 自評「超越 Genspark」——**查證確認為賣方自評自家產品**（信心弱）|
+| [[src-x-taiyo-kimura-html2pptx-2026-06]] | 來源推文摘要頁；含利益衝突查證（推文作者＝工具開發者，2026-04 親自發布 html2pptx CLI）——「Source Bias 錯位——賣方敘事型」又一實例；[[Agent-Skills]] 已知 Skills 集合同步補列 |
+
 ### 2026-06-10
 
 | 頁面 | 摘要 |
@@ -292,6 +299,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 
 | 頁面 | 摘要 | 來源數 |
 |------|------|--------|
+| [[src-x-taiyo-kimura-html2pptx-2026-06\|html2pptx 評價推文（X）]] | 開發者自評自家 HTML→PPTX 工具超越 Genspark；含利益衝突查證（賣方敘事型，信心弱） | 1 |
 | [[src-opencli-github-2026-06\|OpenCLI README]] | 把任何網站變 CLI + 用已登入 Chrome 跑 browser automation；100+ adapter、Agent Skills、CLI hub | 1 |
 | [[src-mcp-cli-doggy8088-2026-06\|mcp-cli README（doggy8088 Rust fork）]] | 與 MCP server 互動的輕量 Rust CLI；按需載入 schema 省 token；fork philschmid 原版 | 1 |
 | [[src-btc-dual-currency-2026-03-09\|BTC 雙幣贏操作記錄]] | OKX 上 2,000 USDT 部署 | 1 |
@@ -354,6 +362,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 
 | 頁面 | 摘要 | 來源數 |
 |------|------|--------|
+| [[html2pptx]] | HTML/CSS → 完全可編輯 PPTX 的 SaaS；REST API / Skill / MCP / CLI 四形態；日本獨立開發者 @taiyo_ai_gakuse | 1 |
 | [[攝影工作室A]] | 攝影工作室客戶，商業攝影網站優化中 | 1 |
 | [[OKX]] | 加密貨幣交易所，使用雙幣贏產品 | 1 |
 | [[Cloudflare]] | 雲端平台 + AI agent 標準推手 + 內部 AI 工程文化（AI code review production case）| 3 |

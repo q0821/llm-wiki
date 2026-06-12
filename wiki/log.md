@@ -1638,3 +1638,19 @@ Quiz 答案：intent 4/4 全選 + **application 只 1/4**（Hi Day vs LLM-wiki �
 - mcp-cli 核心論點接上 [[MCP]] 既有「Tool Search 按需載入」概念——shell 層省 token 實作，對應 [[Context-Engineering]]
 - 來源分類：工具/官方文件型 README → 依 CLAUDE.md 表預設不加個人吸收段（選型決策吸收段待使用者確認）
 - 影響頁面：[[OpenCLI]], [[mcp-cli]], [[src-opencli-github-2026-06]], [[src-mcp-cli-doggy8088-2026-06]], [[MCP]], index.md
+
+## [2026-06-13] ingest | html2pptx skill 評價推文（X @taiyo_ai_gakuse）
+- 來源：https://x.com/taiyo_ai_gakuse/status/2064578992548540650 （inbox 投遞的 URL 備忘，2026-06-10 發文）
+- 擷取方式備忘：markdown.new（exit 56）與 WebFetch（402）對 X 均失敗 → 改用 **Claude in Chrome get_page_text** 成功抓到推文 + 引用推文（含 X 內建繁中翻譯）→ 之後 X 貼文 ingest 優先走瀏覽器
+- **查證亮點：推文作者＝工具開發者**——@taiyo_ai_gakuse 2026-04 親自發布 html2pptx CLI、經營 html2pptx.app（官網 GitHub 指向 nanameru）。「個人 benchmark 超越 Genspark」實為**賣方自評自家產品**（賣方敘事型 source bias），信心降為弱並在來源頁顯著標註
+- 識別注意：taiyokimura.com 當代藝術家「木村太陽」為同名不同人
+- 補充擷取：html2pptx.app 官網（四形態 REST/Skill/MCP/CLI、localhost bridge、價格方案）
+- 建立來源摘要頁：[[src-x-taiyo-kimura-html2pptx-2026-06]]
+- 建立實體頁：[[html2pptx]]（含 vs Marp 工作流定位：Marp 不產可編輯 PPTX，html2pptx 補交付段）
+- 更新既有頁：[[Agent-Skills]]（已知 Skills 集合補列 html2pptx + 賣方敘事警示）
+- 來源分類：工具型（使用者確認）→ 不加個人吸收段
+- 附帶處理：同批 inbox 的 Patreon「Modular Shelf」（Gazzaladra 3D 列印層架，付費牆內）經使用者確認**不需要，已刪除** raw URL 備忘檔，不建頁
+- 影響頁面：[[src-x-taiyo-kimura-html2pptx-2026-06]], [[html2pptx]], [[Agent-Skills]], index.md
+
+### 知識庫規模
+142 → 144 頁（+1 src 頁 +1 entity 頁；[[Agent-Skills]] 實質更新；不含 index/log）

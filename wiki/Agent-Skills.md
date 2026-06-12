@@ -1,9 +1,9 @@
 ---
 title: Agent Skills
 type: concept
-sources: [2026-03-12-Marketing-Skills-for-AI-Agents.md, asgard-ai-platform-skills.md, 只要 5 分鐘！Claude Code 無縫整合 NotebookLM 實戰.md, 推薦的 Claude Code  skill.md, "Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "科技翰林院怎麼用 Claude Code 終端機？8 個實戰設定全公開.md", "Hermes Agent 成功案例 — 你的 AI 代理可以做什麼.md", "未命名.md"]
+sources: [2026-03-12-Marketing-Skills-for-AI-Agents.md, asgard-ai-platform-skills.md, 只要 5 分鐘！Claude Code 無縫整合 NotebookLM 實戰.md, 推薦的 Claude Code  skill.md, "Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "科技翰林院怎麼用 Claude Code 終端機？8 個實戰設定全公開.md", "Hermes Agent 成功案例 — 你的 AI 代理可以做什麼.md", "未命名.md", "x-taiyo-kimura-html2pptx-skill.md"]
 created: 2026-04-15
-updated: 2026-05-14
+updated: 2026-06-13
 tags: [技術, AI, 工具, 概念]
 confidence: 強
 ---
@@ -122,6 +122,7 @@ Skill 的封裝優勢：
 - **NotebookLM Skill**（[[notebooklm-py]] 配套）— 讓 Claude Code 操作 [[NotebookLM]]，把研究外包給 Gemini。詳見 [[src-claude-code-notebooklm]]
 - **yt-search Skill**（自製範例）— 用 yt-dlp 搜尋 YouTube 並回傳結構化結果（含「觀看數/訂閱數」爆款比率）
 - **Hermes Skills**（[[Hermes-Agent]] 生態系）— 99 案例中橫跨 13 個分類，含 awesome-hermes-agent 精選清單；特色是 **Skill Factory**（靜默監看工作流，自動生成 SKILL.md）。詳見 [[src-hermes-agent-99-cases]]
+- **html2pptx Skill**（[[html2pptx]]）— HTML/CSS → 完全可編輯 PPTX；SaaS 四形態之一（REST API / Skill / MCP / CLI）。開發者自評「超越 Genspark」「優於內建 pptx skill」——**賣方敘事，信心弱**，詳見 [[src-x-taiyo-kimura-html2pptx-2026-06]]
 
 ## Skill 自我優化 Meta-Pattern
 

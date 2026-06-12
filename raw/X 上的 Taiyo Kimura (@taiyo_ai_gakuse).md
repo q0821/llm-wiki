@@ -1,0 +1,1 @@
+[X 上的 Taiyo Kimura (@taiyo_ai_gakuse)](https://x.com/taiyo_ai_gakuse/status/2064578992548540650?s=12)
