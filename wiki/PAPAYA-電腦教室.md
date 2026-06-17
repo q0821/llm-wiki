@@ -32,6 +32,7 @@ confidence: 中
 | 影片 | 主題 | ID |
 |---|---|---|
 | [[src-papaya-gemma-lm-studio\|別再小看本地 AI！Gemma 4 + LM Studio]] | 本地 AI 完整工作流（[[Gemma]]、[[LM-Studio]]、[[MCP]]、Continue） | r5M0W66xcGc |
+| [[src-papaya-hermes-agent-tutorial-2026-06\|Hermes Agent 保姆級教學]] | [[Hermes-Agent]] 從安裝到生圖/Notion/排程的完整步驟（Hostinger、OpenRouter、Telegram、Google OAuth） | -EivK7vpOXY |
 
 ## 中文圈 AI 教學者地圖（本知識庫整理）
 
@@ -54,3 +55,5 @@ PAPAYA 為本知識庫貢獻了重要的「**本地 AI 軸線**」——之前�
 ## 後續觀察
 
 PAPAYA 主題涵蓋廣（不限 AI），未來可能有其他電腦工具教學陸續加入此 entity。
+
+> **2026-06 觀察**：PAPAYA 主題從「本地 AI」擴及「AI agent」（[[src-papaya-hermes-agent-tutorial-2026-06|Hermes Agent 教學]]）。值得注意的是該片含較強行銷語（標題「棄養潮」「用過回不去」）與疑似聯盟行銷（重推 Hostinger），與本頁原先記錄的「誠實標示能力邊界」風格略有張力——後續可觀察該頻道在 agent 題材上是否維持中立步驟教學調性。

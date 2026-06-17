@@ -1673,3 +1673,13 @@ Quiz 答案：intent 4/4 全選 + **application 只 1/4**（Hi Day vs LLM-wiki �
 - 待決策：尚未實測，頁內留 spaced retrieval 自問（有實際測過自己語音的 CER 嗎）
 - 反向連結：在 [[src-voice-typing-mac-github-2026-06]] 補上指向本比較頁的連結
 - 影響頁面：[[comparison-stt-models-whisper-paraformer-sensevoice]], [[src-voice-typing-mac-github-2026-06]], index.md
+
+## [2026-06-18] ingest | Hermes Agent 保姆級教學（PAPAYA 電腦教室，YouTube）
+- 來源：https://www.youtube.com/watch?v=-EivK7vpOXY （頻道 PAPAYA 電腦教室，逐字稿 1328 行）
+- 建立來源頁：[[src-papaya-hermes-agent-tutorial-2026-06]]
+- 來源分類：工具教學型 → 不加個人吸收段
+- 對既有實體的價值：[[Hermes-Agent]] 從「99 案例轉述」升級到「一手可重現操作」的首個來源
+- 補充既有頁細節：記憶三檔補齊 User.md/Memory.md/**Soul.md**（既有頁只記 MEMORY/USER）、Goal/Subagent 具體化、提到 gpt-5.5（既有頁為 5.4，仍待驗證）
+- 來源偏誤標註（延續賣方敘事紀律）：① 標題「OpenClaw 大規模棄養潮/用過回不去」為行銷語，規模無數據 ② 重推 Hostinger 疑似聯盟行銷 ③「最安全」為比較級宣稱未對比同類
+- 更新既有頁：[[Hermes-Agent]]（記憶三檔 + 新來源 + updated 日期）、[[PAPAYA-電腦教室]]（第二支作品 + 主題從本地 AI 擴及 agent + 調性張力觀察）
+- 影響頁面：[[src-papaya-hermes-agent-tutorial-2026-06]], [[Hermes-Agent]], [[PAPAYA-電腦教室]], index.md

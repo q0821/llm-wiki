@@ -1,9 +1,9 @@
 ---
 title: Hermes Agent
 type: entity
-sources: ["Hermes Agent 成功案例 — 你的 AI 代理可以做什麼.md", hermesos-your-ai-agents-always-on.md]
+sources: ["Hermes Agent 成功案例 — 你的 AI 代理可以做什麼.md", hermesos-your-ai-agents-always-on.md, "yt-hermes-agent-保姆級教學...md"]
 created: 2026-05-14
-updated: 2026-05-26
+updated: 2026-06-18
 tags: [agent, open-source, self-improving, multi-platform, nous-research]
 confidence: 中
 ---
@@ -28,7 +28,7 @@ confidence: 中
 
 跨多個 case 反覆出現的核心模式：
 
-- **[[MEMORY-md|MEMORY.md]] / USER.md**：跨 session 持久記憶層，AI 自動更新
+- **[[MEMORY-md|MEMORY.md]] / USER.md / Soul.md**：跨 session 持久記憶層，AI 自動更新。三檔分工（據 [[src-papaya-hermes-agent-tutorial-2026-06]] 一手教學）：`User.md`＝使用者檔案卡、`Memory.md`＝Hermes 工作筆記、`Soul.md`＝助理人格（名字/語氣/角色）
 - **Skill 自動生成**：從完成的工作流提取有效方法，自動寫成 `SKILL.md`
 - **偏好學習**：第 1 次標準執行 → 第 5 次完全內化使用者偏好（如 Code Review 案例）
 - **越用越聰明**：第三方獨立評測稱為「最佳自我改進代理」（Clawdi 團隊）
@@ -138,7 +138,8 @@ confidence: 中
 
 ## 在各來源中的角色
 
-- [[src-hermes-agent-99-cases]]：99 個社群案例（Gas Khuang 整理），按 13 個使用情境分類
+- [[src-hermes-agent-99-cases]]：99 個社群案例（Gas Khuang 整理），按 13 個使用情境分類（轉述型）
+- [[src-papaya-hermes-agent-tutorial-2026-06]]：[[PAPAYA-電腦教室]] 一手保姆級教學（2026-06），把安裝→Telegram→Google OAuth→生圖/Notion/排程/備份全程示範。**首個可重現的一手操作來源**，佐證並補充 Soul.md、Goal、Subagent 等細節；同時含行銷語與疑似聯盟行銷（Hostinger）需折扣判讀
 
 ## 信心評估
 
