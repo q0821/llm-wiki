@@ -8,6 +8,18 @@ title: 索引
 
 ## 最近新增
 
+### 2026-06-18
+
+| 頁面 | 摘要 |
+|------|------|
+| [[comparison-stt-models-whisper-paraformer-sensevoice]] | **新比較頁**：Whisper vs Paraformer vs SenseVoice 本機中文 STT 比較。釐清 FunASR=工具箱、後兩者=模型；AISHELL-1 CER 顯示 Whisper(5.14%) 中文明顯落後 Paraformer(1.68%)/SenseVoice(2.96%)；關鍵：兩模型無原生 MLX，Mac 本機需走 sherpa-onnx(CPU)；繁體靠 opencc 非差異點；press-to-talk 情境偏好 SenseVoice。起點 [[src-voice-typing-mac-github-2026-06]]|
+
+### 2026-06-17
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-voice-typing-mac-github-2026-06]] | **新來源（工具型）**：penny1985/voice-typing-mac — 完全本機運行的 macOS 語音轉文字小工具，Whisper（mlx-whisper large-v3-turbo）+ opencc 簡轉繁 + 全形標點 + 規則式修正（`修正規則.txt` 錯＝對）；定位「像 Typeless 但開源免費、隱私自掌」；與 [[src-muki-plaud-workshop-ai-codev-2026-06-04]] 同涉 STT 但情境相反（雲端轉錄 vs 本機 + 後處理修正）|
+
 ### 2026-06-13
 
 | 頁面 | 摘要 |
@@ -299,6 +311,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 
 | 頁面 | 摘要 | 來源數 |
 |------|------|--------|
+| [[src-voice-typing-mac-github-2026-06\|語音輸入 Voice Typing（GitHub）]] | 本機 Whisper 語音轉文字 Mac 小工具；隱私自掌、零 API 成本、台灣繁體 + 全形 + 規則式修正；開源個人實驗作品 | 1 |
 | [[src-x-taiyo-kimura-html2pptx-2026-06\|html2pptx 評價推文（X）]] | 開發者自評自家 HTML→PPTX 工具超越 Genspark；含利益衝突查證（賣方敘事型，信心弱） | 1 |
 | [[src-opencli-github-2026-06\|OpenCLI README]] | 把任何網站變 CLI + 用已登入 Chrome 跑 browser automation；100+ adapter、Agent Skills、CLI hub | 1 |
 | [[src-mcp-cli-doggy8088-2026-06\|mcp-cli README（doggy8088 Rust fork）]] | 與 MCP server 互動的輕量 Rust CLI；按需載入 schema 省 token；fork philschmid 原版 | 1 |
@@ -464,3 +477,4 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 |------|------|--------|
 | [[加密貨幣收益工具比較]] | 活期賺幣 / 網格 / 雙幣贏 / Deribit 自賣選擇權的並排比較 | 2 |
 | [[comparison-ai-native-vs-lean-startup\|AI-Native vs Lean Startup]] | 4 階段 vs 6 階段對映 + 反模式對照 + Anthropic 為何重新框架的 4 大原因 | 1 |
+| [[comparison-stt-models-whisper-paraformer-sensevoice\|STT 模型比較 Whisper/Paraformer/SenseVoice]] | 本機中文語音輸入選型：CER benchmark + Mac MLX 可行性 + sherpa-onnx 路徑 + 繁體 opencc caveat | 2 |

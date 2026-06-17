@@ -1654,3 +1654,22 @@ Quiz 答案：intent 4/4 全選 + **application 只 1/4**（Hi Day vs LLM-wiki �
 
 ### 知識庫規模
 142 → 144 頁（+1 src 頁 +1 entity 頁；[[Agent-Skills]] 實質更新；不含 index/log）
+
+## [2026-06-17] ingest | 語音輸入 Voice Typing（GitHub｜本機 Whisper STT 工具）
+- 來源：https://github.com/penny1985/voice-typing-mac （作者 陳沛孺 Penny）
+- 擷取：markdown.new API 超時（60 秒未完成），改用 GitHub API 抓 README + repo metadata，手動補寫 raw/voice-typing-mac-github-readme.md
+- 建立來源頁：[[src-voice-typing-mac-github-2026-06]]
+- 來源分類：工具型 → 不加個人吸收段（對齊 OpenCLI / mcp-cli / html2pptx 先例）
+- 交叉引用：與 [[src-muki-plaud-workshop-ai-codev-2026-06-04]] 連結——同涉 STT 但情境相反（Plaud 雲端轉錄且有系統性 STT 錯誤需校正 vs 本工具本機 + 規則式 `修正規則.txt` 後處理）
+- 影響頁面：[[src-voice-typing-mac-github-2026-06]], index.md
+
+## [2026-06-18] query→comparison | STT 模型比較 Whisper vs Paraformer vs SenseVoice
+- 起因：有人反映 [[src-voice-typing-mac-github-2026-06]] 用的 Whisper 中文品質不佳，建議改用 FunASR/Paraformer/SenseVoice
+- 網路研究（WebSearch×4 + WebFetch×3）：FunAudioLLM 論文、FunASR repo、ASR 2025-2026 深度比較、sherpa-onnx 文件、mlx-audio issue #761
+- 建立比較頁：[[comparison-stt-models-whisper-paraformer-sensevoice]]
+- 核心釐清：FunASR=工具箱（runtime），Paraformer/SenseVoice=跑在上面的模型；正確比較是三個模型
+- 關鍵發現：① AISHELL-1 CER Whisper 5.14% vs Paraformer 1.68% vs SenseVoice 2.96%（Whisper 中文確實落後）② 兩模型無原生 MLX，Mac 本機需走 sherpa-onnx CPU ③ 繁體靠 opencc，非差異點 ④ press-to-talk 情境偏好 SenseVoice
+- 信心：方向強／確切 CER 中（多來自單一深度比較文）
+- 待決策：尚未實測，頁內留 spaced retrieval 自問（有實際測過自己語音的 CER 嗎）
+- 反向連結：在 [[src-voice-typing-mac-github-2026-06]] 補上指向本比較頁的連結
+- 影響頁面：[[comparison-stt-models-whisper-paraformer-sensevoice]], [[src-voice-typing-mac-github-2026-06]], index.md
