@@ -67,7 +67,7 @@ Skills 是封裝化工作流範本，`/<name>` 觸發。比 prompt 優勢：流�
 
 - **拖放圖片**：直接拖檔進終端機（多模態），免存檔找路徑
 - **cmux 多 session 管理**：`brew install cmux`，多分頁不亂、可 detach/attach
-- **狀態列自訂**：`~/.claude/statusline.sh` + `settings.json` 顯示模型/git 分支/額度倒數
+- **狀態列自訂**：`~/.claude/statusline.sh` + `settings.json` 顯示模型/git 分支/額度倒數（現成方案見 [[src-coralline-statusline-2026-06|coralline]]：仿 Powerlevel10k、9 主題、可叫 AI 訪談式安裝）
 - **Token 體檢**：定期掃 Skills 重複（[[科技翰林院]]實測 4 個重複 Skill 浪費 ~20k Token）
 
 ## 與其他 agentic CLI 的關係

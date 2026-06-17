@@ -1683,3 +1683,15 @@ Quiz 答案：intent 4/4 全選 + **application 只 1/4**（Hi Day vs LLM-wiki �
 - 來源偏誤標註（延續賣方敘事紀律）：① 標題「OpenClaw 大規模棄養潮/用過回不去」為行銷語，規模無數據 ② 重推 Hostinger 疑似聯盟行銷 ③「最安全」為比較級宣稱未對比同類
 - 更新既有頁：[[Hermes-Agent]]（記憶三檔 + 新來源 + updated 日期）、[[PAPAYA-電腦教室]]（第二支作品 + 主題從本地 AI 擴及 agent + 調性張力觀察）
 - 影響頁面：[[src-papaya-hermes-agent-tutorial-2026-06]], [[Hermes-Agent]], [[PAPAYA-電腦教室]], index.md
+
+## [2026-06-18] ingest | coralline — Claude Code statusline（GitHub + 作者 Threads）
+- 來源（2 個，手機 inbox 投遞的書籤連結，本次擷取內容）：
+  - https://github.com/Nanako0129/coralline （Shell/MIT/345★，2026-06-12 建）
+  - https://www.threads.com/@nyanako_0129/post/DZeoN7MERsp （作者 Nanako Tsai 親述）
+- 擷取：GitHub 經 API 抓 README + meta；Threads 經 WebFetch
+- 建立來源頁：[[src-coralline-statusline-2026-06]]（依使用者選擇：輕量合一頁，不另開實體頁）
+- 來源分類：工具型 → 不加個人吸收段（使用者表示「參考收著、未定」，不加個人角度）
+- 重點：仿 Powerlevel10k statusline、13 segment、9 主題、響應式、可匯入 p10k；亮點 pattern「AI installer」訪談式安裝；作者動機=盯 Claude Code 比終端機久想讓它好看
+- 信心：功能強（README 一手）／動機中（Threads 親述單一視角）
+- 反向連結：[[Claude Code]] 狀態列自訂處補指向 coralline
+- 影響頁面：[[src-coralline-statusline-2026-06]], [[Claude Code]], index.md

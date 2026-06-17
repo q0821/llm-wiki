@@ -1,0 +1,1 @@
+[Nanako0129/coralline: 🪸 Powerlevel10k-inspired statusline for Claude Code — paste one prompt and your AI interviews you, then installs it](https://github.com/Nanako0129/coralline)

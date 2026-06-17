@@ -14,6 +14,7 @@ title: 索引
 |------|------|
 | [[comparison-stt-models-whisper-paraformer-sensevoice]] | **新比較頁**：Whisper vs Paraformer vs SenseVoice 本機中文 STT 比較。釐清 FunASR=工具箱、後兩者=模型；AISHELL-1 CER 顯示 Whisper(5.14%) 中文明顯落後 Paraformer(1.68%)/SenseVoice(2.96%)；關鍵：兩模型無原生 MLX，Mac 本機需走 sherpa-onnx(CPU)；繁體靠 opencc 非差異點；press-to-talk 情境偏好 SenseVoice。起點 [[src-voice-typing-mac-github-2026-06]]|
 | [[src-papaya-hermes-agent-tutorial-2026-06]] | **新來源（教學型）**：[[PAPAYA-電腦教室]] 的 [[Hermes-Agent]] 保姆級教學（YouTube）。首個一手可重現操作來源——補齊記憶三檔 User.md/Memory.md/**Soul.md**、Goal/Subagent，完整示範 Hostinger/OpenRouter/Telegram/Google OAuth/FAL.ai 生圖。**標註行銷偏誤**：標題「OpenClaw 棄養潮」為行銷語、重推 Hostinger 疑似聯盟行銷|
+| [[src-coralline-statusline-2026-06]] | **新來源（工具型）**：coralline — 仿 Powerlevel10k 的 [[Claude Code]] statusline（Nanako0129，MIT，345★）。13 segment（含 context/rate-limit/成本）、9 主題、響應式換行、可匯入 p10k；亮點 pattern「AI installer」貼 prompt 讓 Claude 訪談式安裝。含作者 Threads 親述動機。輕量合一頁（GitHub + Threads 兩來源）|
 
 ### 2026-06-17
 
@@ -313,6 +314,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 | 頁面 | 摘要 | 來源數 |
 |------|------|--------|
 | [[src-papaya-hermes-agent-tutorial-2026-06\|Hermes Agent 保姆級教學（PAPAYA）]] | Hermes Agent 一手完整操作教學（安裝→Telegram→Google→生圖→Notion→排程）；含行銷偏誤標註（棄養潮行銷語、Hostinger 聯盟行銷） | 1 |
+| [[src-coralline-statusline-2026-06\|coralline — Claude Code statusline]] | 仿 Powerlevel10k 的 Claude Code 狀態列（MIT，9 主題、context/rate-limit/成本 segment、AI 訪談式安裝）；含作者 Threads 親述 | 2 |
 | [[src-voice-typing-mac-github-2026-06\|語音輸入 Voice Typing（GitHub）]] | 本機 Whisper 語音轉文字 Mac 小工具；隱私自掌、零 API 成本、台灣繁體 + 全形 + 規則式修正；開源個人實驗作品 | 1 |
 | [[src-x-taiyo-kimura-html2pptx-2026-06\|html2pptx 評價推文（X）]] | 開發者自評自家 HTML→PPTX 工具超越 Genspark；含利益衝突查證（賣方敘事型，信心弱） | 1 |
 | [[src-opencli-github-2026-06\|OpenCLI README]] | 把任何網站變 CLI + 用已登入 Chrome 跑 browser automation；100+ adapter、Agent Skills、CLI hub | 1 |
