@@ -1,10 +1,10 @@
 ---
 title: Harness Engineering（駕馭工程）
 type: concept
-sources: [Harness Engineering（AI駕馭工程）入門篇：OpenAI最新編程標準，教你輕鬆做到Lv.1.md, "未命名.md", "cloudflare-ai-code-review.md"]
+sources: [Harness Engineering（AI駕馭工程）入門篇：OpenAI最新編程標準，教你輕鬆做到Lv.1.md, "未命名.md", "cloudflare-ai-code-review.md", "ihower-harness-loop-engineering-系列-9篇.md"]
 created: 2026-04-21
-updated: 2026-05-18
-tags: [AI, Agent, 軟體工程, 架構設計, harness, ratchet, circuit-breaker, production]
+updated: 2026-06-29
+tags: [AI, Agent, 軟體工程, 架構設計, harness, ratchet, circuit-breaker, production, feedback-loop, loop-engineering]
 confidence: 強
 ---
 
@@ -238,10 +238,28 @@ Anthropic 整理 6 個可組合的編排模式（細節見 [[src-anthropic-dynam
 
 兩者互補：Meta-harness 定義穩定介面，Harness Engineering 設計介面內的約束和回饋系統。
 
+## 四個回饋時機點框架（[[ihower]] 視角，[[src-ihower-harness-loop-engineering-2026-06]]）
+
+[[ihower]] 在 GAIConf 2026 的《Harness + Loop Engineering》系列提出一個**正交於「元件清單」的切角**：別人多回答「harness 由哪些元件組成」（靜態清單，如上面 OpenAI 三支柱 / Addy 七元件 / Cloudflare 七元件），ihower 問的是「Agent 的**回饋**該在哪些**時機點**設計」——由內而外、成本遞增、巢狀的四個時機：
+
+| 時機 | 觸發頻率 | 成本 | 修正粒度 | 對應 hook | 核心設計 |
+|---|---|---|---|---|---|
+| **① 工具執行內** | 每次 tool call | 毫秒 | 單一動作 | Pre/PostToolUse | 工具回傳值是寫給 agent 的回饋（夾帶指引、回完整 state 非旗標）|
+| **② request 之間注入** | 想注入時 | 趨近零 | 當前這一輪方向 | 無專屬 hook | steering（人）/ 程式注入（背景結果、外部事件）|
+| **③ 單輪結束** | 每一輪 | 秒級 | 整輪產出 | Stop hook | Goal/Outcome 驗收，沿「裁判獨立性」光譜：自我審計→transcript 裁判→獨立 grader |
+| **④ 外層 Loop** | 每個 session | 分鐘到小時 | 整個任務 | 排程/外迴圈 | Ralph / Symphony / Cron；進度從 context 搬到磁碟 |
+
+關鍵原則（與本頁既有論述呼應）：
+- **核心是回饋迴路不是完美提示**：Prompt → Context → Harness 三層疊加；策略是「先 generate 再 verify」，工程難點在「怎麼確保 verify 真的會發生」。
+- **③ 的「裁判獨立性 vs 資訊量」trade-off**：自我審計（Codex /goal，資訊量最大、零獨立）→ transcript 裁判（Claude Code /goal 用 Haiku，居中）→ 獨立 grader（Managed Agents Outcome，獨立性最大、只看 artifact）。獨立性最大者才抓得到 corrupt success（亂改測試、違規操作）。**驗證強度是 harness 可調參數**，隨任務風險與模型能力調整。
+- **④ Loop Engineering**：Loop 管 scheduling（何時跑），Goal 管 termination（做到什麼程度才停）；swyx 五層 loop（token→turn→/goal→MetaLoop→open-ended）。
+- **harness 會過期（Model-Harness-Fit）**：每個元件都在補某代模型的短處，模型變強後該主動拆掉——這是 [[Ratchet-Pattern|棘輪]]的**反方向**（也會減）。會過期的是具體做法（Bitter Lesson），不會過期的是 Eval 與 Judge。詳見 [[src-ihower-harness-loop-engineering-2026-06]] 篇8。
+
 ## 跨工程文化論述對照
 
 | 工程文化 | 代表 | 主要切角 | 來源 |
 |---|---|---|---|
+| **台灣社群 / 開發者視角** | [[ihower]] | **由內而外四個回饋時機點**（時間軸切角，正交於元件清單）+ Loop Engineering + Model-Harness-Fit | [[src-ihower-harness-loop-engineering-2026-06]] |
 | **OpenAI** | Ryan Lopopolo / Mitchell Hashimoto | 三支柱 + 級別實踐路徑 | [[src-harness-engineering-openai]] |
 | **Anthropic（雲端 agent 視角）** | 工程團隊 | [[Meta-Harness]]、Long-running app design | [[src-anthropic-managed-agents-engineering]] |
 | **Anthropic（Claude Code 視角）** | Applied AI team | **7 個 extension points**（CLAUDE.md / Hooks / Skills / Plugins / LSP / MCP / Subagents）+ 企業導入 DRI / Agent Manager 角色 | [[src-claude-code-in-large-codebases]] |
@@ -253,6 +271,7 @@ Anthropic 整理 6 個可組合的編排模式（細節見 [[src-anthropic-dynam
 
 ## 相關頁面
 
+- [[src-ihower-harness-loop-engineering-2026-06]] — [[ihower]] 台灣社群/開發者視角，**四個回饋時機點** + Loop Engineering + Model-Harness-Fit（9 篇系列）
 - [[src-harness-engineering-openai]] — OpenAI 視角來源
 - [[src-addy-osmani-harness-engineering]] — Google Addy Osmani 視角來源
 - [[src-cloudflare-ai-code-review]] — Cloudflare production 標本，含 Circuit Breaker for AI

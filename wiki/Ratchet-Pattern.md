@@ -83,6 +83,8 @@ Ratchet **不是無限累積**——Addy Osmani 明確警告：
 
 這個原則平衡了「累積」與「臃腫」——對應 [[CLAUDE-md|CLAUDE.md]] 的「飛行員檢查清單而非冗長風格指南」、[[Harness-Engineering]] 的「harness 應可撕裂、隨模型進化移除」。
 
+[[ihower]]（[[src-ihower-harness-loop-engineering-2026-06]] 篇8）給這個「反方向棘輪」更具體的命名與自查法：harness 每個元件都編碼一項「模型做不到什麼」的假設，模型一變強假設就過時（**Model-Harness-Fit** 會過期）。每次模型大升級（連 Opus 小版本指令遵循變嚴都算）逐項問「這條約束還在提高成功率，還是只是慣性？這個強制規劃步驟還在防偏離，還是只是拖慢它？」相關命名：scaffolding trap（舊腳手架反而跟模型新能力衝突）、The Harness Tax（「一月還在承重，三月就成了死碼」）。金句：「想待在前沿，你得在每次新模型發布時，刪掉你大半的程式碼。」
+
 ## 為什麼比「下次小心」更穩
 
 | 仰賴對象 | 限制 |
@@ -107,6 +109,7 @@ Ratchet **不是無限累積**——Addy Osmani 明確警告：
 
 ## 與其他概念的關係
 
+- [[決策疲勞]] — 「每次踩坑變 SOP」就是把一次性決策編碼成永久規則；每條 ratchet 都削減未來決策次數（[[src-jiuann-ai-codev-decision-fatigue-2026-06|酒Ann 實戰]]）
 - [[Harness-Engineering]] — Ratchet 是 harness 「進化機制」的核心執行模式
 - [[Self-Improving-Agent]] — Ratchet 是該範式中「人類引導」的學習路徑（vs MEMORY.md 的「AI 自動」學習路徑）
 - [[CLAUDE-md]] — Ratchet 的最常見編碼載體；CLAUDE.md 中每條規則應能追溯到某個失敗

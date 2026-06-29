@@ -119,8 +119,18 @@ Harness:  wake(sessionId) → harness_instance
 
 詳見 [[Harness-Engineering#Harness 不會萎縮，只會移動]]。
 
+## 自動化 Meta-Harness：把「改 harness」也交給 agent（[[ihower]] 篇7）
+
+[[src-ihower-harness-loop-engineering-2026-06]] 篇7 把 meta-harness 從「人設計穩定介面」推進到「**agent 自動最佳化整個 harness**」：
+
+- **Stanford 論文〈End-to-End Optimization of Model Harnesses〉**：最佳化對象從 prompt 升級到整個 harness（system prompt + 工具定義 + 完成邏輯 + context 管理）。關鍵在「提案者能看到多少」——給提案者一個檔案系統，放所有候選 harness 的原始碼/分數/execution traces，每步最多 1000 萬 token 做「反事實診斷」。成績：讓 Haiku 4.5 演化出的 harness 在 TerminalBench-2 排所有 Haiku 4.5 agent 第 1（37.6%）。
+- **關鍵紀律「沒有關卡，就沒有自我改進」**：regression gate（每個修好的失敗變永久測試，整體不退步才收）+ 效益量測，是把「自我改進」與「自動作弊（Goodhart / reward hacking）」分開的關鍵。
+- 心智模型：傳統 ML 是「模型 + 訓練資料 + 梯度下降 → 更好的模型」；agent 是「**harness + evals + harness engineering → 更好的 agent**」。
+- 對應本頁「介面穩定、實作可替換」——自動化 meta-harness 正是讓「實作」（具體 harness 設定）成為可被 agent 演化替換的對象，而「介面」（eval/grader 定義什麼叫做好）保持穩定。呼應 [[Self-Improving-Agent]]、[[Ratchet-Pattern]]。
+
 ## 相關頁面
 
+- [[src-ihower-harness-loop-engineering-2026-06]] — [[ihower]] 篇7（自我改進 Harness + Stanford Meta-Harness 論文）、篇8（Model-Harness-Fit 即本頁「假設會過期」的具體展開）
 - [[Harness-Engineering]] — OpenAI / Google / LangChain / HumanLayer 各方視角整合
 - [[src-harness-engineering-openai]] — OpenAI Harness Engineering 的來源摘要
 - [[src-addy-osmani-harness-engineering]] — Google Addy Osmani 視角來源

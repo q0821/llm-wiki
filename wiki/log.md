@@ -1695,3 +1695,67 @@ Quiz 答案：intent 4/4 全選 + **application 只 1/4**（Hi Day vs LLM-wiki �
 - 信心：功能強（README 一手）／動機中（Threads 親述單一視角）
 - 反向連結：[[Claude Code]] 狀態列自訂處補指向 coralline
 - 影響頁面：[[src-coralline-statusline-2026-06]], [[Claude Code]], index.md
+
+## [2026-06-26] ingest | 行銷快手 Windows — 房仲/車仲 FB 自動群發工具（YouTube）
+- 來源：https://www.youtube.com/watch?v=8lGMBYYdWHI （廠商官方操作教學影片）
+- 擷取流程（無字幕踩雷紀錄）：YouTube captions 不可用 → fetch-youtube.sh 失敗 → 改 `uv tool install yt-dlp`（brew 本機損壞）抽音訊 → MacWhisper CLI (`/Applications/MacWhisper.app/Contents/MacOS/mw transcribe`) 本機轉錄
+  - 模型選擇踩雷：Parakeet v3 對中文完全無效（輸出亂碼羅馬拼音）→ 改 whisperkit:openai_whisper-large-v2 成功；對照既有 [[comparison-stt-models-whisper-paraformer-sensevoice]] 結論
+  - `mw` detached（nohup）會空手而回，需用 harness background 機制（保留 launchd session 環境）
+- 建立來源頁：[[src-marketing-quick-hand-fb-autopost-2026-06]]
+- 來源分類：工具/產品操作教學型 → **不加個人吸收段**（per CLAUDE.md 分類表）
+- 匯入動機（使用者明示）：手法研究 + 廠商來問「能否自製同類產品」，評估可行性
+- 頁面取向（使用者選擇）：競品/手法研究 + **風險警示並列標註**
+  - 反偵測手法拆解：60 秒節流／刪「紫色圖片」規避重複上架偵測／信任此裝置持久 session
+  - 風險警示（廠商教學未提，賣方敘事偏誤）：違反 FB ToS、封號、帳密交付第三方、spam 商譽、法遵
+- 可行性評估：頁內留結論錨點，完整評估於對話回覆（依使用者慣例「問可行性只給說明不直接執行」）
+- 交叉引用：[[BrowseForge]]／[[OpenCLI]]／[[Playwright]]「自動化操作瀏覽器」家族，定位為最靠近合規紅線的灰產應用
+- 影響頁面：[[src-marketing-quick-hand-fb-autopost-2026-06]], index.md
+
+## [2026-06-29] ingest | AI 協作真正省的是「決策次數」（酒Ann 實戰分享文）
+- 來源：inbox 投遞純文字（`raw/未命名-20260629-110502.md`，社群長貼文，無原始 URL）
+- 來源分類：**論點型** → 加個人吸收段（per CLAUDE.md 分類表）
+- 核心論點：AI 協作省的不是寫程式時間而是**決策腦力**（一天 80–120 次小決策慢慢耗乾）；三種成本（重工/上下文/決策）；核心機制「即時決策→預先規則」
+- 萃取方法論：決策三層（自動/回報/確認）、任務設計>prompt（六要素 + 主動寫 Non-scope）、流程才是真正產出、把 AI 分產品型/工程型角色、換 session+交接摘要、踩坑變 SOP、想法進 Roadmap；附完整 15 條 ChatGPT 協作 Instructions 範本
+- 建立來源頁：[[src-jiuann-ai-codev-decision-fatigue-2026-06]]
+- 建立概念頁：[[決策疲勞]]（AI 協作效率人因衡量框架，補 wiki gap——大量 agent 工作流頁缺「為什麼這樣設計」的認知負荷角度）
+- 更新既有頁（雙向連結）：[[Context-Rot]]（人因側鏡像）、[[Ratchet-Pattern]]（每條 ratchet 削減未來決策次數）
+- 信心：**中**——方法論強（與 4 個既有概念頁獨立呼應）、成果宣稱弱（n=1 自述，202 模塊/20 小時/可商用無第三方驗證，帶自我敘事色彩），分別評估
+- 影響頁面：[[src-jiuann-ai-codev-decision-fatigue-2026-06]], [[決策疲勞]], [[Context-Rot]], [[Ratchet-Pattern]], index.md
+
+## [2026-06-29] reflect | 個人吸收第 10 次 — 新發現「反直覺稀釋」錯位
+- 對應來源：[[src-jiuann-ai-codev-decision-fatigue-2026-06]]
+- Quiz：使用者答「小決策很消耗腦力 + 明確定義現在要做什麼會比較快」/「改自己的 Claude + 調整跟 Claude Code 協作習慣」
+- 觀察（錯位 A，**新類型**）：主論點對位強（小決策耗腦＝全文骨幹），但使用者把第二點記成「定義**要做什麼**」——文章反覆強調的反直覺核心是定義「**不做什麼（Non-scope）**」。recall 把反直覺鋒利版（負空間）平滑成直覺鈍化版（正空間）
+- **新類型**：對位 taxonomy 第 6 大類候選「**反直覺稀釋**」（記得主張方向、把反直覺版記成直覺版）；與前 9 次不同——前面都是 intent/application/受眾的「對位」問題，這次是同一主張在記憶中的**保真度**問題；樣本僅 1 次未固化
+- 觀察（錯位 B，既有大類變體）：使用者場合「單軌 Claude Code」套用作者「ChatGPT+Claude Code 雙軌」方法——「分角色降決策」這塊會打折；歸「場合>工具」大類「單軌套多軌方法」變體
+- 新 heuristic：「你記得的版本是不是這篇最反直覺的那個？還是記成了大家本來就會做的版本？」
+- 領域觀察：方法論/工作流類來源天然高頻觸發「反直覺稀釋」——價值幾乎都在反直覺的 20%，記憶最易磨回直覺的 80%
+- 重組路徑（針對使用者真實場合「改自己的 Claude」）：① 把決策三層寫進 CLAUDE.md ② 每任務先寫 Non-scope 再寫 Scope（矯正錯位 A）③ 養成換 session+交接摘要
+- Spaced retrieval 約定：~2026-07-13（14 天後）
+- 對應 [[Ratchet-Pattern]]
+
+## [2026-06-29] ingest | ihower《Harness + Loop Engineering》系列（GAIConf 2026，9 篇 blog）
+- 來源：https://ihower.tw/blog/13721-harness-engineering （電子報導覽頁）+ 9 篇 blog 子系列（blog.aihao.tw）
+- 擷取流程：導覽頁 fetch-url.sh 成功但只有演講介紹 + 9 篇索引（無深度內容）→ 使用者選「完整抓 9 篇」→ 循序 fetch 9 篇子文章 + 投影片
+  - 投影片 ihower.tw/presentation/harness.html 為 reveal.js 動態渲染，markdown API 抓不到內容（空殼）→ 刪除空檔
+  - 9 篇正文含大量 WordPress boilerplate → 派 9 個並行 subagent 各萃取一篇（跳過 boilerplate），主 agent 綜合
+- 來源分類：技術論述/框架型 → 加個人吸收段；信心**強**（9 篇互撐 + 原始碼級證據 + 學界引用）
+- 核心框架：定位「自建 agent 開發者」視角；原創「由內而外四個回饋時機點」（①工具回傳值 ②mid-run 注入 ③單輪結束 Goal/Outcome 驗收 ④外層 Loop）+ Deep Agent 六項能力 + Prompt→Context→Harness 三層 + Thoughtworks 前饋/回饋×運算/推論 2×2 + 裁判獨立性 vs 資訊量 trade-off + 自我改進 Harness（Stanford Meta-Harness）+ Model-Harness-Fit（harness 會過期）+ 框架選型
+- 建立來源頁：[[src-ihower-harness-loop-engineering-2026-06]]（9 篇精華，整 wiki 最完整 Harness Engineering 單一來源）
+- 建立實體頁：[[ihower]]（前此 wiki 未提及；作者 + 多頁對照表將引用，非孤立）
+- 更新既有概念頁：
+  - [[Harness-Engineering]]：新增「四個回饋時機點」section（時間軸切角，正交於既有元件清單）+ 跨工程文化對照表加「台灣社群/開發者視角」列 + frontmatter source
+  - [[Meta-Harness]]：新增「自動化 Meta-Harness：Stanford 論文」section（篇7 自我改進 + regression gate）
+  - [[Ratchet-Pattern]]：補「反方向棘輪」具體佐證（Model-Harness-Fit / scaffolding trap / The Harness Tax，篇8）
+- 跨來源連結：與同日 [[src-jiuann-ai-codev-decision-fatigue-2026-06|酒Ann]] 互補（使用者降決策 vs 開發者設計回饋）；[[決策疲勞]]
+- 影響頁面：[[src-ihower-harness-loop-engineering-2026-06]], [[ihower]], [[Harness-Engineering]], [[Meta-Harness]], [[Ratchet-Pattern]], index.md
+
+## [2026-06-29] reflect | 個人吸收第 11 次 — 罕見正向對位 + 新「抽象層級/讀者層級錯位」變體
+- 對應來源：[[src-ihower-harness-loop-engineering-2026-06]]
+- Quiz：使用者答「請他寫測試 / 另一個 agent（codex）review / 人工審核」/「擴充認知背景 + 改善跟現成 coding agent 協作」
+- **正向對位（11 次來少見）**：Q1 三種驗證手段正好落在系列篇5 主軸「裁判獨立性光譜」三個點（測試=運算式自動驗證 / codex review=獨立 agent 裁判 / 人工=human-in-the-loop）——使用者既有實踐自發覆蓋來源核心論點，非記錯。記錄「吸收不總是抓錯位，也要肯定對位，避免為找錯位而強加」
+- **錯位（既有「場合>工具」大類新變體）**：Q2「改善跟現成 coding agent 協作」場合 vs 來源明確定位「自建 agent 開發者」視角——對「擴充認知」全對位，對「改善協作」只有上層概念可遷移，篇4/7/9 大量實作（API 注入/eval gate/框架選型）對「使用者」身份用不到。命名「**抽象層級/讀者層級錯位**」（來源預設讀者層級≠使用者身份→可操作粒度不匹配）；與第 9 次「受眾錯位」不同（那是同主張對不同受眾處方相反）；樣本 1 次未升大類
+- 新 heuristic：「這篇是寫給『做這個東西的人』還是『用這個東西的人』？你是哪一種？」
+- 重組路徑（針對使用者場合）：把 9 篇拆「使用者能用」（四時機點心智地圖、形式化 /goal、驗證強度可調、harness 會過期該回頭刪 CLAUDE.md 多餘規則）vs「開發者才用」（API 注入/eval/框架選型）
+- Spaced retrieval 約定：~2026-07-13（14 天後）
+- 對應 [[Ratchet-Pattern]]

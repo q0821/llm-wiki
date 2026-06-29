@@ -155,6 +155,7 @@ Cache Hit Rate 監控指標化——命中率下降時立即排查根因（通�
 
 ## 相關概念
 
+- [[決策疲勞]] — Context Rot 的人因側鏡像；「換 session + 交接摘要」同時降低 AI 與人的負擔（[[src-jiuann-ai-codev-decision-fatigue-2026-06|酒Ann 實戰]]）
 - [[Harness-Engineering]] — Context Rot 是 harness 設計要解決的核心問題之一
 - [[MEMORY-md]] — 跨 session 維度的對應對策
 - [[CLAUDE-md]] — auto-compaction 會壓掉 CLAUDE.md 規則，是 Context Rot 的副作用

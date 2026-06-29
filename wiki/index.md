@@ -8,6 +8,21 @@ title: 索引
 
 ## 最近新增
 
+### 2026-06-29
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-jiuann-ai-codev-decision-fatigue-2026-06]] | **新來源（論點型）**：酒Ann「AI 協作真正省的是決策次數」實戰分享文。核心主張＝AI 省的不是寫程式時間而是**決策腦力**（一天 80–120 次小決策慢慢耗乾人）。萃取方法論：**決策三層**（自動/回報/確認）、**任務設計>prompt**（六要素 + 主動寫 Non-scope）、流程才是真正產出（Discovery→拆小 Task→驗收→踩坑變 SOP→換 session 交接）、**把 AI 分產品型/工程型角色**。附完整 15 條 ChatGPT 協作 Instructions 範本。信心中（方法論強 / n=1 成果宣稱弱）。個人吸收第 10 次：新增對位 taxonomy 第 6 大類候選「**反直覺稀釋**」（記得方向、把反直覺鋒利版記成直覺鈍化版）|
+| [[決策疲勞]] | **新概念**：衡量 AI 協作效率的**人因框架**——瓶頸不是 AI 寫 code 速度，而是人被迫做的小決策次數。三種成本（重工/上下文/決策腦力）+ 核心機制「即時決策→預先規則」+ 七種降決策對策表。與 [[Context-Rot]]（人因側鏡像）/ [[Ratchet-Pattern]]（每條 ratchet 削減未來決策）/ [[Harness-Engineering]]（回答 harness「為什麼這樣設計」）互鎖 |
+| [[src-ihower-harness-loop-engineering-2026-06]] | **新來源（技術框架型，信心強）**：[[ihower]] GAIConf 2026《Harness + Loop Engineering》9 篇系列。定位**自建 agent 開發者**視角（非 coding agent 使用者）。原創框架「**由內而外四個回饋時機點**」（①工具回傳值 ②mid-run 注入 ③單輪結束 Goal/Outcome 驗收 ④外層 Loop Ralph/Symphony/Cron），正交於既有元件清單視角。含 Deep Agent 六項能力、裁判獨立性 vs 資訊量 trade-off、自我改進 Harness（Stanford Meta-Harness）、Model-Harness-Fit（harness 會過期）、框架選型。個人吸收第 11 次：Q1 罕見正向對位、新增「抽象層級/讀者層級錯位」變體 |
+| [[ihower]] | **新實體**：台灣資深工程師/技術作家（《Rails 實戰聖經》、愛好 AI Engineer 電子報）。重一手原始碼觀察（mitmproxy 攔 Claude Code /goal、讀 Codex ext/goal 勘誤）。[[Harness-Engineering]] 的台灣社群/開發者視角代表 |
+
+### 2026-06-26
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-marketing-quick-hand-fb-autopost-2026-06]] | **新來源（工具型／手法研究）**：行銷快手 Windows — 房仲/車仲 Facebook **自動群發機器人**操作教學（廠商 YouTube，無字幕→本機 large-v2 STT）。代持 FB 登入態驅動瀏覽器自動化：自動上架 Marketplace + 群發社團 + 排程。**反偵測手法拆解**（60 秒節流／刪「紫色圖片」規避重複上架偵測／信任裝置）+ **風險警示並列**（違反 FB ToS、封號、帳密交付、spam、法遵）。匯入動機＝評估自製同類產品可行性（技術可行高、門檻在反偵測軍備競賽 + 合規）。關聯 [[BrowseForge]]／[[OpenCLI]]／[[Playwright]]「自動化操作瀏覽器」家族最靠近紅線的應用 |
+
 ### 2026-06-18
 
 | 頁面 | 摘要 |
@@ -313,6 +328,9 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 
 | 頁面 | 摘要 | 來源數 |
 |------|------|--------|
+| [[src-ihower-harness-loop-engineering-2026-06\|Harness + Loop Engineering 系列（ihower）]] | ihower GAIConf 2026 演講 + 9 篇 blog；自建 agent 開發者視角；原創框架「由內而外四個回饋時機點」（工具回傳值/mid-run 注入/Goal 驗收/外層 Loop）+ Deep Agent 六項能力 + 裁判獨立性 trade-off + 自我改進 Harness + Model-Harness-Fit + 框架選型；信心強 | 10 |
+| [[src-jiuann-ai-codev-decision-fatigue-2026-06\|AI 協作真正省的是「決策次數」（酒Ann）]] | 個人實戰分享（ChatGPT+Claude Code 雙軌，20 小時開發）；論點型；核心＝AI 省的是決策腦力非寫程式時間；萃取決策三層/Non-scope/換 session 交接/踩坑變 SOP + 15 條 ChatGPT 協作 Instructions 範本；信心中（方法論強、n=1 成果宣稱弱） | 1 |
+| [[src-marketing-quick-hand-fb-autopost-2026-06\|行銷快手 — 房仲/車仲 FB 自動群發工具]] | 廠商操作教學影片；FB Marketplace + 社團自動群發機器人（代持登入態驅動瀏覽器）；含反偵測手法拆解（節流／刪紫圖規避重複偵測）+ 風險警示並列（FB ToS／封號／帳密交付）+ 自製可行性評估；信心中（賣方敘事 + STT 未校對） | 1 |
 | [[src-papaya-hermes-agent-tutorial-2026-06\|Hermes Agent 保姆級教學（PAPAYA）]] | Hermes Agent 一手完整操作教學（安裝→Telegram→Google→生圖→Notion→排程）；含行銷偏誤標註（棄養潮行銷語、Hostinger 聯盟行銷） | 1 |
 | [[src-coralline-statusline-2026-06\|coralline — Claude Code statusline]] | 仿 Powerlevel10k 的 Claude Code 狀態列（MIT，9 主題、context/rate-limit/成本 segment、AI 訪談式安裝）；含作者 Threads 親述 | 2 |
 | [[src-voice-typing-mac-github-2026-06\|語音輸入 Voice Typing（GitHub）]] | 本機 Whisper 語音轉文字 Mac 小工具；隱私自掌、零 API 成本、台灣繁體 + 全形 + 規則式修正；開源個人實驗作品 | 1 |
@@ -379,6 +397,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 
 | 頁面 | 摘要 | 來源數 |
 |------|------|--------|
+| [[ihower]] | 台灣資深工程師/技術作家（《Rails 實戰聖經》、愛好 AI Engineer 電子報、blog.aihao.tw）；自建 agent 開發者視角；[[Harness-Engineering]] 台灣社群代表 | 1 |
 | [[html2pptx]] | HTML/CSS → 完全可編輯 PPTX 的 SaaS；REST API / Skill / MCP / CLI 四形態；日本獨立開發者 @taiyo_ai_gakuse | 1 |
 | [[攝影工作室A]] | 攝影工作室客戶，商業攝影網站優化中 | 1 |
 | [[OKX]] | 加密貨幣交易所，使用雙幣贏產品 | 1 |
@@ -463,6 +482,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 | [[PGE-Principle]] | Generator ≠ Evaluator——多個既有反模式對策（Subagent-Driven / AI-Quality-Collusion / Adversarial-Code-Review）的上位原則 | 1 |
 | [[Context-Engineering]] | 「真正的工程護城河」；Harness 第一支柱細部展開 + 分層快取結構 | 2 |
 | [[AI-Native-Startup]] | Anthropic 官方版 AI 時代創業範式（「10-person unicorn」）；4 階段 + exit criteria 框架 + 4 個 AI 時代反模式 | 1 |
+| [[決策疲勞]] | AI 協作效率的人因衡量框架；瓶頸＝人被迫做的小決策次數（非 AI 寫 code 速度）；三種成本 + 「即時決策→預先規則」核心機制 + 七種降決策對策；與 [[Context-Rot]] / [[Ratchet-Pattern]] / [[Harness-Engineering]] 互鎖 | 1 |
 
 ## 綜整與分析
 
