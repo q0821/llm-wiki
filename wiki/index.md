@@ -332,6 +332,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 | [[src-jiuann-ai-codev-decision-fatigue-2026-06\|AI 協作真正省的是「決策次數」（酒Ann）]] | 個人實戰分享（ChatGPT+Claude Code 雙軌，20 小時開發）；論點型；核心＝AI 省的是決策腦力非寫程式時間；萃取決策三層/Non-scope/換 session 交接/踩坑變 SOP + 15 條 ChatGPT 協作 Instructions 範本；信心中（方法論強、n=1 成果宣稱弱） | 1 |
 | [[src-marketing-quick-hand-fb-autopost-2026-06\|行銷快手 — 房仲/車仲 FB 自動群發工具]] | 廠商操作教學影片；FB Marketplace + 社團自動群發機器人（代持登入態驅動瀏覽器）；含反偵測手法拆解（節流／刪紫圖規避重複偵測）+ 風險警示並列（FB ToS／封號／帳密交付）+ 自製可行性評估；信心中（賣方敘事 + STT 未校對） | 1 |
 | [[src-papaya-hermes-agent-tutorial-2026-06\|Hermes Agent 保姆級教學（PAPAYA）]] | Hermes Agent 一手完整操作教學（安裝→Telegram→Google→生圖→Notion→排程）；含行銷偏誤標註（棄養潮行銷語、Hostinger 聯盟行銷） | 1 |
+| [[src-papaya-llm-wiki-tutorial\|LLM Wiki 升級 Obsidian 成第二大腦（PAPAYA）]] | [[LLM-Wiki]] 入門教學（三國史料範例），用 [[OpenAI-Codex-CLI\|Codex]]（`AGENTS.md`）示範到排程全自動；定位為「同架構、滑向全自動」中間案例；含個人吸收段（警告 vs 採用的自我拉扯錯位） | 1 |
 | [[src-coralline-statusline-2026-06\|coralline — Claude Code statusline]] | 仿 Powerlevel10k 的 Claude Code 狀態列（MIT，9 主題、context/rate-limit/成本 segment、AI 訪談式安裝）；含作者 Threads 親述 | 2 |
 | [[src-voice-typing-mac-github-2026-06\|語音輸入 Voice Typing（GitHub）]] | 本機 Whisper 語音轉文字 Mac 小工具；隱私自掌、零 API 成本、台灣繁體 + 全形 + 規則式修正；開源個人實驗作品 | 1 |
 | [[src-x-taiyo-kimura-html2pptx-2026-06\|html2pptx 評價推文（X）]] | 開發者自評自家 HTML→PPTX 工具超越 Genspark；含利益衝突查證（賣方敘事型，信心弱） | 1 |

@@ -1,9 +1,9 @@
 ---
 title: PAPAYA 電腦教室
 type: entity
-sources: ["yt-別再小看本地-aigemma-4-lm-studio-讓你的電腦變成超級離線-ai-工作站而且完全免費-手機也能使用喔.md"]
+sources: ["yt-別再小看本地-aigemma-4-lm-studio-讓你的電腦變成超級離線-ai-工作站而且完全免費-手機也能使用喔.md", "yt-國外瘋傳的-ai-筆記工作流llm-wiki-讓你的-obsidian-筆記升級成能自我進化的第二大腦.md"]
 created: 2026-05-10
-updated: 2026-05-10
+updated: 2026-07-11
 tags: [創作者, YouTube, 中文圈, 電腦教學, AI入門]
 confidence: 中
 ---
@@ -33,6 +33,7 @@ confidence: 中
 |---|---|---|
 | [[src-papaya-gemma-lm-studio\|別再小看本地 AI！Gemma 4 + LM Studio]] | 本地 AI 完整工作流（[[Gemma]]、[[LM-Studio]]、[[MCP]]、Continue） | r5M0W66xcGc |
 | [[src-papaya-hermes-agent-tutorial-2026-06\|Hermes Agent 保姆級教學]] | [[Hermes-Agent]] 從安裝到生圖/Notion/排程的完整步驟（Hostinger、OpenRouter、Telegram、Google OAuth） | -EivK7vpOXY |
+| [[src-papaya-llm-wiki-tutorial\|LLM Wiki 升級 Obsidian 成第二大腦]] | [[LLM-Wiki]] 入門教學（三國史料範例），用 [[OpenAI-Codex-CLI\|Codex]]（`AGENTS.md`）示範到排程全自動 | ZC8AI_jFWnU |
 
 ## 中文圈 AI 教學者地圖（本知識庫整理）
 

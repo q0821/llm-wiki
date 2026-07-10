@@ -1759,3 +1759,24 @@ Quiz 答案：intent 4/4 全選 + **application 只 1/4**（Hi Day vs LLM-wiki �
 - 重組路徑（針對使用者場合）：把 9 篇拆「使用者能用」（四時機點心智地圖、形式化 /goal、驗證強度可調、harness 會過期該回頭刪 CLAUDE.md 多餘規則）vs「開發者才用」（API 注入/eval/框架選型）
 - Spaced retrieval 約定：~2026-07-13（14 天後）
 - 對應 [[Ratchet-Pattern]]
+
+## [2026-07-11] ingest | LLM Wiki 升級 Obsidian 成第二大腦（PAPAYA YouTube）
+- 來源：`yt-國外瘋傳的-ai-筆記工作流llm-wiki-...第二大腦.md`（YouTube `ZC8AI_jFWnU`）
+- 來源分類：教學型 + 論點型混合 → 加個人吸收段；信心**中**（教學型，論點未超出 Karpathy 原文，價值在入門可重現操作 + 全自動路線具體證據）
+- 前置修復：`fetch-youtube.sh` 因 Homebrew python 3.13→3.14 升級孤立套件而失敗，已 patch 為自建 venv（詳見記憶 [[llm-wiki-skill-fetch-youtube-patch]]，非 wiki 內容）
+- 建立來源頁：[[src-papaya-llm-wiki-tutorial]]（本知識庫第二篇 LLM Wiki 教學來源，入門向/Codex，對照第一篇 [[src-techhanlin-llm-wiki-tutorial]] 進階向/Claude Code）
+- 更新既有頁面：
+  - [[LLM-Wiki]]：新增「中間案例：同架構、滑向全自動」section（PAPAYA 用人類引導架構卻示範代我核准/排程/自動 lint）+ 工具二元性（CLAUDE.md vs AGENTS.md）+ 相關頁面 + frontmatter source
+  - [[PAPAYA-電腦教室]]：作品表加本片、frontmatter source + updated
+- 跨頁對應：Obsidian「未連結但提及」=lint 檢查項 5 手動版；Codex 排程 lint 對照 [[Managed-Agents]]
+- 影響頁面：[[src-papaya-llm-wiki-tutorial]], [[LLM-Wiki]], [[PAPAYA-電腦教室]], index.md
+
+## [2026-07-11] reflect | 個人吸收第 12 次 — 新「警告 vs 採用的自我拉扯」錯位變體
+- 對應來源：[[src-papaya-llm-wiki-tutorial]]
+- Quiz：使用者答「人提供原始材料、AI 整理、要用再問，但整理得好卻沒進腦」/「看有沒有值得納入工作流的機會」
+- **記住反論而非機制**（正向訊號）：使用者留下的是長文頁第 06 節那句「整理得好但沒進腦」的反論，而非表層操作機制，抓到最有價值那層
+- **錯位（新變體）**：Q1 是**警告**（全自動→不進腦），Q2 卻是「找**可納入**的機會」；而影片最可納入的具體物幾乎都是自動化功能（排程/代我核准/Web Clipper/未連結批次），全部往 Q1 反對的方向拉。命名「**警告 vs 採用的自我拉扯錯位**」（核心洞察與行動意圖指向相反）；與過去「場合>工具」「受眾錯位」「抽象層級錯位」皆不同
+- **自我指涉**：使用者這個 wiki 正在跑的 ingest 個人吸收流程，本身就是影片沒做、專解「沒進腦」的機制
+- 重組路徑：納入機會用「內容類型」切非「功能好用度」切——資料型走全自動、論點型留人工關卡（=本專案 CLAUDE.md「Ingest 個人吸收段」規則，本片為其反面教材）
+- Spaced retrieval 約定：~2026-07-25（14 天後）；回測問句「面對納入機會時，你用什麼標準決定某自動化功能開不開？」期待答「先分資料型/論點型」
+- 對應 [[Ratchet-Pattern]]

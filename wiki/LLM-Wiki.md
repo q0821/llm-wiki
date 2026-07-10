@@ -1,9 +1,9 @@
 ---
 title: LLM Wiki
 type: concept
-sources: ["Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "Hermes Agent 成功案例 — 你的 AI 代理可以做什麼.md"]
+sources: ["Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "Hermes Agent 成功案例 — 你的 AI 代理可以做什麼.md", "yt-國外瘋傳的-ai-筆記工作流llm-wiki-讓你的-obsidian-筆記升級成能自我進化的第二大腦.md"]
 created: 2026-05-08
-updated: 2026-05-14
+updated: 2026-07-11
 tags: [方法論, 知識管理, AI, llm-wiki, second-brain, karpathy]
 confidence: 強
 ---
@@ -150,6 +150,14 @@ Anthropic 官方對 [[Claude Code]] 的 codebase 導覽設計選擇做了明白�
 
 這是 [[Self-Improving-Agent]] 範式在知識管理領域的延伸應用。對本知識庫而言，這提供了一個有意義的對照組——保留「人類引導」路線是有意識選擇，不是技術限制。
 
+### 中間案例：同架構、滑向全自動（[[src-papaya-llm-wiki-tutorial|PAPAYA 教學]]）
+
+[[src-papaya-llm-wiki-tutorial]] 是個有意思的中間態：它用的是**標準的人類引導架構**（Karpathy 三層、原始資料不可變），卻在操作上一路示範**滑向全自動的功能**——[[OpenAI-Codex-CLI|Codex]] 的「代我核准」、排程式每日自動 ingest、定期自動 lint。它不像 [[Hermes-Agent]] 那樣連策展都外包，但展示了「人類引導」如何在便利驅動下逐步讓渡核准權。
+
+> 本知識庫使用者 ingest 此來源時的個人吸收觀察（見該頁「個人吸收」段）：**這些自動化功能全部往「知識不進腦」方向拉**。結論是納入與否要用「內容類型」切——資料型走全自動、論點型留人工關卡——而非用「功能好不好用」切。這正是本專案 CLAUDE.md「Ingest 個人吸收段」規則存在的理由。
+
+補充：此來源也記錄了**工具二元性**——指導手冊檔名依 agent 而定，[[Claude Code]] 用 [[CLAUDE-md|CLAUDE.md]]、[[OpenAI-Codex-CLI|Codex]] 用 [[AGENTS-md|AGENTS.md]]。
+
 ## 信心評估
 
 - **強**：核心方法論（三步驟、人機分工、與 RAG 的差異）— Karpathy 原始 gist 直接定義，多處被獨立引用
@@ -163,7 +171,8 @@ Anthropic 官方對 [[Claude Code]] 的 codebase 導覽設計選擇做了明白�
 - [[RAG]] — 對立的另一種範式
 - [[Obsidian]] / [[Claude Code]] — 主要載體
 - [[Agent-Skills]] — `/llm-wiki` skill 的實作位置
-- [[src-techhanlin-llm-wiki-tutorial]] — 中文圈代表性介紹文（本頁主要依據）
+- [[src-techhanlin-llm-wiki-tutorial]] — 中文圈代表性介紹文（本頁主要依據，進階向、Claude Code）
+- [[src-papaya-llm-wiki-tutorial]] — 入門向教學（三國史料範例、Codex 示範、滑向全自動的中間案例）
 - [[科技翰林院]]、[[HC-AI-說人話]] — 中文圈推廣者
 - [[Hermes-Agent]] — 全自動 LLM Wiki 路線的代表
 - [[Self-Improving-Agent]] — 自我改進範式在 LLM Wiki 領域的應用
