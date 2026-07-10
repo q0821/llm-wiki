@@ -1,0 +1,1 @@
+[Nanako0129/pilotfish: Multi-model orchestration layer for Claude Code — the frontier model plans, cheaper models execute, verification guards quality. One-prompt install.](https://github.com/Nanako0129/pilotfish)

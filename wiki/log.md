@@ -1780,3 +1780,50 @@ Quiz 答案：intent 4/4 全選 + **application 只 1/4**（Hi Day vs LLM-wiki �
 - 重組路徑：納入機會用「內容類型」切非「功能好用度」切——資料型走全自動、論點型留人工關卡（=本專案 CLAUDE.md「Ingest 個人吸收段」規則，本片為其反面教材）
 - Spaced retrieval 約定：~2026-07-25（14 天後）；回測問句「面對納入機會時，你用什麼標準決定某自動化功能開不開？」期待答「先分資料型/論點型」
 - 對應 [[Ratchet-Pattern]]
+
+## [2026-07-11] ingest | 社群 Claude Skills 清單 + 命理提示詞模板（兩件，無吸收段）
+- 來源：`別人常用的skill.md`（清單型）、`多系統命理交叉分析_提示詞模板.md.pdf`（備忘型，離主題）
+- 依 CLAUDE.md 分類規範：清單型與備忘型**不加個人吸收段**
+- 建立來源頁：
+  - [[src-community-claude-skills-list]]（7 個 skill：caveman/graphify/codeburn/claude video/open design/browser-harness/gsap；無署名，信心弱；連結 [[Agent-Skills]]、[[BrowseForge]]、[[src-coralline-statusline-2026-06]]）
+  - [[多系統命理交叉分析-提示詞模板]]（備忘；PDF 存 raw/assets；記錄五條方法論約束：先算後論/交叉匯流/攤開矛盾/可證偽/標來源）
+- 影響頁面：[[src-community-claude-skills-list]], [[多系統命理交叉分析-提示詞模板]], index.md
+- 註：命理模板五條約束與本知識庫「矛盾並列/信心標注/原文引用」同構，備忘附記非吸收
+
+## [2026-07-11] ingest | Claude Code 多模型編排群集（pilotfish + @zhong_yea + @khpr）
+- 來源：`Nanako0129pilotfish....md`（GitHub）、`Threads @zhong_yea.md`、`Threads @khpr.md`（三檔皆 inbox 投遞的連結，內容經 WebFetch 擷取；markdown.new API 對 GitHub 超時故改 WebFetch）
+- 群集發現：pilotfish 與 @zhong_yea 引用**同一 Anthropic benchmark**（Orchestrator 46%成本/96%效能），一為打包工具、一為手動教學 → 合成概念頁
+- 建立概念頁：[[多模型角色編排]]（承載個人吸收段；benchmark 表 + 六角色分類 + 兩實作路線 + 設計原則）
+- 建立來源頁：
+  - [[src-nanako-pilotfish]]（工具，MIT/319★，三層架構、六角色）
+  - [[src-zhongyea-orchestrator-cost]]（Advisor/Orchestrator 兩模式手動教學）
+  - [[src-khpr-lifeos-memory]]（**工具型、不加吸收段**；記憶層，對照使用者自建 [[Memory-md]] / memory 目錄）
+- 跨頁連結：[[Harness-Engineering]]（裁判獨立性=verifier）、[[Adversarial-Code-Review]]、[[Ratchet-Pattern]]（政策寫角色不寫模型=抗汰換）、[[Managed-Agents]]、[[Memory-md]]、[[Context-Engineering]]
+- 影響頁面：[[多模型角色編排]], [[src-nanako-pilotfish]], [[src-zhongyea-orchestrator-cost]], [[src-khpr-lifeos-memory]], index.md
+
+## [2026-07-11] reflect | 個人吸收第 13 次 — 新「全域決策 vs 逐類路由」框架錯位
+- 對應來源：[[多模型角色編排]]（quiz 針對 pilotfish + @zhong_yea 共同主張）
+- Quiz：使用者答 價值「省 token/省錢」、疑慮「品質是否值得 / 省錢卻花更多時間 debug / 何時該這樣用」；意圖「值得就導入」
+- **疑慮精準命中**：使用者三點疑慮中的「何時該用」正是角色分類（機械→便宜、判斷/驗證/資安→前沿）在回答的問題；使用者顧慮與設計者顧慮同源
+- **錯位（新變體）**：Q2「值得就導入」用**全域二選一**框架，但方法本質是**逐任務類型路由**。命名「**全域決策 vs 逐類路由的框架錯位**」；與過去各錯位型（場合>工具/受眾/抽象層級/警告vs採用）皆不同
+- **debug thrash 疑慮成立**：risk 來自判斷工作誤派便宜模型 + verifier 的 Opus 開銷；96% 是 Anthropic eval 平均，不保證落在使用者 codebase → 需自身工作負載實測
+- 重組路徑：決策改「先分機械/判斷 → 只下放機械 → 拿真實任務量測 thrash 與淨成本」；最省事實測場=本 wiki 的 ingest 工作流
+- Spaced retrieval 約定：~2026-07-25（14 天後）；回測問句「決定某任務要不要下放便宜模型，用什麼判準？」期待答「看機械/搜尋 vs 判斷類」非「整體值不值得」
+- 對應 [[Ratchet-Pattern]]
+
+## [2026-07-11] ingest | 用 AI 做半年復盤的四步法（社群貼文）
+- 來源：`復盤.md`（inbox 純文字，無署名/無連結）
+- 分類：論點型 → 加個人吸收段；信心中（n=1 個人分享，方法可操作）
+- 建立來源頁：[[src-ai-retrospective-method]]（4 步法 + 4 個 Prompt + 事件vs模式框架）
+- 核心論點：AI 復盤價值在「追問」把事件逼成模式，非代寫文章
+- 跨頁連結：[[Ratchet-Pattern]]（**強呼應**：個人吸收 quiz = 這篇的追問機制）、[[src-jiuann-ai-codev-decision-fatigue-2026-06]]/[[決策疲勞]]、[[Self-Improving-Agent]]
+- 影響頁面：[[src-ai-retrospective-method]], index.md
+
+## [2026-07-11] reflect | 個人吸收第 14 次 — 未讀+應用意圖，改行動確認回測
+- 對應來源：[[src-ai-retrospective-method]]
+- Quiz：Q1「還沒看」/ Q2「對自己做復盤」
+- 處理：未讀無法測回憶，但有明確應用意圖 → 不硬考，改預先標記「未讀最大風險」
+- **預先標記風險**：跳過載重的第 3 步（追問）直接叫 AI 代寫 → 拿到通順但無洞察的流水帳，正落入來源反對的失敗模式。價值集中在 Prompt 2/3（抓主線+追問），非 Prompt 4（輸出）
+- **自我指涉**：使用者本 wiki 個人吸收 quiz 就是這篇的追問機制；熟悉被 quiz 逼錯位的感覺 → 做復盤時知道「追問才是重點」
+- Spaced retrieval 約定：~2026-07-25，改**行動確認**式回測「你做復盤了嗎？追問步有沒有逼出原本沒想到的模式？」
+- 對應 [[Ratchet-Pattern]]

@@ -333,6 +333,12 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 | [[src-marketing-quick-hand-fb-autopost-2026-06\|行銷快手 — 房仲/車仲 FB 自動群發工具]] | 廠商操作教學影片；FB Marketplace + 社團自動群發機器人（代持登入態驅動瀏覽器）；含反偵測手法拆解（節流／刪紫圖規避重複偵測）+ 風險警示並列（FB ToS／封號／帳密交付）+ 自製可行性評估；信心中（賣方敘事 + STT 未校對） | 1 |
 | [[src-papaya-hermes-agent-tutorial-2026-06\|Hermes Agent 保姆級教學（PAPAYA）]] | Hermes Agent 一手完整操作教學（安裝→Telegram→Google→生圖→Notion→排程）；含行銷偏誤標註（棄養潮行銷語、Hostinger 聯盟行銷） | 1 |
 | [[src-papaya-llm-wiki-tutorial\|LLM Wiki 升級 Obsidian 成第二大腦（PAPAYA）]] | [[LLM-Wiki]] 入門教學（三國史料範例），用 [[OpenAI-Codex-CLI\|Codex]]（`AGENTS.md`）示範到排程全自動；定位為「同架構、滑向全自動」中間案例；含個人吸收段（警告 vs 採用的自我拉扯錯位） | 1 |
+| [[src-community-claude-skills-list\|社群推薦的 7 個常用 Claude Skills]] | **清單型**：caveman/graphify/codeburn/claude video/open design/browser-harness/gsap；無署名社群分享，用到時查閱；信心弱 | 1 |
+| [[多系統命理交叉分析-提示詞模板\|多系統命理交叉分析 提示詞模板]] | **備忘型（離主題）**：跨命理系統交叉分析的提示詞模板，先算後論/交叉匯流/攤開矛盾/可證偽/標來源；需程式執行能力 AI（pyswisseph） | 1 |
+| [[src-nanako-pilotfish\|pilotfish 多模型編排層]] | Claude Code 多模型編排工具（GitHub、MIT、319★）；六角色綁模型層級、前沿規劃+便宜執行+fresh-context verifier；支撐 [[多模型角色編排]] | 1 |
+| [[src-zhongyea-orchestrator-cost\|Claude Code 降本 Advisor/Orchestrator（@zhong_yea）]] | 兩降本模式手動教學（Advisor 63%成本/92%效能、Orchestrator 46%/96%）；pilotfish 的手動版，同 Anthropic benchmark | 1 |
+| [[src-khpr-lifeos-memory\|lifeos-memory 外掛記憶層（@khpr）]] | Claude Code 記憶層工具（踩坑卡/原子記憶卡/自動摘要/token 滿自動存檔/本機向量索引）；工具型，對照使用者自建 memory 機制 | 1 |
+| [[src-ai-retrospective-method\|用 AI 做半年復盤的四步法]] | 論點型：AI 復盤價值在「追問」把事件逼成模式（口述→抓主線→追問→三種輸出，附 4 個 Prompt）；強呼應本 wiki 個人吸收機制；含吸收段（未讀+打算做，改行動確認回測）| 1 |
 | [[src-coralline-statusline-2026-06\|coralline — Claude Code statusline]] | 仿 Powerlevel10k 的 Claude Code 狀態列（MIT，9 主題、context/rate-limit/成本 segment、AI 訪談式安裝）；含作者 Threads 親述 | 2 |
 | [[src-voice-typing-mac-github-2026-06\|語音輸入 Voice Typing（GitHub）]] | 本機 Whisper 語音轉文字 Mac 小工具；隱私自掌、零 API 成本、台灣繁體 + 全形 + 規則式修正；開源個人實驗作品 | 1 |
 | [[src-x-taiyo-kimura-html2pptx-2026-06\|html2pptx 評價推文（X）]] | 開發者自評自家 HTML→PPTX 工具超越 Genspark；含利益衝突查證（賣方敘事型，信心弱） | 1 |
@@ -447,6 +453,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 
 | 頁面 | 摘要 | 來源數 |
 |------|------|--------|
+| [[多模型角色編排]] | 按任務類型把工作分派到不同模型層級（前沿規劃/review、便宜執行），降本；Anthropic benchmark 96%效能/46%成本；含個人吸收段（全域決策 vs 逐類路由錯位）| 2 |
 | [[雙幣贏]] | 選擇權賣方策略的零售包裝版，非存款非利息 | 2 |
 | [[RAG]] | 檢索增強生成，讓 AI 根據自有資料回答（含 vs LLM Wiki 對比）| 3 |
 | [[Embedding]] | 向量化，把文字轉成語意向量供搜尋 | 1 |
