@@ -1,0 +1,105 @@
+#!/bin/bash
+#
+# pre-commit — 敏感資訊守門員
+#
+# 本 repo 是 GitHub public repo，push 後即成公開記錄。
+# 本 hook 在 commit 前掃描「即將新增的內容」，命中敏感樣式就擋下。
+#
+# 兩類規則：
+#   1. 格式規則（寫在本檔內）：手機號碼、身分證、金鑰樣式等，全世界通用
+#   2. 詞彙清單（讀 .sensitive-terms）：客戶名、專有名詞等，因為清單本身就是
+#      敏感資訊，該檔不入版控（已列入 .gitignore）
+#
+# 只掃「新增行」，不掃既有內容——否則舊檔案的歷史問題會讓你永遠 commit 不了。
+#
+# 逃生門：git commit --no-verify
+#   （只有在你確認命中是誤判時才用。真的要提交敏感資訊，請先想清楚
+#     這是 public repo，push 出去就撤不回來了。）
+
+set -u
+
+REPO_ROOT=$(git rev-parse --show-toplevel)
+TERMS_FILE="$REPO_ROOT/.sensitive-terms"
+
+# 命中紀錄（用檔案暫存，避免 subshell 變數作用域問題）
+HITS_FILE=$(mktemp)
+trap 'rm -f "$HITS_FILE"' EXIT
+
+# ── 格式規則 ────────────────────────────────────────────────
+# 每條規則一行，格式：<說明>|<extended regex>
+# 用 | 分隔是因為 regex 裡不會出現它（有需要時改用其他分隔符）
+FORMAT_RULES='
+台灣手機號碼|09[0-9]{2}-?[0-9]{6}
+台灣市話（含區碼）|0[2-8]-[0-9]{7,8}
+身分證字號|[A-Z][12][0-9]{8}
+OpenAI 金鑰|sk-[A-Za-z0-9]{20,}
+GitHub token|gh[pousr]_[A-Za-z0-9]{30,}
+AWS access key|AKIA[0-9A-Z]{16}
+私鑰檔內容|-----BEGIN [A-Z ]*PRIVATE KEY-----
+WordPress 後台路徑|/wp-admin
+資料庫連線字串|(mysql|postgres(ql)?)://[^ ]*:[^ ]*@
+'
+
+# ── 取得 staged 檔案的新增行並比對 ──────────────────────────
+check_file() {
+    file="$1"
+
+    # 只取新增行（+ 開頭，排除 +++ 檔頭），去掉行首的 +
+    added=$(git diff --cached -U0 -- "$file" | grep '^+' | grep -v '^+++' | sed 's/^+//')
+    [ -z "$added" ] && return 0
+
+    # 1. 格式規則
+    echo "$FORMAT_RULES" | while IFS='|' read -r label pattern; do
+        [ -z "$label" ] && continue
+        # -e 是必要的：有些樣式以 - 開頭（如私鑰標頭），否則會被當成 grep 選項
+        matched=$(printf '%s\n' "$added" | grep -nE -e "$pattern" | head -3)
+        if [ -n "$matched" ]; then
+            printf '%s\t%s\t%s\n' "$file" "$label" "$matched" >> "$HITS_FILE"
+        fi
+    done
+
+    # 2. 詞彙清單（固定字串比對，不是 regex）
+    if [ -f "$TERMS_FILE" ]; then
+        while IFS= read -r term; do
+            # 跳過空行與 # 註解
+            case "$term" in
+                ''|\#*) continue ;;
+            esac
+            matched=$(printf '%s\n' "$added" | grep -nF -e "$term" | head -3)
+            if [ -n "$matched" ]; then
+                printf '%s\t敏感詞清單：%s\t%s\n' "$file" "$term" "$matched" >> "$HITS_FILE"
+            fi
+        done < "$TERMS_FILE"
+    fi
+}
+
+# 逐一處理 staged 檔案（-z 處理含空白與中文的檔名）
+while IFS= read -r -d '' file; do
+    # 跳過本 hook 自己（它含有規則樣式，會自我命中）
+    case "$file" in
+        bin/hooks/pre-commit) continue ;;
+    esac
+    check_file "$file"
+done < <(git diff --cached --name-only -z --diff-filter=ACM)
+
+# ── 回報 ────────────────────────────────────────────────────
+if [ -s "$HITS_FILE" ]; then
+    echo ""
+    echo "  ✖ commit 已擋下：偵測到可能的敏感資訊"
+    echo ""
+    while IFS=$'\t' read -r file label matched; do
+        echo "    檔案：$file"
+        echo "    類型：$label"
+        echo "    內容：$matched"
+        echo ""
+    done < "$HITS_FILE"
+    echo "  提醒：本 repo 是 public repo，push 後即成公開記錄。"
+    echo "  處理方式："
+    echo "    1. 把敏感資訊改成 generic 代稱後重新 commit"
+    echo "    2. 確認是誤判 → git commit --no-verify"
+    echo "    3. 要新增／調整詞彙清單 → 編輯 .sensitive-terms（該檔不入版控）"
+    echo ""
+    exit 1
+fi
+
+exit 0

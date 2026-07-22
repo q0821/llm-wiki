@@ -5,3 +5,6 @@ public/
 .quartz-cache/
 tsconfig.tsbuildinfo
 .playwright-mcp/
+
+# 敏感詞清單（含客戶識別，不入版控）
+.sensitive-terms
