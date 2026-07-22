@@ -1897,3 +1897,56 @@ Quiz 答案：intent 4/4 全選 + **application 只 1/4**（Hi Day vs LLM-wiki �
 - 重組路徑：挑第 3 條當本週實驗——收到客戶情緒先翻譯成「資訊」再決定怎麼回，別本能救火
 - Spaced retrieval 約定：~2026-07-30，行動確認「這兩週有沒有一次先按暫停鍵、把某人情緒當資訊而非指令？」
 - 對應 [[Ratchet-Pattern]]
+
+## [2026-07-22] ingest | Claude Code 五個外掛完整指南（傑森所長 @jasonxtsai）
+- 來源：`claude-code-五個外掛完整安裝與實戰指南.md`（inbox 投遞連結，fetch-url.sh 擷取）+ `Instagram 上的 Divyanshi Sharma.md`（同期社群曝光，併入）
+- 分類：論點型（工具導入方法論）→ 加個人吸收段；信心中（作者聲明指令已核實 + 主動糾錯 + 每項附限制；扣分項為明顯的付費社群導流動機）
+- 建立來源頁：[[src-jason-claude-code-5-plugins-2026-07]]
+- **名詞校正入庫**：社群口語的「外掛」混了五種形態（skill+hook／skill+CLI+hook／marketplace plugin／MCP server／純資料夾），形態決定升級方式與失效模式 → 寫入 [[Plugins-Claude-Code]]
+- **三處網路錯誤資訊入庫**：impeccable 是 46 條非 24 條；ponytail「省 94%／快 3-6 倍」作者已自行修正（單次 completion 比對的假象）；Higgsfield **不需要 API key**（2026-04-30 後改 OAuth）
+- 新建 entity：[[graphify]]、[[impeccable]]、[[ponytail]]、[[Higgsfield-MCP]]
+- 更新既有頁：[[Obsidian]]（新增「它不是外掛，是一個資料夾」段 + vault 三個不要用的時候）、[[Plugins-Claude-Code]]（五形態辨析表）、[[Agent-Skills]]（三形態實例 + 純知識注入型）、[[src-community-claude-skills-list]]（graphify 一行描述由 entity 頁取代）
+- 影響頁面：[[src-jason-claude-code-5-plugins-2026-07]], [[graphify]], [[impeccable]], [[ponytail]], [[Higgsfield-MCP]], [[Obsidian]], [[Plugins-Claude-Code]], [[Agent-Skills]], [[src-community-claude-skills-list]], index.md
+
+## [2026-07-22] reflect | 個人吸收第 19 次 — 新錯位「能力項截獲」
+- 對應來源：[[src-jason-claude-code-5-plugins-2026-07]]
+- Quiz：Q1「直接串可以圖片、影片生成，整個工作流程更滑順」（＝五個裡的第 4 個 [[Higgsfield-MCP]]）/ Q2「我自己實際做專案的 Demo 的時候」
+- **新錯位類型「能力項截獲」**：來源同時含**約束型**項目（graphify 少讀／ponytail 少寫／impeccable 少猜，抽象、要改工作習慣、無畫面）與**能力型**項目（Higgsfield，具體、可立即想像）時，記憶優先抓能力型，而來源的主張核心在約束型那邊。本篇論點 2 恰是「這五個沒有一個給了 Claude 新能力，它們都是在限制 Claude」——**記憶結果正好示範了文章想反駁的直覺**。另：使用者記住的是作者自己在安裝順序表標為「需要時再裝」的那一個
+- 有別於既有 taxonomy：不是尺度／階段／層級錯位（那些是場合 vs 工具的範圍不合），而是**主軸被清單中最有畫面感的邊緣項整個替換**
+- **場合的三個實際問題**：(1) 已有 `gpt-image-bridge` 可生 Demo 圖，而 Demo 佔位圖對模型品質要求最低＝Higgsfield「隨時換最好模型」的價值最不成立的場景；(2) Demo 假圖太漂亮會讓客戶期待正式版長那樣，驗收時炸開；(3) credit 成本要先估
+- **真正高價值但沒記得的三件事**：[[impeccable]]（本機已裝 + 主業就是前端）、[[ponytail]] 的 debt 帳本機制（可抄不必裝）、「不要一次全裝＝一次只變動一個變因」的導入方法論（適用任何工具評估）
+- 重組路徑：不裝 Higgsfield；改對已完成客戶案跑一次 `npx impeccable detect src/`（純規則比對、零風險）；把「走捷徑要留註解寫明天花板」抄進 dev-principles
+- Spaced retrieval 約定：~2026-08-05，**兩段式**——先問「文章主要論點是什麼」（期待答出「外掛是約束不是能力」確認主軸歸位），再行動確認「有沒有跑過 impeccable detect」
+- 對應 [[Ratchet-Pattern]]
+
+## [2026-07-22] ingest | B2B 網站的 10 條原則（轉貼，未署名）
+- 來源：`網站報價資訊.md`（inbox 投遞純文字）；**使用者確認為轉貼**，非本人原創
+- 分類：論點型 → 加個人吸收段；信心中（與主流 B2B 行銷共識一致、結構完整涵蓋完整買家旅程；扣分項為無署名無數據，且第 9 條有相反主張）
+- 建立來源頁：[[src-b2b-website-10-principles-2026-07]]（十條整理成定位／說服／轉換／地基四層）
+- **關鍵補位**：[[src-shopline-payments-wp-meetup-2026-spring]] 2026-05-29 個人吸收段曾指出「3 結帳殺手只 cover 轉換漏斗 1/5，缺流量質量／服務頁 CRO／加購前猶豫／結帳後四段」，本篇十條**正好就是那四段** → 雙向連結已建，「整體轉換診斷」工具缺口首次補齊
+- **並列標註爭議**：第 9 條「表單放預算範圍下拉」業界兩派主張（過濾不合格名單 vs 信任未建立前問預算會嚇跑高價值客戶），原文未處理此張力
+- 抽出兩條最有辨識度：第 7 條「幫買方說服公司內部」＝B2B vs B2C 本質差異（網站產出物是給窗口的轉寄彈藥）；第 8 條「報價可不公開但規則必須透明」＝把「不公開價格」與「不透明」拆開
+- 影響頁面：[[src-b2b-website-10-principles-2026-07]], [[src-shopline-payments-wp-meetup-2026-spring]], index.md
+
+## [2026-07-22] reflect | 個人吸收第 20 次 — 新錯位「未消化即自動化」
+- 對應來源：[[src-b2b-website-10-principles-2026-07]]
+- Quiz：Q1「不記得」（誠實且合理，inbox 轉貼未細讀）/ Q2「收斂到我的 Skill 裡面，讓工具幫我檢查原則」
+- **場合方向極佳**：把 checklist 編碼成自動執行，正是使用者一貫的 [[Ratchet-Pattern]] 做法，且已有一整排同型 skill
+- **新錯位類型「未消化即自動化」（危險度高）**：一條都不記得卻打算固化進工具。自動化的前提是「規則我判斷過、我認可」，而本來源無署名無數據、第 9 條業界有相反主張。**把未經自己判斷的清單自動化＝把陌生人的斷言升級成我的預設規則**，且會靜默放大（skill 每次跑都套用，不會再回頭質疑一條從沒讀進去的規則）
+- 與「來源歸屬錯位」（第 16 次）同家族但更進一步：不只採用別人的方法，是把它固化進工具
+- **場合遷移對使用者有利**：2026-05 場合是「診斷客戶」（對外、要能講給客戶聽、需要 why 與證據），本次是「檢查自己產出」（對內、過關即可）。無署名無數據的清單當對客戶診斷依據會脆弱，當內部交付品管 checklist 剛好合適——**新場合恰好避開來源最弱處**
+- **落地校正**：「收斂到我的 Skill」不是一個 skill 的事——第 10 條已被 `seo-audit`+`audit-fix` cover（別重複做）、第 1-7/9 條屬 `funnel-strategy`／`funnel-design`、第 8 條屬 提案／報價 skill。建議**不新建 skill**，拿十條回檢既有三個 skill 補差集（符合使用者自己的 page builder 判準與 [[ponytail]] 懶惰階梯第 2 階）
+- 重組路徑（有先後順序不可跳）：1. 先讀十條並逐條表態（同意／存疑／不適用）2. 特別對第 9 條自行決定 3. 第 7 條單獨落地成「提案文件要有可獨立轉寄版本」4. 最後才動 skill
+- Spaced retrieval 約定：~2026-08-05，**兩段式**——「十條裡你標為存疑的是哪幾條？」（**答不出來就代表還沒消化，此時不該進 skill**）+ 行動確認有沒有補進既有 skill
+- 對應 [[Ratchet-Pattern]]，但為**反向提醒**：棘輪要卡在自己驗證過的齒上
+
+## [2026-07-22] ingest | apple-design SKILL.md + Humanizer-zh-TW + 夫妻 AI 助理（inbox 批次，輕量三篇）
+- 來源：`skillsskillsapple-designSKILL.md at main · emilkowalskiskills · GitHub.md`、`Threads 上的凱文大叔（@cai.chengkai）.md`、`Threads 上的 Vincent Lu（@hi.vincentjkt）.md`
+- **擷取備註**：`fetch-url.sh`（markdown.new crawl API）對 Threads／Instagram／GitHub blob 頁**全部 60 秒逾時**，改用 WebFetch 補抓成功；apple-design 因版權判斷未取得逐字全文，改以結構化抽取（章節 + 規則 + 具體數值），raw/ 中保存的是抽取結果非原文
+- 建立來源頁：
+  - [[src-apple-design-skill-emilkowalski-2026-07]]（規範型，信心強）：Emil Kowalski（Sonner／Vaul 作者）；特點是每條規則附可落參數的數值；核心＝**Interruptibility 是單一最重要原則**（一律從呈現值動畫化不從目標值）；與 [[DESIGN-md]] 互補（DESIGN.md 管視覺 token、本篇管互動動態）、與 [[impeccable]] 互補（注入正確做法 vs 偵測既有問題）
+  - [[src-humanizer-zh-tw-threads-2026-07]]（工具備忘，信心弱）：文字版去 AI 味；**並列標註**作者「台灣人不會用 GitHub」歸因未驗證 + 母體規模／發布時間差／推廣管道三個競爭解釋；採用前必查是否處理台灣 vs 中國用語
+  - [[src-vincent-lu-couple-ai-agents-2026-07]]（案例備忘，信心弱）：以**人的信任邊界**而非任務分工切多 agent；原文架構連結未擷取到，只能記方向不能記做法；指出原文未談的權限界線／失效歸屬／「解的是記憶問題還是關係問題」
+- 分類判斷：三篇皆非論點型（規範型／工具備忘／案例備忘）→ 依 CLAUDE.md 規範**不加個人吸收段**
+- 更新既有頁：[[DESIGN-md]]（補 impeccable 自動產出 DESIGN.md + apple-design 補動態欄位的弱項）
+- 影響頁面：[[src-apple-design-skill-emilkowalski-2026-07]], [[src-humanizer-zh-tw-threads-2026-07]], [[src-vincent-lu-couple-ai-agents-2026-07]], [[DESIGN-md]], index.md

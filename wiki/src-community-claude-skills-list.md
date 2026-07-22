@@ -27,7 +27,9 @@ confidence: 弱
 ## 與本知識庫的關聯
 
 - [[Agent-Skills]] — 這些都是 skill 生態的實例；本頁作為「社群在用什麼 skill」的參考清單
-- **graphify** — 使用者本機已裝有同名 skill（`~/.claude/skills/graphify/`），概念是「任何輸入轉知識圖譜」，與本知識庫的 [[LLM-Wiki]] 精神相近（結構化 + 可查詢）
+- **graphify** — 使用者本機已裝有同名 skill（`~/.claude/skills/graphify/`），概念是「任何輸入轉知識圖譜」，與本知識庫的 [[LLM-Wiki]] 精神相近（結構化 + 可查詢）。**2026-07-22 已建 [[graphify]] entity 頁**（含安裝細節、PreToolUse hook 機制與「什麼時候不要用」），本頁的一行描述由該頁取代
+- **open design** — 對照 2026-07 新增的 [[impeccable]]（AI 前端品質）與
+  [[src-apple-design-skill-emilkowalski-2026-07|apple-design]]（互動規範），三者同屬「約束 AI 視覺輸出」的 skill 群
 - **browser-harness** — 對照使用者已用的 Playwright / [[BrowseForge]] 自動化路線
 - **codeburn** — 對照 [[src-coralline-statusline-2026-06|coralline statusline]] 的 cost/token segment（都在解「token 花費黑箱」問題）
 

@@ -8,6 +8,20 @@ title: 索引
 
 ## 最近新增
 
+### 2026-07-22
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-jason-claude-code-5-plugins-2026-07]] | **新來源（論點型／工具導入）**：傑森所長 @jasonxtsai「Claude Code 五個外掛完整指南」（2026-07-20）。**名詞校正**：五個裡只有三個是真外掛（skill+hook／skill+CLI+hook／plugin／MCP server／純資料夾）。三大元論點：**外掛不是能力是約束**、**每個外掛都是會過期的支票**、**skill 和 hook 都能執行程式碼（裝前看 repo）**。糾正三處網路錯誤資訊（impeccable 是 46 條不是 24 條／ponytail「省 94%」數字作者已修正／Higgsfield **不需要 API key**）。安裝順序主張「不要一次全裝」。含 Instagram 同期曝光註記。**個人吸收（新錯位「能力項截獲」）**：記得的是唯一能力型的 [[Higgsfield-MCP]]（作者標為最不急），三個約束型主軸全蒸發——記憶結果正好示範文章論點 2 想反駁的直覺 |
+| [[src-b2b-website-10-principles-2026-07]] | **新來源（論點型／轉貼未署名）**：B2B 網站 10 條原則，整理成定位／說服／轉換／地基四層。最有辨識度兩條：**第 7 條幫買方說服公司內部**（B2B vs B2C 本質差異）、**第 8 條報價可不公開但規則必須透明**。**並列標註第 9 條爭議**（表單問預算：過濾名單 vs 嚇跑高價值客戶兩派）。**關鍵補位**：正是 [[src-shopline-payments-wp-meetup-2026-spring]] 2026-05 個人吸收段指出「缺的 4 個漏斗階段」。**個人吸收（新錯位「未消化即自動化」）**：一條都不記得卻打算收進 skill 自動檢查；場合從「診斷客戶」遷移到「檢查自己」反而避開來源弱點；建議不新建 skill 而是回檢既有三個 skill 補差集 |
+| [[src-apple-design-skill-emilkowalski-2026-07]] | **新來源（規範型）**：Emil Kowalski（Sonner／Vaul 作者）的 apple-design SKILL.md。特點是**每條規則都附具體數值或公式**：spring damping `1.0`／response `0.3–0.4`、動量投射 `(v/1000)×d/(1−d)`（d≈0.998）、rubber-banding 公式、手勢閾值 10px、大字字距 -0.02em。核心主張 **Interruptibility 是單一最重要原則**（一律從呈現值動畫化，不從目標值）。三個無障礙 media query。信心強 |
+| [[src-humanizer-zh-tw-threads-2026-07]] | **新來源（工具備忘）**：凱文大叔 @cai.chengkai 的 Humanizer-zh-TW（繁中去 AI 味 skill）。文字版的「去 AI 味」，對照 [[impeccable]] 的視覺版。**並列標註**作者「繁中 500 星 vs 簡中 13.3K＝台灣人不會用 GitHub」歸因未經驗證，另列母體規模／發布時間差／推廣管道三個競爭解釋。採用前必查：是否處理台灣 vs 中國用語。信心弱 |
+| [[src-vincent-lu-couple-ai-agents-2026-07]] | **新來源（案例備忘）**：Vincent Lu @hi.vincentjkt 在 Mac mini 上替夫妻各配一個 AI 助理，「她的 Agent 通知我的 Agent」。**以人的信任邊界而非任務分工來切多 agent**，對照 [[多模型角色編排]]。原文架構連結未能擷取，只能記方向不能記做法。指出原文未談的三個問題（權限界線／失效歸屬／解的是記憶問題還是關係問題）。信心弱 |
+| [[graphify]] | **新 entity**：tree-sitter AST 解析把專案轉知識圖譜（community 模組群 + god node）。關鍵是 **PreToolUse hook 在 Glob/Grep 前攔截**＝把「應該先看圖」變環境強制而非指令期待。不到 100 檔別裝；`graphify install` 會覆寫 SKILL.md。使用者本機已裝 |
+| [[impeccable]] | **新 entity**：抓前端 AI 痕跡（Inter 到底／紫藍漸層 hero／卡片包卡片／彩色底灰字）。**46 條確定性規則的 detect CLI 可接 PR check**（乾淨回 0、有問題回 2）。策略是教 AI「什麼不該做」。**對本人警告**：複刻設計稿的案子會誤報，適合看 audit 不適合 CI 硬擋 |
+| [[ponytail]] | **新 entity**：懶惰階梯（7 階，停在第一個成立的階）。**最值得抄的不是階梯是 `ponytail:` 註解 + debt 帳本**——捷徑不是問題，捷徑沒紀錄才是問題。作者主動修正被瘋傳的「省 94%」數字（對照 [[src-x-taiyo-kimura-html2pptx-2026-06]] 的賣方自評，方向相反） |
+| [[Higgsfield-MCP]] | **新 entity**：hosted HTTP MCP server 接 30+ 生成模型，走 OAuth **不需要 API key**（2026-04-30 前的教學全錯）。使用要點：不會通知（要 poll）、批次超過 3 個安靜失敗、先估 credit。對本人評估：已有 gpt-image-bridge，目前不急著裝 |
+
 ### 2026-07-16
 
 | 頁面 | 摘要 |
@@ -337,6 +351,11 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 
 | 頁面 | 摘要 | 來源數 |
 |------|------|--------|
+| [[src-jason-claude-code-5-plugins-2026-07\|Claude Code 五個外掛完整指南（傑森所長）]] | 論點型工具導入：graphify/impeccable/ponytail/Higgsfield/Obsidian；名詞校正（只有三個是真外掛）＋三大元論點（外掛是約束不是能力／會過期的支票／skill 與 hook 都能執行程式碼）＋糾正三處網路錯誤資訊＋「不要一次全裝」導入順序；含個人吸收（**能力項截獲**錯位） | 2 |
+| [[src-b2b-website-10-principles-2026-07\|B2B 網站的 10 條原則（轉貼）]] | 論點型／未署名轉貼：定位／說服／轉換／地基四層；第 7 條「幫買方說服公司內部」＝B2B 本質差異、第 8 條「報價可不公開但規則必須透明」；並列標註第 9 條表單問預算的正反爭議；**補上 SHOPLINE 那次缺的 4 個漏斗階段**；含個人吸收（**未消化即自動化**錯位） | 1 |
+| [[src-apple-design-skill-emilkowalski-2026-07\|apple-design SKILL.md（Emil Kowalski）]] | 規範型：Apple 互動設計語彙寫成 Agent Skill，每條規則附具體數值（spring damping/response、動量投射公式、rubber-banding 公式、手勢閾值、字距）；核心＝Interruptibility 是單一最重要原則；三個無障礙 media query；信心強 | 1 |
+| [[src-humanizer-zh-tw-threads-2026-07\|Humanizer-zh-TW 繁中去 AI 味 skill（凱文大叔）]] | 工具備忘：文字版去 AI 味（對照 impeccable 的視覺版）；並列標註「台灣人不會用 GitHub」歸因未驗證 + 三個競爭解釋；採用前必查是否處理台灣 vs 中國用語；信心弱 | 1 |
+| [[src-vincent-lu-couple-ai-agents-2026-07\|夫妻各配一個 AI 助理（Vincent Lu）]] | 案例備忘：Mac mini 跑兩個 agent，「她的 Agent 通知我的 Agent」；以人的信任邊界切多 agent；原文架構連結未擷取到，只能記方向；指出原文未談的權限／失效歸屬／記憶問題 vs 關係問題；信心弱 | 1 |
 | [[src-build-your-own-agent-system-2026-07\|為自己建一套 Skill／Agent 體系（未署名）]] | 論點型 AI 趨勢：關鍵是建自己的 Agent 體系（會用介面→擁有 AI 團隊）；三層理由＋Skill/Agent/系統三步；wiki 既有主題匯流點（決策疲勞/多模型編排/Agent-Skills/Harness）；個人吸收：未讀+收藏，新知價值低但可當對客戶科普素材 | 1 |
 | [[src-mel-robbins-8-life-reminders-2026-07\|八個生活提醒（Mel Robbins / Let Them）]] | 收藏型自我成長：Let Them Theory（由他們去）＋Let Me；8 條情緒界限提醒；使用者未讀要求導讀，挑第 2/3/7 條最對症 | 1 |
 | [[src-invest-3-lessons-menggong-2026-07\|投資三堂課 — 心法／實戰／風控（孟恭）]] | 論點型投資心法（轉貼整理，講者研判為股癌謝孟恭）：心法(灰階思考/懷疑含講者自己/看原廠)＋實戰(全資收購選股/大跌買指數)＋風控(不死三鐵律：分散、不 All-in、不槓桿)；wiki 第一個投資心法層來源；含個人吸收（來源歸屬錯位：把「自訂規則」記成「用別人方法」） | 1 |
@@ -417,6 +436,10 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 
 | 頁面 | 摘要 | 來源數 |
 |------|------|--------|
+| [[graphify]] | tree-sitter AST 解析 → 專案知識圖譜（community 模組群 + god node）；**PreToolUse hook 在 Glob/Grep 前攔截**＝環境強制而非指令期待；<100 檔別裝；使用者本機已裝 | 3 |
+| [[impeccable]] | 抓前端 AI 痕跡的 skill+CLI+hook（Paul Bakaus）；**46 條確定性規則 detect CLI 可接 PR check**；教 AI「什麼不該做」；對本人警告：複刻設計稿的案子會誤報 | 1 |
+| [[ponytail]] | 懶惰階梯 7 階的 Claude Code plugin；**最值得抄的是 `ponytail:` 註解 + debt 帳本**（捷徑沒紀錄才是問題）；作者主動修正被瘋傳的「省 94%」數字 | 1 |
+| [[Higgsfield-MCP]] | hosted HTTP MCP server 接 30+ 生成模型；走 OAuth **不需要 API key**（2026-04-30 前教學全錯）；不會通知要 poll、批次 >3 安靜失敗；對本人：已有 gpt-image-bridge，不急著裝 | 1 |
 | [[ihower]] | 台灣資深工程師/技術作家（《Rails 實戰聖經》、愛好 AI Engineer 電子報、blog.aihao.tw）；自建 agent 開發者視角；[[Harness-Engineering]] 台灣社群代表 | 1 |
 | [[html2pptx]] | HTML/CSS → 完全可編輯 PPTX 的 SaaS；REST API / Skill / MCP / CLI 四形態；日本獨立開發者 @taiyo_ai_gakuse | 1 |
 | [[攝影工作室A]] | 攝影工作室客戶，商業攝影網站優化中 | 1 |

@@ -54,6 +54,20 @@ confidence: 中
 ## 在各來源中的角色
 
 - [[src-claude-code-in-large-codebases]]：首次紀錄 Plugins 為 [[Claude Code]] Harness 7 個 extension points 之一；定位「Distribute What Works」
+- [[src-jason-claude-code-5-plugins-2026-07]]：**第一個實際 marketplace 安裝案例**（[[ponytail]]），
+  指令為 `/plugin marketplace add <repo>` + `/plugin install <name>@<marketplace>`。
+  該文同時做了有用的名詞校正——社群口語的「外掛」其實混了四種形態：
+
+  | 形態 | 例子 | 安裝方式 |
+  |---|---|---|
+  | skill + hook | [[graphify]] | pip / CLI 安裝器 |
+  | skill + CLI + hook | [[impeccable]] | `npx` 安裝器 |
+  | **plugin** | [[ponytail]] | marketplace（本頁主題） |
+  | MCP server | [[Higgsfield-MCP]] | `claude mcp add` |
+  | 純資料夾 | [[Obsidian]] | 不用安裝 |
+
+  **只有第三種是本頁定義的 plugin**。這個區分實務上重要：形態決定了升級方式、
+  失效模式（ponytail 的 hook 找不到 node 會安靜失效）與信任邊界。
 
 ## 信心評估
 

@@ -60,6 +60,12 @@ Claude Code、Cursor、Gemini CLI、GitHub Copilot、Windsurf
 - [[src-claude-code-context-management]] — Claude Code 讀取 DESIGN.md 時的上下文策略
 - [[src-aapd-claude-design-figma-workflow]] — 「邊走邊建規則」流派的代表來源
 - [[src-akiraxclaw-app-flow-trick]] — 同類設計：App Flow JSON 是「系統地圖」型的 AI 可讀規範檔（DESIGN.md 是「視覺規範」型）
+- [[impeccable]] — `/impeccable init` **自動產出 DESIGN.md**（掃 repo + 合併 Tailwind theme + 盤點元件），
+  是「DESIGN.md 從手寫走向工具生成」的第一個具體實例
+- [[src-apple-design-skill-emilkowalski-2026-07]] — **補 DESIGN.md 最弱的一塊：動態與互動**。
+  DESIGN.md schema 雖有 Motion Principles 欄位，但通常只寫「動畫速度／easing」這種
+  無法執行的描述；apple-design 給的是 damping `1.0`、response `0.3–0.4`、
+  投射公式這類可直接落參數的值
 
 ## 應用領域擴張：從 UI 到短影片
 

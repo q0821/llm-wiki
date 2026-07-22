@@ -86,9 +86,31 @@ Local-first 的 markdown 筆記工具，被 [[Andrej-Karpathy]] 與中文圈創�
 
 > 本知識庫採取不同結構：`raw/` + `wiki/` 二分法（更像 LLM Wiki 原始 schema），不採 PARA 分類。理由：本知識庫主要由 LLM 維護，分類由 frontmatter 的 `type` 欄位決定即可。
 
+## 「它不是外掛，是一個資料夾」
+
+[[src-jason-claude-code-5-plugins-2026-07|傑森所長的 Claude Code 五外掛指南]]（2026-07）
+把 Obsidian 列為五個工具之一，並明說它根本不是外掛，只是一個裝滿 Markdown 的資料夾——
+但它解決五個裡最根本的問題：**Claude 沒有記憶**。
+
+> 「前面四個都是讓 Claude 這一次做得更好，Obsidian 是讓它下一次不用重來。」
+
+該文給的最小可行版本值得對照本知識庫的做法：在 CLAUDE.md 裡明寫「何時讀 vault」
+（回答架構問題前、使用者提到「上次／之前／我們決定過」時、開新功能前）與
+「何時寫 vault」（做出架構決策 → `decisions/`、踩坑並解決 → `gotchas/`、
+明確說「記下來」時），再放一個 INDEX.md 讓 Claude 先掃目錄而非全讀。
+
+**本知識庫的 `wiki/index.md` 就是這個 INDEX.md 的進階版**（表格化 + 分類 + 來源數）。
+
+該文也列了不要用的時候：筆記沒人維護（**過期的 vault 比沒有更糟**，Claude 會照錯的
+資訊做決定）、vault 太大需要索引或上 [[graphify]]、裡面有機密
+（Claude 讀得到的就是進了 context 的）。第三點正是本知識庫 CLAUDE.md
+「公開度與資安」一節在處理的問題。
+
 ## 相關頁面
 
 - [[LLM-Wiki]] — 在 Obsidian 上實作的核心方法論
+- [[graphify]] — vault 太大時的索引方案
+- [[src-jason-claude-code-5-plugins-2026-07]] — 把 Obsidian 定位為「共用記憶層」的來源
 - [[Andrej-Karpathy]] — IDE/programmer/codebase 比喻提出者
 - [[Claude Code]] — 主要搭配的 CLI agent
 - [[NotebookLM]] — 對照組：雲端 RAG 工具

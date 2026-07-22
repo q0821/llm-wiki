@@ -195,3 +195,10 @@ Skill 的封裝優勢：
 - [[Addy-Osmani]] — 提出「10 個職責清楚的工具勝過 50 個功能重疊」原則
 - [[src-addy-osmani-harness-engineering]] — Harness 七元件視角下的 Skills 定位
 - [[Prompt-Pack-Pattern]] — 與 Skill 對照的另一種重用範式（人類控制節奏 vs Agent 自動觸發）
+- [[graphify]] / [[impeccable]] / [[ponytail]] — 三個具體 skill 實例，分屬三種形態
+  （skill+hook／skill+CLI+hook／marketplace plugin）
+- [[src-apple-design-skill-emilkowalski-2026-07]] — **純知識注入型 skill 的範例**：
+  無 hook、無 CLI，只有一份帶具體數值的 SKILL.md。與需要執行環境的 skill 形成對照
+- [[src-humanizer-zh-tw-threads-2026-07]] — 繁中在地化 skill 的實例
+- [[src-jason-claude-code-5-plugins-2026-07]] — skill／plugin／MCP 形態辨析 + 供應鏈風險提醒
+  （「skill 和 hook 都能執行程式碼，裝之前看一眼 repo」）

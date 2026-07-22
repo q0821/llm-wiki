@@ -158,6 +158,11 @@ confidence: 中
 
 - [[src-yangsheep-wp-ai-meetup-2026-spring]] — 同場 WP 小聚姊妹簡報（做網站端）
 - [[src-customer-diagnostic-50-questions]] — 顧客自我診斷 50 題（CRO 上游階段的工具）
+- [[src-b2b-website-10-principles-2026-07]] — **2026-07-22 補上：正是上面「缺的 4 個漏斗階段」的框架**。
+  該篇十條涵蓋定位（首頁 3–5 秒、導覽依買家找法）、說服（具體成果、內容深度、
+  幫買方說服內部）、轉換分流（多階段 CTA、名單成熟度、漸進式表單）、
+  地基（報價規則透明、速度／行動／無障礙／SEO）。與本頁 3 殺手合起來，
+  「整體轉換診斷」的工具缺口首次補齊
 - [[src-cal-diy-github]] — 開源 SaaS 替代方案（金流的「自己刻」選項是 Stripe + 開源 plugin）
 
 ## 未來追蹤候選
