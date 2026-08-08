@@ -8,6 +8,16 @@ title: 索引
 
 ## 最近新增
 
+### 2026-08-08
+
+| 頁面 | 摘要 |
+|------|------|
+| [[src-design-md-revolution\|DESIGN.md 革命]]（更新） | 補充來源 ThisWeb「DESIGN.md 是什麼」文章：規格化生成 prompt（品牌顧問流程，最後才輸出九大段落）+ `/design-guard` skill（防止 AI 未經確認偷改設計規範）+ 更新維護最佳實踐（Git PR review / 具體數值 / 精簡） |
+| [[DESIGN-md\|DESIGN.md]]（更新） | 相關資源補一句 design-guard skill 註記 |
+| [[src-evgeny-andzhelo-tetris-led-wall\|Claude 寫 Tetris 引擎驅動 60 米 LED 牆]] | **新來源（趣味案例）**：Instagram 貼文，Claude 寫自訂 Tetris 引擎（Python）+ Raspberry Pi + WLED 驅動 60 公尺 LED 牆；作為「Claude Code 能寫控制實體硬體程式」的具體佐證 |
+| [[src-nanako-pilotfish\|pilotfish]]（更新） | 資料回查發現 raw/ 有第二份未去重的擷取檔（Nanako0129pilotfish...One-prompt install..md），差點誤建重複頁；更新數據（319→588 stars／v1.1.2→v1.3.10）+ 新增 2 角色（`plan-verifier`／`security-reviewer`，共 8 角色）+ Interaction Shape 路由機制 + pilotfish-grok／pilotfish-codex／remora 生態系；[[多模型角色編排]] 個人吸收段補逾期 14 天的 spaced retrieval 執行記錄 |
+| [[src-ernesto-software-b2c-app-playbook-2026-01\|B2C 訂閱 App 的驗證、付費牆與獲客劇本]] | **新來源（論點型，賣方自述）**：從競品營收找市場訊號、借鑑 onboarding 與付費牆、再以 UGC／influencer／內容／廣告獲客。明確拆開「市場有人付費」與「自己有 PMF」，以退款、取消、負評與 Day 7／30 留存制衡只看首購的陷阱；含個人吸收（競品營收不足以證明切入空間，收費透明是信任條件） |
+
 ### 2026-07-22
 
 | 頁面 | 摘要 |
@@ -351,6 +361,8 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 
 | 頁面 | 摘要 | 來源數 |
 |------|------|--------|
+| [[src-evgeny-andzhelo-tetris-led-wall\|Claude 寫 Tetris 引擎驅動 60 米 LED 牆]] | 趣味案例：Claude 寫自訂 Tetris 引擎（Python）驅動 60 公尺 LED 牆，經 Raspberry Pi + WLED；佐證 Claude Code 可寫硬體控制程式 | 1 |
+| [[src-ernesto-software-b2c-app-playbook-2026-01\|B2C 訂閱 App 的驗證、付費牆與獲客劇本（Ernesto Lopez）]] | 論點型、賣方自述：競品付費訊號→快速 MVP→onboarding／付費牆→UGC／influencer／內容／廣告；以 [[AI-Native-Startup]] 補足初步驗證與 genuine PMF 的界線；個人吸收將收費透明與留存指標列為採用條件 | 1 |
 | [[src-jason-claude-code-5-plugins-2026-07\|Claude Code 五個外掛完整指南（傑森所長）]] | 論點型工具導入：graphify/impeccable/ponytail/Higgsfield/Obsidian；名詞校正（只有三個是真外掛）＋三大元論點（外掛是約束不是能力／會過期的支票／skill 與 hook 都能執行程式碼）＋糾正三處網路錯誤資訊＋「不要一次全裝」導入順序；含個人吸收（**能力項截獲**錯位） | 2 |
 | [[src-b2b-website-10-principles-2026-07\|B2B 網站的 10 條原則（轉貼）]] | 論點型／未署名轉貼：定位／說服／轉換／地基四層；第 7 條「幫買方說服公司內部」＝B2B 本質差異、第 8 條「報價可不公開但規則必須透明」；並列標註第 9 條表單問預算的正反爭議；**補上 SHOPLINE 那次缺的 4 個漏斗階段**；含個人吸收（**未消化即自動化**錯位） | 1 |
 | [[src-apple-design-skill-emilkowalski-2026-07\|apple-design SKILL.md（Emil Kowalski）]] | 規範型：Apple 互動設計語彙寫成 Agent Skill，每條規則附具體數值（spring damping/response、動量投射公式、rubber-banding 公式、手勢閾值、字距）；核心＝Interruptibility 是單一最重要原則；三個無障礙 media query；信心強 | 1 |
@@ -367,7 +379,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 | [[src-papaya-llm-wiki-tutorial\|LLM Wiki 升級 Obsidian 成第二大腦（PAPAYA）]] | [[LLM-Wiki]] 入門教學（三國史料範例），用 [[OpenAI-Codex-CLI\|Codex]]（`AGENTS.md`）示範到排程全自動；定位為「同架構、滑向全自動」中間案例；含個人吸收段（警告 vs 採用的自我拉扯錯位） | 1 |
 | [[src-community-claude-skills-list\|社群推薦的 7 個常用 Claude Skills]] | **清單型**：caveman/graphify/codeburn/claude video/open design/browser-harness/gsap；無署名社群分享，用到時查閱；信心弱 | 1 |
 | [[多系統命理交叉分析-提示詞模板\|多系統命理交叉分析 提示詞模板]] | **備忘型（離主題）**：跨命理系統交叉分析的提示詞模板，先算後論/交叉匯流/攤開矛盾/可證偽/標來源；需程式執行能力 AI（pyswisseph） | 1 |
-| [[src-nanako-pilotfish\|pilotfish 多模型編排層]] | Claude Code 多模型編排工具（GitHub、MIT、319★）；六角色綁模型層級、前沿規劃+便宜執行+fresh-context verifier；支撐 [[多模型角色編排]] | 1 |
+| [[src-nanako-pilotfish\|pilotfish 多模型編排層]] | Claude Code 多模型編排工具（GitHub、MIT、588★／v1.3.10）；八角色綁模型層級、前沿規劃+便宜執行+fresh-context verifier；新增 Interaction Shape 路由機制；支撐 [[多模型角色編排]] | 2 |
 | [[src-zhongyea-orchestrator-cost\|Claude Code 降本 Advisor/Orchestrator（@zhong_yea）]] | 兩降本模式手動教學（Advisor 63%成本/92%效能、Orchestrator 46%/96%）；pilotfish 的手動版，同 Anthropic benchmark | 1 |
 | [[src-khpr-lifeos-memory\|lifeos-memory 外掛記憶層（@khpr）]] | Claude Code 記憶層工具（踩坑卡/原子記憶卡/自動摘要/token 滿自動存檔/本機向量索引）；工具型，對照使用者自建 memory 機制 | 1 |
 | [[src-ai-retrospective-method\|用 AI 做半年復盤的四步法]] | 論點型：AI 復盤價值在「追問」把事件逼成模式（口述→抓主線→追問→三種輸出，附 4 個 Prompt）；強呼應本 wiki 個人吸收機制；含吸收段（未讀+打算做，改行動確認回測）| 1 |
@@ -390,7 +402,7 @@ inbox-pull 拉進 5 個檔案 → 批次 ingest，產出 7 個新頁 + 4 個更�
 | [[src-zeuikli-claude-code-best-practices\|Claude Code 最佳實踐完整研究報告（zeuikli）]] | 1254 行 / 10 章整合報告；Anthropic 81 篇來源 + Boris Cherny / Thariq Shihipar 引言；PGE 原則 + Cache as Uptime | 1 |
 | [[src-customer-diagnostic-50-questions\|50 個顧客自我診斷問題]] | 含 ABC 分級與 CLV 概念 | 1 |
 | [[src-claude-code-context-management\|Claude Code 上下文管理攻略]] | 含 rewind/compact/subagent 策略 | 1 |
-| [[src-design-md-revolution\|DESIGN.md 革命]] | awesome-design-md 專案介紹，AI UI 設計新標準 | 3 |
+| [[src-design-md-revolution\|DESIGN.md 革命]] | awesome-design-md 專案介紹，AI UI 設計新標準；補充 ThisWeb 規格化生成 prompt + `/design-guard` skill 維護機制 | 4 |
 | [[src-claude-code-notebooklm\|Claude Code × NotebookLM 整合實戰]] | token 外包 + skill 自我優化 | 1 |
 | [[src-anthropic-managed-agents-engineering\|Scaling Managed Agents]] | Anthropic 官方工程部落格，meta-harness 架構設計 | 1 |
 | [[src-harness-engineering-openai\|Harness Engineering 入門篇]] | OpenAI 駕馭工程，三根支柱與三級實踐框架 | 1 |

@@ -1,9 +1,9 @@
 ---
 title: AI-Native Startup
 type: concept
-sources: ["anthropic-founders-playbook-2026-05.md"]
+sources: ["anthropic-founders-playbook-2026-05.md", "2026-01-22-ernesto-software-b2c-app-playbook.md"]
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-08-08
 tags: [startup, founder, ai-native, 10-person-unicorn, lifecycle, anthropic-official]
 confidence: 強
 ---
@@ -50,6 +50,18 @@ Idea → MVP → Launch → Scale
 | **Scale** | **Defensible moat through accumulated depth**（profitability / IPO / acquisition） | Delegating operational layer / Scaling tech ops / Scaling org functions / Building GTM |
 
 每個 stage 的 exit criteria 是「**事前可定義的可觀測條件**」——對應 [[PGE-Principle]] 「外部 evaluator」原則。
+
+## B2C 訂閱 App：將市場訊號與 PMF 分開
+
+[[src-ernesto-software-b2c-app-playbook-2026-01]] 提供一條 B2C 實作劇本：先找已有付費競品與社群內容，再快速做 MVP、設計 onboarding 與付費牆、最後用內容或廣告取得流量。它具體化了此頁「瓶頸是選什麼做」的判準，但其「競品營收＋社群內容＝驗證完成」只足以停在 **Idea** 階段。
+
+| 此頁的 exit criteria | B2C 訂閱 App 對應檢查 |
+|---|---|
+| Idea：Problem-solution fit | 已有競品營收是市場訊號；另需驗證特定受眾仍有未被滿足的痛點或可贏的切入角度 |
+| MVP：Genuine PMF | 首次價值是否出現、activation、Day 7／30 留存、退款與單位經濟，不能由首購或爆款內容替代 |
+| Launch：Repeatable growth | 經驗證的內容／廣告渠道與可持續 CAC，而非一次 viral post |
+
+付費牆本身也要有 exit criteria：價格、頻率、試用與取消條件在付款前透明；付費牆轉換率必須與退款／拒付、取消流程完成率、客服抱怨與負評一同解讀。否則「更會收錢」可能只是 [[AI-Native-Startup#3. Falling for False PMF|False PMF]] 的另一種表現。
 
 ## 跨四階段的核心 use case
 

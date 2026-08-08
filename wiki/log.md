@@ -1950,3 +1950,43 @@ Quiz 答案：intent 4/4 全選 + **application 只 1/4**（Hi Day vs LLM-wiki �
 - 分類判斷：三篇皆非論點型（規範型／工具備忘／案例備忘）→ 依 CLAUDE.md 規範**不加個人吸收段**
 - 更新既有頁：[[DESIGN-md]]（補 impeccable 自動產出 DESIGN.md + apple-design 補動態欄位的弱項）
 - 影響頁面：[[src-apple-design-skill-emilkowalski-2026-07]], [[src-humanizer-zh-tw-threads-2026-07]], [[src-vincent-lu-couple-ai-agents-2026-07]], [[DESIGN-md]], index.md
+
+## [2026-08-08] ingest | 補齊未處理來源掃描：ThisWeb DESIGN.md 文章 + Tetris LED 牆案例
+- 前置檢查：`bin/inbox-pull.sh` 搬入 4 個新檔（Instagram 上的 Evgeny Andzhelo、Threads • 登入、Threads 上的皮（@hiraku）、roman (@Nozelcode) 貼文）
+- 掃描 raw/ 與 wiki/src-*.md 交叉比對，找出 11 個從未被任何 wiki 頁引用的 raw 檔；逐一 `read` 直連 URL 重試（`fetch-url.sh` 對多個 Threads/Instagram/GitHub 頁擷取失敗，只存到空殼標題連結）
+- **併入既有頁**：`designmd-是什麼vibe-coding-必備神器讓-ai-遵循你的設計生成網站-thisweb-請網這邊走.md`（ThisWeb｜Kun，2026-04-12）→ 補進 [[src-design-md-revolution]]：規格化生成 prompt（品牌顧問流程，最後才輸出九大段落）+ `/design-guard` skill 定義（防止 AI 未經確認偷改設計規範）+ 更新維護最佳實踐；同步更新 [[DESIGN-md]] 相關資源
+- **新建來源頁**：[[src-evgeny-andzhelo-tetris-led-wall]]（趣味案例，Instagram @andzhelo.evgeny）：Claude 寫自訂 Tetris 引擎（Python）+ Raspberry Pi + WLED 驅動 60 公尺 LED 牆
+- 分類判斷：兩者皆非論點型（教學資訊彙整 / 趣味案例）→ 依 CLAUDE.md 規範不加個人吸收段
+- **確認為重複、無新資訊，不建頁**：`Threads 上的 ThisWeb｜請網這邊走（@this.web）.md`（同一篇 ThisWeb 文章的作者自我宣傳貼文，內容已含於上述併入內容）、`X 上的 Taiyo Kimura (@taiyo_ai_gakuse).md`（與既有 [[src-x-taiyo-kimura-html2pptx-2026-06]] 同一則推文）
+- **確認為死連結／無法擷取，經使用者同意刪除**：`Threads • 登入.md`（目標貼文已無法存取，直連 URL 回傳站台首頁而非該貼文）、`roman (@Nozelcode)...md`（X.com 封鎖爬蟲、Nitter 鏡像不可用）、`Threads 上的 ThisWeb（@this.web）.md`（重複促銷貼文）、`X 上的 Taiyo Kimura (@taiyo_ai_gakuse).md`（重複推文）
+- **使用者要求略過（保留 raw 檔、不建頁）**：`Threads 上的皮（@hiraku）.md`（可擷取但內容過薄，僅一句話分享 line-cheater GitHub release）
+- 影響頁面：[[src-design-md-revolution]], [[DESIGN-md]], [[src-evgeny-andzhelo-tetris-led-wall]], index.md
+
+## [2026-08-08] ingest | pilotfish 資料更新（發現重複擷取，非新來源）
+- 背景：inbox-pull 拉進的 `Nanako0129pilotfish...One-prompt install..md` 起初誤判為未曾 ingest 的新來源（substring 比對因既有頁 sources 欄位寫成截斷檔名 `Nanako0129pilotfish ....md` 而漏配），已建立重複來源頁草稿並跑完一輪個人吸收 quiz 後，核對發現 [[src-nanako-pilotfish]] 早於 2026-07-11 就已建立（六角色版，319 stars／v1.1.2）
+- 修正：刪除重複草稿頁，改為**更新既有頁** [[src-nanako-pilotfish]]：588 stars／v1.3.10、8 角色（新增 `plan-verifier`／`security-reviewer`）、新增 Interaction Shape 路由機制段、pilotfish-grok／pilotfish-codex／remora 生態系表；sources 欄位補上完整檔名（含新舊兩份擷取檔）
+- **個人吸收段不重開**：既有 [[多模型角色編排]] 2026-07-11 段落仍成立（框架核心未變），改為在該段補「Spaced retrieval 執行記錄」子段——原定 ~2026-07-25 的回測已逾期 14 天，藉本次重新接觸來源一併補做；使用者複述「主 session 用強模型規劃，把機械性/低風險工作分給便宜模型執行」對位準確，#stance:conditional-adopt 維持不變
+- 影響頁面：[[src-nanako-pilotfish]], [[多模型角色編排]], index.md
+
+## [2026-08-08] reflect | pilotfish spaced retrieval 補做（逾期 14 天）
+- 對應來源：[[多模型角色編排]]（2026-07-11 個人吸收段）
+- 回測問句（換句話問）：「pilotfish 這類框架在做什麼？」
+- 使用者答：「主 session 用強模型規劃，把機械性/低風險工作分給便宜模型執行」——與原定期待答案「看它是機械/搜尋類還是判斷類」同義，判定為對位準確
+- 場合仍為「純備忘，之後有需要多 agent 編排時再回頭看」，與原立場「條件式採用、非隨手裝」一致，未發生立場漂移
+- 對應 [[Ratchet-Pattern]]：把「截斷檔名導致查重漏配」的踩坑寫進本次 log，供日後 ingest 掃描時提醒改用更寬鬆的比對（如比對檔名前綴而非全字串）
+
+## [2026-08-08] ingest | B2C 訂閱 App 的驗證、付費牆與獲客劇本（Ernesto Lopez）
+- 來源：使用者提供 X 貼文 https://x.com/ErnestoSOFTWARE/status/2014110519913857122?s=20 。X 直連封鎖自動擷取，改由 Thread Navigator 鏡像取得完整串文，保存為 `raw/2026-01-22-ernesto-software-b2c-app-playbook.md`
+- 分類：論點型，賣方自述，信心弱。作者的收入、營收、廣告成本、觀看數與個案成果皆未找到獨立佐證，原文也未提供留存、退款、CAC、LTV 或失敗樣本
+- 建立來源頁：[[src-ernesto-software-b2c-app-playbook-2026-01]]。整理為選題市場訊號、AI 輔助 MVP、onboarding 與付費牆、五種獲客渠道四層，定位為可驗證的假設清單，不是最佳實務
+- 更新概念頁：[[AI-Native-Startup]] 新增 B2C 訂閱 App 對照，明確把競品營收放在 Idea 階段市場訊號，並以首次價值、activation、Day 7／30 留存、退款與單位經濟作為 MVP／Launch 的後續 exit criteria
+- 影響頁面：[[src-ernesto-software-b2c-app-playbook-2026-01]]、[[AI-Native-Startup]]、index.md
+
+## [2026-08-08] reflect | 個人吸收第 21 次：市場訊號與長期信任分開驗證
+- 對應來源：[[src-ernesto-software-b2c-app-playbook-2026-01]]
+- Quiz：使用者記得三點「先找已賺錢的 App 看切入範圍」「行銷不排斥付費請人推廣」「如何開口要錢」；應用場合是研究自有 B2C 訂閱 App 機會
+- 對位結果：三點完整抓到來源的市場、獲客、變現骨架，且用途直接對位。補正第一點：競品營收只證明市場有人付費，不能推論仍有切入空間；須提出未被滿足的特定痛點、受眾、情境或分發優勢
+- Defend：使用者採用「先看競品 onboarding 如何排除困擾，最關鍵部分才設付費牆」。比原文的不可跳過付費牆更成熟，改以首次價值節點作為收費條件
+- Challenge：使用者承諾付款前揭露費用與頻率、提供明顯取消方式；但尚未知道如何判斷高轉換沒有犧牲長期信任。因此頁面不假裝答案，將退款／拒付、取消流程完成率、客服抱怨／負評與 Day 7／30 留存列為待補定義的共同守門指標
+- Spaced retrieval：約 2026-08-22 回測「已知競品營收後，還缺什麼切入證據？」與「付費牆轉換率上升時，還需同看哪些指標？」；期待答出未被滿足的切入假設，以及退款／取消／負評／留存，而非只看首購
+- 對應 [[Ratchet-Pattern]]：收費透明與信任監測應在決定產品需求時編碼，不等有大量付費使用者後才補救

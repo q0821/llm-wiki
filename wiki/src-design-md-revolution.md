@@ -1,9 +1,9 @@
 ---
 title: DESIGN.md 革命：讓 AI Coding Agent 秒生成品牌級 UI
 type: source
-sources: [designmd-革命一個純文字檔案讓-ai-coding-agent-秒生成-stripelinear-等級的-ui.md, oh-my-design-design-system-generator.md, github-voltagentawesome-design-md-a-collection-of-designmd-files-inspired-by-popular-brand-design-systems-drop-one-into-your-project-and-let-coding-agents-generate-a-matching-ui-github.md]
+sources: [designmd-革命一個純文字檔案讓-ai-coding-agent-秒生成-stripelinear-等級的-ui.md, oh-my-design-design-system-generator.md, github-voltagentawesome-design-md-a-collection-of-designmd-files-inspired-by-popular-brand-design-systems-drop-one-into-your-project-and-let-coding-agents-generate-a-matching-ui-github.md, "designmd-是什麼vibe-coding-必備神器讓-ai-遵循你的設計生成網站-thisweb-請網這邊走.md"]
 created: 2026-04-16
-updated: 2026-04-20
+updated: 2026-08-08
 tags: [DESIGN.md, AI工具, 設計系統, UI, Claude Code]
 confidence: 強
 ---
@@ -78,6 +78,33 @@ DESIGN.md 是 Google 於 2026 年 3 月透過 **Google Stitch** 提出的設計�
 1. **選設計風格** — 從 awesome-design-md 或 oh-my-design 挑選品牌
 2. **放入專案根目錄** — AI 工具會自動偵測
 3. **下指令** — 「按照這個 DESIGN.md，幫我建一個像 Linear 一樣風格的頁面」
+
+## 建立與維護實務（補充來源：ThisWeb）
+
+> 補充來源：ThisWeb 請網這邊走｜Kun｜2026-04-12
+
+除了手動撰寫、Google Stitch 生成、參考 awesome-design-md，還有兩種實務做法：
+
+### 用規格化 Prompt 引導生成
+
+透過固定流程的品牌顧問 prompt，一次只問一題（品牌名稱 → 主要顏色 → 產品/服務 → 目標受眾 → 網站風格），最後才輸出完整 DESIGN.md 九大段落。關鍵限制：**引導過程中不做設計，只在最後一步才完整輸出**，避免使用者還沒想清楚就被 AI 搶著下判斷。
+
+### 用 `/design-guard` skill 防止 AI 偷改規範
+
+```yaml
+---
+name: design-guard
+description: 當使用者描述的元件或設計方向與 DESIGN.md 不一致時，主動詢問是否要更新 DESIGN.md
+---
+```
+
+行為：AI 修改任何 UI 元件前先讀 `DESIGN.md` 比對，一旦使用者描述與規範衝突，**不悄悄改檔案**，而是先問：(1) 這個新決策要不要更新 DESIGN.md？(2) 要更新的話是取代、新增、還是記錄成該元件的例外規則？確認後才動手。
+
+### 更新 DESIGN.md 的最佳實踐
+
+- 納入 Git 版本控制，透過 PR review 設計標記變更
+- 用具體數值取代模糊描述（`#1A73E8` 而非「讓人信任的藍色」）
+- 精簡：只留 AI 需要的 token，不塞教學文字，且要跟著品牌演進更新，避免規範過時反而讓 AI 產出錯誤介面
 
 ## 觀察：爆炸性採用速度
 

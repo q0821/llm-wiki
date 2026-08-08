@@ -3,7 +3,7 @@ title: DESIGN.md
 type: concept
 sources: [designmd-革命一個純文字檔案讓-ai-coding-agent-秒生成-stripelinear-等級的-ui.md, oh-my-design-design-system-generator.md, github-voltagentawesome-design-md-a-collection-of-designmd-files-inspired-by-popular-brand-design-systems-drop-one-into-your-project-and-let-coding-agents-generate-a-matching-ui-github.md, "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md", "課後 Prompt & 資源懶人包：Codex × HyperFrames 30 秒 Demo 3615edfc91bd80d19acee2ae9f0c5547.md"]
 created: 2026-04-16
-updated: 2026-05-15
+updated: 2026-08-08
 tags: [設計系統, AI工具, UI, Markdown, video]
 confidence: 強
 ---
@@ -24,7 +24,7 @@ Claude Code、Cursor、Gemini CLI、GitHub Copilot、Windsurf
 
 ## 相關資源
 
-- [[src-design-md-revolution]] — 完整介紹與 awesome-design-md 專案（含 68 個品牌分類）
+- [[src-design-md-revolution]] — 完整介紹與 awesome-design-md 專案（含 68 個品牌分類），另補充規格化生成 prompt 與 `/design-guard` skill（防止 AI 未經確認就偷改設計規範）
 - **awesome-design-md** — GitHub 策展，59.9k stars（2026-04-20），官方 https://getdesign.md/
 - **oh-my-design** — 線上生成器，62 個品牌設計系統可選
 
