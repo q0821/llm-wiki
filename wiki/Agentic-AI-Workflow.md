@@ -1,9 +1,9 @@
 ---
 title: Agentic AI Workflow
 type: concept
-sources: ["(5) Will AI Kill SaaS系列：... - Yu-Chih Edward Hwang.md", "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md", "課後 Prompt & 資源懶人包：Codex × HyperFrames 30 秒 Demo 3615edfc91bd80d19acee2ae9f0c5547.md"]
+sources: ["(5) Will AI Kill SaaS系列：... - Yu-Chih Edward Hwang.md", "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md", "課後 Prompt & 資源懶人包：Codex × HyperFrames 30 秒 Demo 3615edfc91bd80d19acee2ae9f0c5547.md", "yt-ai-一小時做完電商頁面-uiux-設計師拆解它差在哪裡.md"]
 created: 2026-04-28
-updated: 2026-05-15
+updated: 2026-08-19
 tags: [ai-coding, agent, development-paradigm, design-to-code, code-to-design, video]
 confidence: 強
 ---
@@ -57,6 +57,7 @@ Agentic AI Workflow（代理式工作流）是 AI 開發路徑演化的第四階
 
 - [[src-will-ai-kill-saas-design]]（Yu-Chih Edward Hwang，**宏觀觀察**）：將 Agentic AI Workflow 視為「軟體開發邊際成本趨近於零」的最終形態，人類核心價值收斂為意圖、品味、架構三點。
 - [[src-aapd-claude-design-figma-workflow]]（[[Simon-Lin|Simon]]，**實作經驗**）：從 [[Claude-Design]] 0→1 → Hand off → [[Claude Code]] 產品化 → [[Figma]] MCP 雙向同步的具體實踐。實作觀察補強：(1) Claude Design 仍有 hard-coded / 無版本控制等限制；(2) Figma MCP 雙向 Auto layout 仍需人工補強；(3) 設計師角色從「雕刻畫面」轉向「判斷方向」。
+- [[src-taony-ai-ecommerce-page-uiux-2026-08]]（Taony Design，AI 設計實作觀察）：把 Reviewer 角色具體化為「先給產品脈絡、用具理由的回饋判斷方向、連續兩輪仍不對就轉 Figma」，補上從生成到人工收斂的操作門檻。
 - [[src-anthropic-managed-agents-engineering]]（Anthropic）：[[Managed-Agents]] 與 [[Meta-Harness]] 是 Agentic AI Workflow 的具體技術實作——session / harness / sandbox 三層架構，TTFT p50 -60% / p95 -90%。
 - [[src-harness-engineering-openai]]（OpenAI）：[[Harness-Engineering]] 是 Agentic AI Workflow 的「工程紀律」面向——約束、上下文、熵管理三根支柱。
 

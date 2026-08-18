@@ -1,9 +1,9 @@
 ---
 title: impeccable
 type: entity
-sources: ["claude-code-五個外掛完整安裝與實戰指南.md"]
+sources: ["claude-code-五個外掛完整安裝與實戰指南.md", "yt-ai-一小時做完電商頁面-uiux-設計師拆解它差在哪裡.md"]
 created: 2026-07-22
-updated: 2026-07-22
+updated: 2026-08-19
 tags: [agent-skills, claude-code, ui-design, ai-slop, ci, 工具]
 confidence: 中
 ---
@@ -93,6 +93,7 @@ npx impeccable detect src/        # 加 --json 給機器讀
 - [[Claude-Design]] / [[src-aapd-claude-design-figma-workflow]] — AI 產 UI 的上游
 - [[Adversarial-Code-Review]] — detect 接 PR check 是「機器擋門」的同類手法
 - [[src-jason-claude-code-5-plugins-2026-07]] — 目前最完整的說明來源
+- [[src-taony-ai-ecommerce-page-uiux-2026-08]] — 補充 impeccable 只能協助檢查視覺反模式，不能取代產品脈絡、方向判斷與設計師的人工介入。
 
 ## 對接案工作的可能用途（待驗證）
 

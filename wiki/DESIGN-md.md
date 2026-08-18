@@ -1,9 +1,9 @@
 ---
 title: DESIGN.md
 type: concept
-sources: [designmd-革命一個純文字檔案讓-ai-coding-agent-秒生成-stripelinear-等級的-ui.md, oh-my-design-design-system-generator.md, github-voltagentawesome-design-md-a-collection-of-designmd-files-inspired-by-popular-brand-design-systems-drop-one-into-your-project-and-let-coding-agents-generate-a-matching-ui-github.md, "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md", "課後 Prompt & 資源懶人包：Codex × HyperFrames 30 秒 Demo 3615edfc91bd80d19acee2ae9f0c5547.md"]
+sources: [designmd-革命一個純文字檔案讓-ai-coding-agent-秒生成-stripelinear-等級的-ui.md, oh-my-design-design-system-generator.md, github-voltagentawesome-design-md-a-collection-of-designmd-files-inspired-by-popular-brand-design-systems-drop-one-into-your-project-and-let-coding-agents-generate-a-matching-ui-github.md, "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md", "課後 Prompt & 資源懶人包：Codex × HyperFrames 30 秒 Demo 3615edfc91bd80d19acee2ae9f0c5547.md", "yt-ai-一小時做完電商頁面-uiux-設計師拆解它差在哪裡.md"]
 created: 2026-04-16
-updated: 2026-08-08
+updated: 2026-08-19
 tags: [設計系統, AI工具, UI, Markdown, video]
 confidence: 強
 ---
@@ -62,6 +62,7 @@ Claude Code、Cursor、Gemini CLI、GitHub Copilot、Windsurf
 - [[src-akiraxclaw-app-flow-trick]] — 同類設計：App Flow JSON 是「系統地圖」型的 AI 可讀規範檔（DESIGN.md 是「視覺規範」型）
 - [[impeccable]] — `/impeccable init` **自動產出 DESIGN.md**（掃 repo + 合併 Tailwind theme + 盤點元件），
   是「DESIGN.md 從手寫走向工具生成」的第一個具體實例
+- [[src-taony-ai-ecommerce-page-uiux-2026-08]] — 補充沒有完整設計系統時的替代路徑：先用產品脈絡與具理由的回饋約束 AI，連續兩輪仍偏離時再進 Figma 人工收斂。
 - [[src-apple-design-skill-emilkowalski-2026-07]] — **補 DESIGN.md 最弱的一塊：動態與互動**。
   DESIGN.md schema 雖有 Motion Principles 欄位，但通常只寫「動畫速度／easing」這種
   無法執行的描述；apple-design 給的是 damping `1.0`、response `0.3–0.4`、

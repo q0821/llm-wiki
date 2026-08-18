@@ -1,9 +1,9 @@
 ---
 title: Claude Code
 type: entity
-sources: ["Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "科技翰林院怎麼用 Claude Code 終端機？8 個實戰設定全公開.md", "只要 5 分鐘！Claude Code 無縫整合 NotebookLM 實戰.md", "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md", "Hermes Agent 成功案例 — 你的 AI 代理可以做什麼.md", "未命名.md", "claude-blog-large-codebases.md"]
+sources: ["Claude + Obsidian 打造 AI 第二大腦，Karpathy 的知識管理 LLM Wiki 教學｜科技翰林院.md", "科技翰林院怎麼用 Claude Code 終端機？8 個實戰設定全公開.md", "只要 5 分鐘！Claude Code 無縫整合 NotebookLM 實戰.md", "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md", "Hermes Agent 成功案例 — 你的 AI 代理可以做什麼.md", "未命名.md", "claude-blog-large-codebases.md", "yt-ai-一小時做完電商頁面-uiux-設計師拆解它差在哪裡.md"]
 created: 2026-05-09
-updated: 2026-05-19
+updated: 2026-08-19
 tags: [agent, cli, anthropic, claude, second-brain, design-workflow, harness]
 confidence: 強
 ---
@@ -198,6 +198,7 @@ Claude 產品家族官方分工——三者「**共用同一個 Claude，不同�
 - [[Claude-Design]] — Hand off 來源
 - [[Figma]] — 透過 [[MCP]] 雙向操作的設計工具
 - [[Simon-Lin]] — 提供 Claude Design × Claude Code × Figma 整合工作流的實作 Demo
+- [[src-taony-ai-ecommerce-page-uiux-2026-08]] — 補充 Claude Code 在 AI 設計流程中的角色：先接收產品脈絡，再依具理由的回饋迭代，必要時交由 Figma 人工收斂。
 - [[Hermes-Agent]] — 互補的開源 agent；[[src-hermes-agent-99-cases]] 「跨代理統一記憶」case 將 Claude Code + Hermes + Cursor 串成同記憶層
 - [[Harness-Engineering]] — Claude Code 是 harness 七元件的成熟實作；[[Addy-Osmani]] 引 Fareed Khan 對其架構分解
 - [[Addy-Osmani]] — 對 Claude Code 架構提出元件拆解視角

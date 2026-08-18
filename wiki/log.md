@@ -1990,3 +1990,19 @@ Quiz 答案：intent 4/4 全選 + **application 只 1/4**（Hi Day vs LLM-wiki �
 - Challenge：使用者承諾付款前揭露費用與頻率、提供明顯取消方式；但尚未知道如何判斷高轉換沒有犧牲長期信任。因此頁面不假裝答案，將退款／拒付、取消流程完成率、客服抱怨／負評與 Day 7／30 留存列為待補定義的共同守門指標
 - Spaced retrieval：約 2026-08-22 回測「已知競品營收後，還缺什麼切入證據？」與「付費牆轉換率上升時，還需同看哪些指標？」；期待答出未被滿足的切入假設，以及退款／取消／負評／留存，而非只看首購
 - 對應 [[Ratchet-Pattern]]：收費透明與信任監測應在決定產品需求時編碼，不等有大量付費使用者後才補救
+
+## [2026-08-19] ingest | AI 一小時做完電商頁面，UI/UX 設計師拆解它差在哪裡
+- 來源：使用者提供 YouTube URL https://www.youtube.com/watch?v=75eSjf4wrs4 。YouTube 無字幕，語音辨識 fallback 因音訊串流下載失敗未完成；改保存公開頁面的標題、描述與章節至 `raw/yt-ai-一小時做完電商頁面-uiux-設計師拆解它差在哪裡.md`
+- 分類：論點型，信心中。四個判斷點與章節直接來自創作者公開描述；影片中的視覺比較、實際 prompt 與示範成效未自行補寫
+- 建立來源頁：[[src-taony-ai-ecommerce-page-uiux-2026-08]]
+- 更新頁面：[[DESIGN-md]]、[[impeccable]]、[[Figma]]、[[Claude Code]]、[[Agentic-AI-Workflow]]
+- 個人吸收：使用者記得「修改要說明為什麼」，應用場合是從無到有的 AI 設計；重組為「變更 + 原因 + 預期效果」回饋路徑，並補上使用者任務、產品目標、失分條件三個全局判準
+- 影響頁面：[[src-taony-ai-ecommerce-page-uiux-2026-08]]、[[DESIGN-md]]、[[impeccable]]、[[Figma]]、[[Claude Code]]、[[Agentic-AI-Workflow]]、index.md
+
+## [2026-08-19] reflect | 個人吸收第 22 次：設計回饋必須說明原因
+- 對應來源：[[src-taony-ai-ecommerce-page-uiux-2026-08]]
+- Quiz：使用者記得「不要只有單純說修改，順便說為什麼要這樣改，這樣 AI 可以一切考慮全局」；應用場合是「整個從無到有的 AI 設計」
+- 對位結果：核心論點抓得準，且應用場景直接對位；「考慮全局」需具體化為使用者任務、產品目標、預期行為與失分條件，避免退化成抽象視覺偏好
+- 重組路徑：產品真相 → Round 1 → 方向判斷 → 變更 + 原因 + 預期效果 → 兩輪仍不對時進 Figma
+- Spaced retrieval：約 2026-09-02 回測產品脈絡、具理由回饋與 Figma 介入門檻
+- 對應 [[Ratchet-Pattern]]：把「AI UI 回饋必須交代理由」編碼成可回測的工作流程，而不是只記住「叫 AI 改畫面」

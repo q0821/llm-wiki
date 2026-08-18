@@ -1,9 +1,9 @@
 ---
 title: Figma
 type: entity
-sources: ["(5) Will AI Kill SaaS系列：... - Yu-Chih Edward Hwang.md", "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md"]
+sources: ["(5) Will AI Kill SaaS系列：... - Yu-Chih Edward Hwang.md", "【直播筆記】用 Claude Design × Claude Code × Figma 重新定義設計工作流程 - AAPD 產品設計學院.md", "yt-ai-一小時做完電商頁面-uiux-設計師拆解它差在哪裡.md"]
 created: 2026-04-28
-updated: 2026-05-14
+updated: 2026-08-19
 tags: [design-tool, saas, company, mcp]
 confidence: 強
 ---
@@ -22,6 +22,7 @@ confidence: 強
 
 - [[src-will-ai-kill-saas-design]]：核心討論對象。作者觀察上市 120 → 不到 20（不到一年）；雖積極推 AI 工具與整合，但仍承壓。**作者明確表示不會買 Figma 股票**。
 - [[src-aapd-claude-design-figma-workflow]]：實作者觀察。[[Simon-Lin|Simon]] 認為 [[Figma]] 與 [[Claude-Design]] 變成「雙向快速來回迭代」的關係——不是 Claude 取代 Figma，而是兩者形成新分工。實作 Figma MCP 雙向操作後也明確指出當前 bug（Auto layout、色彩 hard-code）需要設計師人工補強。
+- [[src-taony-ai-ecommerce-page-uiux-2026-08]]：當 AI 連續兩輪仍未對準設計方向時，設計師進 Figma 手動調整，並用留言記錄設計意圖；這延續 Figma 在像素級控制與設計真相來源上的角色。
 
 ## Figma MCP 的雙向操作（[[Simon-Lin|Simon]] Demo）
 
